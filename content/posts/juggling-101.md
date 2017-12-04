@@ -2,6 +2,7 @@ title: Juggling 101
 slug: juggling-101
 tags: Juggling, Tutorial
 date: 2017-12-03
+summary: This is a tutorial for those who wish to learn juggling and have absolutely no prior experience. Here you will find links to resources which will help you learn your first juggling pattern and suggestions about what kind of balls to use, what posture you should have, etc.
 
 
 If you want to learn juggling, you should first know what juggling looks like.
@@ -26,7 +27,7 @@ This is not recommended. The shower is more difficult than the cascade.
 Don't even try to learn the shower before the cascade; it will make it more difficult to learn the cascade.
 
 You can find out how to learn the cascade by watching instructional videos.
-You can many such videos on YouTube if you search 'cascade juggling tutorial'
+You can find many such videos on YouTube if you search 'cascade juggling tutorial'
 (for example, [this video](https://www.youtube.com/watch?v=x2_j6kMg1co) by Niels Duinker).
 
 If you practice the cascade for around 15 minutes a day, you'll be able to learn it in around a week.
@@ -40,7 +41,7 @@ Practice everyday for best results.
 Almost any not-easily-breakable spherical object of an appropriate size and weight is good enough to juggle,
 but we'll discuss the options commonly available.
 
-* Tennis or Cricket balls (not the leather ones): These are what I currently now.
+* Tennis or Cricket balls (not the leather ones): These are what I currently use.
 * Sponge balls: These are great if you're juggling in an environment with a lot of breakables.
   But they bounce off from hands and they lack weight.
   I learned juggling with them, but I recommend not starting with them.
@@ -55,16 +56,16 @@ Beanbags and purpose-made balls are good, but they're either difficult to find o
 That's why I have been using tennis balls.
 
 Buy an extra ball so that when you lose a ball,
-you can keep practicing until when you get a new one.
+you can keep practicing till you get a new one.
 
 
 ## Choose an environment
 
-* Make sure you don't have breakables in your environment.
+* Make sure you don't have breakables in your environment (unless you're juggling with sponge balls).
 * The place should be well lit (this makes much more difference than most people think).
-* The place should have a high enough ceiling
-* Make sure you have the ability to recover your props if they roll away
-  (under the furniture if you're juggling at home, or into bushes if you're juggling in a park).
+* The place should have a high enough ceiling.
+* Make sure you have the ability to recover balls if they roll away
+  (for example, under the furniture if you're juggling at home, or into bushes if you're juggling in a park).
 
 If you're a student in a hostel, a common room is often a good place to juggle.
 Hostel corridors are generally also good.
@@ -93,13 +94,15 @@ If you can ensure all of these, you'll make progress faster.
 * Keep a correct stance. Feet should be at shoulder distance. This will increase stability.
 * The [humerus](https://en.wikipedia.org/wiki/Humerus) should be roughly perpendicular to the ground.
   This will keep the juggling pattern plane at the right distance from you.
-* The radius and ulna should be roughly perpendicular to the humerus.
+* The <a href="https://en.wikipedia.org/wiki/Radius_(bone)">radius</a> and
+  [ulna](https://en.wikipedia.org/wiki/Ulna) should be roughly perpendicular to the humerus.
   This will keep the juggling pattern at the correct height.
 * For patterns with simple throws, there should be low variance in catch points.
 * Keep the pattern in a plane parallel to yourself.
 * If you're repeatedly throwing too forward, try holding on to props for longer.
 * Don't rotate yourself while juggling (unless that's an intended trick).
-* Avoid jerk throws, i.e giving  (heavy balls help with this a bit).
+* Avoid jerk throws, i.e giving a very large acceleration to balls for a very short time
+  (heavy balls sometimes help prevent jerk throws).
 * Avoid looking funny (for example, some people open their mouth while juggling high patterns).
 
 
