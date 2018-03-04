@@ -5,9 +5,7 @@ date: 2018-03-03
 summary: My hobbies, interests and preferences, along with description and references.
 
 
-I have often been asked about my hobbies, likes and dislikes, preferences, etc.
-Often I give a good answer but I always miss out on something.
-Here's an attempt to exhaustively document them.
+Here's an attempt to exhaustively document my hobbies, interests and preferences.
 In each section, things are arranged in roughly decreasing order of relevance.
 
 Sometimes you may not know what something means exactly.
@@ -55,6 +53,13 @@ I'll provide other references.
   It used to be my primary hobby in my sophomore year at BITS but I'm no longer as interested in it now.
   I still like to do it occasionally.
 
+* **Video games**:
+  I used to play a lot of video games before college
+  (my favorites include Rally racing, GTA Vice City, Croc and Jazz Jackrabbit)
+  but I stopped after that mostly because I have been busy and I no longer have Windows.
+  Sometimes I play strategy mini-games like [Untrusted](https://alexnisnevich.github.io/untrusted/)
+  and [Transcube](http://code.jerev.be/ggo13-transcube/).
+
 * **Balancing**:
   In my third year at BITS, I learned how to balance long sticks on my foot, chin and nose.
   Here's [my video on YouTube](https://www.youtube.com/watch?v=sOju-b6JRxI).
@@ -71,13 +76,9 @@ I'll provide other references.
 
 * **Tourism**
 
+* **Attending parties, dinners, etc.**
+
 * **Going to sleep at night and waking up in the morning**
-
-* **Attending parties, dinners, etc.**:
-  Good food doesn't tempt me until it's right in front of me.
-  I generally don't enjoy the socializing aspect unless the number of people other than me is 1.
-
-* **Bathing**: I like the outcome but not the process.
 
 
 ## Preferences
