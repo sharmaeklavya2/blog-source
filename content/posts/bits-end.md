@@ -29,81 +29,24 @@ I hope it'll be a useful read for someone like me who has just started college
 or is about to start college and wants to pursue a career in computer science.
 It's likely that you're very different from my past self,
 so some of this post won't apply to you.
-But some of this advice is general and will apply to most computer science students.
-I'll generally give reasons why I recommend something,
-so that you know what's relevant to you.
+Some of this advice is general and will apply to most computer science students.
+I'll give reasons why I recommend something, so that you know what's relevant to you.
+The article beings with generic advice and later becomes specific.
 
 A bit about my past self - just before I joined BITS,
 I had sufficient programming experience in C++ from high school.
-This means I had the capability to write a program for almost any algorithm I could imagine.
+This means I had the capability to write a program for almost any algorithm I could understand.
 I used to have a strong liking for math, and I still do.
 
+# Generic Advice
 
-# Career advice
-
-Keep in touch with seniors, preferably those who seem to be interested in the
-same areas as you and those who might have the same career goals as you.
-They will be of great help.
-
-You have 2 career options as far as I know - working in an IT company or doing research (either academic or industrial).
-(There are others, like entrepreneurship, but I'm quite confident my past self is neither capable
-of nor interested in that).
-Also, there are several areas in computer science where you can specialize -
-machine learning, computer networks, CS theory, etc.
-The earlier you can decide what you want to do, the better it will be for you.
-But you can only decide and be confident about your choice after you try out different things.
-Until then, you have to consider all possibilities.
-
-Maintain a good CGPA. If you're looking a for a job, a CGPA above 8 is almost always sufficient.
-If you want to pursue higher studies, try to keep your CGPA as high as you can and higher than 9 at all times.
-It is easiest to score in the first year.
-
-Doing projects is also important. If you participate in an APOGEE project,
-make sure you have enough talented seniors in your team and the project
-involves a branch of computer science in which you might be interested.
-Avoid purely software-development projects.
-Doing study oriented projects (SOPs) related to your fields of interest can be very helpful.
-To do a SOP in the n<sup>th</sup> semester, you have to apply for it
-roughly in the middle of the (n-1)<sup>th</sup> semester.
-They can also help you get letters of recommendation from professors
-(you'll need 3 of them to apply for masters).
-You can also try getting into a CS lab (I haven't done it,
-but I would have tried it if I knew about their existence in my first year).
-If you do a project as part of a course, either do it so well
-that you can put it on your resume, or do it in a way which
-would fetch you sufficient marks without much effort,
-or do it in a way which would help you explore that branch of computer science
-and help you decide whether you would like to pursue it further or not.
-
-Competitive programming will be very helpful if you want to clear job interviews
-or you want to do algorithms related research.
-But even if you don't want to do any of that, I recommend that you do competitive programming
-for at least a year, since it will make you good at writing efficient programs quickly.
-You should solve at least 5 problems every week.
-The first year seems to be the best time to start competitive programming.
-
-The first CS course you should do is DSA (Data Structures and Algorithms),
-because this knowledge will be used in many different areas.
-This is also very important for competitive programming.
-You should preferably start it in the first year and finish it before the third semester ends.
-
-Good software development practices, like version control and automated testing,
-won't benefit you in job interviews or getting selected in a good college for higher studies.
-But knowing them will help you whenever you do a project, so I recommend that you learn the basics.
-But before you begin learning that, you should learn other important skills
-which I have listed in a section below.
-
-Getting a research intership in a well-known university as part of off-campus thesis
-or during vacations could be a great way to get research experience.
-I couldn't do it because I found out about them too late and then I got busy with other stuff.
-
-
-# What you should get before entering BITS
+### Things you should get before entering BITS
 
 1.  **Laptop** - You'll need it to code and to read stuff (like slides by professors and online tutorials).
 
 2.  **Gmail address** - I can't really justify having it.
-    But I found myself needing one soon and it was a chore to inform my contacts about my new gmail address.
+    But I found myself needing one soon and it was a chore to inform my contacts
+    when I switched from hotmail to gmail.
 
 3.  **Facebook account** - This is so that you can get event and group notifications.
     Some student clubs and workshops use it as their official medium of communication.
@@ -114,33 +57,191 @@ I couldn't do it because I found out about them too late and then I got busy wit
     Also, WhatsApp is a very popular medium of communication between students
     and WhatsApp can only be used on a smartphone. (There are exceptions, but only for power users).
 
+### The importance of talking to people
 
-# What skills you should learn
+Keep in touch with a variety of people, especially seniors.
+Criteria for variety are interests, career aspirations, hobbies, personality traits.
+This will help you be aware of a lot of things, like project opportunities,
+off-campus research/industry internships, good courses, etc.
+Also, when making big choices, consult multiple such people.
 
-Apart from learning about computer science itself, you'll also need to learn about tools/skills
-which will be useful for writing code and doing projects.
-They're arranged in approximately chronological order in which you should learn them.
-You should do a few of these things in parallel instead of doing them one-by-one.
-It will take around 3 semesters for you to learn them all
-(including 2 winter vacations and 1 summer vacation).
-Start learning them as early as possible.
+Keep in touch with senior students of different years.
+When you're a first year student, second year students
+might not have enough experience to guide you correctly.
 
-* **Touch typing**:
-  Touch typing is the ability to type without looking at the keyboard.
-  Most programmers spend a lot of time typing.
-  Learning touch typing will not only improve your speed, but it will make typing very comfortable.
-  It will enable words to flow freely from your mind on to the keyboard.
-  You can find many websites dedicated to helping you learn and practice touch typing.
+It can sometimes be difficult to find people with the same interests as you.
+You shouldn't wait to meet them; seek them out actively.
+Keep asking your friends and seniors whether they know someone
+whose interests match yours.
 
-* **C++ STL**:
-  Knowing the basics of OOP and templates will help you use the STL,
-  which is an important part of the C++ standard library.
-  This will be very helpful in competitive programming.
+### Career choices
+
+You have 2 career options as far as I know - working in an IT company or doing research (either academic or industrial).
+(There are others, like entrepreneurship, but I'm quite confident my past self is neither capable
+of nor interested in that).
+Also, there are several areas in computer science where you can specialize -
+machine learning, computer networks, CS theory, etc.
+The earlier you can decide what you want to do, the better it will be for you.
+Start exploring early. Seniors can be helpful here.
+Read the 'Specific Advice' section of this post to know more.
+
+### Don't be idle
+
+In your first year, you will probably have a lot of free time.
+You shouldn't waste it by watching anime all day or by studying for exams all day.
+You should use that time to explore CS.
+You can learn programming (if you don't already know it).
+You can self-study courses like Data Structures and Algorithms, Machine learning, game theory, etc.
+You can get involved in research laboratories at your college.
+There are a lot of options. Consult with seniors and decide what would be the best use of your time.
+
+### CGPA
+
+A high CGPA is beneficial.
+How high you need depends on whether you want to do a job or pursue higher studies.
+You would have probably not decided that by your first year,
+and it is also easy to score high in the first year.
+I suggest you aim to get a CGPA higher than 9 by the end of your first year.
+
+### Learn to touch type
+
+Touch typing is the ability to type without looking at the keyboard.
+I think most students spend a lot of time typing.
+Learning touch typing will not only improve your speed, but it will make typing very comfortable.
+It will enable words to flow freely from your mind on to the keyboard.
+You can find many websites dedicated to helping you learn and practice touch typing.
+
+### Planning electives
+
+Plan electives for all years before 2nd year begins, because electives are seasonal
+and prone to clash and you might not get a good priority number every time.
+Sometimes a not-so-good professor is allotted a course.
+You'll probably want to wait and take the course later when this happens.
+
+Avoid taking all humanities electives in the beginning.
+Humanities electives may be difficult to score in (at least for my past self),
+but it's also okay to score less in them.
+Therefore, taking a humanities elective instead of a disciplinary elective will make the semester lighter.
+The third year is the busiest part of BITSian life, so it makes sense to take a few humanities electives then.
+
+### Programming
+
+Because some courses at BITS have programming assignments, you should know how to write programs.
+I believe you should learn to program in at least one language by the end of your first semester
+and it'll be great if you can learn to program in C and python by the end of first year.
+This is because C is generally the only programming accepted in project submissions at BITS.
+Python is a popular programming language used in many domains,
+it is very good for quick prototyping and experimentation
+and the range of libraries (both standard and third-party) available for python is probably unmatched.
+
+### Logging
+
+Preserve evidence of all your projects.
+This is useful when other people (like recruiters, friends, juniors, recommendation-letter-writers)
+want to know what you did in that project.
+Write a detailed and easy-to-read report of your project.
+If your project involved writing code, document it and put it up on github.
+
+Log all your activities.
+This will enable you to know how much time you spend studying, exercising, pursuing hobbies, etc.
+and how much time you waste everyday.
+
+Record your operating system customizations.
+If you use Linux, this will prevent you from having to search stackexchange or ubuntuforums
+every time you upgrade your OS, work on a CS lab computer or help a friend customize his/her computer.
+
+### Internet connection
+
+Get a dongle or inexpensive 4G mobile data.
+BITS internet is slow and unreliable. BITS also blocks or throttles some connections.
+Currently (December 2017) WhatsApp and codeforces are blocked.
+
+# Specific Advice
+
+Unlike the 'Generic Advice' section, the advice in this section is not meant for everyone.
+Whether it will be useful to you or not depends on your interests and circumstances.
+
+### Higher Studies
+
+If you want to have a career in research, you'll have to apply for higher studies (either MS or PhD).
+An MS from US can also help you get into a good US company.
+Pursuing higher studies abroad (especially in US) is generally considered better than doing it in India.
+Applying for higher studies is a long process and requires a lot of advance planning.
+
+Most institutes seek these things from applicants:
+
+* [GRE](https://en.wikipedia.org/wiki/Graduate_Record_Examinations) and
+  [TOEFL](https://en.wikipedia.org/wiki/Test_of_English_as_a_Foreign_Language) scores.
+  You'll have to prepare for and give these exams.
+* Statement of purpose and CV:
+  They'll look at the list of things which you did in your undergraduate life,
+  like projects, internships, etc.
+  You'll need to do many good and relevant projects and have a high (around 9+) CGPA
+  otherwise your chances of being accepted are low.
+* Letters of recommendation:
+  At least 3 professors/researchers should write a letter of recommendation for you.
+  For this you'll have to do a project with these professors.
+  The professor needs to work with you closely and should be able to write
+  about your ability to do research. Course projects are usually not counted.
+
+If you want to pursue higher studies straight after completing your undergraduation,
+you'll have to start planning about projects at about the middle of your second year,
+or maybe even before that.
+Applications for higher studies open around 9 months before
+your higher studies begin.
+
+You can either do a project in BITS (on-campus),
+or you can do a research internship at another university or a research-oriented company (off-campus).
+Universities abroad are highly reputed for such projects.
+Generally people do one project in a semester.
+Projects at BITS are generally done under the course 'Study-Oriented Project' (SOP).
+To do a SOP in the n<sup>th</sup> semester, you have to apply for it
+roughly in the middle of the (n-1)<sup>th</sup> semester.
+
+You can also do a thesis instead of Practice School.
+A thesis can also be either on-campus or off-campus.
+An off-campus thesis from a reputed university is the best ways to get
+ample research experience, which is highly valued when you apply for higher studies.
+
+It's best to consult someone already studying abroad or accepted to study abroad
+as soon as you think that you might be interested in higher studies.
+
+### Competitive programming
+
+Unless you are 100% sure that you only want a career in theoretical CS research,
+you are likely to benefit from [competitive programming](https://gist.github.com/sharmaeklavya2/5299a4cd059a6f6f8699).
+Competitive programming problems are asked in job interviews.
+They can also help you develop an interest in algorithms and data structures.
+It will make you good at writing efficient programs in a short time.
+The first year seems to be the best time to start competitive programming.
+
+If you are serious about competitive programming,
+you should learn C++ and STL.
+
+### Software development skills
+
+In an IT job, you'll probably spend most of your time doing software development.
+However, if you want to get a good IT job, extensive software development experience
+isn't what most recruiters look for. They generally focus more on your problem-solving ability.
+So to get a good job, you need not do extensive software development.
+
+However, if you haven't decided between an IT job and a research career,
+doing software development can help you gauge your interest.
+For this, I suggest you do 1 or 2 small software development projects.
+For example, I made a prototype of
+[a website for people to make and take tests](https://github.com/sharmaeklavya2/owliver)
+This will also help you learn software development practices
+like version control (git) and automated testing.
+
+It would be even better if your project involves something other than pure software development.
+For example, if you did a machine learning project, you can create a web interface for it.
+
+# Other stuff you might want to look at
 
 * **Unix-like OS**:
   Windows is the most popular operating system for desktops and laptops on earth,
-  but it's not very programmer-friendly. You should either get a MacBook or install Linux.
-  You'll realize the importance of this when you learn tools which don't have good-enough windows counterparts.
+  but it's not very programmer-friendly. If you want an alternative, you can either get a MacBook or install Linux.
+  You'll see the benefits of this when you learn tools which don't have good-enough windows counterparts.
   Switching an operating system can be difficult at first, but you'll eventually get used to it.
   It's also possible to keep both Windows and Linux on the same computer
   and choose which operating system to load each time the computer starts.
@@ -159,46 +260,3 @@ Start learning them as early as possible.
   Markdown is also used on Wikipedia, Github, Slack and many other places.
   Although there's a lot to learn in CSS, you only need to know the basics.
   You need not learn advanced stuff like animation.
-
-* **Python**:
-  Python is a popular programming language used in many domains.
-  Unlike C and C++, it is very good for quick prototyping and experimentation.
-  The range of libraries (both standard and third-party) available for python is probably unmatched
-  by any other language and therefore it will often be easier to do your course projects using python.
-
-
-Apart from C++ and STL (used in competitive programming),
-you probably haven't been able to put your skills to test until now.
-Doing a software development project will help you do that.
-There are many options available - web development, app development, etc.
-I started with backend web development using Python and Django.
-You can use this opportunity to learn about software-development practices like
-version control (git), automated testing, build automation, etc.
-Don't do very big or ambitious projects at this stage and do just 1 or 2 projects.
-You're doing this so that you learn the basics of software development
-and you get an estimate of how interesting or boring it is.
-
-
-# Miscellaneous advice
-
-* Get a dongle or inexpensive 4G mobile data.
-  BITS internet is slow and unreliable. BITS also blocks or throttles some connections.
-  Currently (December 2017) WhatsApp and codeforces are blocked.
-
-* Log all your activities.
-  This will enable you to know how much time you spend studying and how much time you waste everyday.
-  
-* Plan electives for all years before 2nd year begins, because electives are seasonal
-  and prone to clash and you might not get a good priority number every time.
-  Sometimes a not-so-good professor is allotted a course.
-  You'll probably want to wait and take the course later when this happens.
-
-* Record your Linux customizations.
-  Otherwise you'll have to search stackexchange or ubuntuforums every time you upgrade your OS,
-  work on a CS lab computer or help a friend customize his/her computer.
-
-* Avoid taking all humanities electives in the beginning.
-  Humanities electives are difficult to score in (at least for my past self),
-  but it's also okay to score less in them.
-  Therefore, taking a humanities elective instead of a disciplinary elective will make the semester lighter.
-  The third year is the busiest part of BITSian life, so it makes sense to take a few humanities electives then.
