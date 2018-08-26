@@ -3,6 +3,7 @@ slug: hobbies
 tags: About Me
 date: 2018-03-03
 summary: My hobbies, interests and preferences, along with description and references.
+status: draft
 
 
 Here's an attempt to exhaustively document my hobbies, interests and preferences.
