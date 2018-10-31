@@ -11,6 +11,11 @@ PATH = 'content'
 
 TIMEZONE = 'Asia/Kolkata'
 
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['sitemap']
+
+SITEMAP = {'format': 'txt'}
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
