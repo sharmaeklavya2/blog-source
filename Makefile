@@ -6,5 +6,3 @@ local:
 	pelican --theme=theme
 deploy:
 	pelican --theme=theme --output=deploy --settings=publishconf.py
-	rm deploy/authors.html deploy/categories.html
-	rm -r deploy/author deploy/category
