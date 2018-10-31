@@ -2,14 +2,14 @@
 __pycache__/
 /readme.html
 
-theme/
-theme
-secret/
-secret
-output/
-output
-deploy/
-deploy
+/theme/
+/theme
+/secret/
+/secret
+/output/
+/output
+/deploy/
+/deploy
 .env
 
 # Trash
