@@ -16,6 +16,10 @@ PLUGINS = ['sitemap']
 
 SITEMAP = {'format': 'txt'}
 
+MARKDOWN = {
+    'extensions': ['codehilite(guess_lang=False, use_pygments=True)'],
+}
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -23,7 +27,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-STATIC_PATHS = ['img']
+STATIC_PATHS = ['img', 'css']
 
 MENUITEMS = (
     ('About me', 'https://sharmaeklavya2.github.io'),
