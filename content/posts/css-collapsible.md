@@ -1,6 +1,6 @@
 title: Making a keyboard-navigable collapsible without JavaScript
 slug: css-collapsible
-tags: Front-end web dev
+tags: Front-end web dev,Tutorial
 ExtraCSS: css/collapsible.css, css/pygments-manni.css
 date: 2018-11-01
 summary: A 'collapsible' is content whose visibility can be toggled by clicking something. However, users without a mouse should also be able to open the collapsed content. This article explains how to make a keyboard-navigable collapsible without using JavaScript.
