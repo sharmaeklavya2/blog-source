@@ -122,7 +122,7 @@ I once had a mouse that sometimes stopped functioning, so I can feel a bit of th
 Also, some people *like* using the keyboard for navigation and it would be bad to force them to use a mouse.
 
 I don't know much about web accessibility standards and what it takes for my websites to be fully accessible,
-but the least I can do is make my collapsibles keyboard-navigable.
+but the least I can do is make my pages keyboard-navigable.
 
 The [blog post by alligator.io](https://alligator.io/css/collapsible/#a-note-on-accessibility)
 says how to make a collapsible using only CSS, but to make it accessible they had to use JavaScript.
