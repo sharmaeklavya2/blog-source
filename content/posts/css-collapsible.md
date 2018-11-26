@@ -21,7 +21,7 @@ A 'collapsible' is content whose visibility can be toggled. Here is an example:
 
 In this article, we'll look at how to make one.
 
-### Skeleton
+## Skeleton
 
 Let's first create the basic structure without collapsibility.
 
@@ -64,7 +64,7 @@ This is what the output looks like:
     </div>
 </div>
 
-### Collapsibility
+## Collapsibility
 
 To add collapsibility, we're going to use a checkbox.
 I read about it on the blog post
@@ -112,7 +112,7 @@ Output:
     </div>
 </div>
 
-### Accessibility
+## Accessibility
 
 > Web accessibility is the inclusive practice of ensuring there are no barriers that
 > prevent interaction with, or access to websites, by people with disabilities.
@@ -185,7 +185,7 @@ When the focus moves out of the collapsible, it closes (unless you had clicked o
 
 Navigation using Shift+Tab is a bit wonky though.
 
-### Use
+## Use
 
 When my blog's website is viewed on a screen of size less than 800 pixels, the navigation bar moves to the top.
 It becomes collapsible and users have to click the '&equiv;' button to open it.
