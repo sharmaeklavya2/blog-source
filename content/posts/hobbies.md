@@ -1,9 +1,9 @@
 title: Hobbies and Interests
 slug: hobbies
 tags: About Me
-date: 2018-03-03
-summary: My hobbies, interests and preferences, along with description and references.
-status: draft
+date: 2017-10-01
+modified: 2019-04-01
+summary: My hobbies, interests and preferences, along with descriptions and references.
 
 
 Here's an attempt to exhaustively document my hobbies, interests and preferences.
@@ -14,6 +14,8 @@ Looking it up on Wikipedia will often give you a good idea.
 For things whose Wikipedia articles may not be well written,
 I'll provide other references.
 
+This will answer most questions stalkers have. (Yes, I have been obsessively
+stalked by someone and she even contacted me. That's a story for another day.)
 
 ## Interests
 
@@ -23,16 +25,18 @@ I'll provide other references.
   I started studying DSA (Data Structures and Algorithms) in my first year at BITS
   so that I could become better at competitive programming.
   But in my second year I developed a liking for it by itself.
+  In subsequent years, I studied and got interested in more areas of theoretical computer science,
+  like theory of computation and computational complexity.
 
 * **Competitive Programming**:
-  I started solving problems on [Project Euler](https://projecteuler.net) when I was in class 12.
-  I didn't do it much then because I was also studying for engineering entrance exams.
-  I solved algorithmic programming problems mostly in my first year.
-  I occasionally still solve problems on [Codechef](https://www.codechef.com) and [Codeforces](http://codeforces.com).
-  Although this is my favorite pastime, I didn't do it much while I was in BITS
-  (compared to others in BITS) because I was busy with other things.
+  I solved some math and programming problems on [Project Euler](https://projecteuler.net) when I was in class 12
+  and solved many algorithmic programming problems in college, mostly in my first year.
+  I occasionally still solve problems on [Codechef](https://www.codechef.com/users/sharmaeklavya2)
+  and [Codeforces](http://codeforces.com/profile/eku).
 
-* **Math**: Mostly Number Theory and recently Abstract Algebra.
+* **Math**: I like abstract algebra, number theory and linear algebra.
+  In 2019, I began writing down some of my knowledge on my
+  [theorems website](https://sharmaeklavya2.github.io/theoremdep).
 
 * **Juggling**:
   I started juggling after my entrance exams and before joining BITS.
@@ -42,8 +46,9 @@ I'll provide other references.
   [juggling video of Anthony Gatto](https://www.youtube.com/watch?v=wP8tbLBls_M).
 
 * **Anime**:
-  I have watched 'Death Note', 'Attack on Titan' and 'The Last Airbender'.
-  Do not look them up on Wikipedia or something if you don't want spoilers.
+  'Attack on Titan' is my favorite. I have also watched 'Death Note', 'Fullmetal Alchemist',
+  'My Hero Academia' (first season only) and 'The Last Airbender'.
+  Do not look them up on Wikipedia; you'll get spoilers.
 
 * **Webcomics**:
   Webcomics are comic strips put up on websites.
@@ -54,23 +59,30 @@ I'll provide other references.
   It used to be my primary hobby in my sophomore year at BITS but I'm no longer as interested in it now.
   I still like to do it occasionally.
 
-* **Video games**:
-  I used to play a lot of video games before college
-  (my favorites include Rally racing, GTA Vice City, Croc and Jazz Jackrabbit)
-  but I stopped after that mostly because I have been busy and I no longer have Windows.
-  Sometimes I play strategy mini-games like [Untrusted](https://alexnisnevich.github.io/untrusted/)
-  and [Transcube](http://code.jerev.be/ggo13-transcube/).
+* **Watching videos on YouTube**:
+  Refer to my [subscriptions](https://www.youtube.com/channel/UCsI0Lrna_yR_X9H5m_ubM9A/channels)
+  and [liked videos](https://www.youtube.com/playlist?list=LLsI0Lrna_yR_X9H5m_ubM9A).
 
 * **Balancing**:
   In my third year at BITS, I learned how to balance long sticks on my foot, chin and nose.
   Here's [my video on YouTube](https://www.youtube.com/watch?v=sOju-b6JRxI).
 
+* **Watching movies**:
+  I rarely watch movies (less than once a month).
+  I mostly watch English movies.
+  My favorites are 'The Matrix' and 'Avatar'. I also like the Marvel movies.
+  Among Indian movies, Baahubali is my favorite.
+
+* **Video games**:
+  I used to play a lot of video games before college.
+  My favorites include Rally racing, GTA Vice City and 2D platform games.
+  I stopped after that mostly because I have been busy and I no longer have Windows.
+  Sometimes I play strategy mini-games like [Untrusted](https://alexnisnevich.github.io/untrusted/)
+  and [Transcube](http://code.jerev.be/ggo13-transcube/).
+
 * **Cycling**:
   I love cycling as a mode of transport. I used it to commute to classes at BITS.
-  I wish cycling was safer on Delhi roads. I can cycle without holding the handle.
-
-* **Watching movies**:
-  I mostly watch English movies. I don't like romantic movies.
+  I wish cycling was safer on city roads in India. I can cycle without holding the handlebars.
 
 
 ## Dislikes
@@ -78,8 +90,6 @@ I'll provide other references.
 * **Tourism**
 
 * **Attending parties, dinners, etc.**
-
-* **Going to sleep at night and waking up in the morning**
 
 
 ## Preferences
@@ -104,11 +114,14 @@ I'll provide other references.
 * **Food**:
   I'm vegetarian. South Indian food is my favorite.
   Very oily food makes me nauseous and some North Indian cuisines (especially that of Rajasthan) are very oily.
-  I have recently developed a liking for 'oats in milk' as a quick snack.
+  I can also cook basic food.
 
 * **Operating System**:
-  I strongly prefer Linux (all distributions I have ever seen) over Windows.
-  Mac is good but I find Ubuntu Linux slightly better.
+  I strongly prefer Linux (all distributions I have ever seen) and MacOS over Windows.
+  My favorite thing about Linux and MacOS is that they are Unix-like OSes where
+  I can use [the terminal](https://en.wikipedia.org/wiki/Terminal_emulator) for most of my work.
+  This might seem primitive to most people, but I think the terminal is better than graphical programs
+  for a lot of tasks once you get used to it.
 
 * **Programming language**:
   Python is my favorite for day-to-day programming and projects.
@@ -118,3 +131,4 @@ I'll provide other references.
   but I rarely use it because I find pure functional programming difficult.
 
 * **Text editor**: Vim is my favorite. I haven't yet tried Emacs.
+  You can check out my [.vimrc](https://github.com/sharmaeklavya2/dotfiles/blob/master/dotfiles/.vimrc).
