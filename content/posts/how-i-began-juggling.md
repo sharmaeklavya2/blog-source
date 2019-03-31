@@ -38,4 +38,4 @@ I didn't make much progress in 2016 and 2017.
 I have been busy with studies and haven't been able to juggle regularly.
 
 You can find videos documenting my juggling skills on youtube:
-[Juggling by me (October 2015)](https://www.youtube.com/watch?v=gHr2-w0mQrk&list=PLUFqnl0Lfwwznpx15zIcBgzq4HsXLfLel)
+[Juggling by me (October 2015)](https://www.youtube.com/watch?v=xYrnQMHfDNE&list=PLACN_dyOcd_WSIzGV-4hVCQyQFmzKH1kb).

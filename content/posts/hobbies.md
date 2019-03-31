@@ -37,7 +37,7 @@ I'll provide other references.
 * **Juggling**:
   I started juggling after my entrance exams and before joining BITS.
   I know over 30 juggling patterns now. You can watch me juggle on
-  [YouTube](https://www.youtube.com/watch?v=gHr2-w0mQrk&list=PLUFqnl0Lfwwznpx15zIcBgzq4HsXLfLel).
+  [YouTube](https://www.youtube.com/watch?v=xYrnQMHfDNE&list=PLACN_dyOcd_WSIzGV-4hVCQyQFmzKH1kb).
   One of my first inspirations was this great
   [juggling video of Anthony Gatto](https://www.youtube.com/watch?v=wP8tbLBls_M).
 
