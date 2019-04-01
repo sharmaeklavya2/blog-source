@@ -43,7 +43,7 @@ I'll provide other references.
   [juggling video of Anthony Gatto](https://www.youtube.com/watch?v=wP8tbLBls_M).
 
 * **Anime**:
-  'Attack on Titan' is my favorite. I have also watched 'Death Note', 'Fullmetal Alchemist',
+  'Attack on Titan' is my favorite. I have also watched 'Death Note', 'Fullmetal Alchemist (Brotherhood)',
   'My Hero Academia' (first season only) and 'The Last Airbender'.
   Do not look them up on Wikipedia; you'll get spoilers.
 
