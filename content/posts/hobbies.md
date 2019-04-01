@@ -14,9 +14,6 @@ Looking it up on Wikipedia will often give you a good idea.
 For things whose Wikipedia articles may not be well written,
 I'll provide other references.
 
-This will answer most questions stalkers have. (Yes, I have been obsessively
-stalked by someone and she even contacted me. That's a story for another day.)
-
 ## Interests
 
 * **Data Structures, Algorithms and Theoretical Computer Science**:
