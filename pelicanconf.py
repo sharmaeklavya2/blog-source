@@ -26,12 +26,18 @@ MARKDOWN = {
     'extensions': ['codehilite(guess_lang=False, use_pygments=True)'],
 }
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
+CATEGORY_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
+TRANSLATION_FEED_RSS = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+FEED_DOMAIN = SITEURL
+FEED_ALL_ATOM = 'feed/all.atom.xml'
+FEED_ALL_RSS = 'feed/all.rss.xml'
+TAG_FEED_ATOM = 'feed/%s.atom.xml'
+TAG_FEED_RSS = 'feed/%s.rss.xml'
 
 STATIC_PATHS = ['img', 'css']
 
