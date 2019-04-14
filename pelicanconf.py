@@ -1,14 +1,20 @@
 #!/usr/bin/env python
 
 from __future__ import unicode_literals
+import os
+
+PUBLISH = ('PELICAN_PUBLISH' in os.environ)
 
 AUTHOR = 'Eklavya Sharma'
 SITENAME = "Eklavya's Blog"
-SITEURL = ''
+if PUBLISH:
+    SITEURL = 'https://sharmaeklavya2.github.io/blog'
+else:
+    SITEURL = ''
 DESCRIPTION = "Eklavya Sharma's blog where he writes about juggling and computer science."
 
 PATH = 'content'
-
+DELETE_OUTPUT_DIRECTORY = False
 TIMEZONE = 'Asia/Kolkata'
 
 PLUGIN_PATHS = ['plugins']
@@ -40,8 +46,7 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = False
 
-# Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = not PUBLISH
 
 SHOW_AUTHORS = False
 USE_CATEGORIES = False

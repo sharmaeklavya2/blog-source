@@ -5,4 +5,4 @@ clean:
 local:
 	pelican --theme=theme
 deploy:
-	pelican --theme=theme --output=deploy --settings=publishconf.py
+	PELICAN_PUBLISH=1 pelican --theme=theme --output=deploy
