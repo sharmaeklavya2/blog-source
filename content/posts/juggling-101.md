@@ -5,8 +5,15 @@ date: 2017-12-03
 summary: This is a tutorial for those who wish to learn juggling and have absolutely no prior experience. Here you will find links to resources which will help you learn your first juggling pattern and suggestions about what kind of balls to use, what posture you should have, etc.
 
 
+This is a tutorial for those who wish to learn juggling and have absolutely no prior experience.
+Here you will find links to resources which will help you learn your first juggling pattern
+and suggestions about what kind of balls to use, what posture you should have, etc.
+
+
+## Getting informed and motivated
+
 If you want to learn juggling, you should first know what juggling looks like.
-Watch these videos, which portray many common styles of juggling:
+Watch these awesome videos, which portray many common styles of juggling:
 
 * [Anthony Gatto's performance](https://www.youtube.com/watch?v=wP8tbLBls_M)
 * [World Juggling day Japan](https://www.youtube.com/watch?v=cvME9BLYgsw)
@@ -45,7 +52,6 @@ but we'll discuss the options commonly available.
 * Sponge balls: These are great if you're juggling in an environment with a lot of breakables.
   But they bounce off from hands and they lack weight.
   I learned juggling with them, but I recommend not starting with them.
-  I don't like them anymore.
 * Beanbags: They're small bags filled tight with small beans or beads so that they are almost spherical.
   They don't bounce and roll off, which can make juggling less annoying when you begin learning.
 * Purpose-made: These are balls specifically made for juggling.
