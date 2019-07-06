@@ -15,8 +15,8 @@ The pattern below is called the 'shower' pattern:
 
 ![Shower pattern]({filename}/img/siteswaps/51.gif)
 
-It turned out that shower is a difficult juggling pattern.
-There's a juggling pattern easier than shower, called 'cascade':
+It turned out that the shower is a difficult juggling pattern.
+There's a juggling pattern easier than the shower, called 'cascade':
 
 ![Cascade pattern]({filename}/img/siteswaps/3.gif)
 

@@ -2,11 +2,11 @@ title: Juggling 101
 slug: juggling-101
 tags: Juggling, Tutorial
 date: 2017-12-03
-summary: This is a tutorial for those who wish to learn juggling and have absolutely no prior experience. Here you will find links to resources which will help you learn your first juggling pattern and suggestions about what kind of balls to use, what posture you should have, etc.
+summary: This is a tutorial for those who wish to learn juggling and have absolutely no prior experience. Here you will find links to resources that will help you learn your first juggling pattern and suggestions about what kind of balls to use, what posture you should have, etc.
 
 
 This is a tutorial for those who wish to learn juggling and have absolutely no prior experience.
-Here you will find links to resources which will help you learn your first juggling pattern
+Here you will find links to resources that will help you learn your first juggling pattern
 and suggestions about what kind of balls to use, what posture you should have, etc.
 
 
@@ -40,7 +40,7 @@ You can find many such videos on YouTube if you search 'cascade juggling tutoria
 If you practice the cascade for around 15 minutes a day, you'll be able to learn it in around a week.
 Consistency is very important in juggling (for any pattern, not just cascade).
 If you don't practice for a few days, you will most likely forget the patterns you haven't mastered.
-Practice everyday for best results.
+Practice every day for best results.
 
 
 ## Get balls
@@ -70,7 +70,7 @@ you can keep practicing till you get a new one.
 * Make sure you don't have breakables in your environment (unless you're juggling with sponge balls).
 * The place should be well lit (this makes much more difference than most people think).
 * The place should have a high enough ceiling.
-* Make sure you have the ability to recover balls if they roll away
+* Make sure you can recover balls if they roll away
   (for example, under the furniture if you're juggling at home, or into bushes if you're juggling in a park).
 
 If you're a student in a hostel, a common room is often a good place to juggle.

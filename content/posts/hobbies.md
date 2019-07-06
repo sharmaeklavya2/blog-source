@@ -21,7 +21,7 @@ I'll provide other references.
   [simple English Wikipedia](https://simple.wikipedia.org/wiki/Algorithm).
   I started studying DSA (Data Structures and Algorithms) in my first year at BITS
   so that I could become better at competitive programming.
-  But in my second year I developed a liking for it by itself.
+  But in my second year, I developed a liking for it by itself.
   In subsequent years, I studied and got interested in more areas of theoretical computer science,
   like theory of computation and computational complexity.
 
@@ -67,7 +67,7 @@ I'll provide other references.
 * **Watching movies**:
   I rarely watch movies (less than once a month).
   I mostly watch English movies.
-  My favorites are 'The Matrix' and 'Avatar'. I also like the Marvel movies.
+  My favorites are 'The Matrix' and 'Avatar'. I also like Marvel movies.
   Among Indian movies, Baahubali is my favorite.
 
 * **Video games**:
@@ -100,7 +100,7 @@ I'll provide other references.
     * Mello theme - Death Note soundtrack
     * Hotel California - Eagles
     * [Arpeggios from Hell](https://www.youtube.com/watch?v=1B4pZBmI_gU)
-    * Mr Crowley - Ozzy Osbourne
+    * Mr. Crowley - Ozzy Osbourne
     * [Minute Waltz - Chopin](https://www.youtube.com/watch?v=I6y0eYcIJ5I)
     * [Angelina - Tommy Emmanuel](https://www.youtube.com/watch?v=XWS1IRF_IFA)
     * [Cesar Frank Sonata](https://www.youtube.com/watch?v=c5bzrB5QbSY)
@@ -114,8 +114,8 @@ I'll provide other references.
   I can also cook basic food.
 
 * **Operating System**:
-  I strongly prefer Linux (all distributions I have ever seen) and MacOS over Windows.
-  My favorite thing about Linux and MacOS is that they are Unix-like OSes where
+  I strongly prefer Linux (all distributions I have ever seen) and macOS over Windows.
+  My favorite thing about Linux and macOS is that they are Unix-like OSes where
   I can use [the terminal](https://en.wikipedia.org/wiki/Terminal_emulator) for most of my work.
   This might seem primitive to most people, but I think the terminal is better than graphical programs
   for a lot of tasks once you get used to it.
