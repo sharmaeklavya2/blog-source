@@ -24,11 +24,11 @@ Watch these awesome videos, which portray many common styles of juggling:
 The first juggling pattern you should learn is the 3-ball cascade.
 This is what it looks like:
 
-<img src="{filename}/img/siteswaps/3.gif" title="3-cascade" />
+<img src="{static}/img/siteswaps/3.gif" title="3-cascade" />
 
 Most people try to begin with the 3-ball shower.
 
-<img src="{filename}/img/siteswaps/51.gif" title="3-shower" />
+<img src="{static}/img/siteswaps/51.gif" title="3-shower" />
 
 This is not recommended. The shower is more difficult than the cascade.
 Don't even try to learn the shower before the cascade; it will make it more difficult to learn the cascade.

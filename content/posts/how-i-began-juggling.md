@@ -13,12 +13,12 @@ I saw a documentary-ish thing on TV about juggling.
 According to it, there are multiple ways of juggling. Those ways are called 'patterns'.
 The pattern below is called the 'shower' pattern:
 
-![Shower pattern]({filename}/img/siteswaps/51.gif)
+![Shower pattern]({static}/img/siteswaps/51.gif)
 
 It turned out that the shower is a difficult juggling pattern.
 There's a juggling pattern easier than the shower, called 'cascade':
 
-![Cascade pattern]({filename}/img/siteswaps/3.gif)
+![Cascade pattern]({static}/img/siteswaps/3.gif)
 
 All my life, I had been trying to learn the shower
 because that was the only juggling pattern I could imagine.

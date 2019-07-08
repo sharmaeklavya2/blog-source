@@ -36,8 +36,8 @@ AUTHOR_FEED_RSS = None
 FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = 'feed/all.atom.xml'
 FEED_ALL_RSS = 'feed/all.rss.xml'
-TAG_FEED_ATOM = 'feed/%s.atom.xml'
-TAG_FEED_RSS = 'feed/%s.rss.xml'
+TAG_FEED_ATOM = 'feed/{slug}.atom.xml'
+TAG_FEED_RSS = 'feed/{slug}.rss.xml'
 
 STATIC_PATHS = ['img', 'css']
 
