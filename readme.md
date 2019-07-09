@@ -7,7 +7,7 @@ I write blog posts in markdown files and Pelican uses those files to generate a 
 This repository contains:
 
 * My blog posts in markdown. These are located in the directory `content`.
-* Settings for Pelican. These are located in the files `pelicanconf.py` and `publishconf.py`.
+* `pelicanconf.py`, which contains the settings for pelican.
 
 ### Generating a site from source
 
@@ -15,6 +15,9 @@ This repository contains:
 
 * Get a pelican theme (like [MFPelicanTheme](https://github.com/sharmaeklavya2/MFPelicanTheme)).
   Place the theme's directory at `theme` or create a symlink.
+
+* Clone the [pelican-plugins repository](https://github.com/getpelican/pelican-plugins).
+  Place the plugins directory at the root of this blog's repository.
 
 * To generate a website for local testing, run `make local`.
   The website will be generated in the directory `output`.
