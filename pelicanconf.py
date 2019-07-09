@@ -23,7 +23,10 @@ PLUGINS = ['sitemap']
 SITEMAP = {'format': 'txt'}
 
 MARKDOWN = {
-    'extensions': ['codehilite(guess_lang=False, use_pygments=True)'],
+    'extensions': ['codehilite'],
+    'extension_configs': {
+        'codehilite': {'guess_lang': False, 'use_pygments': True},
+    }
 }
 
 CATEGORY_FEED_ATOM = None
