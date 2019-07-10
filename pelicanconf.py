@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from __future__ import unicode_literals
+
 import os
 
 PUBLISH = ('PELICAN_PUBLISH' in os.environ)
@@ -18,7 +19,7 @@ DELETE_OUTPUT_DIRECTORY = False
 TIMEZONE = 'Asia/Kolkata'
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['sitemap']
+PLUGINS = ['sitemap', 'my_plugin']
 
 SITEMAP = {'format': 'txt'}
 
