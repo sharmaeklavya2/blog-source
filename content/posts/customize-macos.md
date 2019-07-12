@@ -162,20 +162,23 @@ I have put all my dotfiles in a Github repository at
 You can find detailed instructions for setting them up in the repository's readme.
 Here is a brief version:
 
-* Run `git clone https://github.com/sharmaeklavya2/dotfiles.git`.
-This will download a directory named `dotfiles` in your current working directory.
-Run `cd dotfiles`.
-* Run `./scripts/make_links.py` and copy the files in `_links` to your home directory.
-Rename `~/.bashrc` to `~/.bash_profile`.
+    git clone https://github.com/sharmaeklavya2/dotfiles.git
+    cd dotfiles
+    ./scripts/make_links.py
+    shopt -s dotglob nullglob
+    mv _links/.bashrc _links/.bash_profile
+    mv _links/* ~
 
-Once you set up the dotfiles, the first thing you'll notice is the improved, colorful prompt.
+Now either restart your terminal or run `source ~/.bash_profile`.
+If you executed the above instructions correctly,
+the first thing you'll notice is the improved, colorful prompt.
 
 My dotfiles are written with the Solarized terminal color scheme in mind.
 If you're not using Solarized, you may want to modify or omit using `.dircolors` and `.vimrc`.
 
 I also recommend using the `git-prompt.sh` utility script, which will display useful information
 about git repositories (like branch, dirty status, etc) in your prompt.
-To do this, download <https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh>
+To do this, download [git-prompt.sh](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh)
 to `~/ext_bin/git-prompt.sh`. The `~/.bash_profile` will use it to modify the prompt.
 
 I also recommend adding the line `export HISTSIZE=100000` to either `~/.env` or `~/.bash_profile`
@@ -375,14 +378,14 @@ You may get error messages like this when you start Vim:
     Warning: Failed to set locale category LC_MESSAGES to en_IN.
 
 
-Fix this by adding `export LC_ALL=en_US.UTF-8` to `~/.bash_profile` or `~/.env`:
-<https://discourse.brew.sh/t/failed-to-set-locale-category-lc-numeric-to-en-ru/5092>
+Fix this by adding `export LC_ALL=en_US.UTF-8` to `~/.bash_profile` or `~/.env`
+([brew forum post](https://discourse.brew.sh/t/failed-to-set-locale-category-lc-numeric-to-en-ru/5092)).
 
 
 <h2 style="background-color: #D2B4DE">
 Install <a href="https://nginx.org/en/">Nginx</a> and serve website mirrors</h2>
 
-I use Nginx to serve static content.
+I use [Nginx](https://nginx.org/en/) to serve static content.
 It's useful to access local websites that I downloaded or created.
 
 ### Install and run Nginx
