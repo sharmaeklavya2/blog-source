@@ -21,6 +21,9 @@ A 'collapsible' is content whose visibility can be toggled. Here is an example:
 
 In this article, we'll look at how to make one.
 
+[TOC]
+
+
 ## Skeleton
 
 Let's first create the basic structure without collapsibility.

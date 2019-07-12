@@ -24,9 +24,14 @@ PLUGINS = ['sitemap', 'my_plugin']
 SITEMAP = {'format': 'txt'}
 
 MARKDOWN = {
-    'extensions': ['codehilite'],
+    'output_format': 'html5',
     'extension_configs': {
         'codehilite': {'guess_lang': False, 'use_pygments': True},
+        'toc': {
+            'title': 'Table of Contents',
+            'permalink': True,
+            'toc_depth': "2-3",
+        },
     }
 }
 
