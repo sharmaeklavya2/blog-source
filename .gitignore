@@ -1,17 +1,15 @@
 *.pyc
 __pycache__/
+.mypy_cache
 /readme.html
 
-/theme/
 /theme
-/secret/
 /secret
-/output/
 /output
-/deploy/
 /deploy
-/plugins
-/plugins/
+/venv
+/node_modules
+/official-plugins
 .env
 
 # Trash

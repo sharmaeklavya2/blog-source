@@ -18,7 +18,7 @@ PATH = 'content'
 DELETE_OUTPUT_DIRECTORY = False
 TIMEZONE = 'Asia/Kolkata'
 
-PLUGIN_PATHS = ['plugins']
+PLUGIN_PATHS = ['official-plugins', 'plugins']
 PLUGINS = ['sitemap', 'my_plugin']
 
 SITEMAP = {'format': 'txt'}
