@@ -25,7 +25,7 @@ else:
 
 PLUGIN_PATHS = ['official-plugins', 'plugins']
 # Order is important: plugins in `plugins` override plugins in `official-plugins`.
-PLUGINS = ['sitemap', 'my_plugin']
+PLUGINS = ['sitemap', 'my_plugin', 'render_math']
 
 SITEMAP = {'format': 'txt'}
 
@@ -39,6 +39,18 @@ MARKDOWN = {
             'toc_depth': "2-3",
         },
     }
+}
+
+MATH_JAX = {
+    'auto_insert': False,
+    'url': 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
+    'hub_config': {
+        "jax": ["input/TeX", "output/CommonHTML"],
+        "extensions": ["tex2jax.js"],
+        "TeX": {
+            "extensions": ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"]
+        },
+    },
 }
 
 # Show tags but not categories and authors
