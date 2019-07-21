@@ -194,11 +194,5 @@ When my blog's website is viewed on a screen of size less than 800 pixels, the n
 It becomes collapsible and users have to click the '&equiv;' button to open it.
 I have used the above technique to implement this collapsible navigation bar.
 
-You can get the complete CSS code by finding
-[collapsible.css]({static}/css/collapsible.css)
-in the `<head>` tag of the source of this page.
-I have put `#main` before selectors to prevent them from interfering with
-the code for my navigation bar.
-
 Feel free to [reach out](https://github.com/sharmaeklavya2/blog/issues/new)
 for comments, criticism or suggestions.
