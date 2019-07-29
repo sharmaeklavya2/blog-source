@@ -1,0 +1,22 @@
+digraph segtree0 {
+node [fontname="courier"]
+0 [shape=record label="{0..6|(10,70)}"]
+1 [shape=record label="{0..3|(10,40)}"]
+2 [shape=record label="{4..6|(50,70)}"]
+3 [shape=record label="{0..1|(10,20)}"]
+4 [shape=record label="{2..3|(30,40)}"]
+5 [shape=record label="{4..5|(50,60)}"]
+6 [shape=record label="{6..6|(70,70)}"]
+7 [shape=record label="{0..0|(10,10)}"]
+8 [shape=record label="{1..1|(20,20)}"]
+9 [shape=record label="{2..2|(30,30)}"]
+10 [shape=record label="{3..3|(40,40)}"]
+11 [shape=record label="{4..4|(50,50)}"]
+12 [shape=record label="{5..5|(60,60)}"]
+0 -> 1, 2;
+1 -> 3, 4;
+2 -> 5, 6;
+3 -> 7, 8;
+4 -> 9, 10;
+5 -> 11, 12;
+}
