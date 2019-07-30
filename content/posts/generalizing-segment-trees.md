@@ -3,7 +3,7 @@ slug: generalizing-segment-trees
 tags: CS, Algorithms, Math, Abstract Algebra
 date: 2019-07-20
 mathengine: mathjax
-ExtraCSS: css/collapsible.css
+ExtraCSS: css/collapsible.css, css/pygments-manni.css
 summary: Generalizing segment trees by expressing range query outputs as elements of a monoid and update operations as endomorphisms.
 
 
@@ -212,10 +212,32 @@ This is used to create internal nodes of the segment tree.
 For SUMREPL, $x \circ y = x + y$.
 For MINMAX, $x \circ y = \min(x_0, y_0), \max(x_1, y_1)$.
 
-In code, we can create a class for monoid elements.
-The above traits of the monoid can be specified as methods/constructors of the class.
+### C++ example
 
-<!-- TODO: Add C++ class for MinMaxMonoidElem -->
+When we write a generic segment tree library in C++,
+we can make the monoid type as a template parameter.
+
+Here's an example of how to represent monoid elements as a class
+for the MINMAX problem:
+
+    :::cpp
+    #include <algorithm>
+
+    class MinMaxElem {
+    public:
+        static const int infty = 2e9;
+        int x_min, x_max;
+
+        MinMaxElem(): x_min(infty), x_max(-infty) {}  // identity element
+
+        explicit MinMaxElem(int x): x_min(x), x_max(x) {}  // element at leaf node
+
+        MinMaxElem(const MinMaxElem& l, const MinMaxElem& r):  // binary operator
+            x_min(std::min(l.x_min, r.x_min)), x_max(std::max(l.x_max, r.x_max)) {}
+    };
+
+In the segment tree library, we can call the above methods
+on the templated monoid type without needing to know what they do.
 
 ## Generalizing update functions
 
