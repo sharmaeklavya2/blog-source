@@ -8,7 +8,7 @@ summary: Generalizing segment trees by expressing range query outputs as element
 
 
 A segment tree is a data structure which stores an array of size $n$
-and allows $O(\lg{n})$-time range queries and $O(\lg n)$-time range updates on it.
+and allows $O(\log{n})$-time range queries and $O(\log n)$-time range updates on it.
 I devised a method of generalizing segment trees using
 concepts from abstract algebra: monoids and endomorphisms.
 This generalization not only gave me conceptual clarity
@@ -60,6 +60,7 @@ which can be solved using segment trees. These example problems are used through
     * given integers $l$ and $r$ and character $c$, output the number of
         occurrences of $c$ in the concatenation of $a[l], a[l+1], \ldots, a[r]$.
     * given integers $l$ and $r$ and character $c$, append $c$ to $a[i]$ for all $l \le i \le r$.
+        For example, if $a[i]$ is `"car"` and $c$ is `'t'`, then $a[i]$ should be changed to `"cart"`.
 
 You can see that in all these problems, we are given an array of size $n$.
 The elements of the array can be anything: numbers, strings or something else.
@@ -187,12 +188,14 @@ Therefore, $(S, \circ)$ is a monoid.
 
 ### Monoid elements as segment tree values
 
-Every node $u$ of a segment tree has the following attributes associated with it:
-$\operatorname{value}(u), \operatorname{first}(u), \operatorname{last}(u), \operatorname{index}(u)$.
+Every node $u$ of a segment tree represents a segment (contiguous subarray) of the input array.
+For example, the root represents the whole array,
+the root's children represent the left and right halves of the array,
+and the leaves represent segments with only one element in them.
+Let's denote $u$'s segment by $\operatorname{segment}(u)$.
 
-Here $\operatorname{value}(u) = f(a[\operatorname{first}(u)..\operatorname{last}(u)])$
-and $\operatorname{index}(u)$ is the index of $u$ in the segment tree array.
-The children of $u$ have indices $\operatorname{index}(u) * 2 + 1$ and $\operatorname{index}(u) * 2 + 2$.
+In every node $u$ of the segment tree, we will store the value $f(\operatorname{segment}(u))$.
+Let's denote this by $\operatorname{value}(u)$.
 
 To build and query a generalized segment tree, we will need to specify the following:
 
@@ -211,6 +214,8 @@ For MINMAX, $x \circ y = \min(x_0, y_0), \max(x_1, y_1)$.
 
 In code, we can create a class for monoid elements.
 The above traits of the monoid can be specified as methods/constructors of the class.
+
+<!-- TODO: Add C++ class for MinMaxMonoidElem -->
 
 ## Generalizing update functions
 
@@ -281,6 +286,10 @@ which is needed to answer the query.
 I'll explain this with an example for MINMAX
 with the initial array $[10, 20, 30, 40, 50, 60, 70]$.
 The image below shows the initial segment tree.
+It presents 2 attributes of every segment tree node $u$:
+
+* the indexes of the first and last elements of $\operatorname{segment}(u)$.
+* $\operatorname{value}(u)$.
 
 <figure>
 <img src="{static}/img/segtree-lazy-update/0.dot.svg" />
