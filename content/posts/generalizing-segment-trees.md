@@ -277,8 +277,8 @@ This is how we verify $h$:
 
 Here $a + 20$ is the array obtained by adding 20 to every element of $a$.
 
-It can be proven that $h$ is an endomorphism (
-a [homomorphism](https://en.wikipedia.org/wiki/Monoid#Monoid_homomorphisms)
+It can be proven that every node update function is an endomorphism (a
+[homomorphism](https://en.wikipedia.org/wiki/Monoid#Monoid_homomorphisms)
 whose domain and codomain are the same).
 I'm omitting the proof here for brevity.
 
