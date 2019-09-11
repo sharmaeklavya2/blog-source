@@ -224,7 +224,7 @@ to `~/.bash_profile` or `~/.env`.
 MacTex is a suite of programs for typesetting documents using TeX and LaTeX.
 LaTeX is a great system for writing professional-looking mathematical documents.
 
-You can install MacTex using a GUI installer, but I did it using `brew install mactex`.
+You can install MacTex using a GUI installer, but I did it using `brew cask install mactex`.
 
 ### Python and packages
 
