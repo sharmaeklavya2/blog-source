@@ -2,7 +2,7 @@ title: Hobbies and Interests
 slug: hobbies
 tags: About Me
 date: 2017-10-01
-modified: 2019-04-01
+modified: 2019-10-07
 summary: My hobbies, interests and preferences, along with descriptions and references.
 
 
@@ -51,6 +51,9 @@ I'll provide other references.
   Webcomics are comic strips put up on websites.
   I like [XKCD](https://xkcd.com), [SMBC](https://smbc-comics.com) and [JSPH](https://www.jspowerhour.com).
 
+* **Reddit**:
+  I like reading posts on [r/funny](https://www.reddit.com/r/funny/).
+
 * **Software development**:
   See [my Github profile](https://github.com/sharmaeklavya2) for projects I have done.
   It used to be my primary hobby in my sophomore year at BITS but I'm no longer as interested in it now.
@@ -85,8 +88,7 @@ I'll provide other references.
 ## Dislikes
 
 * **Tourism**
-
-* **Attending parties, dinners, etc.**
+* **Attending parties**
 
 
 ## Preferences
@@ -111,7 +113,7 @@ I'll provide other references.
 * **Food**:
   I'm vegetarian. South Indian food is my favorite.
   Very oily food makes me nauseous and some North Indian cuisines (especially that of Rajasthan) are very oily.
-  I can also cook basic food.
+  I can also cook simple food.
 
 * **Operating System**:
   I strongly prefer Linux (all distributions I have ever seen) and macOS over Windows.
