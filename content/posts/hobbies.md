@@ -1,6 +1,7 @@
 title: Hobbies and Interests
 slug: hobbies
 tags: About Me
+status: draft
 date: 2017-10-01
 modified: 2019-10-07
 summary: My hobbies, interests and preferences, along with descriptions and references.
