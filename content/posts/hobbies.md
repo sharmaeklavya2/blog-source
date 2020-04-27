@@ -3,7 +3,7 @@ slug: hobbies
 tags: About Me
 status: draft
 date: 2017-10-01
-modified: 2019-10-07
+modified: 2020-04-27
 summary: My hobbies, interests and preferences, along with descriptions and references.
 
 
@@ -24,7 +24,7 @@ I'll provide other references.
   so that I could become better at competitive programming.
   But in my second year, I developed a liking for it by itself.
   In subsequent years, I studied and got interested in more areas of theoretical computer science,
-  like theory of computation and computational complexity.
+  like approximation algorithms, theory of computation and computational complexity.
 
 * **Competitive Programming**:
   I solved some math and programming problems on [Project Euler](https://projecteuler.net) when I was in class 12
