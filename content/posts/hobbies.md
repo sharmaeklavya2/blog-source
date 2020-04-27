@@ -36,6 +36,12 @@ I'll provide other references.
   In 2019, I began writing down some of my knowledge on my
   [theorems website](https://sharmaeklavya2.github.io/theoremdep).
 
+* **Strength training**:
+  In December 2019, I started training for strength, primarily using barbells.
+  In March 2020, gyms were closed due to the Covid-19 pandemic,
+  so I shifted to bodyweight training, by following
+  [r/BWF RR](https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine).
+
 * **Juggling**:
   I started juggling after my entrance exams and before joining BITS.
   I know over 30 juggling patterns now. You can watch me juggle on
