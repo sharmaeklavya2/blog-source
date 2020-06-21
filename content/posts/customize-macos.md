@@ -2,6 +2,7 @@ title: A Comprehensive Guide to Customizing your MacBook
 slug: customize-macos
 tags: Tutorial
 date: 2019-07-12
+modified: 2020-06-21
 summary: This post contains a list of all the things I did to customize my MacBook. Most instructions here are useful only for programmers and power users.
 
 
@@ -309,6 +310,10 @@ If you're a command-line user, you'll know how annoying it can be to change freq
 
 To solve this problem, I placed all my files outside `~/Dropbox`
 and created [symlinks](https://kb.iu.edu/d/abbe) to them which I placed in `~/Dropbox`.
+
+**Edit**: This no longer works, since
+[Dropbox removed support for using external symlinks](http://www.paulingraham.com/dropbox-and-symlinks.html).
+Now I place my files inside Dropbox and created symlinks to access them from outside `~/Dropbox`.
 
 ### Wallpapers and profile picture
 
