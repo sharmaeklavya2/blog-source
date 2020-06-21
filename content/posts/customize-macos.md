@@ -14,7 +14,7 @@ Major changes include:
 * Setting up a nice environment on my [terminal](https://en.wikipedia.org/wiki/Terminal_emulator).
 
 As I made all these changes to my new laptop, I noted down the steps that I took for future reference.
-I think this could be useful to others', so here I am, writing a blog post on it.
+I think they could be useful to others, so here they are, as a blog post.
 
 This post is written for macOS Mojave.
 You may have to modify some instructions if you're using a newer macOS.
@@ -147,7 +147,7 @@ Now restart Terminal.app and you'll see the dark blue background of the Solarize
 The 'Xcode command-line tools' consist of command-line applications that are
 very common in Unix-like environments, like git, gcc, make, perl.
 
-Run 'xcode-select --install' from a terminal.
+Run `xcode-select --install` from a terminal.
 A dialog box will pop up. Select install.
 You should probably connect to a power source before doing this
 because macOS is going to suggest you do so.
@@ -278,7 +278,8 @@ I moved my frequently-changing content to Dropbox.
 I use the Dropbox desktop app which syncs my files online in real-time.
 On my external hard drive, I have an up-to-date backup of content that rarely changes.
 
-If you use git for your code, make sure push all unpushed code to an online remote like Github or Bitbucket.
+If you use git for your code, make sure to push all unpushed code on your old computer
+to an online remote to avoid losing data.
 
 ### NTFS drivers for macOS
 
