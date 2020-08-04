@@ -41,14 +41,14 @@ which can be solved using segment trees. These example problems are used through
 1.  **Problem SUMREPL**:
     You are given an array $a$ of $n$ numbers, indexed from 0 to $n-1$.
     You will be asked to perform $q$ operations. Each operation will be one of the following:
-    * given $l$ and $r$, output $\sum\limits_{i=l}^r a[i]$.
+    * given $l$ and $r$, output $\sum_{i=l}^r a[i]$.
     * given $l$, $r$ and $y$, replace $a[i]$ by $y$ for all $l \le i \le r$.
 
 2.  **Problem MINMAX**:
     You are given an array $a$ of $n$ numbers, indexed from 0 to $n-1$.
     You will be asked to perform $q$ operations. Each operation will be one of the following:
-    * given $l$ and $r$, output $\min\limits_{i=l}^r a[i]$.
-    * given $l$ and $r$, output $\max\limits_{i=l}^r a[i]$.
+    * given $l$ and $r$, output $\min_{i=l}^r a[i]$.
+    * given $l$ and $r$, output $\max_{i=l}^r a[i]$.
     * given $l$, $r$ and $y$, add $y$ to $a[i]$ for all $l \le i \le r$.
     * given $l$, $r$ and $z$, multiply $a[i]$ by $z$ for all $l \le i \le r$.
 
@@ -72,18 +72,18 @@ We'll generalize these operations to 2 concepts - query function and update func
 
 In queries, we're asked to apply a function $f$ on $b$.
 We'll call this function the 'query function'.
-In SUMREPL, this function is summation: $f(b) = \sum\limits_{x \in b} x$.
+In SUMREPL, this function is summation: $f(b) = \sum_{x \in b} x$.
 
 In MINMAX, the query function is 'min' for some queries and 'max' for others.
 Instead, we can use the query function
-$f(b) = (\min\limits_{x \in b} x, \max\limits_{x \in b})$, which returns an ordered pair.
+$f(b) = \left(\min_{x \in b} x, \max_{x \in b} x\right)$, which returns an ordered pair.
 For every query, we'll compute both min and max and return the appropriate part.
 
 In CHAROCC, the query is parametrized by $c$.
 So we'll compute the result for all lowercase English characters.
 Formally, let $\Gamma$ be the sequence of characters in lowercase English
 and let $e(s, c)$ be the number of occurrences of the character $c$ in string $s$.
-Then $f(b) = [\sum\limits_{x \in b} e(x, c)]_{c \in \Gamma}$.
+Then $f(b) = [\sum_{x \in b} e(x, c)]_{c \in \Gamma}$.
 Here $f(b)$ is an array of length 26.
 
 For these 3 examples, we now have a common abstraction to use: the query function.
