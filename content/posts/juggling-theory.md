@@ -19,7 +19,7 @@ the last few theorems employ elementary graph theory and number theory.
 Juggling is a recreational activity where a person manipulates multiple objects
 by repeatedly throwing and catching them.
 If you haven't seen juggling before, I highly recommend watching this
-[amazing performance by Anthony Gatto](https://youtu.be/wP8tbLBls_M?t=362).
+<a href="https://youtu.be/wP8tbLBls_M?t=362" target="_blank">amazing performance by Anthony Gatto</a>.
 
 There are different *patterns* in juggling.
 The animations below depict three well-known patterns:
@@ -57,7 +57,7 @@ Previously, only non-beginner jugglers could invent patterns using hit-and-trial
 Another advantage of siteswaps is that they can be used as input to
 programs that create animations of juggling patterns.
 In fact, that is exactly how I created the above GIFs,
-using [Juggling Lab](https://jugglinglab.org/).
+using <a href="https://jugglinglab.org/" target="_blank">Juggling Lab</a>.
 
 ## The features of a juggling pattern
 
@@ -246,4 +246,4 @@ $b$ is a permutation of $\mathbb{Z}_n = \{0, 1, \ldots, n-1\}$.
 Then the number of objects being juggled is $(\sum_{i=1}^n a_i)/n$.
 
 The proof of the above theorem is quite involved. Read the editorial of problem
-[ICL1703](https://www.codechef.com/ICL2017/problems/ICL1703) on Codechef.
+<a href="https://www.codechef.com/ICL2017/problems/ICL1703" target="_blank">ICL1703</a> on Codechef.
