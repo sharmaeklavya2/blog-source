@@ -18,7 +18,7 @@ the last few theorems employ elementary graph theory and number theory.
 
 Juggling is a recreational activity where a person manipulates multiple objects
 by repeatedly throwing and catching them.
-If you haven't seen juggling before, I highly recommend watching this
+If you haven't seen professional juggling before, I highly recommend watching this
 <a href="https://youtu.be/wP8tbLBls_M?t=362" target="_blank">amazing performance by Anthony Gatto</a>.
 
 There are different *patterns* in juggling.
