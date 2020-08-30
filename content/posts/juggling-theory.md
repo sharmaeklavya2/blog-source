@@ -21,7 +21,7 @@ by repeatedly throwing and catching them.
 If you haven't seen juggling before, I highly recommend watching this
 [amazing performance by Anthony Gatto](https://youtu.be/wP8tbLBls_M?t=362).
 
-There are different 'patterns' in juggling.
+There are different *patterns* in juggling.
 The animations below depict three well-known patterns:
 cascade, shower and fountain.
 
@@ -44,10 +44,10 @@ The fundamental problem in juggling theory is how to succinctly describe a juggl
 I used GIF animations above to explain to you what cascade, shower and fountain mean,
 but we are interested in a way of representing juggling patterns
 that is much smaller (just a few characters long),
-reveals the 'structure' of the pattern
+reveals the *structure* of the pattern
 and can be read and analyzed by machines.
 In 1981, Paul Klimek invented a way of representing juggling patterns
-as a sequence of integers. His notation is called 'siteswap'.
+as a sequence of integers. His notation is called *siteswap*.
 
 An amazing by-product of having such a notation is the ability to
 automate the process of inventing new patterns
@@ -94,15 +94,15 @@ Every pattern can be made slower by throwing the balls higher.
 
 **Assumption**: *all throws are made at integral units of time.*
 
-A unit of time is called a 'tick' or a 'beat'.
+A unit of time is called a *tick* or a *beat*.
 The speed of a pattern is defined by the duration of a tick in seconds.
 
 ### Dwell
 
 The amount of time the juggler holds a ball in his/her hand is called *dwell*.
 Dwell is measured in ticks.
-Using a large dwell is called 'lazy style'
-and using a small dwell is called 'hot-potato style'.
+Using a large dwell is called *lazy style*
+and using a small dwell is called *hot-potato style*.
 
 <div class="gallery">
 <figure>
