@@ -92,7 +92,7 @@ Every pattern can be made slower by throwing the balls higher.
 </figure>
 </div>
 
-**Assumption**: *All throws are made at integral units of time.*
+**Assumption**: *all throws are made at integral units of time.*
 
 A unit of time is called a 'tick' or a 'beat'.
 The speed of a pattern is defined by the duration of a tick in seconds.
@@ -199,7 +199,7 @@ This is where things start getting mathematical!
 **Assumption**: *hands throw alternately*, i.e. at even ticks, the left hand throws
 and at odd ticks, the right hand throws. This assumption is called *asynchronicity*.
 
-**Assumption**: *A hand can only hold 1 ball at a time.*
+**Assumption**: *a hand can only hold 1 ball at a time.*
 This restriction is called *non-multiplexing*.
 (Most non-jugglers assume that non-multiplexing is mandatory for juggling,
 but that's not always true.)
@@ -218,7 +218,7 @@ then it will be thrown next at time $t+x$.
 Since hands throw alternately, an odd $x$ will change the throwing hand.
 Therefore, to specify a throw, we only need to specify the order of every throw.
 
-**Assumption**: *Patterns are periodic.*
+**Assumption**: *patterns are periodic.*
 So, we only need to state the smallest repeating subsequence
 of the infinite sequence of throw orders.
 This finite-sized subsequence is called siteswap.
