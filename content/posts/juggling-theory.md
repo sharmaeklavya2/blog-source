@@ -247,3 +247,10 @@ Then the number of objects being juggled is $(\sum_{i=1}^n a_i)/n$.
 
 The proof of the above theorem is quite involved. Read the editorial of problem
 <a href="https://www.codechef.com/ICL2017/problems/ICL1703" target="_blank">ICL1703</a> on Codechef.
+
+## Other stuff (Incomplete)
+
+* How to start a pattern
+* Transitions.
+* Throw-orders 0 and 2.
+* Synchronous and multiplexing.
