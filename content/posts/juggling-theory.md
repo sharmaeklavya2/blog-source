@@ -15,6 +15,8 @@ a seemingly non-mathematical area by building a theory and proving stuff.
 This post doesn't assume any mathematical background, except that
 the last few theorems employ elementary graph theory and number theory.
 
+[TOC]
+
 ## What is Juggling?
 
 Juggling is a recreational activity where a person manipulates multiple objects
