@@ -232,7 +232,7 @@ so that you get comfortable with the concept of siteswap.
 
 ## Siteswap examples (Incomplete)
 
-## What is a valid siteswap? (Incomplete)
+## What is a valid siteswap?
 
 If we take an arbitrary sequence of integers, will it be the siteswap of some juggling pattern?
 As we'll see, the answer turns out to be "no". But why?
@@ -347,6 +347,43 @@ This contradicts $P(a)$. Therefore, $f_a$ is one-to-one. $\Box$
 ### Hard part of the proof
 
 **Lemma 5**: If $f_a$ is one-to-one, then $f_a$ is onto.
+
+*Proof*.
+There are 3 crucial insights in this proof.
+The first is that we can represent $f_a$ as a graph of infinite size.
+Formally, let $G_a$ be a graph whose vertex set is $\mathbb{Z}$.
+For each $x \in \mathbb{Z}$, there is an edge from $x$ to $f_a(x)$.
+Hence, the out-degree of each vertex is 1.
+$f_a$ is one-to-one means that the in-degree of each vertex is at most 1.
+We want to show that $f_a$ is onto, i.e. every vertex has in-degree at least 1.
+
+It is easy to see that if $(u, v)$ is an edge in $G_a$,
+then for any $k \in \mathbb{Z}$, $(u - kn, v - kn)$ is also an edge in $G_a$.
+This is the second crucial idea of this proof.
+
+The third crucial idea is to assign two labels to each number:
+a major label $M(x) = \lfloor x/n \rfloor$ and a minor label $m(x) = x \bmod n$.
+We then partition $\mathbb{Z}$ by the major label.
+Therefore, there are an infinite number of partitions and each partition has $n$ numbers.
+
+For an arbitrary integer $r$, consider the set $S$ of integers having major label $r$.
+There are $n$ edges that come out of $S$, i.e. $n$ edges have their source vertex in $S$.
+We now ask: how many edges enter $S$
+(i.e. how many edges have their target vertex in $S$)?
+We'll now show that at least $n$ edges enter $S$.
+Since $f_a$ is one-to-one, this would prove that the number of edges entering $S$
+is equal to $n$ and each vertex in $S$ has in-degree exactly 1.
+
+Let $S = \{u_0, u_1, \ldots, u_{n-1}\}$, where $u_i = rn + i$.
+Let $v_i = f_a(u_i) = u_i + a[i]$.
+Suppose the major label of $v_i$ is $s$.
+Then the major label of $v_i - (s-r)n$ is $r$, so $v_i \in S$.
+Let $w_i = u_i - (s-r)n$. Then the minor label of $w_i$ is $i$.
+
+Since $(u_i, v_i)$ is an edge of $G_a$, $(w_i, v_i - (s-r)n)$ is also an edge in $G_a$.
+This edge enters $S$. Also, the integers $w_0, w_1, \ldots, w_{n-1}$ are all distinct,
+since $w_i$'s minor label is $i$.
+Therefore, at least $n$ edges enter $S$. $\Box$
 
 ## Other properties of a siteswap (Incomplete)
 
