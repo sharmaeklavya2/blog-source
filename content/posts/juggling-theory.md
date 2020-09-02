@@ -17,7 +17,7 @@ the last few theorems employ elementary graph theory and number theory.
 ## What is Juggling?
 
 Juggling is a recreational activity where a person manipulates multiple objects
-by repeatedly throwing and catching them.
+(usually balls, rings or clubs) by repeatedly throwing and catching them.
 If you haven't seen professional juggling before, I highly recommend watching this
 <a href="https://youtu.be/wP8tbLBls_M?t=362" target="_blank">amazing performance by Anthony Gatto</a>.
 
@@ -79,7 +79,7 @@ and then move on to more complex but more important features.
 
 ### Speed
 
-Every pattern can be made slower by throwing the balls higher.
+Every pattern can be made slower by throwing the objects higher.
 
 <div class="gallery">
 <figure>
@@ -99,7 +99,7 @@ The speed of a pattern is defined by the duration of a tick in seconds.
 
 ### Dwell
 
-The amount of time the juggler holds a ball in his/her hand is called *dwell*.
+The amount of time the juggler holds an object in his/her hand is called *dwell*.
 Dwell is measured in ticks.
 Using a large dwell is called *lazy style*
 and using a small dwell is called *hot-potato style*.
@@ -199,7 +199,7 @@ This is where things start getting mathematical!
 **Assumption**: *hands throw alternately*, i.e. at even ticks, the left hand throws
 and at odd ticks, the right hand throws. This assumption is called *asynchronicity*.
 
-**Assumption**: *a hand can only hold 1 ball at a time.*
+**Assumption**: *a hand can only hold 1 object at a time.*
 This restriction is called *non-multiplexing*.
 (Most non-jugglers assume that non-multiplexing is mandatory for juggling,
 but that's not always true.)
@@ -209,7 +209,7 @@ then a juggling pattern can be uniquely determined by specifying two things for 
 
 * The order of the throw, which is the flight-time of a throw in ticks,
 plus the dwell. **Assumption**: *throw orders are integers.*
-* Whether the ball is thrown to the same hand or to a different hand.
+* Whether the object is thrown to the same hand or to a different hand.
 
 It's not hard to observe that the order of a throw is odd
 iff it is thrown to a different hand.
@@ -221,7 +221,7 @@ Therefore, to specify a throw, we only need to specify the order of every throw.
 **Assumption**: *patterns are periodic.*
 So, we only need to state the smallest repeating subsequence
 of the infinite sequence of throw orders.
-This finite-sized subsequence is called siteswap.
+This finite-sized subsequence is called a siteswap.
 The length of this subsequence is called the period of the siteswap.
 
 Looking at a pattern and figuring out its siteswap
