@@ -260,7 +260,8 @@ Theorem 1 gives us the following $O(n)$-time algorithm (python code ahead):
 
     :::python
     def is_valid(a):
-        freq = [0] * len(a)
+        n = len(a)
+        freq = [0] * n
         for i in range(n):
             b_i = (i + a[i]) % n
             freq[b_i] += 1
