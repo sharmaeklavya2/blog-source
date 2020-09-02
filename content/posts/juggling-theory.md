@@ -542,3 +542,14 @@ Siteswap notation and the associated theory extends to these too.
     <figcaption>Passing cascade</figcaption>
 </figure>
 </div>
+
+## Want to learn how to juggle?
+
+Juggling is a very enjoyable hobby. If you feel motivated,
+see my other blog post, [Juggling 101]({filename}/posts/juggling-101.md), on how to learn juggling.
+
+I started learning juggling a few months before I joined BITS Pilani as an undergraduate student.
+By the end of my third semester, I had learned around 30 different patterns.
+You can see my progress on
+<a href="https://www.youtube.com/watch?v=xYrnQMHfDNE&list=PLACN_dyOcd_WSIzGV-4hVCQyQFmzKH1kb">
+YouTube</a>.
