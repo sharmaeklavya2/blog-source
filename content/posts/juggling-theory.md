@@ -4,6 +4,7 @@ tags: Juggling, Math
 status: draft
 date: 2020-08-30
 mathengine: mathjax
+ExtraCSS: css/pygments-manni.css
 summary: This post explains how math and computer science can be applied to juggling, a seemingly non-mathematical field. This gives us more insight into what really goes on in a juggling pattern and helps us automate the process of finding new juggling patterns. It is also used to give input to juggling animation software.
 
 
@@ -233,12 +234,89 @@ so that you get comfortable with the concept of siteswap.
 
 ## What is a valid siteswap? (Incomplete)
 
-An arbitrary sequence of integers isn't necessarily the siteswap of a pattern.
-We'll now look at an algorithm for determining if an integer sequence is a valid siteswap.
+If we take an arbitrary sequence of integers, will it be the siteswap of some juggling pattern?
+As we'll see, the answer turns out to be "no". But why?
+At each tick, we just have to throw according to the throw-order.
+There's no complex decision-making involved here.
+What could go wrong? Try to think about it before reading further.
 
-**Theorem**: Let $a$ be an integer sequence of length $n$.
-For each $i$, let $b_i = a_i \bmod n$. Then $a$ is a valid siteswap iff
-$b$ is a permutation of $\mathbb{Z}_n = \{0, 1, \ldots, n-1\}$.
+Turns out that to throw a ball, there must be a ball in your hand.
+If your throw-orders at odd ticks are odd and throw-orders at even ticks are even,
+balls will land in your hands only on even ticks,
+so at odd ticks, eventually you won't have any balls left to throw.
+But there's more. You also need to ensure that the number of balls
+landing in your hand at each tick is not more than 1.
+Otherwise, you'll have more balls than you can throw.
+
+So how can we find out if a sequence of integers is a valid siteswap?
+I'll get straight to the point, like this:
+
+**Theorem 1**: Let $a = [a_0, a_1, \ldots, a_{n-1}]$ be a sequence of $n$ non-negative integers.
+Let $\mathbb{Z}_n = \{0, 1, \ldots, n-1\}$.
+For each $i \in \mathbb{Z}_n$, let $b_i = (i + a_i) \bmod n$.
+Then $a$ is a valid siteswap iff $b$ is a permutation of $\mathbb{Z}_n$.
+
+Theorem 1 gives us the following $O(n)$ time algorithm (python code ahead):
+
+    :::python
+    def is_valid(a):
+        freq = [0] * len(a)
+        for i in range(n):
+            b_i = (i + a[i]) % n
+            freq[b_i] += 1
+        for j in freq:
+            if j != 1:
+                return False
+        return True
+
+We'll now try to prove theorem 1. To do that, we first need to get a good
+characterization of what a valid siteswap is.
+Essentially, we're trying to remove the *juggling* from the problem
+and reduce it to a pure math problem.
+
+Let $a$ be a sequence of $n$ non-negative integers.
+We'll now define a function $f_a: \mathbb{Z} \mapsto \mathbb{Z}$,
+that takes as input a *throw time* and outputs the corresponding *catch time*.
+\\[ f_a(x) = x + a[x \bmod n] \\]
+
+Here $a[i]$ is the $i^{\textrm{th}}$ integer in $a$ and $x \bmod n$
+is the remainder obtained after dividing $x$ by $n$.
+
+Now we need to prove two things:
+
+* At any time $y$, we have a ball to throw, i.e.
+$\forall y \in \mathbb{Z}, \exists x \in \mathbb{Z}, f_a(x) = y$.
+* We don't have collisions, i.e. there shouldn't be multiple balls landing
+in your hand at the same time:
+$\forall x_1, x_2 \in \mathbb{Z}, (f_a(x_1) = f_a(x_2) \implies x_1 = x_2)$.
+
+Does this look familiar? This is exactly the definition of a bijection!
+The first conditions says that $f_a$ should be onto,
+and the second condition says that $f_a$ should be one-to-one.
+Therefore, we get that $a$ is a valid siteswap iff $f_a$ is a bijection.
+
+Define the predicate $P$ as:<br>
+*$P(a)$: For $b_i = (i + a_i) \bmod n$, $b$ is a permutation of $\mathbb{Z}_n$.*<br>
+Now theorem 1 reduces to this lemma:
+
+**Lemma 2**: Let $a$ be a sequence of $n$ non-negative integers.
+Then $f_a$ is a bijection iff $P(a)$.
+
+Lemma 2 has no reference to juggling. It's a purely mathematical fact.
+Now that we're in familiar territory, you should try proving it yourself
+before you read my proof below.
+This is because math has one thing in common with juggling:
+for maximum enjoyment, you must try it yourself.
+
+### Easy part of the proof
+
+**Lemma 3**: If $f_a$ is a bijection, then $P(a)$ holds.
+
+**Lemma 4**: $P(a)$ implies that $f_a$ is one-to-one.
+
+### Hard part of the proof
+
+**Lemma 5**: If $f_a$ is one-to-one, then $f_a$ is onto.
 
 ## Other properties of a siteswap (Incomplete)
 
