@@ -310,9 +310,39 @@ for maximum enjoyment, you must try it yourself.
 
 ### Easy part of the proof
 
-**Lemma 3**: If $f_a$ is a bijection, then $P(a)$ holds.
+**Lemma 3**: If $f_a$ is a one-to-one, then $P(a)$ is true.
+
+*Proof*. Assume $P(a)$ is false. Then $\exists i_1, i_2 \in \mathbb{Z}_n$ such that
+$i_1 \neq i_2$ and $b[i_1] = b[i_2]$.
+
+\begin{align}
+& b[i_1] = b[i_2]
+\\ &\implies (i_1 + a[i_1]) \bmod n = (i_2 + a[i_2]) \bmod n
+\\ &\implies \exists k \in \mathbb{Z}, i_1 + a[i_1] = i_2 + a[i_2] + kn
+\\ &\implies \exists k \in \mathbb{Z}, f_a(i_1) = f_a(i_2 + kn)
+\end{align}
+This is a contradiction, since $f_a$ is one-to-one.
+Therefore, $P(a)$ is true. $\Box$
 
 **Lemma 4**: $P(a)$ implies that $f_a$ is one-to-one.
+
+*Proof*. Assume $f_a$ is not one-to-one.
+Then $\exists u_1 \neq u_2$ such that $f_a(u_1) = f_a(u_2)$.
+Let $i_1 = u_1 \bmod n$ and $i_2 = u_2 \bmod n$.
+
+*Case 1*: $i_1 = i_2$.
+\\[ f_a(u_1) = f_a(u_2) \implies u_1 + a[i_1] = u_2 + a[i_2] \implies u_1 = u_2 \\]
+This is a contradiction, since $u_1 \neq u_2$.
+
+*Case 2*: $i_1 \neq i_2$.
+\begin{align}
+& f_a(u_1) = f_a(u_2)
+\\ &\implies u_1 + a[i_1] = u_2 + a[i_2]
+\\ &\implies i_1 + a[i_1] \equiv i_2 + a[i_2] \pmod{n}
+\\ &\implies b[i_1] = b[i_2]
+\end{align}
+Since $b$ contains a duplicate entry, it cannot be a permutation of $\mathbb{Z}_n$.
+This contradicts $P(a)$. Therefore, $f_a$ is one-to-one. $\Box$
 
 ### Hard part of the proof
 
