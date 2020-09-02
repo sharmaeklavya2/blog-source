@@ -12,8 +12,8 @@ This post explains the surprising link between math and juggling.
 Juggling theory is a beautiful example of how we can get more insight in
 a seemingly non-mathematical area by building a theory and proving stuff.
 
-This post doesn't assume any mathematical background, except that
-the last few theorems employ elementary graph theory and number theory.
+Most of this post doesn't assume any specialized mathematical background.
+Towards the end, basics of graph theory and number theory are used.
 
 [TOC]
 
