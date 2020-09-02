@@ -305,8 +305,10 @@ Then $f_a$ is a bijection iff $P(a)$.
 Lemma 2 has no reference to juggling. It's a purely mathematical fact.
 Now that we're in familiar territory, you should try proving it yourself
 before you read my proof below.
-This is because math has one thing in common with juggling:
-for maximum enjoyment, you must try it yourself.
+
+> Mathematics shares one feature with juggling:
+> for maximum enjoyment, you have to try it yourself.
+> <footer>Joe Buhler and Ron Graham</footer>
 
 ### Easy part of the proof
 
