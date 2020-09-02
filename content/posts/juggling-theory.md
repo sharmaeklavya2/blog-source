@@ -256,7 +256,7 @@ Let $\mathbb{Z}_n = \{0, 1, \ldots, n-1\}$.
 For each $i \in \mathbb{Z}_n$, let $b_i = (i + a_i) \bmod n$.
 Then $a$ is a valid siteswap iff $b$ is a permutation of $\mathbb{Z}_n$.
 
-Theorem 1 gives us the following $O(n)$ time algorithm (python code ahead):
+Theorem 1 gives us the following $O(n)$-time algorithm (python code ahead):
 
     :::python
     def is_valid(a):
@@ -296,7 +296,7 @@ and the second condition says that $f_a$ should be one-to-one.
 Therefore, we get that $a$ is a valid siteswap iff $f_a$ is a bijection.
 
 Define the predicate $P$ as:<br>
-*$P(a)$: For $b_i = (i + a_i) \bmod n$, $b$ is a permutation of $\mathbb{Z}_n$.*<br>
+*$P(a)$: For $b_i = (i + a[i]) \bmod n$, $b$ is a permutation of $\mathbb{Z}_n$.*<br>
 Now theorem 1 reduces to this lemma:
 
 **Lemma 2**: Let $a$ be a sequence of $n$ non-negative integers.
