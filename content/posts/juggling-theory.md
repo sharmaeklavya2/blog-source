@@ -208,9 +208,12 @@ but that's not always true.)
 If all the other features (ticks per second, dwell, hand position) are fixed,
 then a juggling pattern can be uniquely determined by specifying two things for each throw:
 
-* The order of the throw, which is the flight-time of a throw in ticks,
-plus the dwell. **Assumption**: *throw orders are integers.*
+* The order of the throw, which is the flight-time of a throw in ticks, plus the dwell.
+**Assumption**: *throw orders are integers.*
 * Whether the object is thrown to the same hand or to a different hand.
+
+Note that if an object is thrown at time $t$ and it has order $x$,
+then it will be thrown next at time $t+x$.
 
 It's not hard to observe that the order of a throw is odd
 iff it is thrown to a different hand.
@@ -227,10 +230,57 @@ The length of this subsequence is called the period of the siteswap.
 
 Looking at a pattern and figuring out its siteswap
 can be tricky at first, especially if you're new to juggling.
-I'll show some examples, and explain what a ladder diagram is,
-so that you get comfortable with the concept of siteswap.
+I'll show some examples so that you get comfortable with the concept of siteswap.
 
-## Siteswap examples (Incomplete)
+## Siteswap examples
+
+We'll look at two examples here. Let's start with the simplest pattern: cascade.
+I have slowed down the animation below and given different colors to the balls
+to make it easier to visualize.
+
+<figure>
+    <img src="{static}/img/siteswaps/3-analyze.gif" />
+    <figcaption>Cascade</figcaption>
+</figure>
+
+Firstly, note that all throws are identical.
+So all throws have the same throw-order.
+
+Suppose the blue ball is thrown at time $t$.
+At time $t+1$ the red ball is thrown, at time $t+2$ the green ball is thrown,
+and at time $t+3$, the blue ball is thrown again.
+Therefore, the time between consecutive throws of the blue ball is 3 ticks.
+Hence, all throws have order 3.
+This gives us the siteswap `[3]` for this pattern.
+
+Let's now look at a pattern, which, as far as I know, doesn't have a common name.
+It's identified solely by its siteswap.
+
+<div class="gallery">
+<figure>
+    <img src="{static}/img/siteswaps/345.gif" />
+    <figcaption>Normal</figcaption>
+</figure>
+<figure>
+    <img src="{static}/img/siteswaps/345-analyze.gif" />
+    <figcaption>Slo-mo</figcaption>
+</figure>
+</div>
+
+We'll repeat the same trick as last time. Just keep noting down the colors of the throws.
+Denote the colors gray, red, green, blue by characters `_`, `r`, `g`, `b`, respectively.
+Then the colors of the throws is the string `_bg_rb_gr` repeated indefinitely.
+Now for each throw, find the next throw of the same color,
+and compute the difference of their throw-times to the get the throw-order.
+This gives us the sequence `[3, 4, 5]` repeated indefinitely.
+
+    _bg_rb_gr_bg_rb_gr_bg_rb_gr
+    34534534534534534534534
+
+Therefore, our siteswap is `[3, 4, 5]`.
+Usually people just concatenate the numbers together and write `345` instead of `[3, 4, 5]`.
+This is not a problem, since throw orders above 9 rarely arise in practice,
+and even if they do, we can use `a` for 10, `b` for 11, and so on.
 
 ## What is a valid siteswap?
 
