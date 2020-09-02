@@ -301,12 +301,21 @@ Otherwise, you'll have more balls than you can throw.
 So how can we find out if a sequence of integers is a valid siteswap?
 I'll get straight to the point, like this:
 
-**Theorem 1**: Let $a = [a_0, a_1, \ldots, a_{n-1}]$ be a sequence of $n$ non-negative integers.
+**Permutation Theorem**: Let $a = [a_0, a_1, \ldots, a_{n-1}]$ be a sequence of $n$ non-negative integers.
 Let $\mathbb{Z}_n = \{0, 1, \ldots, n-1\}$.
 For each $i \in \mathbb{Z}_n$, let $b_i = (i + a_i) \bmod n$.
 Then $a$ is a valid siteswap iff $b$ is a permutation of $\mathbb{Z}_n$.
 
-Theorem 1 gives us the following $O(n)$-time algorithm (python code ahead):
+> Wait, $a$ is a sequence of *non-negative* integers? What does a throw-order of 0 mean?
+> <footer>observant reader</footer>
+
+Good question! That's a technical detail that I conveniently brushed under the rug.
+I'll address this at the end of the blog post.
+For now, you can assume that $a$ only has positive integers
+and throw orders can only be positive.
+The proofs work for the general case that includes zero-order throws.
+
+The permutation theorem gives us the following $O(n)$-time algorithm (python code ahead):
 
     :::python
     def is_valid(a):
@@ -438,17 +447,96 @@ This edge enters $S$. Also, the integers $w_0, w_1, \ldots, w_{n-1}$ are all dis
 since $w_i$'s minor label is $i$.
 Therefore, at least $n$ edges enter $S$. $\Box$
 
-## Other properties of a siteswap (Incomplete)
+## Other things about siteswaps
 
-**Theorem**: Let $a$ be a siteswap of period $n$.
+### Average theorem
+
+**Average Theorem**: Let $a$ be a siteswap of period $n$.
 Then the number of objects being juggled is $(\sum_{i=1}^n a_i)/n$.
 
-The proof of the above theorem is quite involved. Read the editorial of problem
-<a href="https://www.codechef.com/ICL2017/problems/ICL1703" target="_blank">ICL1703</a> on Codechef.
+The proof of the average theorem is quite involved, so I'm not going to put it here.
+It uses the same ideas as in the proof of the permutation theorem.
+It also gives a quick sanity check of a siteswap's validity:
+the average should be an integer.
 
-## Other stuff (Incomplete)
+For the competitive programmers reading this who are looking for a challenge,
+you may want to solve the problem
+<a href="https://www.codechef.com/ICL2017/problems/ICL1703" target="_blank">ICL1703</a> on Codechef,
+which is a generalization of the average theorem when multiplexing is allowed.
+I have abstracted out juggling terminology from this problem,
+so you don't need to know anything about juggling to understand it.
+I have also written an
+<a href="https://discuss.codechef.com/t/icl1703-editorial/14270" target="_blank">editorial</a> for it.
 
-* How to start a pattern
-* Transitions.
-* Throw-orders 0 and 2.
-* Synchronous and multiplexing.
+### Weird throw orders
+
+Sometimes you may want to not have a ball in your hand at some tick.
+This situation is called a zero-order throw.
+Here are some examples:
+
+<div class="gallery">
+<figure>
+    <img src="{static}/img/siteswaps/50505.gif" />
+    <figcaption>Snake (50505)</figcaption>
+</figure>
+<figure>
+    <img src="{static}/img/siteswaps/330.gif" />
+    <figcaption>Cascade with 1 ball <br>missing (330)</figcaption>
+</figure>
+<figure>
+    <img src="{static}/img/siteswaps/40.gif" />
+    <figcaption>2-in-1 (40)</figcaption>
+</figure>
+</div>
+
+Sometimes you may want to keep holding on to a ball in your hand instead of throwing it.
+This can be achieved via order-2 throws (think why it makes sense).
+
+<div class="gallery">
+<figure>
+    <img src="{static}/img/siteswaps/552.gif" />
+    <figcaption>552</figcaption>
+</figure>
+<figure>
+    <img src="{static}/img/siteswaps/42.gif" />
+    <figcaption>2-in-1 (42)</figcaption>
+</figure>
+</div>
+
+All the math in this blog post can be made to work with throws of order 0 and 2.
+
+### Extensions
+
+We assumed that in each tick, only one hand throws and hands throw alternately.
+This assumption is called asynchronicity.
+This is the most restrictive assumption that we have made.
+There are several nice patterns that don't fit in this model.
+Fortunately, all of the theory we saw here can be ported to the synchronous model,
+and synchronous patterns have their own, somewhat different, siteswap notation.
+
+<div class="gallery">
+<figure>
+    <img src="{static}/img/siteswaps/box.gif" />
+    <figcaption>Box</figcaption>
+</figure>
+<figure>
+    <img src="{static}/img/siteswaps/columns.gif" />
+    <figcaption>Columns</figcaption>
+</figure>
+</div>
+
+Further generalizations include multiplexing,
+i.e. allowing multiple balls in a single hand, and passing,
+i.e. multiple people juggling together.
+Siteswap notation and the associated theory extends to these too.
+
+<div class="gallery">
+<figure>
+    <img src="{static}/img/siteswaps/multiplex-shower.gif" />
+    <figcaption>Multiplexed shower</figcaption>
+</figure>
+<figure>
+    <img src="{static}/img/siteswaps/3-pass.gif" />
+    <figcaption>Passing cascade</figcaption>
+</figure>
+</div>
