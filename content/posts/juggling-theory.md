@@ -284,7 +284,7 @@ Usually people just concatenate the numbers together and write `345` instead of 
 This is not a problem, since throw orders above 9 rarely arise in practice,
 and even if they do, we can use `a` for 10, `b` for 11, and so on.
 
-## What is a valid siteswap?
+## When is a siteswap valid?
 
 If we take an arbitrary sequence of integers, will it be the siteswap of some juggling pattern?
 As we'll see, the answer turns out to be "no". But why?
@@ -340,9 +340,7 @@ Let $a$ be a sequence of $n$ non-negative integers.
 We'll now define a function $f_a: \mathbb{Z} \mapsto \mathbb{Z}$,
 that takes as input a *throw time* and outputs the corresponding *catch time*.
 \\[ f_a(x) = x + a[x \bmod n] \\]
-
-Here $a[i]$ is the $i^{\textrm{th}}$ integer in $a$ and $x \bmod n$
-is the remainder obtained after dividing $x$ by $n$.
+Here $a[i] = a_i$ and $x \bmod n$ is the remainder obtained after dividing $x$ by $n$.
 
 Now we need to prove two things:
 
@@ -408,7 +406,7 @@ This is a contradiction, since $u_1 \neq u_2$.
 Since $b$ contains a duplicate entry, it cannot be a permutation of $\mathbb{Z}_n$.
 This contradicts $P(a)$. Therefore, $f_a$ is one-to-one. $\Box$
 
-### Hard part of the proof
+### Not-so-easy part of the proof
 
 **Lemma 5**: If $f_a$ is one-to-one, then $f_a$ is onto.
 
@@ -470,7 +468,7 @@ so you don't need to know anything about juggling to understand it.
 I have also written an
 <a href="https://discuss.codechef.com/t/icl1703-editorial/14270" target="_blank">editorial</a> for it.
 
-### Weird throw orders
+### Special throw orders
 
 Sometimes you may want to not have a ball in your hand at some tick.
 This situation is called a zero-order throw.
