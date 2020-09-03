@@ -148,10 +148,8 @@ we throw from the outside and catch on the inside.
 (A careful observation will reveal that the reverse cascade is actually a time-reversed
 version of the normal cascade.)
 
-The above examples use static hand positioning, i.e.
-all throw positions are the same and all catch positions are the same.
-We can get nice variations of the cascade, which don't really look like the cascade,
-by using dynamic hand positioning.
+By using more complicated hand-positions, we can get awesome variations
+of the cascade, that don't really look like the cascade.
 
 <div class="gallery">
 <figure>
