@@ -210,7 +210,8 @@ but that's not always true.)
 If all the other features (ticks per second, dwell, hand position) are fixed,
 then a juggling pattern can be uniquely determined by specifying two things for each throw:
 
-* The order of the throw, which is the flight-time of a throw in ticks, plus the dwell.
+* The *order* (also called *throw-order*) of the throw,
+which is the flight-time of a throw in ticks, plus the dwell.
 **Assumption**: *throw orders are integers.*
 * Whether the object is thrown to the same hand or to a different hand.
 
@@ -222,7 +223,7 @@ iff it is thrown to a different hand.
 This is because if an object is thrown at time $t$ and has order $x$,
 then it will be thrown next at time $t+x$.
 Since hands throw alternately, an odd $x$ will change the throwing hand.
-Therefore, to specify a throw, we only need to specify the order of every throw.
+Therefore, to specify a pattern, we only need to specify the order of every throw.
 
 **Assumption**: *patterns are periodic.*
 So, we only need to state the smallest repeating subsequence
@@ -232,13 +233,11 @@ The length of this subsequence is called the period of the siteswap.
 
 Looking at a pattern and figuring out its siteswap
 can be tricky at first, especially if you're new to juggling.
-I'll show some examples so that you get comfortable with the concept of siteswap.
+I'll show some examples so that you get the hang of it.
 
 ## Siteswap examples
 
-We'll look at two examples here. Let's start with the simplest pattern: cascade.
-I have slowed down the animation below and given different colors to the balls
-to make it easier to visualize.
+Let's start with the simplest pattern: cascade.
 
 <figure>
     <img src="{static}/img/siteswaps/3-analyze.gif" />
@@ -250,7 +249,7 @@ So all throws have the same throw-order.
 
 Suppose the blue ball is thrown at time $t$.
 At time $t+1$ the red ball is thrown, at time $t+2$ the green ball is thrown,
-and at time $t+3$, the blue ball is thrown again.
+and at time $t+3$ the blue ball is thrown again.
 Therefore, the time between consecutive throws of the blue ball is 3 ticks.
 Hence, all throws have order 3.
 This gives us the siteswap `[3]` for this pattern.
