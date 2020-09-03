@@ -335,7 +335,7 @@ Essentially, we're trying to remove the *juggling* from the problem
 and reduce it to a pure math problem.
 
 Let $a$ be a sequence of $n$ non-negative integers.
-We'll now define a function $f_a: \mathbb{Z} \mapsto \mathbb{Z}$,
+We'll now define a function $f_a: \mathbb{Z} \mapsto \mathbb{Z},$
 that takes as input a *throw time* and outputs the corresponding *catch time*.
 \\[ f_a(x) = x + a[x \bmod n] \\]
 Here $a[i] = a_i$ and $x \bmod n$ is the remainder obtained after dividing $x$ by $n$.
@@ -343,10 +343,10 @@ Here $a[i] = a_i$ and $x \bmod n$ is the remainder obtained after dividing $x$ b
 Now we need to prove two things:
 
 * At any time $y$, we have a ball to throw, i.e.
-$\forall y \in \mathbb{Z}, \exists x \in \mathbb{Z}, f_a(x) = y$.
+$\forall y \in \mathbb{Z},$ $\exists x \in \mathbb{Z},$ $f_a(x) = y$.
 * We don't have collisions, i.e. there shouldn't be multiple balls landing
 in your hand at the same time:
-$\forall x_1, x_2 \in \mathbb{Z}, (f_a(x_1) = f_a(x_2) \implies x_1 = x_2)$.
+$\forall x_1, x_2 \in \mathbb{Z},$ $(f_a(x_1) = f_a(x_2)$ $\implies x_1 = x_2)$.
 
 Does this look familiar? This is exactly the definition of a bijection!
 The first conditions says that $f_a$ should be onto,
@@ -354,7 +354,7 @@ and the second condition says that $f_a$ should be one-to-one.
 Therefore, we get that $a$ is a valid siteswap iff $f_a$ is a bijection.
 
 Define the predicate $P$ as:<br>
-*$P(a)$: For $b_i = (i + a[i]) \bmod n$, $b$ is a permutation of $\mathbb{Z}_n$.*<br>
+*$P(a)$: For $b_i = (i + a[i]) \bmod n,$ $b$ is a permutation of $\mathbb{Z}_n$.*<br>
 Now theorem 1 reduces to this lemma:
 
 **Lemma 2**: Let $a$ be a sequence of $n$ non-negative integers.
@@ -390,8 +390,8 @@ Therefore, $P(a)$ is true. $\Box$
 Then $\exists u_1 \neq u_2$ such that $f_a(u_1) = f_a(u_2)$.
 Let $i_1 = u_1 \bmod n$ and $i_2 = u_2 \bmod n$.
 
-*Case 1*: $i_1 = i_2$.
-\\[ f_a(u_1) = f_a(u_2) \implies u_1 + a[i_1] = u_2 + a[i_2] \implies u_1 = u_2 \\]
+*Case 1*: $i_1 = i_2$.<br>
+$f_a(u_1) = f_a(u_2)$ $\implies u_1 + a[i_1] = u_2 + a[i_2]$ $\implies u_1 = u_2.$
 This is a contradiction, since $u_1 \neq u_2$.
 
 *Case 2*: $i_1 \neq i_2$.
@@ -434,7 +434,7 @@ We'll now show that at least $n$ edges enter $S$.
 Since $f_a$ is one-to-one, this would prove that the number of edges entering $S$
 is equal to $n$ and each vertex in $S$ has in-degree exactly 1.
 
-Let $S = \{u_0, u_1, \ldots, u_{n-1}\}$, where $u_i = rn + i$.
+Let $S = \{u_0, u_1, \ldots, u_{n-1}\},$ where $u_i = rn + i$.
 Let $v_i = f_a(u_i) = u_i + a[i]$.
 Suppose the major label of $v_i$ is $s$.
 Then the major label of $v_i - (s-r)n$ is $r$, so $v_i \in S$.
