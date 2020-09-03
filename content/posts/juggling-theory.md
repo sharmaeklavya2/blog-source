@@ -47,19 +47,21 @@ The fundamental problem in juggling theory is how to succinctly describe a juggl
 I used GIF animations above to explain to you what cascade, shower and fountain mean,
 but we are interested in a way of representing juggling patterns
 that is much smaller (just a few characters long),
-reveals the *structure* of the pattern
-and can be read and analyzed by machines.
-In 1981, Paul Klimek invented a way of representing juggling patterns
-as a sequence of integers. His notation is called *siteswap*.
+reveals the *structure* of the pattern, and can be read and analyzed by machines.
+In 1981, Paul Klimek invented a way of associating a sequence of integers
+to each juggling pattern. This sequence of integers is called a *siteswap*,
+and it captures important properties of a jugging pattern.
+In this post, I'll show how to succinctly represent juggling patterns,
+and siteswaps form the most important part of this representation.
 
-An amazing by-product of having such a notation is the ability to
+An amazing by-product of having such a representation is the ability to
 automate the process of inventing new patterns
 by brute-force enumeration of integer sequences.
 Previously, only non-beginner jugglers could invent patterns using hit-and-trial.
 
 Another advantage of siteswaps is that they can be used as input to
 programs that create animations of juggling patterns.
-In fact, that is exactly how I created the above GIFs,
+In fact, this is exactly how I created all the animations in this post,
 using <a href="https://jugglinglab.org/" target="_blank">Juggling Lab</a>.
 
 ## The features of a juggling pattern
