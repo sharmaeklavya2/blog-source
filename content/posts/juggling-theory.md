@@ -541,6 +541,37 @@ Siteswap notation and the associated theory extends to these too.
 </figure>
 </div>
 
+### Uses and limitations of mathematical analysis
+
+We can invent new juggling patterns by brute-force enumeration of integer sequences
+up to a certain length and then using the permutation theorem to filter out invalid sequences.
+Each siteswap output by this process corresponds to a valid juggling pattern.
+This is great, and rumors say that `441` was invented like this.
+
+<figure>
+    <img src="{static}/img/siteswaps/441.gif" />
+    <figcaption>Half box (441)</figcaption>
+</figure>
+
+However, this approach has limitations.
+A lot of patterns look very similar to each other.
+Out of the many patterns output by this algorithm,
+only some may be aesthetically pleasing,
+that too after carefully choosing an appropriate hand positioning.
+So in practice, highly skilled humans outperform machines in inventing *interesting* patterns.
+
+But that doesn't mean this theory is useless!
+All humans are not so highly skilled, and there are other uses of juggling theory,
+like animation programs, transitioning across patterns,
+generating patterns under constraints, etc.
+
+Also, a hybrid approach can be useful.
+For example, I invented the patterns `615150` and `6051`
+using a combination of spatio-temporal imagination
+and help from diagrams and animation programs.
+For more details, see my other blog post,
+[How to juggle 3 balls in 1 hand]({filename}/posts/3-in-1.md).
+
 ## Want to learn how to juggle?
 
 Juggling is a very enjoyable hobby. If you feel motivated,
