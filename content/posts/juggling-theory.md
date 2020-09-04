@@ -330,7 +330,7 @@ The permutation theorem gives us the following $O(n)$-time algorithm (python cod
                 return False
         return True
 
-We'll now try to prove theorem 1. To do that, we first need to get a good
+We'll now try to prove the permutation theorem. To do that, we first need to get a good
 characterization of what a valid siteswap is.
 Essentially, we're trying to remove the *juggling* from the problem
 and reduce it to a pure math problem.
@@ -356,7 +356,7 @@ Therefore, we get that $a$ is a valid siteswap iff $f_a$ is a bijection.
 
 Define the predicate $P$ as:<br>
 *$P(a)$: For $b_i = (i + a[i]) \bmod n,$ $b$ is a permutation of $\mathbb{Z}_n$.*<br>
-Now theorem 1 reduces to this lemma:
+Now the permutation theorem reduces to this lemma:
 
 **Lemma 2**: Let $a$ be a sequence of $n$ non-negative integers.
 Then $f_a$ is a bijection iff $P(a)$.
