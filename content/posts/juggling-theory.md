@@ -368,7 +368,7 @@ before you read my proof below.
 
 > Mathematics shares one feature with juggling:
 > for maximum enjoyment, you have to try it yourself.
-> <footer>Joe Buhler and Ron Graham</footer>
+> <footer>Joe Buhler and Ron Graham<sup><a href="#cite-buhler-graham">[1]</a></sup></footer>
 
 ### Easy part of the proof
 
@@ -587,3 +587,16 @@ By the end of my third semester, I had learned around 30 different patterns.
 You can see my progress on
 <a href="https://www.youtube.com/watch?v=xYrnQMHfDNE&list=PLACN_dyOcd_WSIzGV-4hVCQyQFmzKH1kb">
 YouTube</a>.
+
+## References
+
+<ol>
+<li class="citation" id="cite-buhler-graham">
+<!--<span class="cite-name">buhler-graham</span><br>-->
+<span class="cite-authors">Joe Buhler and Ron Graham.</span>
+<cite class="cite-title">
+<a href="http://www.math.ucsd.edu/~fan/ron/papers/04_05_juggling.pdf" target="_blank">
+Juggling patterns, passing, and posets.</a></cite><br>
+<span class="cite-source">In Mathematical Adventures for Students and Amateurs (2004): 99&ndash;116.</span>
+</li>
+</ol>
