@@ -566,16 +566,18 @@ that too after carefully choosing an appropriate hand positioning.
 So in practice, highly skilled humans outperform machines in inventing *interesting* patterns.
 
 But that doesn't mean this theory is useless!
-All humans are not so highly skilled, and there are other uses of juggling theory,
+There are other uses of juggling theory,
 like animation programs, transitioning across patterns,
 generating patterns under constraints, etc.
+Also, an understanding of juggling theory can help jugglers
+invent interesting patterns more easily.
+This is how I invented `615150` and `6051`,
+and these patterns helped me learn to
+[juggle 3 balls in 1 hand]({filename}/posts/3-in-1.md).
 
-Also, a hybrid approach can be useful.
-For example, I invented the patterns `615150` and `6051`
-using a combination of spatio-temporal imagination
-and help from diagrams and animation programs.
-For more details, see my other blog post,
-[How to juggle 3 balls in 1 hand]({filename}/posts/3-in-1.md).
+You can try inventing your own patterns, and then easily see what they look like using
+<a href="https://jugglinglab.org/" target="_blank">Juggling Lab</a>
+or its <a href="https://jugglinglab.org/html/animinfo.html" target="_blank">GIF server</a>.
 
 ## Want to learn how to juggle?
 
