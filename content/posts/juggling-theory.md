@@ -321,8 +321,8 @@ The permutation theorem gives us the following $O(n)$-time algorithm (python cod
     :::python
     def is_valid(a):
         n = len(a)
-        freq = [0] * n
-        for i in range(n):
+        freq = [0] * n  # a list of n zeros
+        for i in range(n):  # i from 0 to n-1
             b_i = (i + a[i]) % n
             freq[b_i] += 1
         for j in freq:
