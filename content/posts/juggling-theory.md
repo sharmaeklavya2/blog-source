@@ -298,6 +298,7 @@ so at odd ticks, eventually you won't have any balls left to throw.
 But there's more. You also need to ensure that the number of balls
 landing in your hand at each tick is not more than 1.
 Otherwise, you'll have more balls than you can throw.
+Think of these two constraints as the equivalent of *conservation of mass*.
 
 So how can we find out if a sequence of integers is a valid siteswap?
 I'll get straight to the point, like this:
@@ -469,7 +470,10 @@ I have also written an
 
 ### Special throw orders
 
-Sometimes you may want to not have a ball in your hand at some tick.
+We assumed that we will throw a ball on every tick.
+We can relax this assumption, without violating conservation of mass,
+by allowing instances when no ball falls into your hand
+and so you don't throw anything.
 This situation is called a zero-order throw.
 Here are some examples:
 
