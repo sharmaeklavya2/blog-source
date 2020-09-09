@@ -418,6 +418,8 @@ For each $x \in \mathbb{Z}$, there is an edge from $x$ to $f_a(x)$.
 Hence, the out-degree of each vertex is 1.
 $f_a$ is one-to-one means that the in-degree of each vertex is at most 1.
 We want to show that $f_a$ is onto, i.e. every vertex has in-degree at least 1.
+(Actually, there's a name for $G_a$ when $a$ is a valid siteswap:
+it's called a *ladder diagram*.)
 
 It is easy to see that if $(u, v)$ is an edge in $G_a$,
 then for any $k \in \mathbb{Z}$, $(u - kn, v - kn)$ is also an edge in $G_a$.
