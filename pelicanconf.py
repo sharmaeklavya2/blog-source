@@ -23,7 +23,7 @@ else:
 
 # Plugins
 
-PLUGIN_PATHS = ['official-plugins', 'plugins']
+PLUGIN_PATHS = ['plugins', 'official-plugins']
 # Order is important: plugins in `plugins` override plugins in `official-plugins`.
 PLUGINS = ['sitemap', 'my_plugin', 'render_math']
 
