@@ -372,7 +372,7 @@ before you read my proof below.
 
 ### Easy part of the proof
 
-**Lemma 3**: If $f_a$ is a one-to-one, then $P(a)$ is true.
+**Lemma 3**: If $f_a$ is one-to-one, then $P(a)$ is true.
 
 *Proof*. Assume $P(a)$ is false. Then $\exists i_1, i_2 \in \mathbb{Z}_n$ such that
 $i_1 \neq i_2$ and $b[i_1] = b[i_2]$.
