@@ -209,21 +209,29 @@ but that's not always true.)
 
 If all the other features (ticks per second, dwell, hand position) are fixed,
 then a juggling pattern can be uniquely determined by specifying two things for each throw:
+how high should the object be thrown, and whether the object is thrown to the same
+hand or to the other hand.
+(In the fountain pattern, all throws are made to the same hand,
+and in cascade all throws are made to the other hand.)
 
-* The *order* (also called *throw-order*) of the throw,
-which is the flight-time of a throw in ticks, plus the dwell.
-**Assumption**: *throw orders are integers.*
-* Whether the object is thrown to the same hand or to a different hand.
+To specify how high an object is thrown, we associate a number with the throw,
+called *order* (also called *throw-order*).
+The order of a throw is defined to be the flight-time of a throw in ticks, plus the dwell.
+So if an object is thrown at time $t$ with order $x$,
+that object will be thrown next at time $t+x$.
+This implies that throw-orders must be integers.
 
-Note that if an object is thrown at time $t$ and it has order $x$,
-then it will be thrown next at time $t+x$.
+Actually, we don't need to specify whether an object is thrown
+to the same hand or not, because that can be inferred from the throw order.
 
-It's not hard to observe that the order of a throw is odd
-iff it is thrown to a different hand.
-This is because if an object is thrown at time $t$ and has order $x$,
-then it will be thrown next at time $t+x$.
-Since hands throw alternately, an odd $x$ will change the throwing hand.
-Therefore, to specify a pattern, we only need to specify the order of every throw.
+**Lemma 1**: An object is thrown to the same hand iff the throw-order is even.
+
+*Proof*. Define the parity of an integer $y$ to be 1 if $y$ is odd and 0 if $y$ is even.
+Since hands throw alternately, the parity of the throwing time decides whether
+the object is thrown from the left hand or the right hand.
+Suppose an object is thrown at time $t$ with order $x$.
+Then it is thrown to the same hand iff the parities of $t$ and $t+x$ are the same,
+which happens iff $x$ is even. $\Box$
 
 **Assumption**: *patterns are periodic.*
 So, we only need to state the smallest repeating subsequence
