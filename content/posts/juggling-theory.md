@@ -536,6 +536,10 @@ and synchronous patterns have their own, somewhat different, siteswap notation.
     <img src="{static}/img/siteswaps/columns.gif" />
     <figcaption>Columns</figcaption>
 </figure>
+<figure>
+    <img src="{static}/img/siteswaps/6x4x.gif" />
+    <figcaption>5-ball half-shower</figcaption>
+</figure>
 </div>
 
 Further generalizations include multiplexing,
