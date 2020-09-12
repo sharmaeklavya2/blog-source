@@ -129,7 +129,7 @@ but the least I can do is make my pages keyboard-navigable.
 
 The [blog post by alligator.io](https://alligator.io/css/collapsible/#a-note-on-accessibility)
 says how to make a collapsible using only CSS, but to make it accessible they had to use JavaScript.
-I, however, have a way of doing it without JavaScript. Prepare to get enlightened!
+I, however, have a way of doing it without JavaScript.
 
 When navigating a web page using the tab key, certain HTML elements have the potential of receiving focus.
 This generally includes links (`<a>` tags) and form elements (`<input>` tags).
