@@ -523,7 +523,7 @@ All the math in this blog post can be made to work with throws of order 0 and 2.
 We assumed that in each tick, only one hand throws and hands throw alternately.
 This assumption is called asynchronicity.
 This is the most restrictive assumption that we have made.
-There are several nice patterns that don't fit in this model.
+There are many nice patterns that don't fit in this model.
 Fortunately, all of the theory we saw here can be ported to the synchronous model,
 and synchronous patterns have their own, somewhat different, siteswap notation.
 
