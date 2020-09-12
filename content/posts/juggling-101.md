@@ -1,11 +1,11 @@
 title: Juggling 101
 slug: juggling-101
-tags: Juggling, Tutorial
+tags: Juggling
 date: 2017-12-03
-summary: This is a tutorial for those who wish to learn juggling and have absolutely no prior experience. Here you will find links to resources that will help you learn your first juggling pattern and suggestions about what kind of balls to use, what posture you should have, etc.
+summary: This is an article for those who wish to learn juggling and have absolutely no prior experience. Here you will find links to resources that will help you learn your first juggling pattern and suggestions about what kind of balls to use, what posture you should have, etc.
 
 
-This is a tutorial for those who wish to learn juggling and have absolutely no prior experience.
+This is an article for those who wish to learn juggling and have absolutely no prior experience.
 Here you will find links to resources that will help you learn your first juggling pattern
 and suggestions about what kind of balls to use, what posture you should have, etc.
 
@@ -117,4 +117,4 @@ If you can ensure all of these, you'll make progress faster.
 ## Good luck
 
 That's all! Keep practicing regularly and you'll soon be able to juggle the cascade.
-I'll soon post another tutorial where I'll write about what you should learn next.
+Some day I'll post another article about what you should learn next.

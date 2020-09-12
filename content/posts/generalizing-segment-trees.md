@@ -1,6 +1,6 @@
 title: Generalizing Segment Trees
 slug: generalizing-segment-trees
-tags: CS, Algorithms, Math
+tags: Algorithms, Math
 date: 2019-07-20
 mathengine: mathjax
 ExtraCSS: css/collapsible.css, css/pygments-manni.css

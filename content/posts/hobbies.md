@@ -1,6 +1,6 @@
 title: Hobbies and Interests
 slug: hobbies
-tags: About Me
+tags: About me
 status: draft
 date: 2017-10-01
 modified: 2020-04-27

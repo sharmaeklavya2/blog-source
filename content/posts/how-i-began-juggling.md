@@ -1,6 +1,6 @@
 title: How I began Juggling
 slug: how-i-began-juggling
-tags: Juggling, About Me
+tags: Juggling, About me
 date: 2017-12-02
 
 
