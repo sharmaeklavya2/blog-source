@@ -295,9 +295,9 @@ and even if they do, we can use `a` for 10, `b` for 11, and so on.
 
 If we take an arbitrary sequence of integers, will it be the siteswap of some juggling pattern?
 As we'll see, the answer turns out to be "no". But why?
-At each tick, we just have to throw according to the throw-order.
-There's no complex decision-making involved here.
-What could go wrong? Try to think about it before reading further.
+Try to think about it before reading further.
+(Hint: Is `43` a valid siteswap? If yes, what does it look like?
+If no, why is it invalid?)
 
 Turns out that to throw a ball, there must be a ball in your hand.
 If your throw-orders at odd ticks are odd and throw-orders at even ticks are even,
