@@ -14,7 +14,7 @@
 /* Beautification CSS */
 #main .collapsible {
     max-width: 40em;
-    border: 1px solid black;
+    border: 1px solid;
     border-radius: 0.5rem;
     margin: 1rem 0;
 }
@@ -27,5 +27,5 @@
 }
 #main .collapsible-content {
     padding: 0.5rem;
-    border-top: 1px solid black;
+    border-top: 1px solid;
 }

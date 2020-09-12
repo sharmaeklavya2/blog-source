@@ -101,7 +101,7 @@ TextEdit preferences (`Cmd + ,`):
 * Disable 'add .txt extension to plain text files'. This is needed if you have to edit extensionless files.
 
 
-## <span style="background-color: #F9E79F"/>Terminal and Shell</span>
+## <span style="background-color: rgba(255, 204, 0, 0.3)"/>Terminal and Shell</span>
 
 If you're an aspiring programmer or power user, you should get to know the command-line.
 For this blog post, I'm going to assume that you know how to run commands from the shell and
@@ -214,7 +214,7 @@ To prevent that from happening, add `export HOMEBREW_NO_AUTO_UPDATE=1`
 to `~/.bash_profile` or `~/.env`.
 
 
-## <span style="background-color: #A9DFBF">Install command-line programs</span>
+## <span style="background-color: rgba(0, 255, 102, 0.3)">Install command-line programs</span>
 
 ### Java
 
@@ -255,7 +255,7 @@ These packages are useful for number-crunching and analytics:
     pip install numpy scipy pandas matplotlib seaborn
 
 
-## <span style="background-color: #AED6F1">Transfer backed-up data</span>
+## <span style="background-color: rgba(0, 136, 255, 0.3)">Transfer backed-up data</span>
 
 ### Reorganizing data and backup
 
@@ -322,7 +322,7 @@ I configured macOS to use my custom wallpapers instead of the system-default one
 and use my profile picture on the lock screen.
 
 
-## <span style="background-color: #F5B7B1">Customize Vim</span>
+## <span style="background-color: rgba(255, 0, 0, 0.3)">Customize Vim</span>
 
 ### Install newer Vim
 
@@ -386,7 +386,7 @@ Fix this by adding `export LC_ALL=en_US.UTF-8` to `~/.bash_profile` or `~/.env`
 ([brew forum post](https://discourse.brew.sh/t/failed-to-set-locale-category-lc-numeric-to-en-ru/5092)).
 
 
-## <span style="background-color: #D2B4DE">Install Nginx and serve website mirrors</span>
+## <span style="background-color: rgba(170, 0, 255, 0.3)">Install Nginx and serve website mirrors</span>
 
 I use [Nginx](https://nginx.org/en/) to serve static content.
 It's useful to access local websites that I downloaded or created.

@@ -4,7 +4,6 @@ tags: Juggling, Math
 status: draft
 date: 2020-08-30
 mathengine: mathjax
-ExtraCSS: css/pygments-manni.css
 summary: This post explains how math and computer science can be applied to juggling, a seemingly non-mathematical field. This gives us more insight into what really goes on in a juggling pattern and helps us automate the process of finding new juggling patterns. It is also used to give input to juggling animation software.
 
 

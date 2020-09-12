@@ -3,7 +3,7 @@ slug: generalizing-segment-trees
 tags: Algorithms, Math
 date: 2019-07-20
 mathengine: mathjax
-ExtraCSS: css/collapsible.css, css/pygments-manni.css
+ExtraCSS: css/collapsible.css, css/solarized.css
 summary: How I generalized segment trees by expressing range query outputs as elements of a monoid and update operations as functions.
 
 
