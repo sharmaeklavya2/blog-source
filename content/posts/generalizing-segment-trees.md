@@ -266,14 +266,14 @@ Let's call $h$ a 'node update function'.
 There's no straightforward algorithm for deriving $h$ from $g$, but it's usually easy.
 For example, for the MINMAX problem with $g(x) = x + 20$, $h(x) = (x_0 + 20, x_1 + 20)$.
 This is how we verify $h$:
-\begin{align*}
+$$\begin{aligned}
 & h(f(a))
 \\ &= h((\min(a), \max(a)))
 \\ &= (\min(a) + 20, \max(a) + 20)
 \\ &= (\min(a + 20), \max(a + 20))
 \\ &= (\min(g(a)), \max(g(a)))
 \\ &= f(g(a))
-\end{align*}
+\end{aligned}$$
 
 Here $a + 20$ is the array obtained by adding 20 to every element of $a$.
 
@@ -364,12 +364,12 @@ But the children already have a pending update of $d(1, 10)$.
 To resolve this, we will compose the functions, i.e. we'll find a single
 function which is equal to successively applying $d(1, 10)$ and then $d(3, 0)$.
 
-\begin{align*}
+$$\begin{aligned}
 & d(3, 0)(d(1, 10)(x))
 \\ &= d(3, 0)(x + 10)
 \\ &= 3(x + 10) = 3x + 30
 \\ &= d(3, 30)(x)
-\end{align*}
+\end{aligned}$$
 
 <figure>
 <img src="{static}/img/segtree-lazy-update/4.dot.svg" />

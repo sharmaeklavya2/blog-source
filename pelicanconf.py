@@ -52,6 +52,26 @@ MATH_JAX = {
         },
     },
 }
+KATEX = {
+    'prefix': 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist',
+    'style_integrity': 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
+    'katex_js_integrity': 'sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4',
+    'auto_render_js_integrity': 'sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa',
+    'defer_css': False,
+    'options': {
+        "delimiters": [
+            {"left": "$$", "right": "$$", "display": True},
+            {"left": "\\(", "right": "\\)", "display": False},
+        ],
+    },
+    'preload_fonts': [
+        'KaTeX_Main-Regular.woff2',
+        'KaTeX_Math-Italic.woff2',
+        'KaTeX_Size1-Regular.woff2',
+        'KaTeX_AMS-Regular.woff2',
+        'KaTeX_Typewriter-Regular.woff2',
+    ],
+}
 
 # Show tags but not categories and authors
 

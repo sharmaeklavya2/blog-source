@@ -346,7 +346,7 @@ and reduce it to a pure math problem.
 Let $a$ be a sequence of $n$ non-negative integers.
 We'll now define a function $f_a: \mathbb{Z} \mapsto \mathbb{Z},$
 that takes as input a *throw time* and outputs the corresponding *catch time*.
-\\[ f_a(x) = x + a[x \bmod n] \\]
+$$ f_a(x) = x + a[x \bmod n] $$
 Here $a[i] = a_i$ and $x \bmod n$ is the remainder obtained after dividing $x$ by $n$.
 
 Now we need to prove two things:
@@ -384,12 +384,12 @@ before you read my proof below.
 *Proof*. Assume $P(a)$ is false. Then $\exists i_1, i_2 \in \mathbb{Z}_n$ such that
 $i_1 \neq i_2$ and $b[i_1] = b[i_2]$.
 
-\begin{align}
+$$\begin{aligned}
 & b[i_1] = b[i_2]
 \\ &\implies (i_1 + a[i_1]) \bmod n = (i_2 + a[i_2]) \bmod n
 \\ &\implies \exists k \in \mathbb{Z}, i_1 + a[i_1] = i_2 + a[i_2] + kn
 \\ &\implies \exists k \in \mathbb{Z}, f_a(i_1) = f_a(i_2 + kn)
-\end{align}
+\end{aligned}$$
 This is a contradiction, since $f_a$ is one-to-one.
 Therefore, $P(a)$ is true. $\Box$
 
@@ -404,12 +404,12 @@ $f_a(u_1) = f_a(u_2)$ $\implies u_1 + a[i_1] = u_2 + a[i_2]$ $\implies u_1 = u_2
 This is a contradiction, since $u_1 \neq u_2$.
 
 *Case 2*: $i_1 \neq i_2$.
-\begin{align}
+$$\begin{aligned}
 & f_a(u_1) = f_a(u_2)
 \\ &\implies u_1 + a[i_1] = u_2 + a[i_2]
 \\ &\implies i_1 + a[i_1] \equiv i_2 + a[i_2] \pmod{n}
 \\ &\implies b[i_1] = b[i_2]
-\end{align}
+\end{aligned}$$
 Since $b$ contains a duplicate entry, it cannot be a permutation of $\mathbb{Z}_n$.
 This contradicts $P(a)$. Therefore, $f_a$ is one-to-one. $\Box$
 
