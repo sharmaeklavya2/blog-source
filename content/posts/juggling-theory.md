@@ -21,7 +21,7 @@ Towards the end, basics of graph theory and number theory are used.
 Juggling is a recreational activity where a person manipulates multiple objects
 (usually balls, rings or clubs) by repeatedly throwing and catching them.
 If you haven't seen professional juggling before, I highly recommend watching this
-<a href="https://youtu.be/wP8tbLBls_M?t=362" target="_blank">amazing performance by Anthony Gatto</a>.
+<a href="https://youtu.be/wP8tbLBls_M?t=362">amazing performance by Anthony Gatto</a>.
 
 There are different *patterns* in juggling.
 The animations below depict three well-known patterns:
@@ -61,7 +61,7 @@ Previously, only non-beginner jugglers could invent patterns using hit-and-trial
 Another advantage of siteswaps is that they can be used as input to
 programs that create animations of juggling patterns.
 In fact, this is exactly how I created all the animations in this post,
-using <a href="https://jugglinglab.org/" target="_blank">Juggling Lab</a>.
+using <a href="https://jugglinglab.org/">Juggling Lab</a>.
 
 ## The features of a juggling pattern
 
@@ -470,12 +470,12 @@ the average should be an integer.
 
 For the competitive programmers reading this who are looking for a challenge,
 you may want to solve the problem
-<a href="https://www.codechef.com/ICL2017/problems/ICL1703" target="_blank">ICL1703</a> on Codechef,
+<a href="https://www.codechef.com/ICL2017/problems/ICL1703">ICL1703</a> on Codechef,
 which is a generalization of the average theorem when multiplexing is allowed.
 I have abstracted out juggling terminology from this problem,
 so you don't need to know anything about juggling to understand it.
 I have also written an
-<a href="https://discuss.codechef.com/t/icl1703-editorial/14270" target="_blank">editorial</a> for it.
+<a href="https://discuss.codechef.com/t/icl1703-editorial/14270">editorial</a> for it.
 
 ### Special throw orders
 
@@ -587,8 +587,8 @@ and these patterns helped me learn to
 [juggle 3 balls in 1 hand]({filename}/posts/3-in-1.md).
 
 You can try inventing your own patterns, and then easily see what they look like using
-<a href="https://jugglinglab.org/" target="_blank">Juggling Lab</a>
-or its <a href="https://jugglinglab.org/html/animinfo.html" target="_blank">GIF server</a>.
+<a href="https://jugglinglab.org/">Juggling Lab</a>
+or its <a href="https://jugglinglab.org/html/animinfo.html">GIF server</a>.
 
 ## Want to learn how to juggle?
 
@@ -608,7 +608,7 @@ YouTube</a>.
 <!--<span class="cite-name">buhler-graham</span><br>-->
 <span class="cite-authors">Joe Buhler and Ron Graham.</span>
 <cite class="cite-title">
-<a href="http://www.math.ucsd.edu/~fan/ron/papers/04_05_juggling.pdf" target="_blank">
+<a href="http://www.math.ucsd.edu/~fan/ron/papers/04_05_juggling.pdf">
 Juggling patterns, passing, and posets.</a></cite><br>
 <span class="cite-source">In Mathematical Adventures for Students and Amateurs (2004): 99&ndash;116.</span>
 </li>
