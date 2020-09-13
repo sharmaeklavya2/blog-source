@@ -8,16 +8,12 @@ This repository contains:
 
 * My blog posts in markdown. These are located in the directory `content`.
 * Settings for Pelican in `pelicanconf.py`.
-* Pelican plugins for customizing the site-generation process.
-These are located in the directories `plugins` and `my_plugin`.
+* My pelican plugin for customizing the site-generation process, located in `plugins/my_plugin`.
 
 
 ### Generating a site from source
 
 * Install dependencies: `pip install -r requirements.txt`.
-
-* Clone the official [pelican-plugins repository](https://github.com/getpelican/pelican-plugins)
-  to `official-plugins` (or create a symlink).
 
 * Get a pelican theme (like [MFPelicanTheme](https://github.com/sharmaeklavya2/MFPelicanTheme)).
   Place the theme's directory at `theme` or create a symlink.

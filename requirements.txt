@@ -1,3 +1,5 @@
 pelican
 Markdown
 csscompressor
+pelican-sitemap
+pelican-render-math
