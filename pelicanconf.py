@@ -52,13 +52,14 @@ MATH_JAX = {
         },
     },
 }
-KATEX = {
+KATEX_COMMON = {
     'prefix': 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist',
     'style_integrity': 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
     'katex_js_integrity': 'sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4',
     'auto_render_js_integrity': 'sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa',
     'defer_css': False,
     'options': {
+        "output": "html",
         "delimiters": [
             {"left": "$$", "right": "$$", "display": True},
             {"left": "\\(", "right": "\\)", "display": False},
@@ -72,6 +73,8 @@ KATEX = {
         'KaTeX_Typewriter-Regular.woff2',
     ],
 }
+KATEX_PATH = "katex"
+KATEX = KATEX_COMMON['options']
 
 # Show tags but not categories and authors
 
