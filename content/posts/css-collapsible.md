@@ -3,6 +3,7 @@ slug: css-collapsible
 tags: Web dev, Tutorial
 ExtraCSS: css/collapsible.css, css/solarized.css
 date: 2018-11-01
+modified: 2020-09-13
 summary: A 'collapsible' is content whose visibility can be toggled by clicking something. However, users without a mouse should also be able to open the collapsed content. This article explains how to make a keyboard-navigable collapsible without using JavaScript.
 
 
@@ -20,6 +21,11 @@ A 'collapsible' is content whose visibility can be toggled. Here is an example:
 </div>
 
 In this article, we'll look at how to make one.
+
+**Important update**: This article talks about a hacky solution to
+make a collapsible without using JavaScript.
+I recently (September 2020) found a much simpler, cleaner and semantic solution
+using the [`<details>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) tag.
 
 [TOC]
 
