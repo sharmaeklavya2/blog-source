@@ -248,11 +248,11 @@ Now all python commands and applications you run will use this virtualenv.
 I usually install python packages only when required,
 but some are useful enough that I installed them in the beginning:
 
-    pip install ipython requests pipdeptree flake8 grip cleaver
+    pip install ipython requests jinja2 pipdeptree flake8 grip
 
-These packages are useful for number-crunching and analytics:
+These packages are useful for math and computation:
 
-    pip install numpy scipy pandas matplotlib seaborn
+    pip install numpy scipy pandas matplotlib seaborn sympy
 
 
 ## <span style="background-color: rgba(0, 136, 255, 0.3)">Transfer backed-up data</span>
