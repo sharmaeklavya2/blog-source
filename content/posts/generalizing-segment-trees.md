@@ -3,7 +3,7 @@ slug: generalizing-segment-trees
 tags: Algorithms, Math
 date: 2019-07-20
 mathengine: mathjax
-ExtraCSS: css/collapsible.css, css/solarized.css
+ExtraCSS: css/solarized.css
 summary: How I generalized segment trees by expressing range query outputs as elements of a monoid and update operations as functions.
 
 
@@ -508,29 +508,19 @@ You will be asked to perform $q$ operations. Each operation will be one of the f
 The problem of coming up with a suitable monoid and
 a suitable node update function family is left as an exercise.
 
-<div class="collapsible">
-    <label for="checkbox0" class="collapsor-lbl"> Minor hint </label>
-    <div class="focus-capturer" tabindex="0">
-        <input id="checkbox0" class="collapsor" type="checkbox" />
-        <div class="collapsible-content">
-            <p>See the proof of correctness of Kadane's algorithm.
-            Use divide-and-conquer instead of an incremental approach.</p>
-        </div>
-    </div>
-</div>
+<details>
+    <summary>Minor hint</summary>
+    <p>See the proof of correctness of Kadane's algorithm.
+    Use divide-and-conquer instead of an incremental approach.</p>
+</details>
 
-<div class="collapsible">
-    <label for="checkbox1" class="collapsor-lbl"> Major hint </label>
-    <div class="focus-capturer" tabindex="0">
-        <input id="checkbox1" class="collapsor" type="checkbox" />
-        <div class="collapsible-content">
-            <p>Each segment tree node stores 4 values for its segment:</p>
-            <ol>
-                <li>Sum of the elements of the segment</li>
-                <li>Largest prefix sum of the segment</li>
-                <li>Largest suffix sum of the segment</li>
-                <li>Largest subarray sum of the segment</li>
-            </ol>
-        </div>
-    </div>
-</div>
+<details>
+    <summary>Major hint</summary>
+    <p>Each segment tree node stores 4 values for its segment:</p>
+    <ol>
+        <li>Sum of the elements of the segment</li>
+        <li>Largest prefix sum of the segment</li>
+        <li>Largest suffix sum of the segment</li>
+        <li>Largest subarray sum of the segment</li>
+    </ol>
+</details>
