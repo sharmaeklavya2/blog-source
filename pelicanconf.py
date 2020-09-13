@@ -101,3 +101,14 @@ FEED_ALL_ATOM = 'feed/all.atom.xml'
 FEED_ALL_RSS = 'feed/all.rss.xml'
 TAG_FEED_ATOM = 'feed/{slug}.atom.xml'
 TAG_FEED_RSS = 'feed/{slug}.rss.xml'
+
+# Prevent logging useless warnings
+
+def filter_dotsvg(record):
+    msg_match = record.msg == 'Cannot get modification stamp for %s\n\t%s'
+    ext_match = record.args[0].endswith('.dot.svg')
+    return 0 if msg_match and ext_match else 1
+
+import logging
+cache_logger = logging.getLogger('pelican.cache')
+cache_logger.addFilter(filter_dotsvg)
