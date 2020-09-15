@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 from __future__ import unicode_literals
-
 import os
+import logging
 
 AUTHOR = 'Eklavya Sharma'
 SITENAME = "Eklavya's Blog"
@@ -54,9 +54,9 @@ MATH_JAX = {
 }
 KATEX_COMMON = {
     'prefix': 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist',
-    'style_integrity': 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
-    'katex_js_integrity': 'sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4',
-    'auto_render_js_integrity': 'sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa',
+    'style_integrity': 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',  # noqa
+    'katex_js_integrity': 'sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4',  # noqa
+    'auto_render_js_integrity': 'sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa',  # noqa
     'defer_css': False,
     'options': {
         "output": "html",
@@ -105,6 +105,7 @@ FEED_ALL_RSS = 'feed/all.rss.xml'
 TAG_FEED_ATOM = 'feed/{slug}.atom.xml'
 TAG_FEED_RSS = 'feed/{slug}.rss.xml'
 
+
 # Prevent logging useless warnings
 
 def filter_dotsvg(record):
@@ -112,6 +113,6 @@ def filter_dotsvg(record):
     ext_match = record.args[0].endswith('.dot.svg')
     return 0 if msg_match and ext_match else 1
 
-import logging
+
 cache_logger = logging.getLogger('pelican.cache')
 cache_logger.addFilter(filter_dotsvg)
