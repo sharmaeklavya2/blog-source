@@ -25,7 +25,7 @@ else:
 
 PLUGIN_PATHS = ['plugins', 'official-plugins']
 # Order is important: plugins in `plugins` override plugins in `official-plugins`.
-PLUGINS = ['sitemap', 'my_plugin', 'render_math']
+PLUGINS = ['sitemap', 'my_plugin', 'pelican_katex']
 
 SITEMAP = {'format': 'txt'}
 
@@ -53,8 +53,10 @@ MATH_JAX = {
         },
     },
 }
+KATEX_VERSION = "0.12.0"
 KATEX_COMMON = {
-    'prefix': 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist',
+    'version': KATEX_VERSION,
+    'prefix': 'https://cdn.jsdelivr.net/npm/katex@' + KATEX_VERSION + '/dist',
     'style_integrity': 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',  # noqa
     'katex_js_integrity': 'sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4',  # noqa
     'auto_render_js_integrity': 'sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa',  # noqa

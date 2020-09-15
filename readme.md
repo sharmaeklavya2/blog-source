@@ -13,7 +13,10 @@ This repository contains:
 
 ### Generating a site from source
 
-* Install dependencies: `pip install -r requirements.txt`.
+* Install dependencies:
+
+    pip install -r requirements.txt
+    npm install
 
 * Get a pelican theme (like [MFPelicanTheme](https://github.com/sharmaeklavya2/MFPelicanTheme)).
   Place the theme's directory at `theme` or create a symlink.
