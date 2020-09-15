@@ -38,6 +38,7 @@ MARKDOWN = {
             'permalink': True,
             'toc_depth': "2-3",
         },
+        'md_in_html': {},
     }
 }
 

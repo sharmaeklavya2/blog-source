@@ -317,11 +317,11 @@ We'll update the values at `2..3` and `4..6` by applying $h$ to their values.
 We'll then note down that their children are yet to be updated with $h = d(1, 20)$.
 We'll also update all the ancestors of the affected nodes by recomputing their values.
 
-<figure>
+<figure markdown="span">
 <img src="{static}/img/segtree-lazy-update/1.dot.svg" />
 <figcaption>
 Segment tree after update
-<span class="math">\(l=2, r=6, g(x) = x + 20\)</span>.<br />
+$l=2, r=6, g(x) = x + 20$.<br/>
 Blue nodes were updated. Red nodes were not updated but they have a pending update.
 </figcaption>
 </figure>
@@ -336,10 +336,10 @@ and mark its children as pending for updation.
 Since the pending update moved from `4..5` to its child,
 we say that the pending update 'propagated'.
 
-<figure>
+<figure markdown="span">
 <img src="{static}/img/segtree-lazy-update/2.dot.svg" />
 <figcaption>
-Segment tree after the query <span class="math">\(l=2, r=5\)</span>.<br />
+Segment tree after the query $l=2, r=5$.<br/>
 The value returned by the query is written beside each node.
 </figcaption>
 </figure>
@@ -349,11 +349,11 @@ The value returned by the query is written beside each node.
 Suppose we get the update $l=0, r=6, g(x) = x + 10$.
 We will update the root node and add $d(1, 10)$ to the children.
 
-<figure>
+<figure markdown="span">
 <img src="{static}/img/segtree-lazy-update/3.dot.svg" />
 <figcaption>
 Segment tree after update
-<span class="math">\(l=0, r=6, g(x) = x + 10\)</span>.<br />
+$l=0, r=6, g(x) = x + 10$.<br/>
 Blue nodes were updated. Red nodes were not updated but they have a pending update.
 </figcaption>
 </figure>
@@ -371,11 +371,11 @@ $$\begin{aligned}
 \\ &= d(3, 30)(x)
 \end{aligned}$$
 
-<figure>
+<figure markdown="span">
 <img src="{static}/img/segtree-lazy-update/4.dot.svg" />
 <figcaption>
 Segment tree after update
-<span class="math">\(l=0, r=6, g(x) = 3x\)</span>.<br />
+$l=0, r=6, g(x) = 3x$.<br/>
 Blue nodes were updated. Red nodes were not updated but they have a pending update.
 </figcaption>
 </figure>
