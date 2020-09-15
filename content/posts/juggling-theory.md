@@ -29,15 +29,15 @@ cascade, shower and fountain.
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/3.gif" />
+    <img src="{static}/img/siteswaps/3.gif" alt="cascade juggling pattern" />
     <figcaption>Cascade</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/51.gif" />
+    <img src="{static}/img/siteswaps/51.gif" alt="shower juggling pattern" />
     <figcaption>Shower</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/4.gif" />
+    <img src="{static}/img/siteswaps/4.gif" alt="fountain juggling pattern" />
     <figcaption>Fountain</figcaption>
 </figure>
 </div>
@@ -87,11 +87,11 @@ Every pattern can be made slower by throwing the objects higher.
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/3.gif" />
+    <img src="{static}/img/siteswaps/3.gif" alt="cascade juggling pattern" />
     <figcaption>Cascade</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/522.gif" />
+    <img src="{static}/img/siteswaps/522.gif" alt="cascade juggled slowly" />
     <figcaption>Slow cascade</figcaption>
 </figure>
 </div>
@@ -110,11 +110,11 @@ and using a small dwell is called *hot-potato style*.
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/522.gif" />
+    <img src="{static}/img/siteswaps/522.gif" alt="cascade juggling in lazy style" />
     <figcaption>Lazy cascade</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/900.gif" />
+    <img src="{static}/img/siteswaps/900.gif" alt="cascade juggling in hot-potato style" />
     <figcaption>Hot-potato cascade</figcaption>
 </figure>
 </div>
@@ -130,15 +130,15 @@ is the mirror image of the coordinate system for the left hand.)
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/3.gif" />
+    <img src="{static}/img/siteswaps/3.gif" alt="cascade juggling pattern" />
     <figcaption>Cascade</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/3-cross.gif" />
+    <img src="{static}/img/siteswaps/3-cross.gif" alt="crossed-arm cascade juggling pattern" />
     <figcaption>Crossed-arm cascade</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/3-out.gif" />
+    <img src="{static}/img/siteswaps/3-out.gif" alt="reverse cascade juggling pattern" />
     <figcaption>Reverse cascade</figcaption>
 </figure>
 </div>
@@ -154,15 +154,15 @@ of the cascade, that don't really look like the cascade.
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/3-mills.gif" />
+    <img src="{static}/img/siteswaps/3-mills.gif" alt="mills-mess juggling pattern" />
     <figcaption>Mills mess</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/3-wind.gif" />
+    <img src="{static}/img/siteswaps/3-wind.gif" alt="windmill juggling pattern" />
     <figcaption>Windmill</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/3-cherry.gif" />
+    <img src="{static}/img/siteswaps/3-cherry.gif" alt="cherry-picker juggling pattern" />
     <figcaption>Cherry picker</figcaption>
 </figure>
 </div>
@@ -172,19 +172,19 @@ As an example, here are some hand positions applied to the fountain pattern:
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/4.gif" />
+    <img src="{static}/img/siteswaps/4.gif" alt="4 juggling pattern" />
     <figcaption>Fountain</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/4-out.gif" />
+    <img src="{static}/img/siteswaps/4-out.gif" alt="4-out juggling pattern" />
     <figcaption>Reverse fountain</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/4-mills.gif" />
+    <img src="{static}/img/siteswaps/4-mills.gif" alt="4-mills juggling pattern" />
     <figcaption>Fountain mills mess</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/4-wind.gif" />
+    <img src="{static}/img/siteswaps/4-wind.gif" alt="4-wind juggling pattern" />
     <figcaption>Fountain windmill</figcaption>
 </figure>
 </div>
@@ -247,7 +247,7 @@ I'll show some examples so that you get the hang of it.
 Let's start with the simplest pattern: cascade.
 
 <figure>
-    <img src="{static}/img/siteswaps/3-analyze.gif" />
+    <img src="{static}/img/siteswaps/3-analyze.gif" alt="3-analyze juggling pattern" />
     <figcaption>Cascade</figcaption>
 </figure>
 
@@ -266,11 +266,11 @@ It's identified solely by its siteswap.
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/345.gif" />
+    <img src="{static}/img/siteswaps/345.gif" alt="345 juggling pattern" />
     <figcaption>Normal</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/345-analyze.gif" />
+    <img src="{static}/img/siteswaps/345-analyze.gif" alt="345-analyze juggling pattern" />
     <figcaption>Slo-mo</figcaption>
 </figure>
 </div>
@@ -488,15 +488,16 @@ Here are some examples:
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/50505.gif" />
+    <img src="{static}/img/siteswaps/50505.gif" alt="snake juggling pattern" />
     <figcaption>Snake (50505)</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/330.gif" />
+    <img src="{static}/img/siteswaps/330.gif"
+        alt="cascade juggling pattern with 1 ball mising; siteswap 330" />
     <figcaption>Cascade with 1 ball <br>missing (330)</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/40.gif" />
+    <img src="{static}/img/siteswaps/40.gif" alt="juggling 2 balls in 1 hand" />
     <figcaption>2-in-1 (40)</figcaption>
 </figure>
 </div>
@@ -506,11 +507,11 @@ This can be achieved via order-2 throws (think why it makes sense).
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/552.gif" />
+    <img src="{static}/img/siteswaps/552.gif" alt="552 juggling pattern" />
     <figcaption>552</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/42.gif" />
+    <img src="{static}/img/siteswaps/42.gif" alt="juggling 2 balls in one hand" />
     <figcaption>2-in-1 (42)</figcaption>
 </figure>
 </div>
@@ -528,15 +529,15 @@ and synchronous patterns have their own, somewhat different, siteswap notation.
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/box.gif" />
+    <img src="{static}/img/siteswaps/box.gif" alt="box juggling pattern" />
     <figcaption>Box</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/columns.gif" />
+    <img src="{static}/img/siteswaps/columns.gif" alt="columns juggling pattern" />
     <figcaption>Columns</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/6x4x.gif" />
+    <img src="{static}/img/siteswaps/6x4x.gif" alt="5-ball half-shower juggling pattern" />
     <figcaption>5-ball half-shower</figcaption>
 </figure>
 </div>
@@ -548,11 +549,12 @@ Siteswap notation and the associated theory extends to these too.
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/siteswaps/multiplex-shower.gif" />
+    <img src="{static}/img/siteswaps/multiplex-shower.gif"
+        alt="multiplex-shower juggling pattern" />
     <figcaption>Multiplexed shower</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/siteswaps/3-pass.gif" />
+    <img src="{static}/img/siteswaps/3-pass.gif" alt="2-count passing cascade with 2 jugglers" />
     <figcaption>Passing cascade</figcaption>
 </figure>
 </div>
@@ -565,7 +567,7 @@ Each siteswap output by this process corresponds to a valid juggling pattern.
 This is great, and rumors say that `441` was invented like this.
 
 <figure>
-    <img src="{static}/img/siteswaps/441.gif" />
+    <img src="{static}/img/siteswaps/441.gif" alt="441 juggling pattern" />
     <figcaption>Half box (441)</figcaption>
 </figure>
 
