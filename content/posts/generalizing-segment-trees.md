@@ -121,7 +121,7 @@ To be able to solve a problem using segment trees,
 the query function should follow a property called 'substructure'.
 This means that we can compute $f(a)$ using this procedure:
 
-1.  Choose any prefix $b$ of $a$. Let $a = b + c$ ($+$ denotes array concatenation).
+1.  Choose any prefix $b$ of $a$. Let $a = b + c$, where $+$ denotes array concatenation.
 2.  Compute $f(b)$ and $f(c)$.
 3.  Combine $f(b)$ and $f(c)$ to get $f(a)$.
 
@@ -150,8 +150,8 @@ $\circ$ is a function from $S \times S$ to $S$, where $S$ is the output type of 
 Depending on which prefix of $a$ we choose, there can be multiple ways of computing $f(a)$.
 For example, there are 2 ways of computing $f([x, y, z])$:
 
-* choosing $[x]$ as prefix: $f([x, y, z]) = f([x]) \circ f([y, z])$ $ = f([x]) \circ (f([y]) \circ f([z]))$
-* choosing $[x, y]$ as prefix: $f([x, y, z]) = f([x, y]) \circ f([z])$ $ = (f([x]) \circ f([y])) \circ f([z])$
+* choosing $[x]$ as prefix: $f([x, y, z]) = f([x]) \circ f([y, z])$ $= f([x]) \circ (f([y]) \circ f([z]))$
+* choosing $[x, y]$ as prefix: $f([x, y, z]) = f([x, y]) \circ f([z])$ $= (f([x]) \circ f([y])) \circ f([z])$
 
 Since the output should not depend on the choice of prefix,
 $\circ$ should be associative over the range of $f$.
@@ -164,7 +164,7 @@ Let's define $e = f([\,])$.
 Since $f(a) = f(a + [\,]) = f(a) \circ e$ and $f(a) = f([\,] + a) = e \circ f(a)$,
 we call $e$ the 'identity element' of $S$ for $\circ$.
 
-$f$ may not be defined for an empty array ($f(a) = a[0]$ is an example).
+$f$ may not be defined for an empty array; for example $f(a) = a[0]$.
 When this happens, we can still define $f([\,]) = e$.
 $e$ need not have any real significance; it is just a symbol
 (this is similar to how $\sqrt{-1} = i$).

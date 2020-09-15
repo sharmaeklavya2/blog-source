@@ -346,7 +346,7 @@ and reduce it to a pure math problem.
 Let $a$ be a sequence of $n$ non-negative integers.
 We'll now define a function $f_a: \mathbb{Z} \mapsto \mathbb{Z},$
 that takes as input a *throw time* and outputs the corresponding *catch time*.
-$$ f_a(x) = x + a[x \bmod n] $$
+$$f_a(x) = x + a[x \bmod n]$$
 Here $a[i] = a_i$ and $x \bmod n$ is the remainder obtained after dividing $x$ by $n$.
 
 Now we need to prove two things:
@@ -362,8 +362,8 @@ The first conditions says that $f_a$ should be onto,
 and the second condition says that $f_a$ should be one-to-one.
 Therefore, we get that $a$ is a valid siteswap iff $f_a$ is a bijection.
 
-Define the predicate $P$ as:<br>
-*$P(a)$: For $b_i = (i + a[i]) \bmod n,$ $b$ is a permutation of $\mathbb{Z}_n$.*<br>
+Define the predicate $P$ as:<br/><em>
+$P(a)$: For $b_i = (i + a[i]) \bmod n,$ $b$ is a permutation of $\mathbb{Z}_n$.</em><br/>
 Now the permutation theorem reduces to this lemma:
 
 **Lemma 2**: Let $a$ be a sequence of $n$ non-negative integers.
