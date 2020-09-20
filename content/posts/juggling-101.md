@@ -114,7 +114,10 @@ If you can ensure all of these, you'll make progress faster.
 * Avoid looking funny (for example, some people open their mouth while juggling high patterns).
 
 
-## Good luck
+## Practice
 
 That's all! Keep practicing regularly and you'll soon be able to juggle the cascade.
+
 Some day I'll post another article about what you should learn next.
+I'll post it sooner if you [let me know](https://github.com/sharmaeklavya2/blog/issues)
+that you've learned the cascade and are hungry for more.
