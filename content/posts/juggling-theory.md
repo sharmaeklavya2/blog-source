@@ -447,13 +447,14 @@ is equal to $n$ and each vertex in $S$ has in-degree exactly 1.
 
 Let $S = \{u_0, u_1, \ldots, u_{n-1}\},$ where $u_i = rn + i$.
 Let $v_i = f_a(u_i) = u_i + a[i]$.
-Suppose the major label of $v_i$ is $s$.
-Then the major label of $v_i - (s-r)n$ is $r$, so $v_i \in S$.
-Let $w_i = u_i - (s-r)n$. Then the minor label of $w_i$ is $i$.
+Suppose the major label of $v_i$ is $s_i$.
+Then the major label of $v_i' = v_i - (s_i-r)n$ is $r$, so $v_i' \in S$.
+Let $u_i' = u_i - (s_i-r)n$. Then the minor label of $u_i'$ is $i$.
 
-Since $(u_i, v_i)$ is an edge of $G_a$, $(w_i, v_i - (s-r)n)$ is also an edge in $G_a$.
-This edge enters $S$. Also, the integers $w_0, w_1, \ldots, w_{n-1}$ are all distinct,
-since $w_i$'s minor label is $i$.
+Since $(u_i, v_i)$ is an edge of $G_a$, $(u_i', v_i')$ is also an edge in $G_a$
+(as per the second crucial idea).
+This edge enters $S$. Also, the integers $u_0', u_1', \ldots, u_{n-1}'$ are all distinct,
+since the minor label of $u_i'$ is $i$.
 Therefore, at least $n$ edges enter $S$. $\Box$
 
 ## Other things about siteswaps
