@@ -34,7 +34,22 @@ def post_process_theme_staticfiles(pelican):
     print('post-processed {}/{} theme static files'.format(count, len(fnames)))
 
 
+def is_external_url(url):
+    return url.startswith('http:') or url.startswith('https:')
+
+
+def remove_external_articles(article_generator, writer):
+    for article in article_generator.articles:
+        if is_external_url(article.metadata.get('url', '')):
+            ofpath = pjoin(article_generator.output_path, article.save_as)
+            try:
+                os.remove(ofpath)
+            except FileNotFoundError:
+                pass
+
+
 def register():
     signals.static_generator_finalized.connect(inspect_static_generator)
     signals.finalized.connect(post_process_staticfiles)
     signals.finalized.connect(post_process_theme_staticfiles)
+    signals.article_writer_finalized.connect(remove_external_articles)
