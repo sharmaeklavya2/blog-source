@@ -1,10 +1,10 @@
-title: The role of math in juggling
-slug: juggling-theory
+title: The math behind juggling
+slug: juggling-theory-orig
 tags: Juggling, Math
 status: draft
 date: 2020-08-30
 mathengine: katex-full
-summary: This post explains how math and computer science can be applied to juggling, a seemingly non-mathematical field. This gives us more insight into what really goes on in a juggling pattern and helps us automate the process of finding new juggling patterns. It is also used to give input to juggling animation software.
+summary: This post explains how math can be applied to juggling, a seemingly non-mathematical area. This gives us more insight into what really goes on in a juggling pattern and helps us automate the process of finding new juggling patterns.
 
 
 This post explains the surprising link between math and juggling.
@@ -16,7 +16,7 @@ Towards the end, basics of graph theory and number theory are used.
 
 [TOC]
 
-## What is Juggling?
+## What is juggling?
 
 Juggling is a recreational activity where a person manipulates multiple objects
 (usually balls, rings or clubs) by repeatedly throwing and catching them.
