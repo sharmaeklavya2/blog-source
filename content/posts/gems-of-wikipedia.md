@@ -32,4 +32,10 @@ Del Norte Titan</a>:<br/>A huge redwood tree that is<br/>94 m tall and 7.2 m wid
 <figcaption><a href="https://en.wikipedia.org/wiki/Fire_whirl">
 Fire whirl</a>:<br/>Whirlwind/tornado formed by fire.</figcaption>
 </figure>
+<figure>
+<figcaption><a href="https://en.wikipedia.org/wiki/List_of_unusual_deaths">
+List of unusual deaths</a>:<br/>
+unique or extremely rare circumstances of death recorded throughout history.
+</figcaption>
+</figure>
 </div>
