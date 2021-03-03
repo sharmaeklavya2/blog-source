@@ -41,10 +41,11 @@ I searched the internet for animation programs, but the results didn't seem rele
 Specifically, most of them seemed to target two use cases:
 artistic creations (like cartoons) and simple slideshow-like animations.
 It's possible that I overlooked or misjudged some of these tools.
-My sister, who is an artist, recommended
+My sister, who is an artist, said that what I'm trying to do is called
+'[motion graphics](https://en.wikipedia.org/wiki/Motion_graphics)'.
+She, and many other websites, recommended
 [Adobe After Effects](https://www.adobe.com/products/aftereffects.html),
 but that is non-free and very expensive.
-I was also afraid that some of these tools may have a very steep learning curve.
 
 Then an idea struck me: why not ask Derek Muller (the creator of Veritasium)?
 The kind of animations his videos have are very similar to what I want to make.
@@ -57,7 +58,7 @@ I was pleasantly surprised that he replied so quickly;
 I thought he would be too busy for that.
 But I can't hire people, so the reply didn't help much.
 
-## The solution
+## The solution I found
 
 Because of some front-end web development work that I did
 (check out my [github repos](https://github.com/sharmaeklavya2?tab=repositories)
@@ -66,15 +67,23 @@ labeled 'web' for examples), I could recall that we can
 This technique seems to be useful for GIF-like animations,
 but I think they can be used to create longer animations too.
 
-I created the following short animation to experiment
-(you can click the image and then
+I created the following short animations to experiment
+(you can click the images and then
 [view the source code](https://www.computerhope.com/issues/ch000746.htm)):
 
 <figure>
 <a href="{static}/img/snake.svg">
-<img class="nofilter" src="{static}/img/snake.svg" alt="Red balls bouncing in a box"/>
+<img class="nofilter" src="{static}/img/snake.svg" alt="A trail of red balls bouncing in a box"/>
 </a>
-<figcaption>Simple animation using SVG</figcaption>
+<figcaption>A trail of red balls bouncing in a box.</figcaption>
+</figure>
+
+<figure>
+<a href="{static}/img/bp1.svg">
+<img class="no-dark" src="{static}/img/bp1.svg" alt="Animation of 1D bin packing"/>
+</a>
+<figcaption>Animation of 1D
+<a href="https://en.wikipedia.org/wiki/Bin_packing_problem">bin packing</a>.</figcaption>
 </figure>
 
 ### SVG is vector

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="640" height="480" viewBox="0 0 640 480">
+<!-- generated from https://gist.github.com/sharmaeklavya2/ad90d692a6ad2fcf6a77da280321ddf8 -->
+<!-- binXMar = 80.0, binYMar = 80.0, itemXMar = 30.0 -->
+<style>
+svg {
+    --start: 0s;
+    --play-state: running;
+    border: 1px solid black;
+}
+rect {
+    stroke: black;
+}
+.bin {
+    fill: none;
+    stroke-width: 2px;
+}
+.item > rect {
+    stroke-width: 1px;
+}
+text {
+    font-size: 14px;
+    font-style: sans-serif;
+}
+#wrapper, .item {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: var(--play-state);
+    animation-delay: calc(0s - var(--start));
+}
+#wrapper {animation-name: zoom-and-slide;}
+@keyframes zoom-and-slide {
+    0%, 40%, 85%, 100% {transform: none;}
+    45%, 60% {transform: translate(0, -480px) scale(2);}
+    65%, 80% {transform: translate(-640px, -480px) scale(2);}
+}
+#item-0 {animation-name: pack-0;}
+@keyframes pack-0 {
+    0%, 15%, 100% {transform: translate(30.0px, 80.0px);}
+    25%, 95% {transform: translate(80.0px, 280.0px);}
+}
+#item-1 {animation-name: pack-1;}
+@keyframes pack-1 {
+    0%, 15%, 100% {transform: translate(160.0px, 80.0px);}
+    25%, 95% {transform: translate(360.0px, 280.0px);}
+}
+#item-2 {animation-name: pack-2;}
+@keyframes pack-2 {
+    0%, 15%, 100% {transform: translate(270.0px, 80.0px);}
+    25%, 95% {transform: translate(180.0px, 280.0px);}
+}
+#item-3 {animation-name: pack-3;}
+@keyframes pack-3 {
+    0%, 15%, 100% {transform: translate(360.0px, 80.0px);}
+    25%, 95% {transform: translate(440.0px, 280.0px);}
+}
+#item-4 {animation-name: pack-4;}
+@keyframes pack-4 {
+    0%, 15%, 100% {transform: translate(450.0px, 80.0px);}
+    25%, 95% {transform: translate(240.0px, 280.0px);}
+}
+#item-5 {animation-name: pack-5;}
+@keyframes pack-5 {
+    0%, 15%, 100% {transform: translate(520.0px, 80.0px);}
+    25%, 95% {transform: translate(500.0px, 280.0px);}
+}
+#item-6 {animation-name: pack-6;}
+@keyframes pack-6 {
+    0%, 15%, 100% {transform: translate(590.0px, 80.0px);}
+    25%, 95% {transform: translate(540.0px, 280.0px);}
+}
+</style>
+<g id="wrapper">
+<rect class="bin" width="200" height="120"
+    x="80.0" y="280.0"/>
+<rect class="bin" width="200" height="120"
+    x="360.0" y="280.0"/>
+<g class="item" id="item-0">
+    <rect width="100.0" height="120" x="0" y="0"
+        fill="hsl(0, 75%, 70%)"/>
+    <text x="50.0" y="60.0"
+        text-anchor="middle" dominant-baseline="central">0.5</text>
+</g>
+<g class="item" id="item-1">
+    <rect width="80.0" height="120" x="0" y="0"
+        fill="hsl(20, 75%, 70%)"/>
+    <text x="40.0" y="60.0"
+        text-anchor="middle" dominant-baseline="central">0.4</text>
+</g>
+<g class="item" id="item-2">
+    <rect width="60.0" height="120" x="0" y="0"
+        fill="hsl(40, 75%, 70%)"/>
+    <text x="30.0" y="60.0"
+        text-anchor="middle" dominant-baseline="central">0.3</text>
+</g>
+<g class="item" id="item-3">
+    <rect width="60.0" height="120" x="0" y="0"
+        fill="hsl(60, 75%, 70%)"/>
+    <text x="30.0" y="60.0"
+        text-anchor="middle" dominant-baseline="central">0.3</text>
+</g>
+<g class="item" id="item-4">
+    <rect width="40.0" height="120" x="0" y="0"
+        fill="hsl(80, 75%, 70%)"/>
+    <text x="20.0" y="60.0"
+        text-anchor="middle" dominant-baseline="central">0.2</text>
+</g>
+<g class="item" id="item-5">
+    <rect width="40.0" height="120" x="0" y="0"
+        fill="hsl(100, 75%, 70%)"/>
+    <text x="20.0" y="60.0"
+        text-anchor="middle" dominant-baseline="central">0.2</text>
+</g>
+<g class="item" id="item-6">
+    <rect width="20.0" height="120" x="0" y="0"
+        fill="hsl(120, 75%, 70%)"/>
+    <text x="10.0" y="60.0"
+        text-anchor="middle" dominant-baseline="central">0.1</text>
+</g>
+</g>
+</svg>
