@@ -417,3 +417,19 @@ I had backed up compressed archives of my websites to my external hard disk.
 I copied the websites from there, uncompressed them, and placed them in `/usr/local/var/www`.
 
 You can put symlinks in `/usr/local/var/www`, but `/usr/local/var/www` itself cannot be a symlink.
+
+### Security
+
+Anyone on your network can see your files in `/usr/local/var/www`,
+so you should be careful about what you put there to preserve your privacy.
+
+You can [set password authentication for Nginx](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04),
+but if someone is eavesdropping, they can
+[easily recover your password](https://en.wikipedia.org/wiki/Basic_access_authentication#Security).
+
+If you want to prevent others on your network from accessing the http server,
+you can restrict Nginx to work on `localhost` only.
+To do this, go to `/usr/local/etc/nginx/nginx.conf` and
+change `listen 8080;` to `listen localhost:8080;`.
+This is somewhat secure, but not secure against a talented attacker
+(see <https://security.stackexchange.com/q/86773>).
