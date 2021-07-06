@@ -7,7 +7,7 @@ summary:
 
 I had a weird 2-part dream today. Here's what happened in them.
 
-# Part 1
+## Part 1
 
 I had to get
 [Vladimir Putin](https://en.wikipedia.org/wiki/Vladimir_Putin)'s signature
@@ -22,7 +22,7 @@ I troubleshooted the printer while Putin patiently waited behind me.
 Disclaimer: I'm not a Putin fan. I'm not interested in or aware of Russian politics.
 Then why was Putin in my dreams? I have no idea.
 
-# Part 2
+## Part 2
 
 I was attending a lecture at a university.
 There was a loud noise outside, so all the students rushed out to see what's going on.
@@ -41,5 +41,5 @@ The advisor cries, "What will I do with money? You took away my best PhD student
 I may have to restart my experiments from scratch. How will I get
 [tenure](https://en.wikipedia.org/wiki/Academic_tenure) now?"
 
-Disclaimer: I'm not a religious person. Then why was Saraswati in my dreams?
-I have no idea.
+Disclaimer: I'm not a religious person or a Frozen fan.
+Then why were Saraswati and Elsa in my dreams? I have no idea.
