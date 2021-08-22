@@ -12,8 +12,10 @@ so these will be the topics for most of my posts.
 I'll mostly use this blog to publish tutorials and write about interesting life experiences.
 
 I generated this website using [Pelican](http://docs.getpelican.com)
-because my familiarity with python is enough for me to modify or extend Pelican in any way I like.
-I wrote the theme for this website myself ([github repo](https://github.com/sharmaeklavya2/MFPelicanTheme)).
+because I'm fluent in Python, and Pelican is written in Python,
+so I can modify or extend Pelican to suit my needs.
+I wrote the theme for this website myself
+([github repo](https://github.com/sharmaeklavya2/MFPelicanTheme)).
 
 I currently don't have a good system for accepting comments.
 Either contact me personally (if you can) or
