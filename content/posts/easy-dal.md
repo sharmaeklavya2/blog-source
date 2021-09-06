@@ -41,6 +41,9 @@ These are some of the popular ones
 * Black urad
 * Chana
 
+All of these taste different, but the recipe for cooking them is almost the same,
+so you can get variety without having to learn much cooking.
+
 You can find bags of these seeds in Indian stores.
 In the US, you'll find 2-pound and 4-pound bags (0.91 kg and 1.81 kg).
 
