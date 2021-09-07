@@ -32,14 +32,14 @@ because only some species of seeds taste good as dal.
 These are some of the popular ones
 (these are Indian names; I don't know what they're called in English):
 
-* Toor (a.k.a. Arhar)
-* Yellow moong (a.k.a. yellow mung)
-* Green moong (a.k.a. green mung)
-* Yellow/Orange masoor
-* Black masoor
-* White/Yellow urad
-* Black urad
-* Chana
+1.  Toor (a.k.a. Arhar)
+2.  Yellow moong (a.k.a. yellow mung)
+3.  Green moong (a.k.a. green mung)
+4.  Yellow/Orange masoor
+5.  Black masoor
+6.  White/Yellow urad
+7.  Black urad
+8.  Chana
 
 All of these taste different, but the recipe for cooking them is almost the same,
 so you can get variety without having to learn much cooking.
@@ -90,9 +90,9 @@ more than 100&deg;C (212&deg;F), so dal will cook better and faster.
 The amount of water you need depends on how thick you want your dal to be
 and what kind of seeds you're using. I usually use roughly:
 
-1.  1.75 to 2 glasses of water for toor dal.
-2.  2.5 glasses of water for green moong.
-3.  2.25 glasses of water for all other dals.
+* 1.75 to 2 glasses of water for toor dal.
+* 2.5 glasses of water for green moong.
+* 2.25 glasses of water for all other dals.
 
 It's hard to measure 0.4 teaspoons of turmeric powder and coriander powder.
 So you can just mix them beforehand.
