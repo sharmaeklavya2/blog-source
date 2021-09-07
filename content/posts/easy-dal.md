@@ -155,7 +155,11 @@ Just add some more water, turn on the stove to high heat and bring it to a boil
 without closing the lid of the pressure cooker.
 As soon as it starts boiling, turn off the stove.
 
-I guess the cooking time after the first shout is independent of the amount of dal you're cooking.
+Dal doesn't have much fat. You can fix that by adding butter or cream
+(people trying to lose weight may disagree that 'fix' is the right word here).
+This also improves the taste.
+
+The cooking time after the first shout is independent of the amount of dal you're cooking.
 This is because the rate of cooking only depends on the temperature,
 and that's fixed to the boiling point of water.
 If you increase the stove's heat, the food will still take the same time to cook;
