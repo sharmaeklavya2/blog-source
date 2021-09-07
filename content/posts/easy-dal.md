@@ -44,9 +44,11 @@ These are some of the popular ones
 All of these taste different, but the recipe for cooking them is almost the same,
 so you can get variety without having to learn much cooking.
 
+The black/brown/green ones have their seed coat,
+and the white/yellow/orange ones do not.
+
 You can find bags of these seeds in Indian stores.
 In the US, you'll find 2-pound and 4-pound bags (0.91 kg and 1.81 kg).
-
 All these seeds are dicotyledonous, i.e., they have two cotyledons.
 To cook dal, make sure you buy seeds that are already split into two parts.
 
@@ -56,7 +58,6 @@ Half a glass of dal seeds is a meal-for-two,
 since they absorb water and swell up when they're cooked.
 
 Dal is a good source of protein.
-I've heard people criticize vegan food for lacking protein.
 It's true that dal doesn't have as much protein as meat or eggs,
 but it has enough protein that if you eat it once a day,
 you won't get protein deficiency.
@@ -93,18 +94,27 @@ and what kind of seeds you're using. I usually use roughly:
 2.  2.5 glasses of water for green moong.
 3.  2.25 glasses of water for all other dals.
 
-You should soak black urad dal in water for at least 1 hour (and at most 24 hours)
-before you start cooking.
-I don't remember how much water should be used for soaking
-and how much water for boiling.
-Like me, you'll have to figure this out using hit-and-trial.
-
 It's hard to measure 0.4 teaspoons of turmeric powder and coriander powder.
 So you can just mix them beforehand.
 I mixed 200 grams of turmeric powder, 200 grams of coriander powder
 and 100 grams of red chili powder and put it in a box.
 Now I just use 1 heaped teaspoon of this mixture
 each time I cook dal.
+
+I haven't cooked black masoor dal yet,
+and my mom said that this recipe isn't very appropriate for black masoor.
+This recipe works well for black urad dal,
+but you'll get much better results with a better recipe
+(like [Dal Makhani](https://en.wikipedia.org/wiki/Dal_makhani)).
+You should soak black urad dal in water for at least 1 hour (preferably several hours)
+before you start cooking.
+I don't remember how much water should be used for soaking
+and how much water for boiling.
+I'll have to figure this out the next time I cook black urad.
+
+I like to mix yellow moong with orange masoor (2:1 ratio)
+and white urad and chana (3:1 ratio).
+Other than these, I don't mix different kind of seeds.
 
 ## Recipe
 
@@ -129,7 +139,9 @@ each time I cook dal.
 13. After it shouts, set the stove to medium heat.
 14. Turn off the stove after 8 to 10 minutes.
     (The cooker may shout a few times while the stove is on; that's fine.)
-15. Wait for 20 to 25 minutes for the cooker to cool down.
+    For toor dal, 7 minutes may suffice.
+    For dals with seed coat, you can maybe go up to 12 minutes if you want it softer.
+15. Wait for 20 to 30 minutes for the cooker to cool down.
 16. Remove the cooker's whistle and open the lid.
 17. (Optional) Add at most 1 teaspoon garam masala.
 18. Stir the dal with a large spoon to make it homogeneous.
@@ -150,4 +162,4 @@ If you increase the stove's heat, the food will still take the same time to cook
 the extra thermal energy will just be used to convert water to steam, i.e., wasted.
 
 **Credits**: Thanks mom for this awesome recipe!
-Thanks Tanvi for suggesting a good title.
+Thanks [Tanvi Bajpai](https://tanvibajpai.com) for suggesting a good title.
