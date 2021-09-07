@@ -51,6 +51,17 @@ In the US, you'll find 2-pound and 4-pound bags (0.91 kg and 1.81 kg).
 All these seeds are dicotyledonous, i.e., they have two cotyledons.
 To cook dal, make sure you buy seeds that are already split into two parts.
 
+<div class="gallery">
+<figure>
+    <img src="{static}/img/food/green-moong-split.jpg" alt="Split green moong seeds" />
+    <figcaption class="success">Split green moong seeds. Use these for dal.</figcaption>
+</figure>
+<figure>
+    <img src="{static}/img/food/green-moong-whole.jpg" alt="Whole green moong seeds" />
+    <figcaption class="danger">Whole green moong seeds. Do NOT use these for dal.</figcaption>
+</figure>
+</div>
+
 Dal is a very inexpensive source of food.
 In Champaign, Illinois, a 2-pound bag of dal costs between &dollar;3 and &dollar;3.5.
 Half a glass of dal seeds is a meal-for-two
