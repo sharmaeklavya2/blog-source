@@ -15,8 +15,8 @@ or if you're new to cooking and want to start simple.
 But before that, I'll give two disclaimers:
 
 1.  This recipe tastes good, but you can get slightly better-tasting dal by putting in more effort.
-    However, I'm not picky about what I eat, and I want to save time, so I'm going to
-    stick to this article's recipe for the foreseeable future.
+    However, I'm not picky about what I eat, and I want to save time,
+    so I'll stick to this article's recipe for the foreseeable future.
 2.  My mom often uses a better recipe. Don't judge her cooking skills based on this article's recipe!
 
 ## What is dal?
@@ -25,9 +25,8 @@ I'll start from the basics for non-Indian readers of this article.
 
 Dal is basically a traditional Indian dish where you boil seeds
 (from the Leguminosae family of plants) in water and add spices.
-Yes, it's that simple.
 
-You can't use *any* seeds,
+You can't use *any* seeds
 because only some species of seeds taste good as dal.
 These are some of the popular ones
 (these are Indian names; I don't know what they're called in English):
@@ -42,7 +41,7 @@ These are some of the popular ones
 8.  Chana
 
 All of these taste different, but the recipe for cooking them is almost the same,
-so you can get variety without having to learn much cooking.
+so you can get a lot of variety without learning much cooking.
 
 The black/brown/green ones have their seed coat,
 and the white/yellow/orange ones do not.
@@ -54,20 +53,19 @@ To cook dal, make sure you buy seeds that are already split into two parts.
 
 Dal is a very inexpensive source of food.
 In Champaign, Illinois, a 2-pound bag of dal costs between &dollar;3 and &dollar;3.5.
-Half a glass of dal seeds is a meal-for-two,
+Half a glass of dal seeds is a meal-for-two
 since they absorb water and swell up when they're cooked.
 
 Dal is a good source of protein.
-It's true that dal doesn't have as much protein as meat or eggs,
-but it has enough protein that if you eat it once a day,
-you won't get protein deficiency.
+It has much less protein than meat or eggs, but it has enough protein
+that you won't get protein deficiency if you eat it once a day.
 (Though if you're looking to build serious muscle,
 like if you're bodybuilding, then dal alone is unlikely to suffice).
 
 Most people in India eat dal with either rice or roti
 (roti is like an Indian version of tortilla).
 You can also eat it with toasted bread.
-Personally, I like rice with toor dal and black masoor dal
+I like rice with toor dal and black masoor dal
 and roti/bread with the other dals.
 
 ## Ingredients and Utensils
@@ -108,13 +106,13 @@ but you'll get much better results with a better recipe
 (like [Dal Makhani](https://en.wikipedia.org/wiki/Dal_makhani)).
 You should soak black urad dal in water for at least 1 hour (preferably several hours)
 before you start cooking.
-I don't remember how much water should be used for soaking
+I don't remember how much water to use for soaking
 and how much water for boiling.
-I'll have to figure this out the next time I cook black urad.
+I'll figure this out the next time I cook black urad.
 
 I like to mix yellow moong with orange masoor (2:1 ratio)
 and white urad and chana (3:1 ratio).
-Other than these, I don't mix different kind of seeds.
+Other than these, I don't mix different kinds of seeds.
 
 ## Recipe
 
@@ -150,12 +148,12 @@ Other than these, I don't mix different kind of seeds.
 
 You may want to try varying the amount of spices and water to your preferences.
 
-If after opening the cooker you find that the dal is too thick/dry, you can fix it.
-Just add some more water, turn on the stove to high heat and bring it to a boil
+If you find that the dal is too thick/dry after opening the cooker, you can fix it:
+Add some more water, turn on the stove to high heat and bring it to a boil
 without closing the lid of the pressure cooker.
 As soon as it starts boiling, turn off the stove.
 
-Dal doesn't have much fat. You can fix that by adding butter or cream
+Dal doesn't have much fat. You can fix this by adding butter or cream
 (people trying to lose weight may disagree that 'fix' is the right word here).
 This also improves the taste.
 
