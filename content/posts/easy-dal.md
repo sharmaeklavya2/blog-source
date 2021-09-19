@@ -116,10 +116,8 @@ This recipe works well for black urad dal,
 but you'll get much better results with a better recipe
 (like [Dal Makhani](https://en.wikipedia.org/wiki/Dal_makhani)).
 You should soak black urad dal in water for at least 1 hour (preferably several hours)
-before you start cooking.
-I don't remember how much water to use for soaking
-and how much water for boiling.
-I'll figure this out the next time I cook black urad.
+before you start cooking. The amount of water used for soaking plus
+the amount added afterwards should equal around 2.25 glasses.
 
 I like to mix yellow moong with orange masoor (2:1 ratio)
 and white urad and chana (3:1 ratio).
