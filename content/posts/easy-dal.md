@@ -2,7 +2,6 @@ title: The No-Brainer Dal Recipe
 slug: easy-dal
 tags: Cooking, Tutorial
 date: 2021-09-06
-status: draft
 summary: This article gives a very simple recipe for cooking dal, invented by my mom. It's easier than the recipes I found on the internet, and easier than the recipes that my friends use. This recipe is great if you want to reduce the time you spend cooking or if you're new to cooking and want to start simple.
 
 
