@@ -14,7 +14,7 @@ or if you're new to cooking and want to start simple.
 But before that, I'll give two disclaimers:
 
 1.  This recipe tastes good, but you can get slightly better-tasting dal by putting in more effort.
-    However, I'm not picky about what I eat, and I want to save time,
+    However, I like this recipe, I'm not picky about what I eat, and I want to save time,
     so I'll stick to this article's recipe for the foreseeable future.
 2.  My mom often uses a better recipe. Don't judge her cooking skills based on this article's recipe!
 
@@ -124,6 +124,10 @@ Other than these, I don't mix different kinds of seeds.
 
 ## Recipe
 
+Basically you sautée cumin and hing for a few seconds in a pressure cooker,
+then add water, dal, spices, salt, and then close the pressure cooker's lid and wait.
+Here are the steps in more detail:
+
 1.  Put a pressure cooker on the stove and set the heat to medium.
     Start the exhaust fan.
 2.  Add a teaspoon or two of cooking oil / butter / ghee.
@@ -150,6 +154,7 @@ Other than these, I don't mix different kinds of seeds.
 15. Wait for 20 to 30 minutes for the cooker to cool down.
 16. Remove the cooker's whistle and open the lid.
 17. (Optional) Add at most 1 teaspoon garam masala.
+19. (Optional) Add butter / ghee / cream.
 18. Stir the dal with a large spoon to make it homogeneous.
 
 ## Tweaking and Troubleshooting
