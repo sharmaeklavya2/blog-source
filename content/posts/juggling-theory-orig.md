@@ -204,7 +204,7 @@ and at odd ticks, the right hand throws. This assumption is called *asynchronici
 **Assumption**: *a hand can only hold 1 object at a time.*
 This restriction is called *non-multiplexing*.
 (Most non-jugglers assume that non-multiplexing is mandatory for juggling,
-but that's not always true.)
+but that's not always true. We will, however, enforce non-multiplexing in our model for simplicity.)
 
 If all the other features (ticks per second, dwell, hand position) are fixed,
 then a juggling pattern can be uniquely determined by specifying two things for each throw:
@@ -251,7 +251,7 @@ Let's start with the simplest pattern: cascade.
     <figcaption>Cascade</figcaption>
 </figure>
 
-Firstly, note that all throws are identical.
+First, note that all throws are identical.
 So all throws have the same throw-order.
 
 Suppose the blue ball is thrown at time $t$.
