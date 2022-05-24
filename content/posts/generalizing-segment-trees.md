@@ -16,11 +16,11 @@ but also allowed me to write a
 [segment tree C++ library](https://gist.github.com/sharmaeklavya2/99ed35efbb639bbe7d7b46b89b74fea0)
 that can be used for any application without modifying the code for queries and updates.
 
-This blog post explains what a monoid is,
+This article explains what a monoid is,
 and the intuition which led me to use these abstractions to generalize segment trees.
 I'll also explain how to perform range updates using lazy propagation.
 
-Prerequisite concepts for this blog post:
+Prerequisite concepts for this article:
 
 * What a segment tree is.
 * How to build a segment tree.

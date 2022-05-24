@@ -3,14 +3,14 @@ slug: juggling-theory
 tags: Juggling, Math
 date: 2020-09-22
 mathengine: katex-full
-summary: This post explains how math can be applied to juggling, a seemingly non-mathematical area. This gives us more insight into what really goes on in a juggling pattern and helps us automate the process of finding new juggling patterns.
+summary: This article explains how math can be applied to juggling, a seemingly non-mathematical area. This gives us more insight into what really goes on in a juggling pattern and helps us automate the process of finding new juggling patterns.
 
 
-This post explains the surprising link between math and juggling.
+This article explains the surprising link between math and juggling.
 Juggling theory is a beautiful example of how we can get more insight in
 a seemingly non-mathematical area by building a theory and proving stuff.
 
-Most of this post doesn't assume any specialized mathematical background.
+Most of this article doesn't assume any specialized mathematical background.
 Towards the end, basics of graph theory and number theory are used.
 
 [TOC]
@@ -49,7 +49,7 @@ reveals the *structure* of the pattern, and can be read and analyzed by machines
 In 1981, Paul Klimek invented a way of associating a sequence of integers
 to each juggling pattern. This sequence of integers is called a *siteswap*,
 and it captures important properties of a jugging pattern.
-In this post, I'll show how to succinctly represent juggling patterns,
+In this article, I'll show how to succinctly represent juggling patterns,
 and siteswaps form the most important part of this representation.
 
 An amazing by-product of having such a representation is the ability to
@@ -59,7 +59,7 @@ Previously, only non-beginner jugglers could invent patterns using hit-and-trial
 
 Another advantage of siteswaps is that they can be used as input to
 programs that create animations of juggling patterns.
-In fact, this is exactly how I created all the animations in this post,
+In fact, this is exactly how I created all the animations in this article,
 using <a href="https://jugglinglab.org/">Juggling Lab</a>.
 
 ## The features of a juggling pattern
@@ -321,7 +321,7 @@ and $x \bmod y$ denotes the remainder obtained by dividing $x$ by $y$.
 > <footer>observant reader</footer>
 
 Good question! That's a technical detail that I conveniently brushed under the rug.
-I'll address this at the end of the blog post.
+I'll address this at the end of the article.
 For now, you can assume that $a$ only has positive integers
 and throw orders can only be positive.
 The proofs work for the general case that includes zero-order throws.
@@ -520,7 +520,7 @@ This can be achieved via order-2 throws (think why it makes sense).
 </figure>
 </div>
 
-All the math in this blog post can be made to work with throws of order 0 and 2.
+All the math in this article can be made to work with throws of order 0 and 2.
 
 ### Extensions
 
@@ -599,7 +599,7 @@ or its <a href="https://jugglinglab.org/html/animinfo.html">GIF server</a>.
 ## Want to learn how to juggle?
 
 Juggling is a very enjoyable hobby. If you feel motivated,
-see my other blog post, [Juggling 101]({filename}/posts/juggling-101.md), on how to learn juggling.
+see my other article, [Juggling 101]({filename}/posts/juggling-101.md), on how to learn juggling.
 
 I started learning juggling a few months before I joined BITS Pilani as an undergraduate student.
 By the end of my third semester, I had learned around 30 different patterns.
