@@ -310,9 +310,12 @@ So how can we find out if a sequence of integers is a valid siteswap?
 I'll get straight to the point, like this:
 
 **Permutation Theorem**: Let $a = [a_0, a_1, \ldots, a_{n-1}]$ be a sequence of $n$ non-negative integers.
-Let $\mathbb{Z}_n = \{0, 1, \ldots, n-1\}$.
-For each $i \in \mathbb{Z}_n$, let $b_i = (i + a_i) \bmod n$.
-Then $a$ is a valid siteswap iff $b$ is a permutation of $\mathbb{Z}_n$.
+Define the function $g_a: \mathbb{Z}_n \mapsto \mathbb{Z}_n$ as $g_a(i) = (i + a_i) \bmod n$.
+Then $a$ is a valid siteswap iff $g_a$ is a bijection
+(i.e., $[g_a(0), g_a(1), \ldots, g_a(n-1)]$ is a permutation of $\mathbb{Z}_n$).
+
+For those unfamiliar with notation, $\mathbb{Z}_n$ denotes the set $\{0, 1, \ldots, n-1\}$,
+and $x \bmod y$ denotes the remainder obtained by dividing $x$ by $y$.
 
 > Wait, $a$ is a sequence of *non-negative* integers? What does a throw-order of 0 mean?
 > <footer>observant reader</footer>
@@ -346,7 +349,7 @@ Let $a$ be a sequence of $n$ non-negative integers.
 We'll now define a function $f_a: \mathbb{Z} \mapsto \mathbb{Z},$
 that takes as input a *throw time* and outputs the corresponding *catch time*.
 $$f_a(x) = x + a[x \bmod n]$$
-Here $a[i] = a_i$ and $x \bmod n$ is the remainder obtained after dividing $x$ by $n$.
+Here $a[i] = a_i$.
 
 Now we need to prove two things:
 
@@ -361,12 +364,10 @@ The first conditions says that $f_a$ should be onto,
 and the second condition says that $f_a$ should be one-to-one.
 Therefore, we get that $a$ is a valid siteswap iff $f_a$ is a bijection.
 
-Define the predicate $P$ as:<br/><em>
-$P(a)$: For $b_i = (i + a[i]) \bmod n,$ $b$ is a permutation of $\mathbb{Z}_n$.</em><br/>
 Now the permutation theorem reduces to this lemma:
 
 **Lemma 2**: Let $a$ be a sequence of $n$ non-negative integers.
-Then $f_a$ is a bijection iff $P(a)$.
+Then $f_a$ is a bijection iff $g_a$ is a bijection.
 
 Lemma 2 has no reference to juggling. It's a purely mathematical fact.
 Now that we're in familiar territory, you should try proving it yourself
@@ -378,21 +379,24 @@ before you read my proof below.
 
 ### Easy part of the proof
 
-**Lemma 3**: If $f_a$ is one-to-one, then $P(a)$ is true.
+Since the domain and co-domain of $g_a$ are identical and finite,
+$g_a$ is a bijeciton iff $g_a$ is one-to-one.
 
-*Proof*. Assume $P(a)$ is false. Then $\exists i_1, i_2 \in \mathbb{Z}_n$ such that
-$i_1 \neq i_2$ and $b[i_1] = b[i_2]$.
+**Lemma 3**: If $f_a$ is one-to-one, then $g_a$ is one-to-one.
+
+*Proof*. Assume $g_a$ is not one-to-one. Then $\exists i_1, i_2 \in \mathbb{Z}_n$ such that
+$i_1 \neq i_2$ and $g_a(i_1) = g_a(i_2)$.
 
 $$\begin{aligned}
-& b[i_1] = b[i_2]
+& g_a(i_1) = g_a(i_2)
 \\ &\implies (i_1 + a[i_1]) \bmod n = (i_2 + a[i_2]) \bmod n
 \\ &\implies \exists k \in \mathbb{Z}, i_1 + a[i_1] = i_2 + a[i_2] + kn
 \\ &\implies \exists k \in \mathbb{Z}, f_a(i_1) = f_a(i_2 + kn)
 \end{aligned}$$
 This is a contradiction, since $f_a$ is one-to-one.
-Therefore, $P(a)$ is true. $\Box$
+Hence, $g_a$ is one-to-one. $\Box$
 
-**Lemma 4**: $P(a)$ implies that $f_a$ is one-to-one.
+**Lemma 4**: $g_a$ is one-to-one implies $f_a$ is one-to-one.
 
 *Proof*. Assume $f_a$ is not one-to-one.
 Then $\exists u_1 \neq u_2$ such that $f_a(u_1) = f_a(u_2)$.
@@ -407,10 +411,10 @@ $$\begin{aligned}
 & f_a(u_1) = f_a(u_2)
 \\ &\implies u_1 + a[i_1] = u_2 + a[i_2]
 \\ &\implies i_1 + a[i_1] \equiv i_2 + a[i_2] \pmod{n}
-\\ &\implies b[i_1] = b[i_2]
+\\ &\implies g_a(i_1) = g_a(i_2)
 \end{aligned}$$
-Since $b$ contains a duplicate entry, it cannot be a permutation of $\mathbb{Z}_n$.
-This contradicts $P(a)$. Therefore, $f_a$ is one-to-one. $\Box$
+This is a contradiction, since $g_a$ is one-to-one.
+Hence, $f_a$ is one-to-one. $\Box$
 
 ### Not-so-easy part of the proof
 
