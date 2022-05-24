@@ -472,14 +472,14 @@ It uses the same ideas as in the proof of the permutation theorem.
 It also gives a quick sanity check of a siteswap's validity:
 the average should be an integer.
 
-For the competitive programmers reading this who are looking for a challenge,
+For the sport programmers reading this who are looking for a challenge,
 you may want to solve the problem
 <a href="https://www.codechef.com/ICL2017/problems/ICL1703">ICL1703</a> on Codechef,
 which is a generalization of the average theorem when multiplexing is allowed.
 I have abstracted out juggling terminology from this problem,
 so you don't need to know anything about juggling to understand it.
-I have also written an
-<a href="https://discuss.codechef.com/t/icl1703-editorial/14270">editorial</a> for it.
+I have also written the
+<a href="https://discuss.codechef.com/t/icl1703-editorial/14270">solution</a> to it.
 
 ### Special throw orders
 
