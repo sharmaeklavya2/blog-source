@@ -113,7 +113,7 @@ TAG_FEED_RSS = 'feed/{slug}.rss.xml'
 
 def filter_dotsvg(record):
     msg_match = record.msg == 'Cannot get modification stamp for %s\n\t%s'
-    ext_match = record.args[0].endswith('.dot.svg')
+    ext_match = record.args[0].endswith('.dot.svg') or record.args[0].endswith('.gif.mp4')
     return 0 if msg_match and ext_match else 1
 
 

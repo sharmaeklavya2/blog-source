@@ -18,6 +18,8 @@ This repository contains:
     pip install -r requirements.txt
     npm install
 
+* Install [`dot`](https://graphviz.org/download/) and [`ffmpeg`](https://ffmpeg.org/).
+
 * Get a pelican theme (like [MFPelicanTheme](https://github.com/sharmaeklavya2/MFPelicanTheme)).
   Place the theme's directory at `theme` or create a symlink.
 
