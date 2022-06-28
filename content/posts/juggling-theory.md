@@ -28,17 +28,17 @@ cascade, shower and fountain.
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/3.gif.mp4" alt="cascade juggling pattern"></video>
     <figcaption>Cascade</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="200"
         src="{static}/img/siteswaps/51.gif.mp4" alt="shower juggling pattern"></video>
     <figcaption>Shower</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/4.gif.mp4" alt="fountain juggling pattern"></video>
     <figcaption>Fountain</figcaption>
 </figure>
@@ -89,12 +89,12 @@ Every pattern can be made slower by throwing the objects higher.
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/3.gif.mp4" alt="cascade juggling pattern"></video>
     <figcaption>Cascade</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/522.gif.mp4" alt="cascade juggled slowly"></video>
     <figcaption>Slow cascade</figcaption>
 </figure>
@@ -114,12 +114,12 @@ and using a small dwell is called *hot-potato style*.
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/522.gif.mp4" alt="cascade juggling in lazy style"></video>
     <figcaption>Lazy cascade</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/900.gif.mp4" alt="cascade juggling in hot-potato style"></video>
     <figcaption>Hot-potato cascade</figcaption>
 </figure>
@@ -136,17 +136,17 @@ is the mirror image of the coordinate system for the left hand.)
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/3.gif.mp4" alt="cascade juggling pattern"></video>
     <figcaption>Cascade</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/3-cross.gif.mp4" alt="crossed-arm cascade juggling pattern"></video>
     <figcaption>Crossed-arm cascade</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/3-out.gif.mp4" alt="reverse cascade juggling pattern"></video>
     <figcaption>Reverse cascade</figcaption>
 </figure>
@@ -163,17 +163,17 @@ of the cascade, that don't really look like the cascade.
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/3-mills.gif.mp4" alt="mills-mess juggling pattern"></video>
     <figcaption>Mills mess</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/3-wind.gif.mp4" alt="windmill juggling pattern"></video>
     <figcaption>Windmill</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/3-cherry.gif.mp4" alt="cherry-picker juggling pattern"></video>
     <figcaption>Cherry picker</figcaption>
 </figure>
@@ -184,22 +184,22 @@ As an example, here are some hand positions applied to the fountain pattern:
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/4.gif.mp4" alt="4 juggling pattern"></video>
     <figcaption>Fountain</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/4-out.gif.mp4" alt="4-out juggling pattern"></video>
     <figcaption>Reverse fountain</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/4-mills.gif.mp4" alt="4-mills juggling pattern"></video>
     <figcaption>Fountain mills mess</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/4-wind.gif.mp4" alt="4-wind juggling pattern"></video>
     <figcaption>Fountain windmill</figcaption>
 </figure>
@@ -263,7 +263,7 @@ I'll show some examples so that you get the hang of it.
 Let's start with the simplest pattern: cascade.
 
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/3-analyze.gif.mp4" alt="3-analyze juggling pattern"></video>
     <figcaption>Cascade</figcaption>
 </figure>
@@ -283,12 +283,12 @@ It's identified solely by its siteswap.
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="280"
         src="{static}/img/siteswaps/345.gif.mp4" alt="345 juggling pattern"></video>
     <figcaption>Normal</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="280"
         src="{static}/img/siteswaps/345-analyze.gif.mp4" alt="345-analyze juggling pattern"></video>
     <figcaption>Slo-mo</figcaption>
 </figure>
@@ -512,18 +512,18 @@ Here are some examples:
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/50505.gif.mp4" alt="snake juggling pattern"></video>
     <figcaption>Snake (50505)</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="220"
         src="{static}/img/siteswaps/330.gif.mp4"
         alt="cascade juggling pattern with 1 ball mising; siteswap 330"></video>
     <figcaption>Cascade with 1 ball <br>missing (330)</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/40.gif.mp4" alt="juggling 2 balls in 1 hand"></video>
     <figcaption>2-in-1 (40)</figcaption>
 </figure>
@@ -534,12 +534,12 @@ This can be achieved via order-2 throws (think why it makes sense).
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/552.gif.mp4" alt="552 juggling pattern"></video>
     <figcaption>552</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/42.gif.mp4" alt="juggling 2 balls in one hand"></video>
     <figcaption>2-in-1 (42)</figcaption>
 </figure>
@@ -558,17 +558,17 @@ and synchronous patterns have their own, somewhat different, siteswap notation.
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/box.gif.mp4" alt="box juggling pattern"></video>
     <figcaption>Box</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/columns.gif.mp4" alt="columns juggling pattern"></video>
     <figcaption>Columns</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="280"
         src="{static}/img/siteswaps/6x4x.gif.mp4" alt="5-ball half-shower juggling pattern"></video>
     <figcaption>5-ball half-shower</figcaption>
 </figure>
@@ -581,13 +581,13 @@ Siteswap notation and the associated theory extends to these too.
 
 <div class="gallery">
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="240"
         src="{static}/img/siteswaps/multiplex-shower.gif.mp4"
         alt="multiplex-shower juggling pattern"></video>
     <figcaption>Multiplexed shower</figcaption>
 </figure>
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="240" height="200"
         src="{static}/img/siteswaps/3-pass.gif.mp4" alt="2-count passing cascade with 2 jugglers"></video>
     <figcaption>Passing cascade</figcaption>
 </figure>
@@ -601,7 +601,7 @@ Each siteswap output by this process corresponds to a valid juggling pattern.
 This is great, and rumors say that `441` was invented like this.
 
 <figure>
-    <video class="dark-filter" autoplay loop muted
+    <video class="dark-filter" autoplay loop muted width="160" height="220"
         src="{static}/img/siteswaps/441.gif.mp4" alt="441 juggling pattern"></video>
     <figcaption>Half box (441)</figcaption>
 </figure>
