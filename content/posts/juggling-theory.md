@@ -337,7 +337,8 @@ Then $a$ is a valid siteswap iff $g_a$ is a bijection
 For those unfamiliar with notation, $\mathbb{Z}_n$ denotes the set $\{0, 1, \ldots, n-1\}$,
 and $x \bmod y$ denotes the remainder obtained by dividing $x$ by $y$.
 
-> Wait, $a$ is a sequence of *non-negative* integers? What does a throw-order of 0 mean?
+> In the permutation theorem, you mentioned that $a$ is a sequence of *non-negative* integers.
+> Can throw-orders be 0? What would that even mean?
 > <footer>observant reader</footer>
 
 Good question! That's a technical detail that I conveniently brushed under the rug.
