@@ -72,6 +72,16 @@ to
 are readable.</figcaption>
 </figure>
 
+### Use cleveref
+
+Always `\usepackage{cleveref}`.
+
+Name your references such that it's possible to know what kind of thing it is:
+theorem, definition, section, figure, etc.
+Preferably do this by using a prefix: `thm:`, `defn:`, `sec:`, `fig:`, etc.
+Don't use different prefixes for theorems, lemmas, observations, claims;
+use `thm:` for all of them (otherwise there's no point in using `cleveref`).
+
 ### Multi-file projects and makefile
 
 Suppose your document is split into multiple files, where the top-level file is called `main.tex`,
