@@ -2,6 +2,7 @@ title: LaTeX tips
 slug: latex-tips
 tags: latex
 date: 2022-11-13
+modified: 2022-11-28
 summary: This article lists LaTeX tips. The primary audience is my current and future collaborators, but it should be useful to other people too. To prevent stating facts that are either obvious or irrelevant to my primary audience, most of these tips are based on subtle 'mistakes' by other researchers and grad students.
 
 
@@ -29,6 +30,26 @@ Always `\usepackage{hyperref}` in your document.
 It won't affect what your document looks like when you print it on paper,
 but it will improve the digital reading experience,
 like making references clickable and adding a table of contents.
+
+The order in which you load packages matters.
+Most packages should be loaded before `hyperref`.
+
+You can pass several options to hyperref either while loading the package
+(`usepackage[options]{hyperref}`) or later (`\hypersetup{options}`).
+Some useful options:
+
+1.  `bookmarksnumbered=true`: Table of contents entries will be numbered.
+2.  `hidelinks` and `colorlinks`: `hyperref`'s default behavior is to box links.
+    Instead, if you want to color the links, use `colorlinks`.
+    If you want to neither box nor color links, use `hidelinks`.
+3.  `colorlinks`: color links instead of boxing them.
+4.  `linkcolor`, `citecolor`, `urlcolor`:
+    specify colors to use for internal links, citations, and URLs, respectively.
+
+I used the following options in my old ArXiv papers
+(the options I use now are a little more complicated):
+
+    \hypersetup{bookmarksnumbered=true,colorlinks,linkcolor=red,citecolor=red,urlcolor=blue}
 
 ### Handle the warnings
 
