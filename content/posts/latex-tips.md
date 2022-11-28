@@ -97,9 +97,20 @@ are readable.</figcaption>
 
 Always `\usepackage{cleveref}`.
 
+`cleveref` allows you to write `\cref{lower-bound}` instead of `Theorem \ref{lower-bound}`,
+because `cleveref` automatically detects which kind of thing you're referring to.
+If you ever decide to change a theorem to a lemma,
+you won't have to find and replace every `Theorem \ref{lower-bound}` to `Lemma \ref{lower-bound}`.
+
+Official documentation: [`CTAN:cleveref`](https://mirrors.mit.edu/CTAN/macros/latex/contrib/cleveref/cleveref.pdf).
+Useful options you may want to check out: `capitalize`, `sort`.
+Load `cleveref` after `hyperref`.
+
 Name your references such that it's possible to know what kind of thing it is:
 theorem, definition, section, figure, etc.
 Preferably do this by using a prefix: `thm:`, `defn:`, `sec:`, `fig:`, etc.
+(e.g., `\label{thm:lower-bound}` instead of `\label{lower-bound}`).
+This makes it easier to know what is being referenced when reading the TeX source.
 Don't use different prefixes for theorems, lemmas, observations, claims;
 use `thm:` for all of them (otherwise there's no point in using `cleveref`).
 
