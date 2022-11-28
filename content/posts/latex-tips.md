@@ -218,3 +218,16 @@ to automatically do this conversion for me. To do this,
 I put my abstract in a separate file (like `abstract.tex`) and `\input` it into my document.
 My tool reads `abstract.tex` and outputs a plain text version by replacing LaTeX macros
 by unicode/ascii characters.
+
+## Collaborating with a git user
+
+If you're using [git](https://en.wikipedia.org/wiki/Git),
+or if you're using Overleaf and one of your co-authors uses git to access Overleaf,
+follow these well-established git-friendly practices:
+
+1.  Avoid very long lines in your `.tex` files.
+    Perhaps you don't care because you have word-wrap on.
+    But git tracks files line-by-line.
+    Longer lines make it harder to do a `git diff` to see what has changed.
+    Split long lines into multiple smaller lines.
+2.  Avoid trailing whitespace. Git marks them as warnings during `git diff`.
