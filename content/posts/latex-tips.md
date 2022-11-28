@@ -42,8 +42,7 @@ Some useful options:
 2.  `hidelinks` and `colorlinks`: `hyperref`'s default behavior is to box links.
     Instead, if you want to color the links, use `colorlinks`.
     If you want to neither box nor color links, use `hidelinks`.
-3.  `colorlinks`: color links instead of boxing them.
-4.  `linkcolor`, `citecolor`, `urlcolor`:
+3.  `linkcolor`, `citecolor`, `urlcolor`:
     specify colors to use for internal links, citations, and URLs, respectively.
 
 I used the following options in my old ArXiv papers
