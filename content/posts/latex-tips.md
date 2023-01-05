@@ -39,10 +39,12 @@ You can pass several options to hyperref either while loading the package
 Some useful options:
 
 1.  `bookmarksnumbered=true`: Table of contents entries will be numbered.
-2.  `hidelinks` and `colorlinks`: `hyperref`'s default behavior is to box links.
+2.  `hypertexnames=false`: To work around hyperref-related bugs in some packages.
+    Example: <https://tex.stackexchange.com/a/670742>.
+3.  `hidelinks` and `colorlinks`: `hyperref`'s default behavior is to box links.
     Instead, if you want to color the links, use `colorlinks`.
     If you want to neither box nor color links, use `hidelinks`.
-3.  `linkcolor`, `citecolor`, `urlcolor`:
+4.  `linkcolor`, `citecolor`, `urlcolor`:
     specify colors to use for internal links, citations, and URLs, respectively.
 
 I used the following options in my old ArXiv papers
