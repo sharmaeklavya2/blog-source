@@ -32,10 +32,10 @@ digraph dep_graph {
         "install brew" -> "install tmux"
 
     node [color = "#A9DFBF"]
-    "install java"
-        "install brew" -> "install java"
     "install mactex"
         "install brew" -> "install mactex"
+    "install useful programs"
+        "install brew" -> "install useful programs"
     "install python3"
         "install brew" -> "install python3"
     "pip3 install virtualenv"
