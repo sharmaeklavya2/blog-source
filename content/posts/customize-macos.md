@@ -2,7 +2,7 @@ title: A Comprehensive Guide to Customizing your MacBook
 slug: customize-macos
 tags: Tutorial
 date: 2019-07-12
-modified: 2020-06-21
+modified: 2023-01-12
 summary: This post contains a list of all the things I did to customize my MacBook. Most instructions here are useful only for programmers and power users.
 
 
@@ -216,16 +216,12 @@ to `~/.bash_profile` or `~/.env`.
 
 ## <span style="background-color: rgba(0, 255, 102, 0.3)">Install command-line programs</span>
 
-### Java
-
-    brew install java
-
 ### MacTex
 
 MacTex is a suite of programs for typesetting documents using TeX and LaTeX.
 LaTeX is a great system for writing professional-looking mathematical documents.
 
-You can install MacTex using a GUI installer, but I did it using `brew cask install mactex`.
+You can install MacTex using a GUI installer, but I did it using `brew install --cask mactex`.
 
 ### Python and packages
 
@@ -253,6 +249,22 @@ but some are useful enough that I installed them in the beginning:
 These packages are useful for math and computation:
 
     pip install numpy scipy pandas matplotlib seaborn sympy
+
+### Other useful programs
+
+* Although git is provided by the Xcode command line tools,
+a more recent version can be obtained using `brew install git`.
+* To be able to write and run Java programs, install openjdk: `brew install openjdk`.
+* Node.js and npm: `brew install node`.
+* Other useful programs that can be `brew install`ed:
+[`diffr`](https://github.com/mookid/diffr/),
+[`dos2unix`](https://linux.die.net/man/1/dos2unix),
+[`htop`](https://en.wikipedia.org/wiki/Htop),
+[`rlwrap`](https://github.com/hanslub42/rlwrap/),
+[`graphviz`](https://graphviz.org),
+[`ffmpeg`](https://ffmpeg.org),
+[`pandoc`](https://pandoc.org),
+[`youtube-dl`](https://github.com/ytdl-org/youtube-dl/).
 
 
 ## <span style="background-color: rgba(0, 136, 255, 0.3)">Transfer backed-up data</span>
