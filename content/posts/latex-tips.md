@@ -220,15 +220,118 @@ I put my abstract in a separate file (like `abstract.tex`) and `\input` it into 
 My tool reads `abstract.tex` and outputs a plain text version by replacing LaTeX macros
 by unicode/ascii characters.
 
-## Collaborating with a git user
+## Collaboration
 
-If you're using [git](https://en.wikipedia.org/wiki/Git),
-or if you're using Overleaf and one of your co-authors uses git to access Overleaf,
-follow these well-established git-friendly practices:
+People often have different preferences about how to write documents and collaborate,
+and such differences can make collaboration less pleasant.
+These differences often arise because of personal taste or choice of tools.
+To deal with such issues, it is important to respect others' preferences
+and know ways to handle conventions different from what one is used to.
 
-1.  Avoid very long lines in your `.tex` files.
-    Perhaps you don't care because you have word-wrap on.
-    But git tracks files line-by-line.
-    Longer lines make it harder to do a `git diff` to see what has changed.
-    Split long lines into multiple smaller lines.
-2.  Avoid trailing whitespace. Git marks them as warnings during `git diff`.
+### Long lines
+
+TeX joins consecutive non-empty lines by a space. So if your TeX code looks like this:
+
+    :::tex
+    This is the first paragraph.
+    It has 2 sentences.
+
+    This is the
+    second paragraph
+    with just a
+    single sentence.
+
+Its output will look like this:
+
+> This is the first paragraph. It has 2 sentences.
+>
+> This is the second paragraph with just a single sentence.
+
+Some people, like me, prefer breaking up long lines in the TeX code into shorter lines
+(usually at most 80 to 100 characters long). This is called *hard-wrapping*.
+This is useful for multiple reasons:
+
+1.  [Git](https://en.wikipedia.org/wiki/Git) tracks files line-by-line.
+If you or your collaborators use git, you'll be more likely to get merge conflicts
+if your files have very long lines.
+2.  To iterate over sentences in a paragraph, one usually needs to scan the paragraph for periods.
+However, I break lines such that sentences usually begin at the beginning of lines.
+Hence, I can iterate over sentences by just reading the first few characters of each line.
+3.  Longer lines make it harder to use a diff tool (like `git diff`) to see what has changed
+between versions of a file.
+
+As far as I know, most people don't hard wrap lines.
+They may agree to hard wrap and then keep forgetting to do so, because old habits die hard.
+They may also refuse to hard wrap text, and there can be good reasons for this.
+For example, it can be irritating to edit TeX code that is hard-wrapped at
+a width larger than the editor window width, and Overleaf has a very narrow editor window.
+Hence, you will need ways to deal with extremely long lines,
+especially if you're not used to it.
+
+1.  Use a diff tool that highlights intra-line diffs,
+like [`delta`](https://dandavison.github.io/delta/introduction.html)
+or [`diffr`](https://github.com/mookid/diffr).
+See <https://stackoverflow.com/q/49278577/> for more info.
+2.  If you're using Vim, then prefixing `g` to navigation commands
+(i.e., changing `h`, `j`, `k`, `l` to `gh`, `gj`, `gk`, `gl`)
+make them move by screen lines instead of source lines.
+
+### Trailing whitespace
+
+Trailing whitespace is when a line of text ends with a space,
+or when a file ends with multiple newline characters.
+Avoid trailing whitespaces.
+Git and some text editors mark them as warnings during `git diff`.
+
+### Online collaboration tools
+
+#### Overleaf
+
+Overleaf is an online editor that allows multiple people to edit a LaTeX document simultaneously.
+My initial impression of Overleaf (sometime in 2019) was bad, since it was slow
+and hard to use with a bad internet connection.
+It may have improved now, but I haven't tried it.
+
+Overleaf's best feature, in my opinion, is
+[the ability to pull and push via a git interface](https://www.overleaf.com/learn/how-to/Using_Git_and_GitHub).
+This way, I can just use my own text editor (vim) to edit files.
+This is a premium feature, so everyone can't do this.
+
+#### Git
+
+[Git](https://en.wikipedia.org/wiki/Git) is a tool for collaborative version control.
+It was written so that large software projects can be worked on
+by a large number of people at the same time.
+It's also useful for non-software projects, though, like LaTeX documents.
+
+Git has a steep learning curve, and without adequate experience
+it's hard to appreciate its utility.
+(I used to be a professional software engineer, so I'm quite comfortable with git.)
+What makes learning git difficult isn't just getting used to the terminal commands.
+It's also understanding the concepts behind git, like commits, branches,
+working directory, remotes, etc.
+But it is the knowledge of these very concepts that make collaboration easier.
+
+For hosting git repositories online,
+[Github](https://github.com) and [Gitlab](https://gitlab.com) are viable options.
+Repositories can be either public or private,
+though for private repositories there may be certain restrictions or paywalls.
+
+#### Shared online folder
+
+A shared online folder (like [Dropbox](https://www.dropbox.com) or [Box](https://www.box.com)) is,
+in my opinion, a quick-and-dirty way of collaboration.
+With auto-syncing in Dropbox, authors need to be careful about concurrent access.
+Dropbox saves past versions, but git has far superior version control.
+Dropbox sends notifications to collaborators whenever someone makes a change.
+If someone has a habit of constantly saving their work, collaborators
+get flooded with notifications (except if they turn off those notifications entirely).
+
+When my collaborators use Dropbox, I treat it like a git remote.
+I have a local git repository outside Dropbox.
+Each time I need to edit the document, I use `rsync` to copy
+the shared Dropbox folder into my working directory, and then I commit those changes.
+Then I continue working on my git repository as usual.
+When I need to push, I use `rsync` to copy my working directory to the shared Dropbox folder
+(I first check diffs to ensure that I'm not overwriting others' work).
+This way, I partially get the benefits of git and my collaborators don't even need to know about it.
