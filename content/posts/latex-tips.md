@@ -2,19 +2,16 @@ title: LaTeX tips
 slug: latex-tips
 tags: latex
 date: 2022-11-13
-modified: 2023-01-05
-summary: This article lists LaTeX tips. The primary audience is my current and future collaborators, but it should be useful to other people too. To prevent stating facts that are either obvious or irrelevant to my primary audience, most of these tips are based on subtle 'mistakes' by other researchers and grad students.
+modified: 2023-01-12
+summary: This article lists LaTeX tips. The primary audience is my current and future collaborators, but it should be useful to other people too. To prevent stating facts that are either obvious or irrelevant to my primary audience, most of these tips are based on subtle 'mistakes' by other researchers and students.
 
 
-I have collaborated on LaTeX documents with many people.
-Although it should be expected that each person has their own unique style,
-there are a few best practices which I recommend others to follow.
-In this article, I'll list some of these best practices.
+In this article, I'll list tips for making LaTeX documents better and easing collaboration.
 
 The primary audience of this article are my current and future collaborators,
 but it should be useful to other LaTeX users too, mostly other academics.
 To prevent these tips from being obvious or irrelevant to my primary audience,
-most of them are either based on subtle 'mistakes' by other researchers and grad students,
+most of them are either based on subtle 'mistakes' by other researchers and students,
 or are tricks I discovered/invented to ease collaboration.
 
 <span class="danger">This article is an incomplete draft.
