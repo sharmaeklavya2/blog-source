@@ -20,6 +20,7 @@ if PUBLISH:
     SITEURL = 'https://sharmaeklavya2.github.io/blog'
 else:
     SITEURL = ''
+NUMBER_HEADINGS = True
 
 # Plugins
 
