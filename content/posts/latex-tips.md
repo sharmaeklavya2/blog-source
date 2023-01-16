@@ -58,7 +58,7 @@ because `cleveref` automatically detects which kind of thing you're referring to
 If you ever decide to change a theorem to a lemma,
 you won't have to find and replace every `Theorem \ref{lower-bound}` to `Lemma \ref{lower-bound}`.
 
-Official documentation: [`CTAN:cleveref`](https://mirrors.mit.edu/CTAN/macros/latex/contrib/cleveref/cleveref.pdf).
+Official documentation: [`CTAN:cleveref`](https://mirrors.ctan.org/macros/latex/contrib/cleveref/cleveref.pdf).
 Useful options you may want to check out: `capitalize`, `sort`.
 Load `cleveref` after `hyperref`.
 
@@ -72,8 +72,8 @@ use `thm:` for all of them (otherwise there's no point in using `cleveref`).
 
 ### Do not use obsolete commands
 
-[l2tabuen.pdf](https://ctan.math.washington.edu/tex-archive/info/l2tabu/english/l2tabuen.pdf) lists
-obsolete commands and their newer alternatives. These are the most important ones:
+[l2tabuen.pdf](http://mirrors.ctan.org/info/l2tabu/english/l2tabuen.pdf)
+lists obsolete commands and their newer alternatives. These are the most important ones:
 
 * Use `\[ … \]` instead of `$$ … $$`.
 * Use `\frac` instead of `\over`.
