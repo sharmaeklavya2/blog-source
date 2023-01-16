@@ -278,7 +278,7 @@ make them move by screen lines instead of source lines.
 Trailing whitespace is when a line of text ends with a space,
 or when a file ends with multiple newline characters.
 Avoid trailing whitespaces.
-Git and some text editors mark them as warnings during `git diff`.
+`git diff` and some text editors mark them as warnings.
 
 ### Online collaboration tools
 
