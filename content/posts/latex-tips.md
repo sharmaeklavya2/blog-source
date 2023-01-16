@@ -2,7 +2,7 @@ title: LaTeX tips
 slug: latex-tips
 tags: latex
 date: 2022-11-13
-modified: 2023-01-12
+modified: 2023-01-16
 summary: This article lists LaTeX tips. The primary audience is my current and future collaborators, but it should be useful to other people too. To prevent stating facts that are either obvious or irrelevant to my primary audience, most of these tips are based on subtle 'mistakes' by other researchers and students.
 
 
@@ -13,9 +13,6 @@ but it should be useful to other LaTeX users too, mostly other academics.
 To prevent these tips from being obvious or irrelevant to my primary audience,
 most of them are either based on subtle 'mistakes' by other researchers and students,
 or are tricks I discovered/invented to ease collaboration.
-
-<span class="danger">This article is an incomplete draft.
-I will add more tips and elaborate on existing ones.</span>
 
 [TOC]
 
