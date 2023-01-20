@@ -324,29 +324,27 @@ This is a premium feature, so everyone can't do this.
 #### Git
 
 [Git](https://en.wikipedia.org/wiki/Git) is a tool for collaborative version control.
-It was written so that large software projects can be worked on
-by a large number of people at the same time.
-It's also useful for non-software projects, though, like LaTeX documents.
+It was written so that a large number of people
+can work on a large software project at the same time.
+Git is also useful for non-software projects, though, like LaTeX documents.
 
-Git has a steep learning curve, and without adequate experience
-it's hard to appreciate its utility.
+Git has a steep learning curve.
 (I used to be a professional software engineer, so I'm quite comfortable with git.)
 What makes learning git difficult isn't just getting used to the terminal commands.
-It's also understanding the concepts behind git, like commits, branches,
-working directory, remotes, etc.
-But it is the knowledge of these very concepts that make collaboration easier.
+The real difficulty lies in realizing what git can do for you.
+If you think of git as just an interface to sync a folder to Github,
+you're missing the point, and won't be able to appreciate the utility of git.
+<span class="danger">(TODO: add list of resources to learn about git.)</span>
 
-For hosting git repositories online,
-[Github](https://github.com) and [Gitlab](https://gitlab.com) are viable options.
-Repositories can be either public or private,
-though for private repositories there may be certain restrictions or paywalls.
+For multiple people to work on a shared git repository, it needs to be hosted online.
+[Github](https://github.com) and [Gitlab](https://gitlab.com) are viable hosting options.
 
 #### Shared online folder
 
 A shared online folder (like [Dropbox](https://www.dropbox.com) or [Box](https://www.box.com)) is,
 in my opinion, a quick-and-dirty way of collaboration.
 With auto-syncing in Dropbox, authors need to be careful about concurrent access.
-Dropbox saves past versions, but git has far superior version control.
+Dropbox saves past versions, but the kind of versioning it does is very rudimentary (especially compared to git).
 Dropbox sends notifications to collaborators whenever someone makes a change.
 If someone has a habit of constantly saving their work, collaborators
 get flooded with notifications (except if they turn off those notifications entirely).
