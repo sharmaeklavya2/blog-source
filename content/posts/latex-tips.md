@@ -2,7 +2,7 @@ title: LaTeX tips
 slug: latex-tips
 tags: latex
 date: 2022-11-13
-modified: 2023-01-16
+modified: 2023-01-19
 summary: This article lists LaTeX tips. The primary audience is my current and future collaborators, but it should be useful to other people too. To prevent stating facts that are either obvious or irrelevant to my primary audience, most of these tips are based on subtle 'mistakes' by other researchers and students.
 
 
