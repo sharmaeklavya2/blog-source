@@ -372,6 +372,12 @@ When I need to push, I use `rsync` to copy my working directory to the shared Dr
 (I first check diffs to ensure that I'm not overwriting others' work).
 This way, I partially get the benefits of git and my collaborators don't even need to know about it.
 
+## Acknowlegements
+
+* [Prof. Arindam Khan](https://www.csa.iisc.ac.in/~arindamkhan/), my masters advisor,
+told me about cleveref.
+* [Robert Andrews](http://rgandre2.web.engr.illinois.edu) told me about `\autoref`.
+
 ## References
 
 <ol>
