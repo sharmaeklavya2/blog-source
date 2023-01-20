@@ -2,7 +2,7 @@ title: LaTeX tips
 slug: latex-tips
 tags: latex
 date: 2022-11-13
-modified: 2023-01-19
+modified: 2023-01-20
 summary: This article lists LaTeX tips. The primary audience is my current and future collaborators, but it should be useful to other people too. To prevent stating facts that are either obvious or irrelevant to my primary audience, most of these tips are based on subtle 'mistakes' by other researchers and students.
 
 
@@ -48,9 +48,10 @@ I used the following options in my old ArXiv papers
 
     \hypersetup{bookmarksnumbered=true,colorlinks,linkcolor=red,citecolor=red,urlcolor=blue}
 
-### Use cleveref
+### Use cleveref or autoref
 
-Always `\usepackage{cleveref}`.
+Instead of `\ref`, use `\cref` from the cleveref package,
+or use `\autoref` from the hyperref package.
 
 `cleveref` allows you to write `\cref{lower-bound}` instead of `Theorem \ref{lower-bound}`,
 because `cleveref` automatically detects which kind of thing you're referring to.
@@ -68,6 +69,18 @@ Preferably do this by using a prefix: `thm:`, `defn:`, `sec:`, `fig:`, etc.
 This makes it easier to know what is being referenced when reading the TeX source.
 Don't use different prefixes for theorems, lemmas, observations, claims;
 use `thm:` for all of them (otherwise there's no point in using `cleveref`).
+
+`\autoref` is almost the same as `\cref`.
+These are the main differences that I found:
+
+* In `\cref` we can pass multiple comma-separated labels,
+    e.g., `\cref{thm:lower-bound,thm:upper-bound}` outputs 'Theorems 1 and 2'
+    (or 'Theorem 1 and Lemma 2', if `thm:upper-bound` is a Lemma).
+    `\autoref` doesn't support this.
+* Capitalization can be controlled in `cleveref` using the `capitalize` option or the `\Cref` command.
+    With `\autoref`, some entities are capitalized and some are not.
+    The defaults can be overriden by defining `\<entity>autorefname`-style commands (see section 6 of the
+    [hyperref manual](http://mirrors.ctan.org/macros/latex/contrib/hyperref/doc/hyperref-doc.pdf) for details).
 
 ### Do not use obsolete commands
 
