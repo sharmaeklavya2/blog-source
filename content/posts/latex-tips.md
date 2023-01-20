@@ -366,9 +366,8 @@ This way, I partially get the benefits of git and my collaborators don't even ne
 <!--<span class="cite-name">freek-pc</span><br>-->
 <span class="cite-authors">Freek Dijkstra.</span>
 <cite class="cite-title">
-<a href="http://www.math.ucsd.edu/~fan/ron/papers/04_05_juggling.pdf">
 <a href="http://www.macfreek.nl/memory/LaTeX_package_conflicts">
-LaTeX package conflicts.</a></cite><br>
-<!--<span class="cite-source"></span>-->
+LaTeX package conflicts.</a></cite>
+<!--<br><span class="cite-source"></span>-->
 </li>
 </ol>
