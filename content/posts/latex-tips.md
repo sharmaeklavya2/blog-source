@@ -146,7 +146,7 @@ Suppose your document is split into multiple files, where the top-level file is 
 and you `\input` other files in `main.tex`. When you use `pdflatex` to compile `main.tex`,
 the output will be named `main.pdf`.
 If you use this naming scheme for all your documents, they will all be named `main.pdf`.
-This can be a problem, depending on how you navigate your filesystem.
+This may be a problem, depending on how you navigate your filesystem.
 There are 2 ways of fixing this:
 
 1.  *Change the output name*:
@@ -162,7 +162,7 @@ There are 2 ways of fixing this:
 2.  *Change the input name*:
     Name the top-level document `number-theory.tex` instead of `main.tex`.
     But this can make it hard for others (or you, after a long time)
-    to figure out which is the top-level tex file.
+    to figure out which is the top-level TeX file.
 
 For both the options above, I recommend having a file named `makefile` in your project,
 where you specify the compilation instructions. Thus, you not only document
@@ -199,7 +199,7 @@ to the `makefile`, then you can delete all intermediate files by running `make c
 
 Publishers often have some requirements about the submission,
 like the way metadata is formatted, page limit,
-constraints on the tex source, bibliography format, etc.
+constraints on the TeX source, bibliography format, etc.
 Hence, authors need to make changes to their paper before submission.
 This issue is exacerbated if the authors get one or more rejections and they resubmit elsewhere,
 or they are also submitting to arXiv.
@@ -207,13 +207,13 @@ or they are also submitting to arXiv.
 To make this just-before-submission process easier, I formulated some best practices
 and wrote programs to automate a few tasks.
 
-### Splitting a document into multiple tex files
+### Splitting a document into multiple TeX files
 
 A common practice is to split a LaTeX document into multiple files.
 There is a file for each section, and they are all `\input` into a main file (usually named `main.tex`).
 Some people, including me, like this approach for various reasons.
 
-One disadvantage of such a splitting is that publishers often ask for a single tex file.
+One disadvantage of such a splitting is that publishers often ask for a single TeX file.
 Then we need to copy-and-paste everything into a single file.
 But this need not be a deterrent, because I automated this process:
 [github:sharmaeklavya2/tex-flatten](https://github.com/sharmaeklavya2/tex-flatten).
