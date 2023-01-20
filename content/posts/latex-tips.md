@@ -27,7 +27,8 @@ but it will improve the digital reading experience,
 like making references clickable and adding a table of contents.
 
 The order in which you load packages matters.
-Most packages should be loaded before `hyperref`.
+Most packages should be loaded before `hyperref`<sup><a href="#cite-freek-pc">[1]</a></sup>
+(`cleveref`, `algorithm`, and `algpseudocode` are the only exceptions I'm aware of).
 
 You can pass several options to hyperref either while loading the package
 (`usepackage[options]{hyperref}`) or later (`\hypersetup{options}`).
@@ -357,3 +358,17 @@ Then I continue working on my git repository as usual.
 When I need to push, I use `rsync` to copy my working directory to the shared Dropbox folder
 (I first check diffs to ensure that I'm not overwriting others' work).
 This way, I partially get the benefits of git and my collaborators don't even need to know about it.
+
+## References
+
+<ol>
+<li class="citation" id="cite-freek-pc">
+<!--<span class="cite-name">freek-pc</span><br>-->
+<span class="cite-authors">Freek Dijkstra.</span>
+<cite class="cite-title">
+<a href="http://www.math.ucsd.edu/~fan/ron/papers/04_05_juggling.pdf">
+<a href="http://www.macfreek.nl/memory/LaTeX_package_conflicts">
+LaTeX package conflicts.</a></cite><br>
+<!--<span class="cite-source"></span>-->
+</li>
+</ol>
