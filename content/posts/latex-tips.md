@@ -285,13 +285,12 @@ Hence, I can iterate over sentences by just reading the first few characters of 
 3.  Longer lines make it harder to use a diff tool (like `git diff`) to see what has changed
 between versions of a file.
 
-As far as I know, most people don't hard wrap lines.
+I recommend hard-wrapping. But as far as I know, most people don't hard wrap lines.
 They may agree to hard wrap and then keep forgetting to do so, because old habits die hard.
-They may also refuse to hard wrap text, and there can be good reasons for this.
+They may also refuse to hard wrap text, and there may be good reasons for this.
 For example, it can be irritating to edit TeX code that is hard-wrapped at
 a width larger than the editor window width, and Overleaf has a very narrow editor window.
-Hence, you will need ways to deal with extremely long lines,
-especially if you're not used to it.
+Hence, one needs to know how to deal with extremely long lines.
 
 1.  Use a diff tool that highlights intra-line diffs,
 like [`delta`](https://dandavison.github.io/delta/introduction.html)
