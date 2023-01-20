@@ -8,10 +8,11 @@ summary: This article lists LaTeX tips. The primary audience is my current and f
 
 In this article, I'll list tips for making LaTeX documents better and easing collaboration.
 
-The primary audience of this article are my current and future collaborators,
-but it should be useful to other LaTeX users too, mostly other academics.
-To prevent these tips from being obvious or irrelevant to my primary audience,
-most of them are either based on subtle 'mistakes' by other researchers and students,
+The target audience of this article is academic researchers
+who write math-heavy papers using LaTeX.
+I don't want to offer tips that are either obvious or irrelevant,
+so most of these tips are either based on subtle 'mistakes' by other researchers and students,
+mistakes by me pointed out by my collaborators (thanks!),
 or are tricks I discovered/invented to ease collaboration.
 
 [TOC]
