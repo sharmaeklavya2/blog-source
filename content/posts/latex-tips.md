@@ -3,7 +3,7 @@ slug: latex-tips
 tags: latex
 date: 2022-11-13
 modified: 2023-01-20
-summary: This article lists LaTeX tips. The primary audience is my current and future collaborators, but it should be useful to other people too. To prevent stating facts that are either obvious or irrelevant to my primary audience, most of these tips are based on subtle 'mistakes' by other researchers and students.
+summary: This article lists LaTeX tips. The primary audience of this article is academic researchers who write math-heavy papers using LaTeX. To prevent stating facts that are either obvious or irrelevant, most of these tips are based on subtle 'mistakes' by other researchers and students, and mistakes by me pointed out by my collaborators.
 
 
 In this article, I'll list tips for making LaTeX documents better and easing collaboration.
