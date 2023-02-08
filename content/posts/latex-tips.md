@@ -1,6 +1,6 @@
 title: LaTeX tips
 slug: latex-tips
-tags: latex
+tags: LaTeX
 date: 2022-11-13
 modified: 2023-01-20
 summary: This article lists LaTeX tips. The primary audience of this article is academic researchers who write math-heavy papers using LaTeX. To prevent stating facts that are either obvious or irrelevant, most of these tips are based on subtle 'mistakes' by other researchers and students, and mistakes by me pointed out by my collaborators.
