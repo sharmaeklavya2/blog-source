@@ -64,10 +64,12 @@ KATEX_COMMON = {
     'defer_css': False,
     'options': {
         "output": "html",
-        "delimiters": [
-            {"left": "$$", "right": "$$", "display": True},
-            {"left": "\\(", "right": "\\)", "display": False},
-        ],
+        "fleqn": True,
+        "macros": {
+            "\\eps": "\\varepsilon",
+            "\\E": "\\operatorname{\\mathbb{E}}",
+            "\\defeq": ":=",
+        }
     },
     'preload_fonts': [
         'KaTeX_Main-Regular.woff2',
