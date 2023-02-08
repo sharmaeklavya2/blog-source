@@ -66,7 +66,7 @@ The event $i = j$ is called *bowling out*.
 The inning ends when either $b$ or $w$ becomes 0.
 When an inning ends at state $(b, s, w)$, the batter gets a score of $s$.
 After both innings, the player with a larger score wins.
-If both players have the same score, it's a draw.
+If both players have the same score, it's a tie.
 
 ## Preliminaries
 
@@ -89,7 +89,7 @@ where ESM abbreviates Expected Score Maximization.
 
 Infinite ESM hand cricket intuitively seems to be a reasonable surrogate
 to the first inning when $B = \infty$.
-(In contrast, in the second inning, the batter wants to maximize the probability
+(By contrast, in the second inning, the batter wants to maximize the probability
 of scoring more than a given target.)
 
 **Definition**:
