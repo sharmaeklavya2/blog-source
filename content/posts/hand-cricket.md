@@ -17,8 +17,15 @@ An informal description of hand cricket can be found on
 [this instructibles page](https://www.instructables.com/How-to-Play-Hand-Cricket/),
 or on [this iOS app's website](https://theshubhamarya.github.io/HandCricket/).
 
+I used to play hand cricket a lot in childhood.
+But back then it never occurred to me that maybe I can use math to figure out how to play this game well.
+I searched the internet to see if anyone has analyzed this game already,
+but I didn't come across anything.
+This game doesn't even have a proper wikipedia page!
+This is a shame. We must fix this by giving it the mathematical treatment it deserves.
+
 In this article, I formally define the game and the associated mathematical problem.
-I haven't yet succeeded in solving the problem. I've written down the progress I've made.
+I haven't yet succeeded in solving the problem. I've written down the progress I made.
 I have never formally studied game theory, so perhaps I'm just ill-equipped to solve it.
 
 ## Formal Description of the Game
@@ -63,7 +70,7 @@ If both players have the same score, it's a draw.
 
 ## Preliminaries
 
-For any positive integer $n$, let $[n] \defeq \{1, 2, \ldots, n\}$.
+For any positive integer $n$, let $[n] \defeq \{1, 2, \ldots, n\}$
 and $\simplex_n \defeq \{x \in \mathbb{R}_{\ge 0}^n: \sum_{i=1}^n x_i = 1\}$.
 
 We can assume that all entries in the score vector are positive,
@@ -123,9 +130,13 @@ Since $e(x, y)$ is proportional to $W$, we can assume without loss of generality
 
 **Open Problem**:
 Does infinite ESM hand cricket have a Nash equilibrium
-where both players use a memoryless strategy.
+where both players use a memoryless strategy?
 If yes, can we compute it or get a closed-form expression for it?
 Is the Nash equilibrium unique? If no, which one is *better*?
 
 <span class="danger">I don't know how to solve this problem.</span>
 Any help would be appreciated!
+
+Intuitively, it seems to me that studying memoryless strategies is enough,
+i.e., other strategies can't possibly do better.
+But I don't know how to prove it.
