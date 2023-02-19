@@ -25,8 +25,8 @@ This game doesn't even have a proper wikipedia page!
 This is a shame. We must fix this by giving it the mathematical treatment it deserves.
 
 In this article, I formally define the game and the associated mathematical problem.
-I haven't yet succeeded in solving the problem. I've written down the progress I made.
-I have never formally studied game theory, so perhaps I'm just ill-equipped to solve it.
+
+[TOC]
 
 ## Formal Description of the Game
 
@@ -96,6 +96,11 @@ of scoring more than a given target.)
 Let $x \in \simplex_n$. Then the *memoryless strategy* $x$ is this:
 make each move independently, and in each move pick $i$ with probability $x_i$.
 
+If one player uses a memoryless strategy, the other player can't gain anything by
+using a non-memoryless strategy. <span class="danger">I don't yet have a formal proof of this</span>,
+but the intuition is that there's a kind of substructure:
+after the first move, the remaining game is identical to the original.
+
 Suppose the batter and bowler commit to playing memoryless strategies only.
 We want to analyze how they should pick their strategies.
 Let $e(x, y)$ be the batter's expected total score
@@ -128,15 +133,81 @@ $\quad\Box$
 
 Since $e(x, y)$ is proportional to $W$, we can assume without loss of generality that $W = 1$.
 
+### Existence of Nash Equilibrium
+
+Here I'll show that infinite ESM cricket has a Nash equilibrium
+where both players use a memoryless strategy.
+
+We want to find a strategy $\xhat$ for the batter such that $e(\xhat, y)$ doesn't depend on $y$.
+Similarly, we want to find a strategy $\yhat$ for the bowler such that $e(x, \yhat)$ doesn't depend on $x$.
+Then $(\xhat, \yhat)$ would be a Nash equilibrium.
+
+Let us first rewrite $e(x, y)$ using the fact that $\sum_{j=1}^n y_j = 1$.
+Let $\vecone \in \mathbb{R}^n$ be a vector where each coordinate is 1.
+
+$$\begin{aligned}
+e(x, y) &= \frac{\sum_{i=1}^n s_i(\vecone^Ty - y_i)x_i}{\sum_{i=1}^n y_ix_i}
+= \frac{\sum_{j=1}^n (s^Tx - s_jx_j)y_j}{\sum_{j=1}^n x_jy_j}.
+\tag{\htmlId{eq-exy}{\texttt{exy}}}
+\end{aligned}$$
+
+To find $\xhat$, we enforce that the coefficients of $y$ in the numerator of $e(\xhat, y)$
+are proportional to the coefficients of $y$ in the denominator of $e(\xhat, y)$, i.e.,
+for some constant $\beta$, we have
+$$\frac{s^T\xhat - s_j\xhat_j}{\xhat_j} = \beta \quad \forall j \in [n].
+\tag{\htmlId{eq-coeff-ratio}{\texttt{coeff-ratio}}}$$
+Then we get $e(\xhat, y) = \beta$ for all $y \in \simplex_n$.
+We can find $\xhat$ using some algebraic manipulation, which gives us the following theorem:
+
+**Theorem <span id="thm-esm1">ESM1</span>**:
+Let $g: \mathbb{R}_{\ge 0} \to \mathbb{R}_{\ge 0}$ be a function where
+$g(z) \defeq \sum_{i=1}^n \frac{s_i}{z + s_i}$. Then $g(\beta) = 1$ and
+$$\displaystyle \xhat_i = \frac{1}{n-1}\frac{\beta}{\beta + s_i} \quad \forall i \in [n].$$
+
+*Proof*.
+By eq. <a href="#eq-coeff-ratio">(coeff-ratio)</a>,
+we get $\xhat_j = s^T\xhat/(\beta + s_j)$ for all $j \in [n]$.
+Computing $s^T\xhat$ using this value of $\xhat$ gives us
+$$s^T\xhat = \sum_{i=1}^n s_i\left(\frac{s^T\xhat}{\beta + s_i}\right)
+= s^T\xhat \sum_{i=1}^n \frac{s_i}{\beta + s_i}.$$
+
+Hence, we get
+$$\sum_{i=1}^n \frac{s_i}{\beta + s_i} = g(\beta) = 1.$$
+Now set $\vecone^T\xhat = 1$ to get
+
+$$\begin{aligned}
+1 &= \sum_{i=1}^n \xhat_i = s^T\xhat \sum_{i=1}^n \frac{1}{\beta + s_i}
+\\ &= \frac{s^T\xhat}{\beta} \sum_{i=1}^n \left(1 - \frac{s_i}{\beta + s_i}\right)
+\\ &= \frac{s^T\xhat(n-1)}{\beta}.
+\end{aligned}$$
+
+Hence, $s^T\xhat = \beta/(n-1)$, and so we get
+$$\xhat_i = \frac{1}{n-1}\frac{\beta}{\beta + s_i} \quad \forall i \in [n].$$
+
+<span style="float: right; margin-top: -3em;">&squ;</span>
+
+Note that $g(z)$ is decreasing in $z$ and $g(0) = n$. Also
+$$g\left(\sum_{i=1}^n s_i\right) = \sum_{i=1}^n \frac{s_i}{s_i + \sum_{j=1}^n s_j}
+\le \sum_{i=1}^n \frac{s_i}{\sum_{j=1}^n s_j} = 1.$$
+Hence, $g(z) = 1$ has a unique solution $\beta$ and $0 < \beta \le \sum_{i=1}^n s_i$.
+
+Using similar techniques, we can find $\yhat$ such that $e(x, \yhat)$ doesn't depend on $x$.
+
+**Theorem <span id="thm-esm2">ESM2</span>**:
+Let $\beta$ be as defined in Theorem <a href="#thm-esm1">ESM1</a>.
+Let $\yhat_j \defeq s_j/(\beta + s_j)$ for all $j \in [n]$.
+Then $\yhat \in \simplex_n$ and $e(x, \yhat) = \beta$ for all $x \in \simplex_n$.
+
+*Proof*.
+$$\begin{aligned}
+x^T\yhat e(x, \yhat) &= \sum_{i=1}^n s_i(1 - \yhat_i)x_i
+\\ &= \sum_{i=1}^n \frac{\beta s_i}{\beta + s_i}x_i
+\\ &= \sum_{i=1}^n \beta \yhat_ix_i = \beta x^T\yhat.
+\end{aligned}$$
+Hence, $e(x, \yhat) = \beta$ for all $x \in \simplex_S$.
+Also, $\yhat \in \simplex_n$ since $\sum_{j=1}^n \yhat_j = g(\beta) = 1$
+(where $g$ is as defined in Theorem <a href="#thm-esm1">ESM1</a>).
+$\quad$ &squ;
+
 **Open Problem**:
-Does infinite ESM hand cricket have a Nash equilibrium
-where both players use a memoryless strategy?
-If yes, can we compute it or get a closed-form expression for it?
 Is the Nash equilibrium unique? If no, which one is *better*?
-
-<span class="danger">I don't know how to solve this problem.</span>
-Any help would be appreciated!
-
-Intuitively, it seems to me that studying memoryless strategies is enough,
-i.e., other strategies can't possibly do better.
-But I don't know how to prove it.

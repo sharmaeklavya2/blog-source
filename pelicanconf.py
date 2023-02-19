@@ -65,10 +65,14 @@ KATEX_COMMON = {
     'options': {
         "output": "html",
         "fleqn": True,
+        "trust": True,
         "macros": {
             "\\eps": "\\varepsilon",
             "\\E": "\\operatorname{\\mathbb{E}}",
             "\\defeq": ":=",
+            "\\vecone": "\\mathbf{1}",
+            "\\xhat": "\\widehat{x}",
+            "\\yhat": "\\widehat{y}",
         }
     },
     'preload_fonts': [
