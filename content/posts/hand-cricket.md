@@ -133,7 +133,7 @@ $\quad\Box$
 
 Since $e(x, y)$ is proportional to $W$, we can assume without loss of generality that $W = 1$.
 
-### Existence of Nash Equilibrium
+### Finding a Nash Equilibrium
 
 Here I'll show that infinite ESM cricket has a Nash equilibrium
 where both players use a memoryless strategy.
@@ -210,10 +210,16 @@ $$\begin{aligned}
 Hence, $s^T\xhat = \beta/(n-1)$, and so we get
 $$\xhat_i = \frac{1}{n-1}\frac{\beta}{\beta + s_i} \quad \forall i \in [n].$$
 
-Note that $g(z)$ is decreasing in $z$ and $g(0) = n$. Also
-$$g\left(\sum_{i=1}^n s_i\right) = \sum_{i=1}^n \frac{s_i}{s_i + \sum_{j=1}^n s_j}
-\le \sum_{i=1}^n \frac{s_i}{\sum_{j=1}^n s_j} = 1.$$
-Hence, $g(z) = 1$ has a unique solution $\beta$ and $0 < \beta \le \sum_{i=1}^n s_i$.
+Note that $g(z)$ is decreasing in $z$. Let $r \defeq \sum_{i=1}^n s_i$. Then
+<span class="targetbox" id="eq-beta-bounds">
+$$\begin{aligned}
+g(r-s_n) &= \sum_{i=1}^n \frac{s_i}{r-s_n+s_i}
+\ge \sum_{i=1}^n \frac{s_i}{r} = 1
+\\ g(r-s_1) &= \sum_{i=1}^n \frac{s_i}{r-s_1+s_i}
+\le \sum_{i=1}^n \frac{s_i}{r} = 1
+\end{aligned} \tag{$\beta$\texttt{-bounds}}$$
+</span>
+Hence, $g(z) = 1$ has a unique solution $\beta$ and $r-s_n \le \beta \le r-s_1$.
 
 Using similar techniques, we can find $\yhat$ such that $e(x, \yhat)$ doesn't depend on $x$.
 
@@ -225,6 +231,12 @@ x^T\yhat e(x, \yhat) &= \sum_{i=1}^n s_i(1 - \yhat_i)x_i
 Hence, $e(x, \yhat) = \beta$ for all $x \in \simplex_S$.
 Also, $\yhat \in \simplex_n$ since $\sum_{j=1}^n \yhat_j = g(\beta) = 1$.
 $\quad\Box$
+
+Since $g(z)$ is monotonically decreasing and $r-s_n \le \beta \le r-s_1$
+(by eq. <a href="eq-beta-bounds">&beta;-bounds</a>),
+we can compute $\beta$ approximately using binary search.
+To get a $(1+\eps)$-approximate value of $\beta$, the number of iterations needed is at most
+$$\left\lceil\log_2\left(\frac{1}{\eps}\right) + \log_2\left(\frac{s_n-s_1}{r-s_n}\right)\right\rceil.$$
 
 ### Open Problems
 
