@@ -145,24 +145,30 @@ Then $(\xhat, \yhat)$ would be a Nash equilibrium.
 Let us first rewrite $e(x, y)$ using the fact that $\sum_{j=1}^n y_j = 1$.
 Let $\vecone \in \mathbb{R}^n$ be a vector where each coordinate is 1.
 
+<span id="eq-exy" class="targetbox">
 $$\begin{aligned}
 e(x, y) &= \frac{\sum_{i=1}^n s_i(\vecone^Ty - y_i)x_i}{\sum_{i=1}^n y_ix_i}
 = \frac{\sum_{j=1}^n (s^Tx - s_jx_j)y_j}{\sum_{j=1}^n x_jy_j}.
-\tag{\htmlId{eq-exy}{\texttt{exy}}}
+\tag{\texttt{exy}}
 \end{aligned}$$
+</span>
 
 To find $\xhat$, we enforce that the coefficients of $y$ in the numerator of $e(\xhat, y)$
 are proportional to the coefficients of $y$ in the denominator of $e(\xhat, y)$, i.e.,
 for some constant $\beta$, we have
+<span id="eq-coeff-ratio" class="targetbox">
 $$\frac{s^T\xhat - s_j\xhat_j}{\xhat_j} = \beta \quad \forall j \in [n].
-\tag{\htmlId{eq-coeff-ratio}{\texttt{coeff-ratio}}}$$
+\tag{\texttt{coeff-ratio}}$$
+</span>
 Then we get $e(\xhat, y) = \beta$ for all $y \in \simplex_n$.
 We can find $\xhat$ using some algebraic manipulation, which gives us the following theorem:
 
-**Theorem <span id="thm-esm1">ESM1</span>**:
+<span class="targetbox" id="thm-esm1">
+**Theorem ESM1**:
 Let $g: \mathbb{R}_{\ge 0} \to \mathbb{R}_{\ge 0}$ be a function where
 $g(z) \defeq \sum_{i=1}^n \frac{s_i}{z + s_i}$. Then $g(\beta) = 1$ and
 $$\displaystyle \xhat_i = \frac{1}{n-1}\frac{\beta}{\beta + s_i} \quad \forall i \in [n].$$
+</span>
 
 *Proof*.
 By eq. <a href="#eq-coeff-ratio">(coeff-ratio)</a>,
@@ -193,10 +199,12 @@ Hence, $g(z) = 1$ has a unique solution $\beta$ and $0 < \beta \le \sum_{i=1}^n 
 
 Using similar techniques, we can find $\yhat$ such that $e(x, \yhat)$ doesn't depend on $x$.
 
+<span class="targetbox" id="thm-esm2">
 **Theorem <span id="thm-esm2">ESM2</span>**:
 Let $\beta$ be as defined in Theorem <a href="#thm-esm1">ESM1</a>.
 Let $\yhat_j \defeq s_j/(\beta + s_j)$ for all $j \in [n]$.
 Then $\yhat \in \simplex_n$ and $e(x, \yhat) = \beta$ for all $x \in \simplex_n$.
+</span>
 
 *Proof*.
 $$\begin{aligned}

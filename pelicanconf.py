@@ -65,7 +65,6 @@ KATEX_COMMON = {
     'options': {
         "output": "html",
         "fleqn": True,
-        "trust": True,
         "macros": {
             "\\eps": "\\varepsilon",
             "\\E": "\\operatorname{\\mathbb{E}}",
