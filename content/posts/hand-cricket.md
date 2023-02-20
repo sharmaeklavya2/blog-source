@@ -241,3 +241,4 @@ $$\left\lceil\log_2\left(\frac{1}{\eps}\right) + \log_2\left(\frac{s_n-s_1}{r-s_
 ### Open Problems
 
 * Is the Nash equilibrium unique? If no, which one is *better*?
+* Can we get concentration bounds on the equilibrium score?
