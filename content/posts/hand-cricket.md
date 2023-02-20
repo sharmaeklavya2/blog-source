@@ -155,6 +155,15 @@ Furthermore, $e(\xhat, y) = \beta$ for all $y \in \simplex_n$
 and $e(x, \yhat) = \beta$ for all $x \in \simplex_n$.
 </span>
 
+Before I prove this theorem, let's see some examples:
+
+* When $s_i = i$ and $n = 10$, we get $\beta \approx 48.112$,
+<br> $\xhat \approx $ `[0.10885, 0.10668, 0.10459, 0.10258, 0.10065, 0.09879, 0.09700, 0.09527, 0.09360, 0.09199]`,
+<br> $\yhat \approx $ `[0.02036, 0.03991, 0.05869, 0.07676, 0.09414, 0.11088, 0.12701, 0.14257, 0.15759, 0.17208]`.
+* When $n=2$, we get $\beta = \sqrt{s_1s_2}$,
+$\xhat_1 = \yhat_2 = \frac{\sqrt{s_2}}{\sqrt{s_1} + \sqrt{s_2}}$,
+$\yhat_1 = \xhat_2 = \frac{\sqrt{s_1}}{\sqrt{s_1} + \sqrt{s_2}}$.
+
 *Proof*.
 Let us first rewrite $e(x, y)$ using the fact that $\sum_{j=1}^n y_j = 1$.
 Let $\vecone \in \mathbb{R}^n$ be a vector where each coordinate is 1.
