@@ -141,7 +141,21 @@ where both players use a memoryless strategy.
 We want to find a strategy $\xhat$ for the batter such that $e(\xhat, y)$ doesn't depend on $y$.
 Similarly, we want to find a strategy $\yhat$ for the bowler such that $e(x, \yhat)$ doesn't depend on $x$.
 Then $(\xhat, \yhat)$ would be a Nash equilibrium.
+We will now see why such $\xhat$ and $\yhat$ exist.
 
+<span class="fbox targetbox" id="thm-esm-main">
+**Theorem ESM**:
+Let $g(z) \defeq \sum_{i=1}^n \frac{s_i}{z + s_i}$.
+Then there exists a unique $\beta > 0$ such that $g(\beta) = 1$.
+Define vectors $\xhat$ and $\yhat$ as
+$$\displaystyle \xhat_i \defeq \frac{1}{n-1}\frac{\beta}{\beta + s_i} \quad \forall i \in [n]$$
+$$\yhat_j \defeq \frac{s_j}{\beta + s_j} \quad \forall j \in [n]$$
+Then $\xhat, \yhat \in \simplex_n$ and $(\xhat, \yhat)$ is a Nash equilibrium for infinite ESM hand cricket.
+Furthermore, $e(\xhat, y) = \beta$ for all $y \in \simplex_n$
+and $e(x, \yhat) = \beta$ for all $x \in \simplex_n$.
+</span>
+
+*Proof*.
 Let us first rewrite $e(x, y)$ using the fact that $\sum_{j=1}^n y_j = 1$.
 Let $\vecone \in \mathbb{R}^n$ be a vector where each coordinate is 1.
 
@@ -153,6 +167,12 @@ e(x, y) &= \frac{\sum_{i=1}^n s_i(\vecone^Ty - y_i)x_i}{\sum_{i=1}^n y_ix_i}
 \end{aligned}$$
 </span>
 
+Instead of just showing that $\xhat$ and $\beta$ satisfy the claims
+of Theorem <a href="#thm-esm-main">ESM</a>, we will do the reverse, i.e.,
+we assume that they satisfy the claims and use those to solve for $\xhat$ and $\beta$.
+I think this is a better way of writing the proof since
+we can then see how I came up with these $\xhat$ and $\beta$.
+
 To find $\xhat$, we enforce that the coefficients of $y$ in the numerator of $e(\xhat, y)$
 are proportional to the coefficients of $y$ in the denominator of $e(\xhat, y)$, i.e.,
 for some constant $\beta$, we have
@@ -161,16 +181,7 @@ $$\frac{s^T\xhat - s_j\xhat_j}{\xhat_j} = \beta \quad \forall j \in [n].
 \tag{\texttt{coeff-ratio}}$$
 </span>
 Then we get $e(\xhat, y) = \beta$ for all $y \in \simplex_n$.
-We can find $\xhat$ using some algebraic manipulation, which gives us the following theorem:
 
-<span class="targetbox" id="thm-esm1">
-**Theorem ESM1**:
-Let $g: \mathbb{R}_{\ge 0} \to \mathbb{R}_{\ge 0}$ be a function where
-$g(z) \defeq \sum_{i=1}^n \frac{s_i}{z + s_i}$. Then $g(\beta) = 1$ and
-$$\displaystyle \xhat_i = \frac{1}{n-1}\frac{\beta}{\beta + s_i} \quad \forall i \in [n].$$
-</span>
-
-*Proof*.
 By eq. <a href="#eq-coeff-ratio">(coeff-ratio)</a>,
 we get $\xhat_j = s^T\xhat/(\beta + s_j)$ for all $j \in [n]$.
 Computing $s^T\xhat$ using this value of $\xhat$ gives us
@@ -190,8 +201,6 @@ $$\begin{aligned}
 Hence, $s^T\xhat = \beta/(n-1)$, and so we get
 $$\xhat_i = \frac{1}{n-1}\frac{\beta}{\beta + s_i} \quad \forall i \in [n].$$
 
-<span style="float: right; margin-top: -3em;">&squ;</span>
-
 Note that $g(z)$ is decreasing in $z$ and $g(0) = n$. Also
 $$g\left(\sum_{i=1}^n s_i\right) = \sum_{i=1}^n \frac{s_i}{s_i + \sum_{j=1}^n s_j}
 \le \sum_{i=1}^n \frac{s_i}{\sum_{j=1}^n s_j} = 1.$$
@@ -199,23 +208,15 @@ Hence, $g(z) = 1$ has a unique solution $\beta$ and $0 < \beta \le \sum_{i=1}^n 
 
 Using similar techniques, we can find $\yhat$ such that $e(x, \yhat)$ doesn't depend on $x$.
 
-<span class="targetbox" id="thm-esm2">
-**Theorem <span id="thm-esm2">ESM2</span>**:
-Let $\beta$ be as defined in Theorem <a href="#thm-esm1">ESM1</a>.
-Let $\yhat_j \defeq s_j/(\beta + s_j)$ for all $j \in [n]$.
-Then $\yhat \in \simplex_n$ and $e(x, \yhat) = \beta$ for all $x \in \simplex_n$.
-</span>
-
-*Proof*.
 $$\begin{aligned}
 x^T\yhat e(x, \yhat) &= \sum_{i=1}^n s_i(1 - \yhat_i)x_i
 \\ &= \sum_{i=1}^n \frac{\beta s_i}{\beta + s_i}x_i
 \\ &= \sum_{i=1}^n \beta \yhat_ix_i = \beta x^T\yhat.
 \end{aligned}$$
 Hence, $e(x, \yhat) = \beta$ for all $x \in \simplex_S$.
-Also, $\yhat \in \simplex_n$ since $\sum_{j=1}^n \yhat_j = g(\beta) = 1$
-(where $g$ is as defined in Theorem <a href="#thm-esm1">ESM1</a>).
-$\quad$ &squ;
+Also, $\yhat \in \simplex_n$ since $\sum_{j=1}^n \yhat_j = g(\beta) = 1$.
+$\quad\Box$
 
-**Open Problem**:
-Is the Nash equilibrium unique? If no, which one is *better*?
+### Open Problems
+
+* Is the Nash equilibrium unique? If no, which one is *better*?
