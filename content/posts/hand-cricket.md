@@ -2,6 +2,7 @@ title: Hand Cricket: A Game Theoretic Perspective
 slug: hand-cricket
 tags: Math
 date: 2023-02-07
+modified: 2023-02-19
 mathengine: katex-full
 summary: Hand cricket is a popular game among Indian children. Here I try to analyze hand cricket from the perspective of non-cooperative game theory.
 
