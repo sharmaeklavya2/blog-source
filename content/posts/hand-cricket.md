@@ -234,7 +234,7 @@ Also, $\yhat \in \simplex_n$ since $\sum_{j=1}^n \yhat_j = g(\beta) = 1$.
 $\quad\Box$
 
 Since $g(z)$ is monotonically decreasing and $r-s_n \le \beta \le r-s_1$
-(by eq. <a href="eq-beta-bounds">&beta;-bounds</a>),
+(by eq. <a href="#eq-beta-bounds">&beta;-bounds</a>),
 we can compute $\beta$ approximately using binary search.
 To get a $(1+\eps)$-approximate value of $\beta$, the number of iterations needed is at most
 $$\left\lceil\log_2\left(\frac{1}{\eps}\right) + \log_2\left(\frac{s_n-s_1}{r-s_n}\right)\right\rceil.$$
