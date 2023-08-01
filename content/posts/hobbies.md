@@ -78,7 +78,7 @@ I'll provide other references.
   I rarely watch movies (less than once a month).
   I mostly watch English movies.
   My favorites are 'The Matrix' and 'Avatar'. I also like Marvel movies.
-  Among Indian movies, Baahubali is my favorite.
+  Among Indian movies, '3 Idiots' and 'Baahubali' are my favorite.
 
 * **Video games**:
   I used to play a lot of video games before college.
