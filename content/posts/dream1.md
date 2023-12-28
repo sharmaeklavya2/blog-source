@@ -19,7 +19,7 @@ But my printer refused to print because it was low on cyan,
 even though the form was completely black-and-white.
 I troubleshooted the printer while Putin patiently waited behind me.
 
-Disclaimer: I'm not a Putin fan. I'm not interested in or aware of Russian politics.
+Disclaimer: I'm not interested in or aware of Russian politics.
 Then why was Putin in my dreams? I have no idea.
 
 ## Part 2
@@ -37,10 +37,10 @@ An animal (either an owl or a deer or a human; I forgot which exactly)
 walks up to us, claiming to be an agent of Saraswati.
 He claims that Elsa and Anna have been chosen by God to complete holy quests.
 He offers monetary remuneration to Elsa and Anna's advisor.
-The advisor cries, "What will I do with money? You took away my best PhD students.
-I may have to restart my experiments from scratch. How will I get
+The advisor cries, "Just giving me money won't help. You took away my best PhD students.
+I'll have to restart my experiments from scratch. How will I get
 [tenure](https://en.wikipedia.org/wiki/Academic_tenure) now?"
 
 Disclaimer: I'm not a religious person or a Frozen fan.
 Then why were Saraswati and Elsa in my dreams? I have no idea.
-Also, I don't think tenure works like that.
+Also, that's not how tenure works.
