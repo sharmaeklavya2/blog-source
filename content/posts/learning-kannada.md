@@ -3,6 +3,7 @@ slug: learning-kannada
 tags: kannada
 status: draft
 date: 2024-03-17
+modified: 2024-03-23
 ExtraCSS: https://sharmaeklavya2.github.io/trin/trin.css
 summary: How I am learning Kannada as a Hindi speaker.
 
