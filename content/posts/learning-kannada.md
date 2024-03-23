@@ -97,14 +97,15 @@ Constructing sentences using memorized grammatical rules
 is not something we are meant to be good at.
 You can never achieve fluency using the algorithm approach.
 
-So if you don't have a large corpus of translations, is there no hope? False!
-You can combine the two approaches!
-Learn the language using the algorithm approach.
-Then find a lot of text/audio in your target language.
-Generate translations yourself using the algorithm approach
-(maybe with some help from a dictionary and maybe Google translate
-to fill in the gaps in your knowledge),
-and feed those input-output pairs to your brain.
+So if you don't have a large corpus of translations, what can you do?
+Combine the two approaches!
+First learn the language using the algorithm approach.
+Then switch to the data approach, i.e.,
+read and listen to a lot of sentences in your target language.
+You won't need an external source to tell you the meaning of these sentences;
+you can just translate them yourself.
+As you continue reading and listening, your language instincts will kick in
+and over time you'll gain fluency.
 
 In the rest of the article, I'll give details on the specific learning
 process that builds upon this high-level idea.
@@ -337,7 +338,7 @@ I recomend @correctKannada's [Learning_Kannada_from_Scratch][corrKn] series
 for learning grammar, where he teaches Kannada from English.
 The total duration of this playlist is around 18 hours.
 His channel also has a 40-minute-long
-[summary/trailer](https://www.youtube.com/watch?v=Hiz5yDJGK7Y) for the series. 
+[summary/trailer](https://www.youtube.com/watch?v=Hiz5yDJGK7Y) for the series.
 
 I took [notes][ekuNotes] while watching this playlist.
 When I need to revisit a concept, it's easier for me to read these notes
