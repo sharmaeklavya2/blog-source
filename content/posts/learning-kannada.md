@@ -15,8 +15,8 @@ since not many people want to learn this language,
 so there are very few good resources available.
 It's hard to even figure out *how* to learn Kannada.
 
-After having tried many resources, I've finally found some good ones
-and had some success learning Kannada.
+After trying out many resources, I finally found some good ones
+and have succeeded in learning some Kannada.
 This article documents what I think is a good way to learn Kannada,
 especially if you already know an Indian language.
 I think the ideas in this article can be used to learn
@@ -46,8 +46,8 @@ Here are the Kannada translations of the individual key words:
 2.  every day = रोज़ (roz) = ಪ್ರತಿದಿನ (pratidina)
 3.  go = जाओ (jao) = ಹೋಗು (hōgu)
 
-Even with these, it's not obvious how to get the Kannada translation
-for the whole sentence. That's what we need grammar for.
+It's not obvious how to combine these individual word translations to get the
+Kannada translation for the whole sentence. That's what we need grammar for.
 
 Btw, the text in parenthesis next to the Kannada sentence is its [IAST](https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration).
 You can also click the ट्र button on this page to transliterate
@@ -89,9 +89,10 @@ and not having any other responsibilities.
 The algorithm approach doesn't require much data,
 and you'll learn the language more quickly this way.
 
-However, the algorithm approach has a much bigger disadvantage:
+However, the algorithm approach has a major disadvantage:
 it's not the approach our brains are hard-wired for.
-Our brains have specific regions dedicated for producing and understanding language,
+Our brains have [specific regions](https://en.wikipedia.org/wiki/Language_processing_in_the_brain)
+dedicated for producing and understanding language,
 and they work best if you learn a language 'naturally'.
 Constructing sentences using memorized grammatical rules
 is not something we are meant to be good at.
@@ -106,6 +107,9 @@ You won't need an external source to tell you the meaning of these sentences;
 you can just translate them yourself.
 As you continue reading and listening, your language instincts will kick in
 and over time you'll gain fluency.
+
+(Disclaimer: I don't have scientific evidence to back these claims.
+They're just my hypotheses based on personal experience.)
 
 In the rest of the article, I'll give details on the specific learning
 process that builds upon this high-level idea.
@@ -148,7 +152,7 @@ It's important to make an informed decision on whether you
 would like to actually learn Kannada.
 I underestimated how difficult it would be to learn a new language.
 If I knew it would be this difficult, I may not have started.
-By the time I had realized this, I was already halfway through Phase 3.
+By the time I realized this, I was already halfway through Phase 3.
 By then I had gotten somewhat attached to Kannada and I thought
 that now that I've come so far, might as well finish what I started.
 
