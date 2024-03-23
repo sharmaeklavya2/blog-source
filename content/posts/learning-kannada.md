@@ -384,12 +384,14 @@ E.g., consider these 3 sentences:
 
 <table>
 <tr><th>English</th><th>Hindi</th></tr>
-<tr><td>I keep my clothes in my cupboard.</td>
-    <td>मैं अपने कपड़े अलमारी में रखता हूँ। (main apane kapade alamaaree mein rakhata hoon.)</td>
-<tr><td>Put the book on the chair.</td>
-    <td>पुस्तक को कुर्सी पर रखो। (Pustak ko kursi par rakho.)</td></tr>
-<tr><td>Put the book in the box.</td>
-    <td>पुस्तक को डिब्बे में डालो। (Pustak ko dibbe mein daalo.)</td></tr>
+<tr><td>I <strong>keep</strong> my clothes in my cupboard.</td>
+    <td>मैं अपने कपड़े अलमारी में <strong>रखता</strong> हूँ। (main apane kapade alamaaree mein <strong>rakhata</strong> hoon.)</td>
+<tr><td><strong>Put</strong> the book on the chair.</td>
+    <td>पुस्तक को कुर्सी पर <strong>रखो</strong>।
+    (Pustak ko kursi par <strong>rakho</strong>.)</td></tr>
+<tr><td><strong>Put</strong> the book in the box.</td>
+    <td>पुस्तक को डिब्बे में <strong>डालो</strong>।
+    (Pustak ko dibbe mein <strong>daalo</strong>.)</td></tr>
 </tr>
 </table>
 
