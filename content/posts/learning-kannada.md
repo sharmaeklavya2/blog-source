@@ -3,7 +3,7 @@ slug: learning-kannada
 tags: kannada
 status: draft
 date: 2024-03-17
-modified: 2024-03-23
+modified: 2024-03-24
 ExtraCSS: https://sharmaeklavya2.github.io/trin/trin.css
 summary: How I am learning Kannada as a Hindi speaker.
 
@@ -414,10 +414,24 @@ or examples where the word is used in sentences.
 
 I'm currently in this phase, so I'm still figuring out what to do.
 
-Start reading Kannada books. I started with the KTBS Class 1 book
-*Savi Kannada* ([PDF download link](https://ktbs.kar.nic.in/new/website%20textbooks/class1/1st-language-kannada.pdf)).
+Start reading Kannada books.
+I have started reading the *ಸವಿ ಕನ್ನಡ (Savi Kannada)* textbook series.
+Download links:
+[class 1](https://ktbs.kar.nic.in/new/website%20textbooks/class1/1st-language-kannada.pdf),
+[class 2](https://ktbs.kar.nic.in/new/website%20textbooks/class2/2nd-language-savikannada-1.pdf),
+[class 3](https://ktbs.kar.nic.in/new/website%20textbooks/class3/3rd-language-savikannada-1.pdf),
+[class 4](https://ktbs.kar.nic.in/new/website%20textbooks/class4/4th-language-savikannada-1.pdf).
+Visit the [KTBS website](https://ktbs.kar.nic.in/new/index.html#!/textbook)
+for more textbooks.
+
 If you can't understand the meaning of a word, you can use a
 Kannada-to-English dictionary, like [alar.ink](https://alar.ink/).
+For Savi Kannada textbooks, you can find English explanation videos by
+[@yashaswikannadavaani](https://www.youtube.com/@yashaswikannadavaani):
+[class 1](https://www.youtube.com/playlist?list=PLNMHhN8DrOUuuIr8CGr0kHwMTKJztnTbm),
+[class 2](https://www.youtube.com/playlist?list=PLNMHhN8DrOUt31HAn6oBGfEvMvBebS9Gg),
+[class 3](https://www.youtube.com/playlist?list=PLNMHhN8DrOUsBScU0Pvk9M4uoXUzQ7VwF),
+[class 4](https://www.youtube.com/playlist?list=PLNMHhN8DrOUvovQbJfIh-dBMXXu_k9M9Q).
 
 To attune your ears to Kannada, you must listen to a lot of it.
 Kannaḍa Kalike has [30 videos](https://kannadakalike.org/video-modules.php)
