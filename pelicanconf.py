@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from __future__ import unicode_literals
+import json
 import os
 import logging
 
@@ -54,13 +55,14 @@ MATH_JAX = {
         },
     },
 }
-KATEX_VERSION = "0.12.0"
+
+with open('package.json') as fp:
+    NPM_DEP_VERSIONS = json.load(fp)['dependencies']
+
+KATEX_VERSION = NPM_DEP_VERSIONS['katex']
 KATEX_COMMON = {
     'version': KATEX_VERSION,
     'prefix': 'https://cdn.jsdelivr.net/npm/katex@' + KATEX_VERSION + '/dist',
-    'style_integrity': 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',  # noqa
-    'katex_js_integrity': 'sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4',  # noqa
-    'auto_render_js_integrity': 'sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa',  # noqa
     'defer_css': False,
     'options': {
         "output": "html",
