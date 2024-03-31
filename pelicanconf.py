@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 import json
 import os
 import logging
+import markdown.util
 
 AUTHOR = 'Eklavya Sharma'
 SITENAME = "Eklavya's Blog"
@@ -43,6 +44,9 @@ MARKDOWN = {
         'md_in_html': {},
     }
 }
+
+for tag in ('figure', 'figcaption'):
+    markdown.util.BLOCK_LEVEL_ELEMENTS.remove(tag)
 
 MATH_JAX = {
     'auto_insert': False,
