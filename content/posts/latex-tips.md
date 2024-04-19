@@ -261,11 +261,9 @@ by unicode/ascii characters.
 
 ## Collaboration
 
-People often have different preferences about how to write documents and collaborate,
-and such differences can make collaboration less pleasant.
-These differences often arise because of personal taste or choice of tools.
-To deal with such issues, it is important to respect others' preferences
-and know ways to handle conventions different from what one is used to.
+People often have different preferences about how to write documents and collaborate.
+To accommodate others' preferences, one needs to know how to
+handle conventions different from what one is used to.
 
 ### Long lines
 
@@ -300,9 +298,8 @@ Hence, I can iterate over sentences by just reading the first few characters of 
 between versions of a file.
 
 I recommend hard-wrapping. But as far as I know, most people don't hard wrap lines.
-They may agree to hard wrap and then keep forgetting to do so, because old habits die hard.
-They may also refuse to hard wrap text, and there may be good reasons for this.
-For example, it can be irritating to edit TeX code that is hard-wrapped at
+They may agree to hard wrap and then keep forgetting to do so.
+Also, it can be irritating to edit TeX code that is hard-wrapped at
 a width larger than the editor window width, and Overleaf has a very narrow editor window.
 Hence, one needs to know how to deal with extremely long lines.
 
@@ -328,12 +325,12 @@ Avoid trailing whitespaces.
 Overleaf is an online editor that allows multiple people to edit a LaTeX document simultaneously.
 My initial impression of Overleaf (sometime in 2019) was bad, since it was slow
 and hard to use with a bad internet connection.
-It may have improved now, but I haven't tried it.
+It may have improved now, but I haven't tried its web interface.
 
 Overleaf's best feature, in my opinion, is
 [the ability to pull and push via a git interface](https://www.overleaf.com/learn/how-to/Using_Git_and_GitHub).
 This way, I can just use my own text editor (vim) to edit files.
-This is a premium feature, so everyone can't do this.
+This is a premium feature, unfortunately.
 
 #### Git
 
