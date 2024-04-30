@@ -3,7 +3,7 @@ slug: learning-kannada
 tags: kannada
 status: draft
 date: 2024-03-17
-modified: 2024-03-24
+modified: 2024-04-30
 ExtraCSS: https://sharmaeklavya2.github.io/trin/trin.css
 summary: How I am learning Kannada as a Hindi speaker.
 
@@ -37,15 +37,15 @@ Consider this example:
 <table>
 <tr><th>language</th><th>sentence</th></tr>
 <tr><td>English</td><td>I go to the gym every day.</td></tr>
-<tr><td>Hindi</td><td>मैं रोज़ gym जाता हूँ। (main roz gym jaata hoon.)</td></tr>
-<tr><td>Kannada</td><td>ನಾನು ಪ್ರತಿದಿನ gymಗೆ ಹೋಗುತ್ತೇನೆ. (nānu pratidina gymge hōguttēne.)</td></tr>
+<tr><td>Hindi</td><td>मैं रोज़ gym जाता हूँ। <span class="secondary">(main roz gym jaata hoon.)</span></td></tr>
+<tr><td>Kannada</td><td>ನಾನು ಪ್ರತಿದಿನ gymಗೆ ಹೋಗುತ್ತೇನೆ. <span class="secondary">(nānu pratidina gymge hōguttēne.)</span></td></tr>
 </table>
 
 Here are the Kannada translations of the individual key words:
 
-1.  I = मैं (main) = ನಾನು (nānu)
-2.  every day = रोज़ (roz) = ಪ್ರತಿದಿನ (pratidina)
-3.  go = जाओ (jao) = ಹೋಗು (hōgu)
+1.  I = मैं <span class="secondary">(main)</span> = ನಾನು <span class="secondary">(nānu)</span>
+2.  every day = रोज़ <span class="secondary">(roz)</span> = ಪ್ರತಿದಿನ <span class="secondary">(pratidina)</span>
+3.  go = जाओ <span class="secondary">(jao)</span> = ಹೋಗು <span class="secondary">(hōgu)</span>
 
 It's not obvious how to combine these individual word translations to get the
 Kannada translation for the whole sentence. That's what we need grammar for.
@@ -176,18 +176,18 @@ As an example of grammatical similarity, consider this sentence:
 <table>
 <tr><th>language</th><th>sentence</th></tr>
 <tr><td>English</td><td>I am in the kitchen.</td></tr>
-<tr><td>Hindi</td><td>मैं रसोई में हूँ। (main rasoee mein hoon.)</td></tr>
-<tr><td>Kannada</td><td>ನಾನು ಅಡುಗೆಮನೆಯಲ್ಲಿದ್ದೇನೆ. (nānu aḍugemaneyalliddēne.)</td></tr>
+<tr><td>Hindi</td><td>मैं रसोई में हूँ। <span class="secondary">(main rasoee mein hoon.)</span></td></tr>
+<tr><td>Kannada</td><td>ನಾನು ಅಡುಗೆಮನೆಯಲ್ಲಿದ್ದೇನೆ. <span class="secondary">(nānu aḍugemaneyalliddēne.)</span></td></tr>
 <tr><td>French</td><td>Je suis dans la cuisine.</td></tr>
 </table>
 
 These are the grammatical tokens in this sentence:
 
-1.  subject: I = मैं (main) = ನಾನು (nānu) = Je
-2.  verb: am = हूँ (hoon) = ಇದ್ದೇನೆ (iddēne) = suis
-3.  preposition (prep): in = में (mein) = ಅಲ್ಲಿ (alli) = dans
+1.  subject: I = मैं <span class="secondary">(main)</span> = ನಾನು <span class="secondary">(nānu)</span> = Je
+2.  verb: am = हूँ <span class="secondary">(hoon)</span> = ಇದ್ದೇನೆ <span class="secondary">(iddēne)</span> = suis
+3.  preposition (prep): in = में <span class="secondary">(mein)</span> = ಅಲ್ಲಿ <span class="secondary">(alli)</span> = dans
 4.  prepositional object (prepObj):
-    the kitchen = रसोई (rasoee) = ಅಡುಗೆಮನೆ (aḍugemane) = la cuisine
+    the kitchen = रसोई <span class="secondary">(rasoee)</span> = ಅಡುಗೆಮನೆ <span class="secondary">(aḍugemane)</span> = la cuisine
 
 So, the sentence structure in English and French is "subject verb prep prepObj",
 but the sentence structure in Hindi and Kannada is "subject prepObj prep verb".
@@ -201,8 +201,8 @@ instead of English, e.g., when you memorize words, memorize the meaning
 of Kannada words in Hindi instead of English.
 
 Kannada uses [Sandhi](https://en.wikipedia.org/wiki/Sandhi) (संधि) extensively.
-In this example, we get ಅಡುಗೆಮನೆಯಲ್ಲಿದ್ದೇನೆ (aḍugemaneyalliddēne) by joining
-ಅಡುಗೆಮನೆ (aḍugemane), ಅಲ್ಲಿ (alli), and ಇದ್ದೇನೆ (iddēne).
+In this example, we get ಅಡುಗೆಮನೆಯಲ್ಲಿದ್ದೇನೆ <span class="secondary">(aḍugemaneyalliddēne)</span> by joining
+ಅಡುಗೆಮನೆ <span class="secondary">(aḍugemane)</span>, ಅಲ್ಲಿ <span class="secondary">(alli)</span>, and ಇದ್ದೇನೆ <span class="secondary">(iddēne)</span>.
 
 ### Similarity with the Devanagari Script
 
@@ -333,9 +333,11 @@ Check out these links to review your English grammar.
 4.  [Verb tenses](https://www.grammarly.com/blog/verb-tenses/)
 5.  [Conjunctions](https://www.grammarly.com/blog/conjunctions/)
 
-*कारक (kaarak)*, aka *विभक्ति (vibhakti)* or *case*, is a very useful
-grammatical concept in Indian languages. In Hindi, there are 8 of them:
-करता, कर्म, कारण, संप्रदान, अपादान, संबंध, अधिकरण, संबोधन।
+<em>कारक <span class="secondary">(kaarak)</span></em>,
+aka <em>विभक्ति <span class="secondary">(vibhakti)</span></em> or *case*,
+is a very useful grammatical concept in Indian languages.
+If you speak Hindi, it'll be helpful if you know about all these 8 कारकs:
+करता, कर्म, कारण, संप्रदान, अपादान, संबंध, अधिकरण, संबोधन.
 
 ## Phase 3: Grammar and Vocabulary
 
@@ -381,8 +383,12 @@ Learning verbs, adverbs, and adjectives reliably is hard,
 because most resources you'll find on the internet map Kannada
 words to English words. This can cause problems, since
 there isn't always a one-to-one mapping.
-E.g., consider these 3 sentences:
+E.g., the verbs ಉರಿ <span class="secondary">(uri)</span> and ಸುಡು <span class="secondary">(suḍu)</span> translate to 'burn',
+but they are not interchangeable.
+ಉರಿ <span class="secondary">(uri)</span> means to get burned (जलो in Hindi),
+and ಸುಡು <span class="secondary">(suḍu)</span> means to make something burn (जलाओ in Hindi).
 
+<!--
 <table>
 <tr><th>English</th><th>Hindi</th></tr>
 <tr><td>I <strong>keep</strong> my clothes in my cupboard.</td>
@@ -404,6 +410,7 @@ specifically to the act of putting someting inside something else.
 We can't just blindly translate 'put' to 'डालो (daalo)',
 otherwise the second sentence would be wrong.
 English and Kannada have the same issue, but I don't remember any examples.
+-->
 
 Hence, to pick up non-noun vocabulary, don't just use tables mapping
 Kannada words to English words. Use sources that give you additional context,
@@ -415,7 +422,7 @@ or examples where the word is used in sentences.
 I'm currently in this phase, so I'm still figuring out what to do.
 
 Start reading Kannada books.
-I have started reading the *ಸವಿ ಕನ್ನಡ (Savi Kannada)* textbook series.
+I have started reading the <em>ಸವಿ ಕನ್ನಡ <span class="secondary">(Savi Kannada)</span></em> textbook series.
 Download links:
 [class 1](https://ktbs.kar.nic.in/new/website%20textbooks/class1/1st-language-kannada.pdf),
 [class 2](https://ktbs.kar.nic.in/new/website%20textbooks/class2/2nd-language-savikannada-1.pdf),
