@@ -64,8 +64,8 @@ She often hung out in the forest, enjoying its beauty and tranquility.
 
 Exasperated by Eddington's rule, the locals decided to fight back.
 At dawn, they attacked his mansion, which was situated at the edge of the forest.
-Although Eddington had a small army, it was no match for the locals who had been training
-for this day and were experts at navigating the mountainous terrain and hiding in the forest.
+Although Eddington had a small army, it was no match for the locals who were
+experts at navigating the mountainous terrain and hiding in the forest.
 They eventually broke into his mansion and captured him.
 They beheaded him in front of his mansion, declaring their freedom and the beginning of
 a new era free of tyranny. They set fire to his mansion, killing the remaining soldiers,
@@ -96,8 +96,7 @@ Finally, I heard footsteps. I approached the person, and shouted for help, but h
 As I crept up behind him, I snapped into a trance. I wanted his eyes.
 I grabbed his neck, plucked out his eyes with my sharp nails,
 and popped them into my eye sockets. I could see again!
-I don't know why I did this, or why I expected this to work, but it did.
-How glad I was to be able to see once again! The forest was as beautiful as I remembered it.
+I don't know why I did this, or why I expected this to work, but it did, and I so was glad!
 The next day, however, my elation gradually faded away, just like my eyesight.
 I guess this only works for a short time.
 I'll just have to wait for more people to come to the forest.
