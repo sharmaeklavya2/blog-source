@@ -265,6 +265,7 @@ to be able to type it. Here are some ways in which you can type Indian languages
 2.  Use [Google input tools](https://www.google.com/inputtools/try/) on the web.
 3.  Add [phonetic keyboards on Windows](https://support.microsoft.com/en-us/windows/how-to-set-up-and-use-indic-phonetic-keyboards-7c4d2e8a-abf2-f200-9866-1a4cead7b127).
 4.  Add a [keyboard language on Android](https://support.google.com/gboard/answer/7068494).
+5.  Add a [keyboard on iPhone/iPad](https://support.apple.com/guide/iphone/add-or-change-keyboards-iph73b71eb/ios).
 
 When you read a piece of Kannada text, you can check whether you read it
 correctly by transliterating it to Devanagari (or any other Indian language).
