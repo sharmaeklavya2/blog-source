@@ -334,33 +334,29 @@ Run `brew install vim` to install a newer, better Vim.
 Alternatively, you can install MacVim (`brew install macvim`).
 This will not replace the old vim; the old vim can still be accessed at `/usr/bin/vim`.
 
-### Install [Pathogen](https://github.com/tpope/vim-pathogen)
-
-    mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-Add `execute pathogen#infect()` to your `.vimrc`.
-If you're using [my dotfiles](https://github.com/sharmaeklavya2/dotfiles),
-you'll already have it in your `.vimrc`.
-
 ### Get Vim plugins
 
-Just go to `~/.vim/bundle` and clone the git repositories of the plugins you need.
+Go to `~/.vim/pack/default/start` (create this directory if it doesn't exist)
+and clone the git repositories of the plugins you need.
 You can see the list of plugins that I use at
 [`vimpackages.txt`](https://github.com/sharmaeklavya2/dotfiles/blob/master/vimpackages.txt) in my dotfiles.
 
-If you're using my dotfiles, you can run `./scripts/get_vim_packages.py`.
+<!--If you're using my dotfiles, you can run `./scripts/get_vim_packages.py`.
 This will download the vim plugins from `vimpackages.txt` and place them in a directory named `vim_bundle`.
-[Symlink](https://kb.iu.edu/d/abbe) `vim_bundle` to `~/.vim/bundle`.
+[Symlink](https://kb.iu.edu/d/abbe) `vim_bundle` to `~/.vim/bundle`.-->
 
 ### Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
 
 YouCompleteMe is a vim plugin for code auto-completion.
 To install this plugin:
 
-* Run `brew install cmake`.
-* `cd ~/.vim/bundle ; git clone --recursive https://github.com/ycm-core/YouCompleteMe.git ; cd YouCompleteMe`.
-* If you use a python virtualenv, switch to it and then run `./install.py`.
+* `brew install cmake`
+* `cd ~/.vim/pack/default/start`
+* `git clone --recursive --depth=1 https://github.com/ycm-core/YouCompleteMe.git`
+* `cd YouCompleteMe`
+* If you use a python virtualenv, activate it.
+* `./install.py`
+
 If you don't switch to the virtualenv before running `./install.py`,
 python auto-complete may not work for external libraries installed in that virtualenv.
 
