@@ -2,7 +2,7 @@ title: A Comprehensive Guide to Customizing your MacBook
 slug: customize-macos
 tags: Tutorial
 date: 2019-07-12
-modified: 2023-01-12
+modified: 2024-07-31
 summary: This post contains a list of all the things I did to customize my MacBook. Most instructions here are useful only for programmers and power users.
 
 
@@ -110,27 +110,15 @@ terminal emulator, shell, prompt, home directory, current working directory.
 In case you don't, here's a nice short tutorial by TreeHouse:
 [Introduction to the Mac OS X Command Line](https://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line).
 
-### Terminal.app preferences
+### Terminal preferences
 
 Terminal.app is the default terminal emulator on macOS.
-There are better alternatives, like [iTerm2](https://www.iterm2.com/features.html),
-but Terminal.app is good enough for me, so I didn't bother installing iTerm2.
+But I recommend a better alternative, like [iTerm2](https://www.iterm2.com/features.html).
+I use iTerm2 with the _Solarized_ color scheme and font size 16.
 
-#### Creating a new profile with the Solarized color scheme
-
-Terminal.app has multiple profiles available.
-Each profile specifies the color scheme, font face, font size and many other settings.
-Instead of making changes to the default profile,
-we're going to create a new profile with our changes.
-
-I use the [Solarized](https://ethanschoonover.com/solarized/) color scheme for my terminal because:
-
-* It is an eye-pleasing color scheme. It works well with Vim's syntax highlighting.
-* Solarized is a popular color scheme, so it's available on many terminal emulators, text editors, IDEs, etc.
-This helps me get a unified look-and-feel when switching programs or platforms.
-
-Even though Solarized isn't available out-of-the-box for Terminal.app,
-the advantages above outweigh the effort required to set it up on the terminal.
+Terminal.app is also good enough, though.
+But if you want to use the Solarized color scheme on Terminal.app,
+you'll need to download and install it:
 
 * Download the [Solarized dark theme for Terminal.app](https://raw.githubusercontent.com/tomislav/osx-terminal.app-colors-solarized/master/Solarized%20Dark.terminal). Open it in finder and double-click on it.
 * macOS will say that the file cannot be opened because it is not from an identified developer.
@@ -138,10 +126,8 @@ Go to 'System Preferences > Security > General' and press 'Open Anyway' (don't w
 * Open terminal, 'Preferences > Profiles', select 'Solarized Dark' and press the 'Default' button.
 Now restart Terminal.app and you'll see the dark blue background of the Solarized color scheme.
 
-#### Other preferences
-
-* In the 'Preferences > Profile > Text' tab, set opacity to 85% and font size to 16.
-* In the 'Preferences > Profile > Window' tab, deselect 'restore text when reopening windows'.
+Additionally, you may want to deselect 'restore text when reopening windows'
+in the 'Preferences > Profile > Window' tab in Terminal.app.
 
 ### Installing [Xcode command-line tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
 
@@ -176,15 +162,18 @@ If you executed the above instructions correctly,
 the first thing you'll notice is the improved, colorful prompt.
 
 My dotfiles are written with the Solarized terminal color scheme in mind.
-If you're not using Solarized, you may want to modify or omit using `.dircolors` and `.vimrc`.
+If you're not using Solarized, you should modify `.vimrc` accordingly:
+either remove `colorscheme solarized` or pick a different colorscheme,
+like [one](https://github.com/rakr/vim-one).
 
 I also recommend using the `git-prompt.sh` utility script, which will display useful information
 about git repositories (like branch, dirty status, etc) in your prompt.
 To do this, download [git-prompt.sh](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh)
 to `~/ext_bin/git-prompt.sh`. The `~/.bash_profile` will use it to modify the prompt.
 
-I also recommend adding the line `export HISTSIZE=100000` to either `~/.env` or `~/.bash_profile`
-to increase your shell input history size.
+I also recommend adding the lines `export HISTSIZE=100000` and `export HISTCONTROL=ignoredups`
+to either `~/.env` or `~/.bash_profile` to increase your shell input history size
+and remove consecutive duplicates.
 
 ### Install [Homebrew](https://brew.sh/)
 

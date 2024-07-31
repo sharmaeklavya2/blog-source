@@ -16,20 +16,20 @@ digraph dep_graph {
     node [style = "filled"]
 
     node [color = "#F9E79F"]
-    "terminal.app preferences"
-        "join wifi network" -> "terminal.app preferences"
     "install xcode cmdline tools"
         "join wifi network" -> "install xcode cmdline tools"
-    "dotfiles"
-        "terminal.app preferences" -> "dotfiles"
-        "install xcode cmdline tools" -> "dotfiles"
-    "add to .env"
-    "add __git_ps1"
-        "dotfiles" -> "add __git_ps1"
     "install brew"
         "install xcode cmdline tools" -> "install brew"
     "install tmux"
         "install brew" -> "install tmux"
+    "install and setup iTerm2"
+        "install brew" -> "install and setup iTerm2"
+    "dotfiles"
+        "install and setup iTerm2" -> "dotfiles"
+        "install xcode cmdline tools" -> "dotfiles"
+    "add to .env"
+    "add __git_ps1"
+        "dotfiles" -> "add __git_ps1"
 
     node [color = "#A9DFBF"]
     "install mactex"
