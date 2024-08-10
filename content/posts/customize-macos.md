@@ -114,16 +114,20 @@ In case you don't, here's a nice short tutorial by TreeHouse:
 
 Terminal.app is the default terminal emulator on macOS.
 But I recommend a better alternative, like [iTerm2](https://www.iterm2.com/features.html).
-I use iTerm2 with the _Solarized_ color scheme and font size 16.
+I use iTerm2 with the _Solarized_ color scheme.
 
-Terminal.app is also good enough, though.
-But if you want to use the Solarized color scheme on Terminal.app,
+In iTerm2, you may want to configure <kbd>Option</kbd> + arrow keys to move over words,
+just like in Terminal.app. To do this, go to Settings > Profiles > Keys > Key Mappings,
+and select 'Terminal.app Compatibility' as the preset.
+
+If you decide to stick to Terminal.app, that's also not a bad option.
+If you want to use the Solarized color scheme on Terminal.app,
 you'll need to download and install it:
 
-* Download the [Solarized dark theme for Terminal.app](https://raw.githubusercontent.com/tomislav/osx-terminal.app-colors-solarized/master/Solarized%20Dark.terminal). Open it in finder and double-click on it.
-* macOS will say that the file cannot be opened because it is not from an identified developer.
+1.  Download the [Solarized dark theme for Terminal.app](https://raw.githubusercontent.com/tomislav/osx-terminal.app-colors-solarized/master/Solarized%20Dark.terminal). Open it in finder and double-click on it.
+2.  macOS will say that the file cannot be opened because it is not from an identified developer.
 Go to 'System Preferences > Security > General' and press 'Open Anyway' (don't worry; it's not an executable).
-* Open terminal, 'Preferences > Profiles', select 'Solarized Dark' and press the 'Default' button.
+3.  Open terminal, 'Preferences > Profiles', select 'Solarized Dark' and press the 'Default' button.
 Now restart Terminal.app and you'll see the dark blue background of the Solarized color scheme.
 
 Additionally, you may want to deselect 'restore text when reopening windows'
