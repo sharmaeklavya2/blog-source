@@ -74,12 +74,9 @@ digraph dep_graph {
     node [color = "#F5B7B1"];
     "brew install vim"
         "install brew" -> "brew install vim"
-    "install pathogen"
-        "join wifi network" -> "install pathogen"
     "get vim plugins"
         "dotfiles" -> "get vim plugins"
     "install youcompleteme"
-        "install pathogen" -> "install youcompleteme"
         "create virtualenv" -> "install youcompleteme"
     "fix vim locale error"
         "brew install vim" -> "fix vim locale error"

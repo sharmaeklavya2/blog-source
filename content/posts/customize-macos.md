@@ -2,7 +2,7 @@ title: A Comprehensive Guide to Customizing your MacBook
 slug: customize-macos
 tags: Tutorial
 date: 2019-07-12
-modified: 2024-07-31
+modified: 2024-08-08
 summary: This post contains a list of all the things I did to customize my MacBook. Most instructions here are useful only for programmers and power users.
 
 
@@ -228,8 +228,7 @@ I use [python virtual environments](https://docs.python.org/3/tutorial/venv.html
 I use one big virtualenv where I install all commonly used packages,
 and I create application-specific virtualenvs for large applications that I'm developing.
 
-Run `pip3 install virtualenv` to install the `virtualenv` tool.
-Run `virtualenv /path/to/venv/ -p python3` to create a python3 virtualenv.
+Run `python3 -m venv /path/to/venv/` to create a python3 virtualenv.
 
 Activate the virtualenv using `source /path/to/venv/bin/activate`.
 Now all python commands and applications you run will use this virtualenv.
