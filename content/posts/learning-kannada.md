@@ -3,7 +3,7 @@ slug: learning-kannada
 tags: kannada
 status: draft
 date: 2024-03-17
-modified: 2024-04-30
+modified: 2024-10-18
 ExtraCSS: https://sharmaeklavya2.github.io/trin/trin.css
 summary: How I am learning Kannada as a Hindi speaker.
 
@@ -28,81 +28,44 @@ but the specific resources I'll list here are for Kannada.
 
 ## How our Brain Learns Language
 
-Learning a language mainly involves two things: vocabulary and grammar.
-Vocabulary is a mapping between a concept and a word representing that concept.
-Grammar is how we put together multiple words into a coherent sentence.
-
-Consider this example:
-
-<table>
-<tr><th>language</th><th>sentence</th></tr>
-<tr><td>English</td><td>I go to the gym every day.</td></tr>
-<tr><td>Hindi</td><td>मैं रोज़ gym जाता हूँ। <span class="secondary">(main roz gym jaata hoon.)</span></td></tr>
-<tr><td>Kannada</td><td>ನಾನು ಪ್ರತಿದಿನ gymಗೆ ಹೋಗುತ್ತೇನೆ. <span class="secondary">(nānu pratidina gymge hōguttēne.)</span></td></tr>
-</table>
-
-Here are the Kannada translations of the individual key words:
-
-1.  I = मैं <span class="secondary">(main)</span> = ನಾನು <span class="secondary">(nānu)</span>
-2.  every day = रोज़ <span class="secondary">(roz)</span> = ಪ್ರತಿದಿನ <span class="secondary">(pratidina)</span>
-3.  go = जाओ <span class="secondary">(jao)</span> = ಹೋಗು <span class="secondary">(hōgu)</span>
-
-It's not obvious how to combine these individual word translations to get the
-Kannada translation for the whole sentence. That's what we need grammar for.
-
-Btw, the text in parenthesis next to the Kannada sentence is its [IAST](https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration).
-You can also click the ट्र button on this page to transliterate
-Hindi and Kannada to any Indian language.
-
 There are two main approaches for learning a language:
 
-1.  **The data approach**:
+1.  **The natural approach**:
     You hear/read a lot of sentences or words in your target language
     along with their meanings.
     Over time, you automatically start understanding it.
-2.  **The algorithm approach**:
+2.  **The synthetic approach**:
     You memorize vocabulary and grammar rules of your target language.
 
-For computer scientists reading this article,
-you can think of grammar as an algorithm that converts ideas into sentences
-(and has your vocabulary available as a lookup table).
-The second approach is like reading the source code of the algorithm.
-The first approach is like trying to infer the algorithm from its input-output pairs.
-
-The data approach is what babies use when they learn their first language.
+The natural approach is what babies use when they learn their first language.
 It's also the approach taken by [Duolingo](https://www.duolingo.com/).
 Kannada is not available to learn on Duolingo as of now.
 
-The disadvantage of the data approach is that
-you need a lot of high-quality data to learn the language.
-Your brain is essentially reverse-engineering the grammar from data.
-If you don't have a large source of sentences in your target language
-with corresponding translations, using this approach is difficult.
-(Interestingly, [GPT3](https://en.wikipedia.org/wiki/GPT-3)
-seems to have learned language from just raw text.)
+The disadvantage of the natural approach is that you need a lot of high-quality data,
+i.e., a large collection of sentences in your target language with translations.
+In the natural approach, your brain is essentially reverse-engineering the grammar from data.
+If you don't have a lot of data, using this approach is difficult.
 Google translate is bad at translating Kannada,
 so I would recommend against learning from it.
 
-The data approach also needs a lot of time.
+The natural approach also needs a lot of time.
 Babies take 2 to 5 years to learn their first language,
 despite getting high-quality data from their parents/surroundings,
 and not having any other responsibilities.
-The algorithm approach doesn't require much data,
-and you'll learn the language more quickly this way.
+The synthetic approach doesn't require much data,
+and you may learn the language more quickly this way.
 
-However, the algorithm approach has a major disadvantage:
+However, the synthetic approach has a major disadvantage:
 it's not the approach our brains are hard-wired for.
 Our brains have [specific regions](https://en.wikipedia.org/wiki/Language_processing_in_the_brain)
 dedicated for producing and understanding language,
-and they work best if you learn a language 'naturally'.
-Constructing sentences using memorized grammatical rules
-is not something we are meant to be good at.
-You can never achieve fluency using the algorithm approach.
+and they work best if you learn a language naturally.
+You can never achieve fluency using the synthetic approach.
 
 So if you don't have a large corpus of translations, what can you do?
 Combine the two approaches!
-First learn the language using the algorithm approach.
-Then switch to the data approach, i.e.,
+First learn the language using the synthetic approach.
+Then switch to the natural approach, i.e.,
 read and listen to a lot of sentences in your target language.
 You won't need an external source to tell you the meaning of these sentences;
 you can just translate them yourself.
