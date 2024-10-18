@@ -18,11 +18,11 @@ It's hard to even figure out *how* to learn Kannada.
 
 After trying out many resources, I finally found some good ones
 and have succeeded in learning some Kannada.
-This article documents what I think is a good way to learn Kannada,
-especially if you already know an Indian language.
-I think the ideas in this article can be used to learn
-any Indian language (except maybe Tamil),
+This article documents what I think is a good way to learn Kannada.
+I think the ideas in this article can be used to learn most Indian languages,
 but the specific resources I'll list here are for Kannada.
+This article's primary audience is people who can speak Hindi,
+but it should be helpful to other people too.
 
 [TOC]
 
