@@ -76,6 +76,7 @@ KATEX_COMMON = {
             "\\E": "\\operatorname{\\mathbb{E}}",
             "\\defeq": ":=",
             "\\vecone": "\\mathbf{1}",
+            "\\boolone": "\\mathbf{1}",
             "\\xhat": "\\widehat{x}",
             "\\yhat": "\\widehat{y}",
         }
