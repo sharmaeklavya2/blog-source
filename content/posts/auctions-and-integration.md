@@ -12,6 +12,8 @@ $$
 
 Imagine we are trying to sell a sack of rice. We want to make as much money from this sale as possible. What should we do? This is an important problem in the field of *mechanism design*, which is a part of *game theory*. I was studying this problem in a very simple setting, and came across some very interesting math while doing so. In this article, I will share my mathematical journey. I won't talk much about the *mechanism design* part to keep this article accessible to a broad audience.
 
+[TOC]
+
 ## Posted-Price Mechanisms
 
 Let's consider the simplest case where there is
@@ -151,6 +153,20 @@ Using <a href="#thm-truthful">Lemma 1</a>, we get $r(x) = xa(x) - \int_0^x a(y)d
 Then the pair $(a, r)$ gives us the maximum revenue
 among all truthful single-parameter mechanisms. $\quad\Box$
 
+Another result, which would be useful later, is that in truthful mechanisms,
+the revenue function is non-decreasing.
+
+<strong id="thm-revenue-nondec">Lemma 4</strong>:
+If $(a, r)$ is a truthful mechanism, then $r(x)$ is non-decreasing in $x$.
+
+*Proof*.
+Since $(a, r)$ is truthful, for all $0 ≤ x_1 < x_2$, we get
+$$a(x_1) ≤ \frac{s(x_2)-s(x_1)}{x_2-x_1} ≤ a(x_2)$$
+$$\implies x_1(a(x_2)-a(x_1)) ≤ r(x_2) - r(x_1) ≤ x_2(a(x_2)-a(x_1)).$$
+Since $a$ is non-decreasing in truthful mechanisms,
+we get that $r(x_2) - r(x_1) ≥ 0$ for all $0 ≤ x_1 < x_2$.
+Hence, $r$ is non-decreasing. $\quad\Box$.
+
 ## Need for Mathematical Rigor
 
 You may have noticed a lot of problems with the proofs above.
@@ -270,7 +286,7 @@ Proofs can be found in standard texts on real analysis
 Armed with these results, we are ready to prove <a href="#thm-truthful">Lemma 1</a> rigorously.
 
 *Proof of Lemma 1*.<br>
-Suppose $a$ is non-decreasing and $r(x) = xa(x) - \int_0^x a(y)dy$ for all $x \ge 0$.
+Suppose $a$ is non-decreasing and $r(x) = xa(x) - \int_0^x a(y)dy$ for all $x ≥ 0$.
 We have to prove that $(a, r)$ is truthful.
 For any $0 ≤ x_1 < x_2$, we get
 $$\frac{s(x_2) - s(x_1)}{x_2 - x_1} = \frac{\int_{x_1}^{x_2} a(y)dy}{x_2 - x_1}
@@ -302,7 +318,7 @@ Hence, $U_a(0, t) ≤ U_a(P) = s(t)$ and $L_a(0, t) ≥ L_a(P) = s(t)$.
 
 Since $a$ is non-decreasing, $a$ is integrable over $[0, t]$,
 and so, $U_a(0, t) = L_a(0, t) = s(t)$.
-Hence, for any $x \ge 0$, we have $r(x) = xa(x) - \int_0^x a(y)dy$.
+Hence, for any $x ≥ 0$, we have $r(x) = xa(x) - \int_0^x a(y)dy$.
 $\quad\Box$
 
 ## The Weighted Darboux Integral
@@ -313,7 +329,7 @@ We need to somehow deal with $a'(x)$ in the lemma statement.
 My original idea was to modify the Darboux integral.
 For any function $f: [a, b] \to \mathbb{R}$
 and any non-decreasing function $W: [a, b] \to \mathbb{R}$,
-to change $\int_a^b f(x)dx$ to $\int_a^b f(x)d'W(x)dx$,
+to change $\int_a^b f(x)dx$ to $\int_a^b f(x)W'(x)dx$,
 in $L_f(P)$ and $U_f(P)$, I changed $(x_i - x_{i-1})$ to $(W(x_i) - W(x_{i-1}))$.
 
 I initially thought that I had come up with a nice generalization of Darboux integrals,
@@ -336,8 +352,8 @@ but I later realized that this idea has been studied before by
     $\Pcal(a, b)$ is called the set of *partitions* of $[a, b]$.
 * The lower and upper *weighted Darboux integrals* of $f$ with weight $W$ are
     $$\begin{aligned}
-    L_{f,W}(a, b) &\defeq \sup_{P \in \Pcal(a, b)} L_{f,W}(P)
-    \\ U_{f,W}(a, b) &\defeq \inf_{P \in \Pcal(a, b)} U_{f,W}(P)
+    L_{f,W}(a, b) &\defeq \sup_{P \in \Pcal(a, b)} L_{f,W}(P),
+    \\ U_{f,W}(a, b) &\defeq \inf_{P \in \Pcal(a, b)} U_{f,W}(P).
     \end{aligned}$$
 * If $L_{f,W}(a, b) = U_{f,W}(a, b)$, then $f$ is said to be
     $W$-<em>Darboux integrable</em> on $[a, b]$,
@@ -381,7 +397,7 @@ $\int_0^x a(y)dy$ is still well-defined.
 
 However, I was thinking of using weighted Darboux integrals to define expected value.
 For a non-negative random variable $X$ with cumulative distribution function $F$
-(i.e., $F(x) \defeq \Pr(X \le x)$), one could define $\E(g(X))$ as
+(i.e., $F(x) \defeq \Pr(X ≤ x)$), one could define $\E(g(X))$ as
 $$\lim_{T \to \infty} \int_0^T g(x)dF(x).$$
 
 Let $X$ be a random variable that takes value $1/2$ with probability 1
@@ -392,8 +408,89 @@ but the integral defining $\E(g(X))$ doesn't exist by <a href="#ex1">Example 1</
 
 Also, in <a href="#thm-expected-revenue">Lemma 2</a>, I want the integral
 $$\int_0^T x(1-F(x))da(x)$$
-to exist for all $T \ge 0$, but I can't think of a way of guaranteeing that
+to exist for all $T ≥ 0$, but I can't think of a way of guaranteeing that
 (unless we change the definition of weighted Darboux integrals.)
+
+## A Second Attempt at Weighted Darboux Integrals
+
+Let's try to define Darboux integrals again, but this time,
+we will explicitly take discontinuities into account.
+
+Let $f: [a, b] \to \mathbb{R}$ be a non-decreasing function.
+For any $c \in (a, b]$, let $f^-(c) \defeq \sup_{x \in (a, c)} f(x)$,
+and for any $c \in [a, b)$, let $f^+(c) \defeq \inf_{x \in (c, b)} f(x)$.
+
+**Definition 3** (Jump-aware weighted Darboux integral):
+
+* Let $f, W: [a, b] \to \mathbb{R}$ be functions where $W$ is non-decreasing.
+* Let $P \defeq (x_0, x_1, \ldots, x_n)$ where $a = x_0 < x_1 < \ldots < x_n = b$.
+    Then the jump, lower, and upper *weighted Darboux sums* of $f$ on $P$ with weight $W$,
+    denoted by $J_{f,W}(P)$, $L_{f,W}(P)$, and $U_{f,W}(P)$, respectively,
+    are defined as follows:
+    If $a = b$, then $J_{f,W}(P) = L_{f,W}(P) = U_{f,W}(P) = 0$. Otherwise,
+    $$\begin{aligned}
+    J_{f,W}(P) &\defeq f(x_0)(W^+(x_0) - W(x_0))
+        + \sum_{i=1}^{n-1} f(x_i)(W^+(x_i) - W^-(x_i))
+        \\ &\quad + f(x_n)(W(x_n) - W^-(x_n)),
+    \\ L_{f,W}(P) &\defeq J_{f,W}(P)
+        + \sum_{i=1}^n (W^-(x_i) - W^+(x_{i-1}))\left(\inf_{x \in (x_{i-1}, x_i)} f(x)\right),
+    \\ U_{f,W}(P) &\defeq J_{f,W}(P)
+        + \sum_{i=1}^n (W^-(x_i) - W^+(x_{i-1}))\left(\sup_{x \in (x_{i-1}, x_i)} f(x)\right).
+    \end{aligned}$$
+* Let $\Pcal(a, b) \defeq \{(x_0, \ldots, x_n): n \in \mathbb{N}, a = x_0 < \ldots < x_n = b\}$.
+    $\Pcal(a, b)$ is called the set of *partitions* of $[a, b]$.
+    The lower and upper *weighted Darboux integrals* of $f$ with weight $W$ are
+    $$\begin{aligned}
+    L_{f,W}(a, b) &\defeq \sup_{P \in \Pcal(a, b)} L_{f,W}(P),
+    & U_{f,W}(a, b) &\defeq \inf_{P \in \Pcal(a, b)} U_{f,W}(P).
+    \end{aligned}$$
+* If $L_{f,W}(a, b) = U_{f,W}(a, b)$, then $f$ is said to be
+    $W$-*Darboux integrable* on $[a, b]$,
+    and we denote $L_{f,W}(a, b)$ and $U_{f,W}(a, b)$ by $\int_a^b f(x)dW(x)$.
+
+Most simple properties that one might expect weighted Darboux integrals to have,
+the jump-aware weighted Darboux integrals have them too.
+See my notes <a href="#cite-es-wdbx">[4]</a> for formal statements and proofs.
+
+Additionally, one can show that all monotone functions are integrable in this model
+<a href="#cite-es-wdbx">[4]</a>.
+It also evaluates $\int_0^1 g(x)dW(x)$ as $1/2$ in <a href="#ex1">Example 1</a>.
+So far, this new definition of weighted Darboux integrals seems to have
+fixed the problems that the previous definition had.
+Now let's get back to trying to formalize <a href="#thm-expected-revenue">Lemma 2</a>.
+
+## Formalizing Lemma 2
+
+First, we would like to ensure that $\E(r(v))$ is well-defined.
+Or at least, we want to ensure that $\int_0^T r(x)dF(x)$ exists for all $T \ge 0$,
+where $F$ is the cumulative distribution function of $v$.
+This integral exists since $r$ is non-decreasing by [Lemma 4](#thm-revenue-nondec).
+
+Next, we would like to ensure that the integral
+$\int_0^T x(1-F(x))da(x)$ exists for all $T ≥ 0$.
+$x$ and $1-F(x)$ are increasing and non-increasing, respectively, so they are individually integrable.
+In my notes <a href="#cite-es-wdbx">[4]</a>, I show that
+the product of integrable functions is also integrable.
+
+Next, we want to show that integration by parts holds in our model.
+We would like to show that for two non-decreasing functions
+$f, g: [a, b] \to \mathbb{R}$, we have
+$$\int_a^b f(x)dg(x) + \int_a^b g(x)df(x) = f(b)g(b) - f(a)g(a).$$
+Unfortunately, this isn't true, even when $f = g$.
+
+<strong id="ex2">Example 2</strong>:
+Let $g(x) = 0$ if $x < 1/2$, $g(1/2) = 1/5$, and $g(x) = 1$ for $x > 1/2$.
+Then one can show that $\int_0^1 g(x)dg(x) = 1/5$,
+but $2/5 = 2\int_0^1 g(x)dg(x) ≠ g(1)^2 - g(0)^2 = 1$.
+
+Fortunately, I could prove that integration by parts holds if
+either $f$ or $g$ is continuous <a href="#cite-es-wdbx">[4]</a>.
+And in [Lemma 2](#thm-expected-revenue), we apply integration by parts on $x$ and $a(x)$,
+and $x$ is continuous. So things still work out (for now).
+
+Next, we need to prove that we can exchange the order of integration.
+<span class="warning">I haven't proved this yet,
+and I'm still struggling to figure out how to do it.</span>
 
 ## Conclusion
 
@@ -443,5 +540,11 @@ Lecture notes for Math 321 (Real Variables II)</a>,</span>
 <br>
 <span class="cite-source">University of British Columbia,</span>
 <span class="cite-year">2016.</span>
+</li>
+<li class="citation" id="cite-es-wdbx">
+<span class="cite-authors"><a href="https://sharmaeklavya2.github.io/">Eklavya Sharma</a>.</span>
+<span class="cite-title">
+<a href="https://sharmaeklavya2.github.io/notes/math/wdbx-integral.pdf">
+My notes on weighted Darboux integrals</a>.</span>
 </li>
 </ol>
