@@ -229,8 +229,8 @@ E.g., the greatest lower bound of $(3, 4]$ is 3.
 
 Does every set $X \subseteq \mathbb{R}$ have an infimum?
 If $X$ is empty, then no. But what if $X$ is non-empty?
-$X$ may not have any lower bound, e.g., the set $(-\infty, 1]$.
-In that case we say that $\inf(X) = -\infty$.
+$X$ may not have any lower bound, e.g., the set $(-∞, 1]$.
+In that case we say that $\inf(X) = -∞$.
 But what if $X$ has a lower bound?
 Then yes, $X$ always has an infimum, and this is an axiom of real numbers:
 *If a non-empty set $X$ of real numbers has a lower bound, then it has a greatest lower bound.*
@@ -238,7 +238,7 @@ Then yes, $X$ always has an infimum, and this is an axiom of real numbers:
 We can similarly define the least upper bound of $X$,
 also called the *supremum* of $X$, denoted as $\sup(X)$.
 If $X \neq \emptyset$, then $\sup(X)$ always exists:
-$\sup(X) = \infty$ if $X$ has no upper bound, and $\sup(X)$ is a real number otherwise.
+$\sup(X) = ∞$ if $X$ has no upper bound, and $\sup(X)$ is a real number otherwise.
 
 ## Darboux Integrals and the Proof of Lemma 1
 
@@ -396,9 +396,9 @@ then $g$ is $W$-integrable, so in <a href="#thm-truthful">Lemma 1</a>,
 $\int_0^x a(y)dy$ is still well-defined.
 
 However, I was thinking of using weighted Darboux integrals to define expected value.
-For a non-negative random variable $X$ with cumulative distribution function $F$
+For a positive random variable $X$ with cumulative distribution function $F$
 (i.e., $F(x) \defeq \Pr(X ≤ x)$), one could define $\E(g(X))$ as
-$$\lim_{T \to \infty} \int_0^T g(x)dF(x).$$
+$$\lim_{T \to ∞} \int_0^T g(x)dF(x).$$
 
 Let $X$ be a random variable that takes value $1/2$ with probability 1
 (i.e., it's not random at all). Then its cumulative distribution function is $W$
@@ -461,18 +461,8 @@ Now let's get back to trying to formalize <a href="#thm-expected-revenue">Lemma 
 
 ## Formalizing Lemma 2
 
-First, we would like to ensure that $\E(r(v))$ is well-defined.
-Or at least, we want to ensure that $\int_0^T r(x)dF(x)$ exists for all $T \ge 0$,
-where $F$ is the cumulative distribution function of $v$.
-This integral exists since $r$ is non-decreasing by [Lemma 4](#thm-revenue-nondec).
-
-Next, we would like to ensure that the integral
-$\int_0^T x(1-F(x))da(x)$ exists for all $T ≥ 0$.
-$x$ and $1-F(x)$ are increasing and non-increasing, respectively, so they are individually integrable.
-In my notes <a href="#cite-es-wdbx">[4]</a>, I show that
-the product of integrable functions is also integrable.
-
-Next, we want to show that integration by parts holds in our model.
+First, let's show that integration by parts holds in our model,
+because we use it in the first step of our proof.
 We would like to show that for two non-decreasing functions
 $f, g: [a, b] \to \mathbb{R}$, we have
 $$\int_a^b f(x)dg(x) + \int_a^b g(x)df(x) = f(b)g(b) - f(a)g(a).$$
@@ -488,15 +478,51 @@ either $f$ or $g$ is continuous <a href="#cite-es-wdbx">[4]</a>.
 And in [Lemma 2](#thm-expected-revenue), we apply integration by parts on $x$ and $a(x)$,
 and $x$ is continuous. So things still work out (for now).
 
-Next, we need to prove that we can exchange the order of integration.
-<span class="warning">I haven't proved this yet,
-and I'm still struggling to figure out how to do it.</span>
+First, we would like to ensure that $\E(r(v))$ is well-defined.
+Or at least, we want to ensure that $\int_0^T r(x)dF(x)$ exists for all $T ≥ 0$,
+where $F$ is the cumulative distribution function of $v$.
+This integral exists since $r$ is non-decreasing by [Lemma 4](#thm-revenue-nondec).
+
+Next, I wanted to prove that we can exchange the order of integration.
+But I couldn't prove it.
+
+And then it struck me; [Lemma 2](#thm-expected-revenue) is wrong!
+Consider posted price mechanisms. There, the expected revenue is $p\Pr(v ≥ p)$.
+But for all $T > p$, $\int_0^T x(1-F(x))da(x)$ evaluates to $p(1-F(p)) = p\Pr(v > p)$.
+Maybe we should use $x(1-G(x))$ instead of $x(1-F(x))$
+in [Lemma 2](#thm-expected-revenue)'s statement, where $G(x) \defeq \Pr(v < x)$?
+(Note that $G(x) = F^-(x)$ for all $x > 0$ and $G^+(x) = F(x)$ for all $x ≥ 0$.
+$G(0) = 0$, but $F^-(0)$ is not defined.)
+
+I discovered an edge case that was spoiling the definition of expected value.
+For a positive random variable $X$, defining $\E(g(X))$ as
+$\lim_{T \to ∞} \int_0^T g(x)dF(x)$, where $F(x) \defeq \Pr(X ≤ x)$ seems to work fine,
+but if $X$ is non-negative, and can take a value of 0 with positive probability,
+then this definition doesn't work.
+We can fix it by using $\int_{-1}^T$ instead of $\int_0^T$,
+or we can define $\E(g(X))$ as
+$\lim_{T \to ∞} \int_0^T g(x)dG(x)$, where $G(x) \defeq \Pr(X < x)$.
+
+With these fixes, [Lemma 2](#thm-expected-revenue) seems to be true for posted price mechanisms,
+i.e., for $a(x) = \boolone(x ≥ p)$ and $r(x) = p\boolone(x ≥ p)$,
+we get $\E(r(v)) = p\Pr(v ≥ p)$ and $\lim_{T \to ∞} \int_0^T x(1-G(x))da(x) = p\Pr(v ≥ p)$.
+
+However, let's consider a different mechanism. For any $p, γ \in (0, 1)$, define
+$$a(x) = \begin{cases}0 & x < p \\ γ & x = p \\ 1 & x > p\end{cases}.$$
+Then
+$$r(x) = \begin{cases}0 & x < p \\ pγ & x = p \\ p & x > p\end{cases}.$$
+Suppose $v$ is $p$ with probability 1. Then $\E(r(v)) = pγ$.
+However, for any function $h: \mathbb{R}_{≥0} \to \mathbb{R}$ and any $T ≥ 1$,
+we have $\int_0^T h(x)da(x) = h(p)$.
+For this integral to equal $\E(r(v))$, we must have $h(p) = pγ$.
+Hence, we cannot have $h(x)$ be $x(1-F(x))$ or $x(1-G(x))$
+or anything independent of $a(x)$.
 
 ## Conclusion
 
-Well, there's not much to conclude, really.
-I tried to formalize a proof, and haven't been able to do so.
-Reach out to me if you know how to do this.
+So, it turns out that my informal results aren't true.
+I'm not sure how to modify them to make things work.
+Reach out to me if you have ideas.
 
 ## References
 
