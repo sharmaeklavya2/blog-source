@@ -88,7 +88,7 @@ and that's where things get really interesting if you like real analysis.
 
 We first give a characterization of all truthful mechanisms.
 
-<strong id="lemma1">Lemma 1</strong>:
+<strong id="thm-truthful">Lemma 1</strong>:
 Mechanism $(a, r)$ is truthful iff $a$ is non-decreasing
 and $$r(x) = xa(x) - \int_0^x a(y)dy.$$
 
@@ -108,7 +108,7 @@ Assume that the cumulative distribution of $v$ is $F$
 and the probability density function of $v$ is $f$,
 i.e., $F(x) \defeq \Pr(v ≤ x)$ and $f(x) \defeq dF(x)/dx$.
 
-<strong id="lemma2">Lemma 2</strong>:
+<strong id="thm-expected-revenue">Lemma 2</strong>:
 The expected revenue of a truthful mechanism $(a, r)$ is
 $$\int_0^∞ x(1-F(x))a'(x)dx.$$
 
@@ -122,7 +122,7 @@ $$\begin{aligned}
 \end{aligned}$$
 (Here we swapped the integration order.) $\quad\Box$
 
-<strong id="lemma3">Lemma 3</strong>:
+<strong id="thm-revenue-max">Lemma 3</strong>:
 $(a, r)$ is a revenue-maximizing truthful mechanism
 iff $a(x) = \boolone(x ≥ p)$ and $r(x) = \boolone(x ≥ p)$,
 where $p$ is the value for which $p(1-F(p))$ is maximum.
@@ -147,7 +147,7 @@ We first find $p \in \mathbb{R}_{≥ 0}$ such that $p(1-F(p))$ is maximized.
 Then we want to *concentrate all the mass* at $p$, i.e.,
 $a'(p)$ is extremely large and $a'(x) = 0$ for all $x \neq p$.
 This is the same as saying $a(x) = \boolone(x ≥ p)$.
-Using <a href="#lemma1">Lemma 1</a>, we get $r(x) = xa(x) - \int_0^x a(y)dy = p\boolone(x ≥ p)$.
+Using <a href="#thm-truthful">Lemma 1</a>, we get $r(x) = xa(x) - \int_0^x a(y)dy = p\boolone(x ≥ p)$.
 Then the pair $(a, r)$ gives us the maximum revenue
 among all truthful single-parameter mechanisms. $\quad\Box$
 
@@ -155,8 +155,8 @@ among all truthful single-parameter mechanisms. $\quad\Box$
 
 You may have noticed a lot of problems with the proofs above.
 
-* In <a href="#lemma1">Lemma 1</a>'s proof, we assumed that $s'(x_1)$ is well-defined, i.e., $s$ is differentiable at $x_1$.
-* In Lemmas <a href="#lemma2">2</a> and <a href="#lemma3">3</a>, we assumed that $a$ is differentiable.
+* In <a href="#thm-truthful">Lemma 1</a>'s proof, we assumed that $s'(x_1)$ is well-defined, i.e., $s$ is differentiable at $x_1$.
+* In Lemmas <a href="#thm-expected-revenue">2</a> and <a href="#thm-revenue-max">3</a>, we assumed that $a$ is differentiable.
 (But for posted-price mechanisms, we *know* that $a$ is not differentiable!)
 * We assumed that $v$ is a continuous random variable.
 What if $v$ is a discrete random variable, or it is neither discrete nor continuous?
@@ -185,9 +185,9 @@ We have used integrals extensively in the proofs above,
 but for them to make sense, we must first define integration appropriately.
 I had taken a course in real analysis at UIUC, so this wasn't hard for me:
 one can just use Darboux integrals or Riemann integrals here,
-and that would easily fix <a href="#lemma1">Lemma 1</a>.
+and that would easily fix <a href="#thm-truthful">Lemma 1</a>.
 
-But fixing Lemmas <a href="#lemma2">2</a> and <a href="#lemma3">3</a> is tough.
+But fixing Lemmas <a href="#thm-expected-revenue">2</a> and <a href="#thm-revenue-max">3</a> is tough.
 I still haven't been able to do it.
 I'll talk about the approaches I tried and why they didn't work.
 
@@ -267,7 +267,7 @@ Proofs can be found in standard texts on real analysis
     Then $α(b-a) ≤ L_f(a, b) ≤ U_f(a, b) ≤ β(b-a)$.
 4.  If $f$ is non-decreasing, then $f$ is integrable over $[a, b]$.
 
-Armed with these results, we are ready to prove <a href="#lemma1">Lemma 1</a> rigorously.
+Armed with these results, we are ready to prove <a href="#thm-truthful">Lemma 1</a> rigorously.
 
 *Proof of Lemma 1*.<br>
 Suppose $a$ is non-decreasing and $r(x) = xa(x) - \int_0^x a(y)dy$ for all $x \ge 0$.
@@ -307,7 +307,7 @@ $\quad\Box$
 
 ## The Weighted Darboux Integral
 
-Proving <a href="#lemma2">Lemma 2</a> is trickier.
+Proving <a href="#thm-expected-revenue">Lemma 2</a> is trickier.
 We need to somehow deal with $a'(x)$ in the lemma statement.
 
 My original idea was to modify the Darboux integral.
@@ -376,7 +376,7 @@ so $g$ is not $W$-integrable over $[0, 1]$.
 
 But why is this example concerning?
 We can prove that if either $g$ or $W$ is continuous, and $g$ is non-decreasing,
-then $g$ is $W$-integrable, so in <a href="#lemma1">Lemma 1</a>,
+then $g$ is $W$-integrable, so in <a href="#thm-truthful">Lemma 1</a>,
 $\int_0^x a(y)dy$ is still well-defined.
 
 However, I was thinking of using weighted Darboux integrals to define expected value.
@@ -385,11 +385,12 @@ For a non-negative random variable $X$ with cumulative distribution function $F$
 $$\lim_{T \to \infty} \int_0^T g(x)dF(x).$$
 
 Let $X$ be a random variable that takes value $1/2$ with probability 1
-(i.e., it's not random at all). Then its cumulative distribution function is $W$.
+(i.e., it's not random at all). Then its cumulative distribution function is $W$
+from <a href="#ex1">Example 1</a>.
 Then one would expect $\E(g(X))$ to equal $g(1/2)$, which is $1/2$,
 but the integral defining $\E(g(X))$ doesn't exist by <a href="#ex1">Example 1</a>.
 
-Also, in <a href="#lemma2">Lemma 2</a>, I want the integral
+Also, in <a href="#thm-expected-revenue">Lemma 2</a>, I want the integral
 $$\int_0^T x(1-F(x))da(x)$$
 to exist for all $T \ge 0$, but I can't think of a way of guaranteeing that
 (unless we change the definition of weighted Darboux integrals.)
