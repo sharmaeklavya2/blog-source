@@ -8,6 +8,7 @@ summary: While studying pricing mechanisms, trying to formalize simple results l
 
 $$@
 \def\Pcal{\mathcal{P}}
+\def\rhat{\widehat{r}}
 $$
 
 Imagine we are trying to sell a sack of rice. We want to make as much money from this sale as possible. What should we do? This is an important problem in the field of *mechanism design*, which is a part of *game theory*. I was studying this problem in a very simple setting, and came across some very interesting math while doing so. In this article, I will share my mathematical journey. I won't talk much about the *mechanism design* part to keep this article accessible to a broad audience.
@@ -165,7 +166,7 @@ $$a(x_1) ≤ \frac{s(x_2)-s(x_1)}{x_2-x_1} ≤ a(x_2)$$
 $$\implies x_1(a(x_2)-a(x_1)) ≤ r(x_2) - r(x_1) ≤ x_2(a(x_2)-a(x_1)).$$
 Since $a$ is non-decreasing in truthful mechanisms,
 we get that $r(x_2) - r(x_1) ≥ 0$ for all $0 ≤ x_1 < x_2$.
-Hence, $r$ is non-decreasing. $\quad\Box$.
+Hence, $r$ is non-decreasing. $\quad\Box$
 
 ## Need for Mathematical Rigor
 
@@ -203,9 +204,8 @@ I had taken a course in real analysis at UIUC, so this wasn't hard for me:
 one can just use Darboux integrals or Riemann integrals here,
 and that would easily fix <a href="#thm-truthful">Lemma 1</a>.
 
-But fixing Lemmas <a href="#thm-expected-revenue">2</a> and <a href="#thm-revenue-max">3</a> is tough.
-I still haven't been able to do it.
-I'll talk about the approaches I tried and why they didn't work.
+But fixing Lemmas <a href="#thm-expected-revenue">2</a>
+and <a href="#thm-revenue-max">3</a> is really tough.
 
 ## Preliminaries: sup and inf
 
@@ -420,6 +420,10 @@ Let $f: [a, b] \to \mathbb{R}$ be a non-decreasing function.
 For any $c \in (a, b]$, let $f^-(c) \defeq \sup_{x \in (a, c)} f(x)$,
 and for any $c \in [a, b)$, let $f^+(c) \defeq \inf_{x \in (c, b)} f(x)$.
 
+One can easily show that $f^+(c) ≥ f(c)$ for all $c \in [a, b)$,
+$f^-(c) ≤ f(c)$ for all $c \in (a, b]$,
+and $f^+(x_1) ≤ f((x_1+x_2)/2) ≤ f^-(x_2)$ for all $a ≤ x_1 < x_2 ≤ b$.
+
 **Definition 3** (Jump-aware weighted Darboux integral):
 
 * Let $f, W: [a, b] \to \mathbb{R}$ be functions where $W$ is non-decreasing.
@@ -476,7 +480,8 @@ but $2/5 = 2\int_0^1 g(x)dg(x) ≠ g(1)^2 - g(0)^2 = 1$.
 Fortunately, I could prove that integration by parts holds if
 either $f$ or $g$ is continuous <a href="#cite-es-wdbx">[4]</a>.
 And in [Lemma 2](#thm-expected-revenue), we apply integration by parts on $x$ and $a(x)$,
-and $x$ is continuous. So things still work out (for now).
+and $x$ is continuous. So things still work out (for now),
+and we get that $r(x) = \int_0^y yda(y)$ for all $x \ge 0$.
 
 First, we would like to ensure that $\E(r(v))$ is well-defined.
 Or at least, we want to ensure that $\int_0^T r(x)dF(x)$ exists for all $T ≥ 0$,
@@ -499,15 +504,16 @@ For a positive random variable $X$, defining $\E(g(X))$ as
 $\lim_{T \to ∞} \int_0^T g(x)dF(x)$, where $F(x) \defeq \Pr(X ≤ x)$ seems to work fine,
 but if $X$ is non-negative, and can take a value of 0 with positive probability,
 then this definition doesn't work.
-We can fix it by using $\int_{-1}^T$ instead of $\int_0^T$,
+We can fix it by adding the term $F(0)g(0)$ to the integral,
 or we can define $\E(g(X))$ as
 $\lim_{T \to ∞} \int_0^T g(x)dG(x)$, where $G(x) \defeq \Pr(X < x)$.
 
 With these fixes, [Lemma 2](#thm-expected-revenue) seems to be true for posted price mechanisms,
 i.e., for $a(x) = \boolone(x ≥ p)$ and $r(x) = p\boolone(x ≥ p)$,
-we get $\E(r(v)) = p\Pr(v ≥ p)$ and $\lim_{T \to ∞} \int_0^T x(1-G(x))da(x) = p\Pr(v ≥ p)$.
+we get $\E(r(v)) = p\Pr(v ≥ p)$ and $\int_0^T x(1-G(x))da(x) = p\Pr(v ≥ p)$ for all $T > p$.
 
-However, let's consider a different mechanism. For any $p, γ \in (0, 1)$, define
+However, [Lemma 2](#thm-expected-revenue) is still wrong.
+Consider a different mechanism: for any $p, γ \in (0, 1)$, define
 $$a(x) = \begin{cases}0 & x < p \\ γ & x = p \\ 1 & x > p\end{cases}.$$
 Then
 $$r(x) = \begin{cases}0 & x < p \\ pγ & x = p \\ p & x > p\end{cases}.$$
@@ -518,11 +524,103 @@ For this integral to equal $\E(r(v))$, we must have $h(p) = pγ$.
 Hence, we cannot have $h(x)$ be $x(1-F(x))$ or $x(1-G(x))$
 or anything independent of $a(x)$.
 
+## Fixing Lemma 2
+
+We will soon see that [Lemma 2](#thm-expected-revenue) doesn't hold only if
+$a^+(x) > a(x)$ for some $x ≥ 0$.
+
+Let $(a, r)$ be a truthful mechanism.
+Then $a$ is non-decreasing and $r(x) = xa(x) - \int_0^x a(y)dy$ for all $x ≥ 0$
+by [Lemma 1](#thm-truthful).
+Let $b = a^+$ be a different allocation function.
+Note that $b$ is also non-decreasing.
+Let $\rhat(x) = xb(x) - \int_0^x b(y)dy$ for all $x \ge 0$.
+Then $(b, \rhat)$ is also a truthful mechanism by [Lemma 1](#thm-truthful).
+
+<strong id="thm-hat-dom">Lemma 5</strong>:
+$\rhat(x) ≥ r(x)$ for all $x ≥ 0$.
+
+*Proof*. $\rhat(x) - r(x) = x(b(x)-a(x)) - \int_0^x y(b(y)-a(y))dy$.
+Let $g(x) \defeq x(b(x) - a(x))$ for all $x ≥ 0$.
+We will show that $U_g(0, T) ≤ 0$ for all $T ≥ 0$, which would complete the proof.
+
+Pick any $n \ge 1$. Let $x_i = T(i/n)$ for $0 ≤ i ≤ n$.
+Then $P = (x_0, \ldots, x_n) \in \Pcal(0, T)$, and
+$$\begin{aligned}
+U_g(P) &= \sum_{i=1}^n (x_i - x_{i-1})\left(\sup_{x \in (x_{i-1}, x_i)} y(b(y)-a(y))\right)
+\\ &\le (T^2/n)\sum_{i=1}^n \sup_{x \in (x_{i-1}, x_i)} (b(y)-a(y))
+\\ &\le (T^2/n)\sum_{i=1}^n (b(x_i)-a^+(x_{i-1}))
+\\ &= (T^2/n)(a^+(T) - a^+(0)).
+\end{aligned}$$
+By making $n$ arbitrarily large, we can make $U_g(P)$ infinitesimally small.
+Hence, $U_g(0, T) = \inf_{P \in \Pcal(0, T)} U_g(P) ≤ 0$.
+Hence, $\rhat(x) ≥ r(x)$ for all $x ≥ 0$. $\quad\Box$
+
+<strong id="thm-plus-plus">Lemma 6</strong>:
+Let $f: \mathbb{R}_{≥0} \to \mathbb{R}$ and let $g = f^+$.
+Then $g$ is right-continuous, i.e., $g^+(c) = g(c)$ for all $c ≥ 0$.
+
+*Proof*.
+Pick any $ε > 0$. Then $\exists z \in (c, b)$ such that $f(z) < f^+(c) + ε$.
+Now, $g(c) ≤ g^+(c) ≤ g((c+z)/2) = f^+((c + z)/2) ≤ f(z) < f^+(c) + ε = g(c) + ε$.
+Since we can make $ε$ as small as we want, we get $g^+(c) = g(c)$. $\quad\Box$
+
+Lemmas [5](#thm-hat-dom) and [6](#thm-plus-plus) tell us that
+for every allocation function, there is a right-continuous allocation function
+whose revenue is greater or equal.
+Hence, from now on, we assume that the allocation function is right-continuous.
+
+In my notes <a href="#cite-es-wdbx">[4]</a>,
+I prove that the product of two bounded integrable functions is also integrable.
+Moreover, I prove the following result, that helps us do double integration.
+
+<strong id="thm-dbl-integration">Lemma 7</strong>:
+Let $V, W: [a, b] \to \mathbb{R}$ be non-decreasing functions
+and $V$ be right continuous, i.e., $V^+(x) = V(x)$ for all $x \in [a, b)$.
+Let $f: [a, b] \to [0, M]$ for some $M \in \mathbb{R}_{\ge 0}$
+such that $L_{f,V}(a, b) = U_{f,V}(a, b)$.
+Let $r: [a, b] \to \mathbb{R}_{\ge 0}$, where
+$r(x) \defeq \int_a^x f(y)dV(y)$.
+(Then $r$ is monotonic by $f$'s non-negativity,
+so $r$ is $W$-integrable over $[a, b]$.)
+
+Let $h(x) \defeq f(x)(W(b)-W^-(x))$ for all $x \in (a, b]$,
+and let $h(a) \defeq f(x)(W(b)-W(a))$.
+(Then $h$ is $V$-integrable over $[a, b]$,
+since $f$ is $V$-integrable and $W$ is non-increasing.)
+Then $\int_a^b r(x)dW(x) = \int_a^b h(x)dV(x)$.
+
+Using [Lemma 7](#thm-dbl-integration),
+we get that if $(a, r)$ is truthful and $a$ is right-continuous,
+then the expected revenue is
+$$\E(r(v)) = \sup_{T \ge 0} \int_0^T r(x)dF(x)
+= \sup_{T \ge 0} \int_0^T x(F(T)-F^-(x))da(x).$$
+(Recall that $F$ is the cumulative distribution function of $v$.)
+Hence, [Lemma 2](#thm-expected-revenue) holds after slight modification.
+
+## Lemma 3
+
+Let's now get to [Lemma 3](#thm-revenue-max).
+
+Define $r_{\max} \defeq \sup_{p \ge 0} p(1-F^-(p))$.
+Then for any truthful mechanism $(a, r)$ where $a$ is right-continuous, we get
+$$\begin{aligned}
+\E(r(v)) &= \sup_{T \ge 0} \int_0^T x(F(T)-F^-(x))da(x)
+\le \sup_{T \ge 0} \int_0^T r_{\max}da(x)
+\\ &= \sup_{T \ge 0} r_{\max}(a(T)-a(0)) \le r_{\max}.
+\end{aligned}$$
+
+Hence, the expected revenue of any truthful mechanism is at most $r_{\max}$.
+Moreover, if $(a, r)$ is the posted-price mechanism with price $p$,
+then $\E(r(v)) = p(1-F^-(p))$, so the maximum revenue we can get
+using posted-price mechanisms is $r_{\max}$.
+Hence, posted-price mechanisms are optimal.
+
 ## Conclusion
 
-So, it turns out that my informal results aren't true.
-I'm not sure how to modify them to make things work.
-Reach out to me if you have ideas.
+This took several days to figure out and almost drove me mad.
+The informal proof is so simple, yet the formal proof is so long
+and requires deep insight into real analysis.
 
 ## References
 
