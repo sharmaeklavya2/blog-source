@@ -41,7 +41,7 @@ Suppose $v$ is 2 with probability $1/3$ and 4 with probability $2/3$.
 * If the price is more than 4, the buyer would not want to purchase, so our revenue would be $0$.
 * If the price is at most 2, the buyer will definitely purchase, so our revenue would be $p$.
 * If the price is more than 2 and at most 4, the buyer will purchase with probability $2/3$,
-and our expected revenue would be $(2/3) \cdot p$.
+and our expected revenue would be $(2/3) · p$.
 
 If we set $p = 4$, our revenue would be $8/3$,
 and it is easy to see that there is no other way to set the price $p$
@@ -50,15 +50,15 @@ Hence, $p = 2$ is the optimal price and the optimal expected revenue is $8/3$.
 
 In general, our revenue is $p$ with probability $\Pr(v ≥ p)$
 and $0$ with probability $\Pr(v < p)$.
-Hence, the expected value of our revenue is $p \cdot \Pr(v ≥ p)$.
+Hence, the expected value of our revenue is $p · \Pr(v ≥ p)$.
 We should set $p$ to a value such that this expression is maximized.
 
 ## Truthful Single-Parameter Mechanisms
 
 Now let's consider a totally different kind of mechanism, called a single-parameter mechanism.
 We give the buyer $a(v)$ fraction of the good and charge them $r(v)$ dollars.
-Here $a: \mathbb{R}_{≥ 0} \to [0, 1]$ is called the *allocation function*
-and $r: \mathbb{R}_{≥ 0} \to \mathbb{R}_{≥ 0}$ is called the *revenue function*.
+Here $a: ℝ_{≥ 0} \to [0, 1]$ is called the *allocation function*
+and $r: ℝ_{≥ 0} \to ℝ_{≥ 0}$ is called the *revenue function*.
 We require $r(0)$ to be 0.
 
 Now you may wonder, "To charge them $r(v)$ dollars, we would need to know the value of $v$.
@@ -69,7 +69,7 @@ For now, assume that we can know the value of $v$
 if the mechanism $(a, r)$ is *truthful*, i.e.,
 for every $0 ≤ x_1 < x_2$, we have
 $$a(x_1) ≤ \frac{s(x_2) - s(x_1)}{x_2 - x_1} ≤ a(x_2),$$
-where $s(x) \defeq xa(x) - r(x)$.
+where $s(x) := xa(x) - r(x)$.
 
 Observe that posted-price mechanisms can also be viewed as single-parameter mechanisms.
 If the item has price $p$, then $a(v) = \boolone(v ≥ p)$ and $r(v) = p\boolone(v ≥ p)$.
@@ -109,7 +109,7 @@ $$s(x_2) - s(x_1) = \int_{x_1}^{x_2} a(x)dx ∈ [a(x_1)(x_2 - x_1), a(x_2)(x_2 -
 Now let's compute the expected revenue.
 Assume that the cumulative distribution of $v$ is $F$
 and the probability density function of $v$ is $f$,
-i.e., $F(x) \defeq \Pr(v ≤ x)$ and $f(x) \defeq dF(x)/dx$.
+i.e., $F(x) := \Pr(v ≤ x)$ and $f(x) := dF(x)/dx$.
 
 <strong id="thm-expected-revenue">Lemma 2</strong>:
 The expected revenue of a truthful mechanism $(a, r)$ is
@@ -123,7 +123,7 @@ $$\begin{aligned}
 \\ &= \int_0^∞ xa'(x) \left(\int_x^∞ f(u)du\right)dx
 \\ &= \int_0^∞ xa'(x)(1-F(x)) dx.
 \end{aligned}$$
-(Here we swapped the integration order.) $\quad\Box$
+(Here we swapped the integration order.) $\quad \Box$
 
 <strong id="thm-revenue-max">Lemma 3</strong>:
 $(a, r)$ is a revenue-maximizing truthful mechanism
@@ -138,21 +138,21 @@ We need to find a non-decreasing allocation function $a$
 for which $\int_0^∞ x(1-F(x))a'(x)dx$ is maximized.
 This means $a'(x) ≥ 0$ for all $x$ and $\int_0^∞ a'(x)dx ≤ 1$.
 
-This is similar to the problem where we are given a vector $b \in \mathbb{R}^n$
-and we must find a vector $x \in \mathbb{R}_{≥ 0}^n$
+This is similar to the problem where we are given a vector $b ∈ ℝ^n$
+and we must find a vector $x ∈ ℝ_{≥ 0}^n$
 such that $\sum_{i=1}^n x_i ≤ 1$ and $b^Tx$ is maximized.
 The solution is to find the index $i^*$ at which $b$ is maximum,
 i.e., $b_{i^*} ≥ b_i$ for all $i$, and then set $x_i = \boolone(i = i^*)$.
 Then $b^Tx$ would equal $\max_{i=1}^n b_i$.
 
 We just carry over this idea from sums to integrals.
-We first find $p \in \mathbb{R}_{≥ 0}$ such that $p(1-F(p))$ is maximized.
+We first find $p ∈ ℝ_{≥ 0}$ such that $p(1-F(p))$ is maximized.
 Then we want to *concentrate all the mass* at $p$, i.e.,
 $a'(p)$ is extremely large and $a'(x) = 0$ for all $x \neq p$.
 This is the same as saying $a(x) = \boolone(x ≥ p)$.
 Using <a href="#thm-truthful">Lemma 1</a>, we get $r(x) = xa(x) - \int_0^x a(y)dy = p\boolone(x ≥ p)$.
 Then the pair $(a, r)$ gives us the maximum revenue
-among all truthful single-parameter mechanisms. $\quad\Box$
+among all truthful single-parameter mechanisms. $\quad \Box$
 
 Another result, which would be useful later, is that in truthful mechanisms,
 the revenue function is non-decreasing.
@@ -166,7 +166,7 @@ $$a(x_1) ≤ \frac{s(x_2)-s(x_1)}{x_2-x_1} ≤ a(x_2)$$
 $$\implies x_1(a(x_2)-a(x_1)) ≤ r(x_2) - r(x_1) ≤ x_2(a(x_2)-a(x_1)).$$
 Since $a$ is non-decreasing in truthful mechanisms,
 we get that $r(x_2) - r(x_1) ≥ 0$ for all $0 ≤ x_1 < x_2$.
-Hence, $r$ is non-decreasing. $\quad\Box$
+Hence, $r$ is non-decreasing. $\quad \Box$
 
 ## Need for Mathematical Rigor
 
@@ -187,13 +187,13 @@ we need to define integration appropriately.
 High school math generally defines integrals like this:
 $\int_a^b f(x)dx$ is defined to be $F(b) - F(a)$,
 where $F$ is the *anti-derivative* of $f$,
-i.e., $F'(x) = f(x)$ for all $x \in [a, b]$.
+i.e., $F'(x) = f(x)$ for all $x ∈ [a, b]$.
 But this definition is problematic.
 
 For posted-price mechanisms, $a(x) = \boolone(x ≥ p)$.
 To compute $r(x)$, we must find $\int_0^x a(y)dy$.
 We can't use the high-school definition since there is no differentiable function
-whose derivative at $y$ is $a(y)$ for all $y \in [0, x]$.
+whose derivative at $y$ is $a(y)$ for all $y ∈ [0, x]$.
 Intuitively, $\int_0^x a(y)dy$ should be $(x-p)\boolone(x ≥ p)$,
 but this function is not differentiable at $p$
 (the left derivative is 0 and the right derivative is 1).
@@ -220,14 +220,14 @@ the interval $[3, 4]$ is 3, but $(3, 4]$ does not have a smallest element.
 In situations where we require a set to have a minimum but it doesn't have one,
 we can generally use the *infimum* instead.
 
-Let $X \subseteq \mathbb{R}$ and $a \in \mathbb{R}$.
-$a$ is called a *lower bound* on $X$ if $a ≤ x$ for all $x \in X$.
+Let $X \subseteq ℝ$ and $a ∈ ℝ$.
+$a$ is called a *lower bound* on $X$ if $a ≤ x$ for all $x ∈ X$.
 A number $b$ is called the *greatest lower bound* of $X$
 (aka the *infimum* of $X$, denoted as $\inf(X)$)
 if $b ≥ a$ for every lower bound $a$ of $X$.
 E.g., the greatest lower bound of $(3, 4]$ is 3.
 
-Does every set $X \subseteq \mathbb{R}$ have an infimum?
+Does every set $X \subseteq ℝ$ have an infimum?
 If $X$ is empty, then no. But what if $X$ is non-empty?
 $X$ may not have any lower bound, e.g., the set $(-∞, 1]$.
 In that case we say that $\inf(X) = -∞$.
@@ -250,36 +250,36 @@ For any integer $n ≥ 0$, define $[n]$ as the set $\{1, 2, \ldots, n\}$.
 
 **Definition 1** (Darboux integral):
 
-* Let $f: [a, b] \to \mathbb{R}$ be a function.
-* Let $P \defeq (x_0, x_1, \ldots, x_n)$ be a sequence of numbers
+* Let $f: [a, b] \to ℝ$ be a function.
+* Let $P := (x_0, x_1, \ldots, x_n)$ be a sequence of numbers
     where $a = x_0 < x_1 < \ldots < x_n = b$.
     The lower and upper *Darboux sums* of $f$ on $P$,
     denoted by $L_f(P)$ and $U_f(P)$, respectively, are defined as follows:
     If $a = b$, then $L_f(P) = U_f(P) = 0$. Otherwise,
     $$\begin{aligned}
-    L_f(P) &\defeq \sum_{i=1}^n (x_i - x_{i-1})\left(\inf_{x \in [x_{i-1}, x_i]} f(x)\right),
-    \\ U_f(P) &\defeq \sum_{i=1}^n (x_i - x_{i-1})\left(\sup_{x \in [x_{i-1}, x_i]} f(x)\right).
+    L_f(P) &:= \sum_{i=1}^n (x_i - x_{i-1})\left(\inf_{x ∈ [x_{i-1}, x_i]} f(x)\right),
+    \\ U_f(P) &:= \sum_{i=1}^n (x_i - x_{i-1})\left(\sup_{x ∈ [x_{i-1}, x_i]} f(x)\right).
     \end{aligned}$$
-* Let $\Pcal(a, b) \defeq \{(x_0, \ldots, x_n): n \in \mathbb{N}, a = x_0 < \ldots < x_n = b\}$.
+* Let $\Pcal(a, b) := \{(x_0, \ldots, x_n): n ∈ \mathbb{N}, a = x_0 < \ldots < x_n = b\}$.
     Then $\Pcal(a, b)$ is called the set of *partitions* of $[a, b]$.
 * The lower and upper *Darboux integrals* of $f$ are
     $$\begin{aligned}
-    L_f(a, b) &\defeq \sup_{P \in \Pcal(a, b)} L_f(P),
-    \\ U_f(a, b) &\defeq \inf_{P \in \Pcal(a, b)} U_f(P).
+    L_f(a, b) &:= \sup_{P ∈ \Pcal(a, b)} L_f(P),
+    \\ U_f(a, b) &:= \inf_{P ∈ \Pcal(a, b)} U_f(P).
     \end{aligned}$$
 * If $L_f(a, b) = U_f(a, b)$, then $f$ is said to be
     *Darboux integrable* on $[a, b]$,
     and we denote $L_f(a, b)$ and $U_f(a, b)$ by $\int_a^b f(x)dx$ or $\int_a^b f$.
 
 Here are some useful properties of Darboux integrals
-of the function $f: [a, b] \to \mathbb{R}$.
+of the function $f: [a, b] \to ℝ$.
 Proofs can be found in standard texts on real analysis
 (e.g., <a href="#cite-dg-dbx">[2]</a>).
 
 1.  $U_f(a, b) ≥ L_f(a, b)$.
 2.  For $a ≤ b ≤ c$, we have
     $L_f(a, b) = L_f(a, c) + L_f(c, b)$ and $U_f(a, b) = U_f(a, c) + U_f(c, b)$.
-3.  Suppose $α ≤ f(x) ≤ β$ for all $x \in [a, b]$.
+3.  Suppose $α ≤ f(x) ≤ β$ for all $x ∈ [a, b]$.
     Then $α(b-a) ≤ L_f(a, b) ≤ U_f(a, b) ≤ β(b-a)$.
 4.  If $f$ is non-decreasing, then $f$ is integrable over $[a, b]$.
 
@@ -290,26 +290,26 @@ Suppose $a$ is non-decreasing and $r(x) = xa(x) - \int_0^x a(y)dy$ for all $x �
 We have to prove that $(a, r)$ is truthful.
 For any $0 ≤ x_1 < x_2$, we get
 $$\frac{s(x_2) - s(x_1)}{x_2 - x_1} = \frac{\int_{x_1}^{x_2} a(y)dy}{x_2 - x_1}
-\in [a(x_1), a(x_2)].$$
+∈ [a(x_1), a(x_2)].$$
 Hence, $(a, r)$ is truthful.
 
 Suppose $(a, r)$ is truthful. Then $a$ is non-decreasing,
 and for all $0 ≤ y < z$, we have
 $$a(y) ≤ \frac{s(z)-s(y)}{z-y} ≤ a(z),$$
-where $s(x) \defeq xa(x) - r(x)$.
+where $s(x) := xa(x) - r(x)$.
 
-Pick any $t \in \mathbb{R}_{≥0}$. Let $P = (x_0, \ldots, x_n) \in \Pcal(0, t)$.
-Then for all $i \in [n]$, we get
+Pick any $t ∈ ℝ_{≥0}$. Let $P = (x_0, \ldots, x_n) ∈ \Pcal(0, t)$.
+Then for all $i ∈ [n]$, we get
 $$a(x_{i-1})(x_i - x_{i-1}) ≤ s(x_i)-s(x_{i-1}) ≤ a(x_i)(x_i - x_{i-1}).$$
 Hence,
 $$\begin{aligned}
-L_a(P) &= \sum_{i=1}^n (x_i - x_{i-1})\left(\inf_{x \in [x_{i-1}, x_i]} a(x)\right)
+L_a(P) &= \sum_{i=1}^n (x_i - x_{i-1})\left(\inf_{x ∈ [x_{i-1}, x_i]} a(x)\right)
 \\ &= \sum_{i=1}^n (x_i - x_{i-1})a(x_{i-1})
 \\ &= \sum_{i=1}^n (s(x_i) - s(x_{i-1})) = s(t) - s(0),
 \end{aligned}$$
 and
 $$\begin{aligned}
-U_a(P) &= \sum_{i=1}^n (x_i - x_{i-1})\left(\sup_{x \in [x_{i-1}, x_i]} a(x)\right)
+U_a(P) &= \sum_{i=1}^n (x_i - x_{i-1})\left(\sup_{x ∈ [x_{i-1}, x_i]} a(x)\right)
 \\ &= \sum_{i=1}^n (x_i - x_{i-1})a(x_i)
 \\ &= \sum_{i=1}^n (s(x_i) - s(x_{i-1})) = s(t) - s(0).
 \end{aligned}$$
@@ -319,7 +319,7 @@ Hence, $U_a(0, t) ≤ U_a(P) = s(t)$ and $L_a(0, t) ≥ L_a(P) = s(t)$.
 Since $a$ is non-decreasing, $a$ is integrable over $[0, t]$,
 and so, $U_a(0, t) = L_a(0, t) = s(t)$.
 Hence, for any $x ≥ 0$, we have $r(x) = xa(x) - \int_0^x a(y)dy$.
-$\quad\Box$
+$\quad \Box$
 
 ## The Weighted Darboux Integral
 
@@ -327,8 +327,8 @@ Proving <a href="#thm-expected-revenue">Lemma 2</a> is trickier.
 We need to somehow deal with $a'(x)$ in the lemma statement.
 
 My original idea was to modify the Darboux integral.
-For any function $f: [a, b] \to \mathbb{R}$
-and any non-decreasing function $W: [a, b] \to \mathbb{R}$,
+For any function $f: [a, b] \to ℝ$
+and any non-decreasing function $W: [a, b] \to ℝ$,
 to change $\int_a^b f(x)dx$ to $\int_a^b f(x)W'(x)dx$,
 in $L_f(P)$ and $U_f(P)$, I changed $(x_i - x_{i-1})$ to $(W(x_i) - W(x_{i-1}))$.
 
@@ -339,21 +339,21 @@ but I later realized that this idea has been studied before by
 
 **Definition 2** (Weighted Darboux integral):
 
-* Let $f, W: [a, b] \to \mathbb{R}$ be functions where $W$ is non-decreasing.
-* Let $P \defeq (x_0, x_1, \ldots, x_n)$ where $a = x_0 < x_1 < \ldots < x_n = b$.
+* Let $f, W: [a, b] \to ℝ$ be functions where $W$ is non-decreasing.
+* Let $P := (x_0, x_1, \ldots, x_n)$ where $a = x_0 < x_1 < \ldots < x_n = b$.
     Then the lower and upper *weighted Darboux sums* of $f$ on $P$ with weight $W$,
     denoted by $L_{f,W}(P)$ and $U_{f,W}(P)$, respectively, are defined as follows:
     If $a = b$, then $L_{f,W}(P) = U_{f,W}(P) = 0$. Otherwise,
     $$\begin{aligned}
-    L_{f,W}(P) &\defeq \sum_{i=1}^n (W(x_i) - W(x_{i-1}))\left(\inf_{x \in (x_{i-1}, x_i)} f(x)\right),
-    \\ U_{f,W}(P) &\defeq \sum_{i=1}^n (W(x_i) - W(x_{i-1}))\left(\sup_{x \in (x_{i-1}, x_i)} f(x)\right).
+    L_{f,W}(P) &:= \sum_{i=1}^n (W(x_i) - W(x_{i-1}))\left(\inf_{x ∈ (x_{i-1}, x_i)} f(x)\right),
+    \\ U_{f,W}(P) &:= \sum_{i=1}^n (W(x_i) - W(x_{i-1}))\left(\sup_{x ∈ (x_{i-1}, x_i)} f(x)\right).
     \end{aligned}$$
-* Let $\Pcal(a, b) \defeq \{(x_0, \ldots, x_n): n \in \mathbb{N}, a = x_0 < \ldots < x_n = b\}$.
+* Let $\Pcal(a, b) := \{(x_0, \ldots, x_n): n ∈ \mathbb{N}, a = x_0 < \ldots < x_n = b\}$.
     $\Pcal(a, b)$ is called the set of *partitions* of $[a, b]$.
 * The lower and upper *weighted Darboux integrals* of $f$ with weight $W$ are
     $$\begin{aligned}
-    L_{f,W}(a, b) &\defeq \sup_{P \in \Pcal(a, b)} L_{f,W}(P),
-    \\ U_{f,W}(a, b) &\defeq \inf_{P \in \Pcal(a, b)} U_{f,W}(P).
+    L_{f,W}(a, b) &:= \sup_{P ∈ \Pcal(a, b)} L_{f,W}(P),
+    \\ U_{f,W}(a, b) &:= \inf_{P ∈ \Pcal(a, b)} U_{f,W}(P).
     \end{aligned}$$
 * If $L_{f,W}(a, b) = U_{f,W}(a, b)$, then $f$ is said to be
     $W$-<em>Darboux integrable</em> on $[a, b]$,
@@ -363,13 +363,13 @@ but I later realized that this idea has been studied before by
     If $L_f(a, b) = U_f(a, b)$, we denote them by $\int_a^b f(x)dx$.
 
 Once again, we can prove some simple properties
-for $f, W: [a, b] \to \mathbb{R}$, where $W$ is non-decreasing:
+for $f, W: [a, b] \to ℝ$, where $W$ is non-decreasing:
 
 1.  $U_{f,W}(a, b) ≥ L_{f,W}(a, b)$.
 2.  For $a ≤ b ≤ c$, we have
     $L_{f,W}(a, b) = L_{f,W}(a, c) + L_{f,W}(c, b)$
     and $U_{f,W}(a, b) = U_{f,W}(a, c) + U_{f,W}(c, b)$.
-3.  Suppose $α ≤ f(x) ≤ β$ for all $x \in [a, b]$.
+3.  Suppose $α ≤ f(x) ≤ β$ for all $x ∈ [a, b]$.
     Then $α(W(b)-W(a)) ≤ L_{f,W}(a, b) ≤ U_{f,W}(a, b) ≤ β(W(b)-W(a))$.
 
 Unfortunately, every non-decreasing function may not be integrable now
@@ -380,7 +380,7 @@ if the weight function $W$ is discontinuous.
 * Let $g(x) = 0$ for $x < 1/2$, $g(1/2) = 1/2$, and $g(x) = 1$ for $x > 1/2$.
 * Let $W(x) = 0$ for $x < 1/2$ and $W(x) = 1$ for $x ≥ 1/2$.
 
-Pick any partition $P = (x_0, \ldots, x_n) \in \Pcal(0, 1)$.
+Pick any partition $P = (x_0, \ldots, x_n) ∈ \Pcal(0, 1)$.
 We now have two cases:
 
 1.  $x_{i-1} < 1/2 < x_i$ for some $i$.
@@ -397,7 +397,7 @@ $\int_0^x a(y)dy$ is still well-defined.
 
 However, I was thinking of using weighted Darboux integrals to define expected value.
 For a positive random variable $X$ with cumulative distribution function $F$
-(i.e., $F(x) \defeq \Pr(X ≤ x)$), one could define $\E(g(X))$ as
+(i.e., $F(x) := \Pr(X ≤ x)$), one could define $\E(g(X))$ as
 $$\lim_{T \to ∞} \int_0^T g(x)dF(x).$$
 
 Let $X$ be a random variable that takes value $1/2$ with probability 1
@@ -416,37 +416,37 @@ to exist for all $T ≥ 0$, but I can't think of a way of guaranteeing that
 Let's try to define Darboux integrals again, but this time,
 we will explicitly take discontinuities into account.
 
-Let $f: [a, b] \to \mathbb{R}$ be a non-decreasing function.
-For any $c \in (a, b]$, let $f^-(c) \defeq \sup_{x \in (a, c)} f(x)$,
-and for any $c \in [a, b)$, let $f^+(c) \defeq \inf_{x \in (c, b)} f(x)$.
+Let $f: [a, b] \to ℝ$ be a non-decreasing function.
+For any $c ∈ (a, b]$, let $f^-(c) := \sup_{x ∈ (a, c)} f(x)$,
+and for any $c ∈ [a, b)$, let $f^+(c) := \inf_{x ∈ (c, b)} f(x)$.
 
-One can easily show that $f^+(c) ≥ f(c)$ for all $c \in [a, b)$,
-$f^-(c) ≤ f(c)$ for all $c \in (a, b]$,
+One can easily show that $f^+(c) ≥ f(c)$ for all $c ∈ [a, b)$,
+$f^-(c) ≤ f(c)$ for all $c ∈ (a, b]$,
 and $f^+(x_1) ≤ f((x_1+x_2)/2) ≤ f^-(x_2)$ for all $a ≤ x_1 < x_2 ≤ b$.
 
 **Definition 3** (Jump-aware weighted Darboux integral):
 
-* Let $f, W: [a, b] \to \mathbb{R}$ be functions where $W$ is non-decreasing.
-* Let $P \defeq (x_0, x_1, \ldots, x_n)$ where $a = x_0 < x_1 < \ldots < x_n = b$.
+* Let $f, W: [a, b] \to ℝ$ be functions where $W$ is non-decreasing.
+* Let $P := (x_0, x_1, \ldots, x_n)$ where $a = x_0 < x_1 < \ldots < x_n = b$.
     Then the jump, lower, and upper *weighted Darboux sums* of $f$ on $P$ with weight $W$,
     denoted by $J_{f,W}(P)$, $L_{f,W}(P)$, and $U_{f,W}(P)$, respectively,
     are defined as follows:
     If $a = b$, then $J_{f,W}(P) = L_{f,W}(P) = U_{f,W}(P) = 0$. Otherwise,
     $$\begin{aligned}
-    J_{f,W}(P) &\defeq f(x_0)(W^+(x_0) - W(x_0))
+    J_{f,W}(P) &:= f(x_0)(W^+(x_0) - W(x_0))
         + \sum_{i=1}^{n-1} f(x_i)(W^+(x_i) - W^-(x_i))
         \\ &\quad + f(x_n)(W(x_n) - W^-(x_n)),
-    \\ L_{f,W}(P) &\defeq J_{f,W}(P)
-        + \sum_{i=1}^n (W^-(x_i) - W^+(x_{i-1}))\left(\inf_{x \in (x_{i-1}, x_i)} f(x)\right),
-    \\ U_{f,W}(P) &\defeq J_{f,W}(P)
-        + \sum_{i=1}^n (W^-(x_i) - W^+(x_{i-1}))\left(\sup_{x \in (x_{i-1}, x_i)} f(x)\right).
+    \\ L_{f,W}(P) &:= J_{f,W}(P)
+        + \sum_{i=1}^n (W^-(x_i) - W^+(x_{i-1}))\left(\inf_{x ∈ (x_{i-1}, x_i)} f(x)\right),
+    \\ U_{f,W}(P) &:= J_{f,W}(P)
+        + \sum_{i=1}^n (W^-(x_i) - W^+(x_{i-1}))\left(\sup_{x ∈ (x_{i-1}, x_i)} f(x)\right).
     \end{aligned}$$
-* Let $\Pcal(a, b) \defeq \{(x_0, \ldots, x_n): n \in \mathbb{N}, a = x_0 < \ldots < x_n = b\}$.
+* Let $\Pcal(a, b) := \{(x_0, \ldots, x_n): n ∈ \mathbb{N}, a = x_0 < \ldots < x_n = b\}$.
     $\Pcal(a, b)$ is called the set of *partitions* of $[a, b]$.
     The lower and upper *weighted Darboux integrals* of $f$ with weight $W$ are
     $$\begin{aligned}
-    L_{f,W}(a, b) &\defeq \sup_{P \in \Pcal(a, b)} L_{f,W}(P),
-    & U_{f,W}(a, b) &\defeq \inf_{P \in \Pcal(a, b)} U_{f,W}(P).
+    L_{f,W}(a, b) &:= \sup_{P ∈ \Pcal(a, b)} L_{f,W}(P),
+    & U_{f,W}(a, b) &:= \inf_{P ∈ \Pcal(a, b)} U_{f,W}(P).
     \end{aligned}$$
 * If $L_{f,W}(a, b) = U_{f,W}(a, b)$, then $f$ is said to be
     $W$-*Darboux integrable* on $[a, b]$,
@@ -468,7 +468,7 @@ Now let's get back to trying to formalize <a href="#thm-expected-revenue">Lemma 
 First, let's show that integration by parts holds in our model,
 because we use it in the first step of our proof.
 We would like to show that for two non-decreasing functions
-$f, g: [a, b] \to \mathbb{R}$, we have
+$f, g: [a, b] \to ℝ$, we have
 $$\int_a^b f(x)dg(x) + \int_a^b g(x)df(x) = f(b)g(b) - f(a)g(a).$$
 Unfortunately, this isn't true, even when $f = g$.
 
@@ -481,7 +481,7 @@ Fortunately, I could prove that integration by parts holds if
 either $f$ or $g$ is continuous <a href="#cite-es-wdbx">[4]</a>.
 And in [Lemma 2](#thm-expected-revenue), we apply integration by parts on $x$ and $a(x)$,
 and $x$ is continuous. So things still work out (for now),
-and we get that $r(x) = \int_0^y yda(y)$ for all $x \ge 0$.
+and we get that $r(x) = \int_0^y yda(y)$ for all $x ≥ 0$.
 
 First, we would like to ensure that $\E(r(v))$ is well-defined.
 Or at least, we want to ensure that $\int_0^T r(x)dF(x)$ exists for all $T ≥ 0$,
@@ -495,30 +495,30 @@ And then it struck me; [Lemma 2](#thm-expected-revenue) is wrong!
 Consider posted price mechanisms. There, the expected revenue is $p\Pr(v ≥ p)$.
 But for all $T > p$, $\int_0^T x(1-F(x))da(x)$ evaluates to $p(1-F(p)) = p\Pr(v > p)$.
 Maybe we should use $x(1-G(x))$ instead of $x(1-F(x))$
-in [Lemma 2](#thm-expected-revenue)'s statement, where $G(x) \defeq \Pr(v < x)$?
+in [Lemma 2](#thm-expected-revenue)'s statement, where $G(x) := \Pr(v < x)$?
 (Note that $G(x) = F^-(x)$ for all $x > 0$ and $G^+(x) = F(x)$ for all $x ≥ 0$.
 $G(0) = 0$, but $F^-(0)$ is not defined.)
 
 I discovered an edge case that was spoiling the definition of expected value.
 For a positive random variable $X$, defining $\E(g(X))$ as
-$\lim_{T \to ∞} \int_0^T g(x)dF(x)$, where $F(x) \defeq \Pr(X ≤ x)$ seems to work fine,
+$\lim_{T \to ∞} \int_0^T g(x)dF(x)$, where $F(x) := \Pr(X ≤ x)$ seems to work fine,
 but if $X$ is non-negative, and can take a value of 0 with positive probability,
 then this definition doesn't work.
 We can fix it by adding the term $F(0)g(0)$ to the integral,
 or we can define $\E(g(X))$ as
-$\lim_{T \to ∞} \int_0^T g(x)dG(x)$, where $G(x) \defeq \Pr(X < x)$.
+$\lim_{T \to ∞} \int_0^T g(x)dG(x)$, where $G(x) := \Pr(X < x)$.
 
 With these fixes, [Lemma 2](#thm-expected-revenue) seems to be true for posted price mechanisms,
 i.e., for $a(x) = \boolone(x ≥ p)$ and $r(x) = p\boolone(x ≥ p)$,
 we get $\E(r(v)) = p\Pr(v ≥ p)$ and $\int_0^T x(1-G(x))da(x) = p\Pr(v ≥ p)$ for all $T > p$.
 
 However, [Lemma 2](#thm-expected-revenue) is still wrong.
-Consider a different mechanism: for any $p, γ \in (0, 1)$, define
+Consider a different mechanism: for any $p, γ ∈ (0, 1)$, define
 $$a(x) = \begin{cases}0 & x < p \\ γ & x = p \\ 1 & x > p\end{cases}.$$
 Then
 $$r(x) = \begin{cases}0 & x < p \\ pγ & x = p \\ p & x > p\end{cases}.$$
 Suppose $v$ is $p$ with probability 1. Then $\E(r(v)) = pγ$.
-However, for any function $h: \mathbb{R}_{≥0} \to \mathbb{R}$ and any $T ≥ 1$,
+However, for any function $h: ℝ_{≥0} \to ℝ$ and any $T ≥ 1$,
 we have $\int_0^T h(x)da(x) = h(p)$.
 For this integral to equal $\E(r(v))$, we must have $h(p) = pγ$.
 Hence, we cannot have $h(x)$ be $x(1-F(x))$ or $x(1-G(x))$
@@ -534,36 +534,36 @@ Then $a$ is non-decreasing and $r(x) = xa(x) - \int_0^x a(y)dy$ for all $x ≥ 0
 by [Lemma 1](#thm-truthful).
 Let $b = a^+$ be a different allocation function.
 Note that $b$ is also non-decreasing.
-Let $\rhat(x) = xb(x) - \int_0^x b(y)dy$ for all $x \ge 0$.
+Let $\rhat(x) = xb(x) - \int_0^x b(y)dy$ for all $x ≥ 0$.
 Then $(b, \rhat)$ is also a truthful mechanism by [Lemma 1](#thm-truthful).
 
 <strong id="thm-hat-dom">Lemma 5</strong>:
 $\rhat(x) ≥ r(x)$ for all $x ≥ 0$.
 
 *Proof*. $\rhat(x) - r(x) = x(b(x)-a(x)) - \int_0^x y(b(y)-a(y))dy$.
-Let $g(x) \defeq x(b(x) - a(x))$ for all $x ≥ 0$.
+Let $g(x) := x(b(x) - a(x))$ for all $x ≥ 0$.
 We will show that $U_g(0, T) ≤ 0$ for all $T ≥ 0$, which would complete the proof.
 
-Pick any $n \ge 1$. Let $x_i = T(i/n)$ for $0 ≤ i ≤ n$.
-Then $P = (x_0, \ldots, x_n) \in \Pcal(0, T)$, and
+Pick any $n ≥ 1$. Let $x_i = T(i/n)$ for $0 ≤ i ≤ n$.
+Then $P = (x_0, \ldots, x_n) ∈ \Pcal(0, T)$, and
 $$\begin{aligned}
-U_g(P) &= \sum_{i=1}^n (x_i - x_{i-1})\left(\sup_{x \in (x_{i-1}, x_i)} y(b(y)-a(y))\right)
-\\ &\le (T^2/n)\sum_{i=1}^n \sup_{x \in (x_{i-1}, x_i)} (b(y)-a(y))
-\\ &\le (T^2/n)\sum_{i=1}^n (b(x_i)-a^+(x_{i-1}))
+U_g(P) &= \sum_{i=1}^n (x_i - x_{i-1})\left(\sup_{x ∈ (x_{i-1}, x_i)} y(b(y)-a(y))\right)
+\\ &≤ (T^2/n)\sum_{i=1}^n \sup_{x ∈ (x_{i-1}, x_i)} (b(y)-a(y))
+\\ &≤ (T^2/n)\sum_{i=1}^n (b(x_i)-a^+(x_{i-1}))
 \\ &= (T^2/n)(a^+(T) - a^+(0)).
 \end{aligned}$$
 By making $n$ arbitrarily large, we can make $U_g(P)$ infinitesimally small.
-Hence, $U_g(0, T) = \inf_{P \in \Pcal(0, T)} U_g(P) ≤ 0$.
-Hence, $\rhat(x) ≥ r(x)$ for all $x ≥ 0$. $\quad\Box$
+Hence, $U_g(0, T) = \inf_{P ∈ \Pcal(0, T)} U_g(P) ≤ 0$.
+Hence, $\rhat(x) ≥ r(x)$ for all $x ≥ 0$. $\quad \Box$
 
 <strong id="thm-plus-plus">Lemma 6</strong>:
-Let $f: \mathbb{R}_{≥0} \to \mathbb{R}$ and let $g = f^+$.
+Let $f: ℝ_{≥0} \to ℝ$ and let $g = f^+$.
 Then $g$ is right-continuous, i.e., $g^+(c) = g(c)$ for all $c ≥ 0$.
 
 *Proof*.
-Pick any $ε > 0$. Then $\exists z \in (c, b)$ such that $f(z) < f^+(c) + ε$.
+Pick any $ε > 0$. Then $∃ z ∈ (c, b)$ such that $f(z) < f^+(c) + ε$.
 Now, $g(c) ≤ g^+(c) ≤ g((c+z)/2) = f^+((c + z)/2) ≤ f(z) < f^+(c) + ε = g(c) + ε$.
-Since we can make $ε$ as small as we want, we get $g^+(c) = g(c)$. $\quad\Box$
+Since we can make $ε$ as small as we want, we get $g^+(c) = g(c)$. $\quad \Box$
 
 Lemmas [5](#thm-hat-dom) and [6](#thm-plus-plus) tell us that
 for every allocation function, there is a right-continuous allocation function
@@ -575,17 +575,17 @@ I prove that the product of two bounded integrable functions is also integrable.
 Moreover, I prove the following result, that helps us do double integration.
 
 <strong id="thm-dbl-integration">Lemma 7</strong>:
-Let $V, W: [a, b] \to \mathbb{R}$ be non-decreasing functions
-and $V$ be right continuous, i.e., $V^+(x) = V(x)$ for all $x \in [a, b)$.
-Let $f: [a, b] \to [0, M]$ for some $M \in \mathbb{R}_{\ge 0}$
+Let $V, W: [a, b] \to ℝ$ be non-decreasing functions
+and $V$ be right continuous, i.e., $V^+(x) = V(x)$ for all $x ∈ [a, b)$.
+Let $f: [a, b] \to [0, M]$ for some $M ∈ ℝ_{≥ 0}$
 such that $L_{f,V}(a, b) = U_{f,V}(a, b)$.
-Let $r: [a, b] \to \mathbb{R}_{\ge 0}$, where
-$r(x) \defeq \int_a^x f(y)dV(y)$.
+Let $r: [a, b] \to ℝ_{≥ 0}$, where
+$r(x) := \int_a^x f(y)dV(y)$.
 (Then $r$ is monotonic by $f$'s non-negativity,
 so $r$ is $W$-integrable over $[a, b]$.)
 
-Let $h(x) \defeq f(x)(W(b)-W^-(x))$ for all $x \in (a, b]$,
-and let $h(a) \defeq f(x)(W(b)-W(a))$.
+Let $h(x) := f(x)(W(b)-W^-(x))$ for all $x ∈ (a, b]$,
+and let $h(a) := f(x)(W(b)-W(a))$.
 (Then $h$ is $V$-integrable over $[a, b]$,
 since $f$ is $V$-integrable and $W$ is non-increasing.)
 Then $\int_a^b r(x)dW(x) = \int_a^b h(x)dV(x)$.
@@ -593,8 +593,8 @@ Then $\int_a^b r(x)dW(x) = \int_a^b h(x)dV(x)$.
 Using [Lemma 7](#thm-dbl-integration),
 we get that if $(a, r)$ is truthful and $a$ is right-continuous,
 then the expected revenue is
-$$\E(r(v)) = \sup_{T \ge 0} \int_0^T r(x)dF(x)
-= \sup_{T \ge 0} \int_0^T x(F(T)-F^-(x))da(x).$$
+$$\E(r(v)) = \sup_{T ≥ 0} \int_0^T r(x)dF(x)
+= \sup_{T ≥ 0} \int_0^T x(F(T)-F^-(x))da(x).$$
 (Recall that $F$ is the cumulative distribution function of $v$.)
 Hence, [Lemma 2](#thm-expected-revenue) holds after slight modification.
 
@@ -602,12 +602,12 @@ Hence, [Lemma 2](#thm-expected-revenue) holds after slight modification.
 
 Let's now get to [Lemma 3](#thm-revenue-max).
 
-Define $r_{\max} \defeq \sup_{p \ge 0} p(1-F^-(p))$.
+Define $r_{\max} := \sup_{p ≥ 0} p(1-F^-(p))$.
 Then for any truthful mechanism $(a, r)$ where $a$ is right-continuous, we get
 $$\begin{aligned}
-\E(r(v)) &= \sup_{T \ge 0} \int_0^T x(F(T)-F^-(x))da(x)
-\le \sup_{T \ge 0} \int_0^T r_{\max}da(x)
-\\ &= \sup_{T \ge 0} r_{\max}(a(T)-a(0)) \le r_{\max}.
+\E(r(v)) &= \sup_{T ≥ 0} \int_0^T x(F(T)-F^-(x))da(x)
+≤ \sup_{T ≥ 0} \int_0^T r_{\max}da(x)
+\\ &= \sup_{T ≥ 0} r_{\max}(a(T)-a(0)) ≤ r_{\max}.
 \end{aligned}$$
 
 Hence, the expected revenue of any truthful mechanism is at most $r_{\max}$.
