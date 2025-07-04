@@ -103,8 +103,10 @@ and so, $r(x) = xa(x) - \int_0^x a(y)dy$.
 
 Now suppose $a$ is non-decreasing and $r(x) = xa(x) - \int_0^x a(y)dy$.
 Then $s(x) = \int_0^x a(y)dy$, so for any $0 ≤ x_1 < x_2$, we get
-$$s(x_2) - s(x_1) = \int_{x_1}^{x_2} a(x)dx ∈ [a(x_1)(x_2 - x_1), a(x_2)(x_2 - x_1)].
-\quad \Box$$
+$$\begin{aligned}
+& s(x_2) - s(x_1) = \int_{x_1}^{x_2} a(x)dx
+\\ &\quad ∈ [a(x_1)(x_2 - x_1), a(x_2)(x_2 - x_1)].
+\quad \Box\end{aligned}$$
 
 Now let's compute the expected revenue.
 Assume that the cumulative distribution of $v$ is $F$
@@ -593,8 +595,10 @@ Then $\int_a^b r(x)dW(x) = \int_a^b h(x)dV(x)$.
 Using [Lemma 7](#thm-dbl-integration),
 we get that if $(a, r)$ is truthful and $a$ is right-continuous,
 then the expected revenue is
-$$\E(r(v)) = \sup_{T ≥ 0} \int_0^T r(x)dF(x)
-= \sup_{T ≥ 0} \int_0^T x(F(T)-F^-(x))da(x).$$
+$$\begin{aligned}
+\E(r(v)) &= \sup_{T ≥ 0} \int_0^T r(x)dF(x)
+\\ &= \sup_{T ≥ 0} \int_0^T x(F(T)-F^-(x))da(x).
+\end{aligned}$$
 (Recall that $F$ is the cumulative distribution function of $v$.)
 Hence, [Lemma 2](#thm-expected-revenue) holds after slight modification.
 
@@ -606,7 +610,7 @@ Define $r_{\max} := \sup_{p ≥ 0} p(1-F^-(p))$.
 Then for any truthful mechanism $(a, r)$ where $a$ is right-continuous, we get
 $$\begin{aligned}
 \E(r(v)) &= \sup_{T ≥ 0} \int_0^T x(F(T)-F^-(x))da(x)
-≤ \sup_{T ≥ 0} \int_0^T r_{\max}da(x)
+\\ &≤ \sup_{T ≥ 0} \int_0^T r_{\max}da(x)
 \\ &= \sup_{T ≥ 0} r_{\max}(a(T)-a(0)) ≤ r_{\max}.
 \end{aligned}$$
 
