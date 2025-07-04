@@ -73,14 +73,14 @@ I created the following short animations to experiment
 
 <figure>
 <a href="{static}/img/snake.svg">
-<img class="nofilter" src="{static}/img/snake.svg" alt="A trail of red balls bouncing in a box"/>
+<img src="{static}/img/snake.svg" alt="A trail of red balls bouncing in a box"/>
 </a>
 <figcaption>A trail of red balls bouncing in a box.</figcaption>
 </figure>
 
 <figure>
 <a href="{static}/img/bp1.svg">
-<img class="no-dark" src="{static}/img/bp1.svg" alt="Animation of 1D bin packing"/>
+<img class="dark-invert" src="{static}/img/bp1.svg" alt="Animation of 1D bin packing"/>
 </a>
 <figcaption>Animation of 1D
 <a href="https://en.wikipedia.org/wiki/Bin_packing_problem">bin packing</a>.</figcaption>

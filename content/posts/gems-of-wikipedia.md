@@ -6,7 +6,7 @@ summary: A list of Wikipedia articles about strange and wonderful things.
 
 This is a list of Wikipedia articles about strange and wonderful things.
 
-<div class="gallery">
+<div class="gallery darken-all">
 <figure>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Rainbow_Eucalyptus_Maui.jpg/640px-Rainbow_Eucalyptus_Maui.jpg" width="400"/>
 <figcaption><a href="https://en.wikipedia.org/wiki/Eucalyptus_deglupta">Rainbow Eucalyptus</a>:

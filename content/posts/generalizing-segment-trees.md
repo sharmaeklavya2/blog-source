@@ -300,7 +300,7 @@ It presents 2 attributes of every segment tree node $u$:
 * $\operatorname{value}(u)$.
 
 <figure>
-<img src="{static}/img/segtree-lazy-update/0.dot.svg" alt="segment tree on 7 elements"/>
+<img class="dark-invert" src="{static}/img/segtree-lazy-update/0.dot.svg" alt="segment tree on 7 elements"/>
 <figcaption>Initial segment tree</figcaption>
 </figure>
 
@@ -318,7 +318,7 @@ We'll then note down that their children are yet to be updated with $h = d(1, 20
 We'll also update all the ancestors of the affected nodes by recomputing their values.
 
 <figure markdown="span">
-<img src="{static}/img/segtree-lazy-update/1.dot.svg"
+<img class="dark-invert" src="{static}/img/segtree-lazy-update/1.dot.svg"
 alt="segment tree after adding 20 to 5 elements" />
 <figcaption>
 Segment tree after update
@@ -338,7 +338,7 @@ Since the pending update moved from `4..5` to its child,
 we say that the pending update 'propagated'.
 
 <figure markdown="span">
-<img src="{static}/img/segtree-lazy-update/2.dot.svg"
+<img class="dark-invert" src="{static}/img/segtree-lazy-update/2.dot.svg"
 alt="querying a segment tree with lazy propagation" />
 <figcaption>
 Segment tree after the query $l=2, r=5$.<br/>
@@ -352,7 +352,7 @@ Suppose we get the update $l=0, r=6, g(x) = x + 10$.
 We will update the root node and add $d(1, 10)$ to the children.
 
 <figure markdown="span">
-<img src="{static}/img/segtree-lazy-update/3.dot.svg"
+<img class="dark-invert" src="{static}/img/segtree-lazy-update/3.dot.svg"
 alt="segment tree after two updates" />
 <figcaption>
 Segment tree after update
@@ -375,7 +375,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 <figure markdown="span">
-<img src="{static}/img/segtree-lazy-update/4.dot.svg"
+<img class="dark-invert" src="{static}/img/segtree-lazy-update/4.dot.svg"
 alt="combining updates in a segment tree" />
 <figcaption>
 Segment tree after update

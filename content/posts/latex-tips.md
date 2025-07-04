@@ -133,7 +133,7 @@ However, this table can only contain simple text, not mathematical expressions.
 Here's a screenshot of what happens if we include math in section titles.
 
 <figure>
-<img src="{static}/img/latex/bad-heading.png"/>
+<img class="darken" src="{static}/img/latex/bad-heading.png"/>
 <figcaption>PDF opened in Google Chrome, showing garbled section titles in the table of contents.</figcaption>
 </figure>
 
@@ -149,7 +149,7 @@ to
     in \texorpdfstring{$n^{O_{\eps}(1)}$}{n\^{}(O\_eps(1))} time}
 
 <figure>
-<img src="{static}/img/latex/good-heading.png"/>
+<img class="darken" src="{static}/img/latex/good-heading.png"/>
 <figcaption>PDF opened in Google Chrome, where section titles in the table of contents
 are readable.</figcaption>
 </figure>

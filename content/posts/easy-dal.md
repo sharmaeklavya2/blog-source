@@ -52,11 +52,11 @@ To cook dal, make sure you buy seeds that are already split into two parts.
 
 <div class="gallery">
 <figure>
-    <img src="{static}/img/food/green-moong-split.jpg" alt="Split green moong seeds" />
+    <img class="darken" src="{static}/img/food/green-moong-split.jpg" alt="Split green moong seeds" />
     <figcaption class="success">Split green moong seeds. Use these for dal.</figcaption>
 </figure>
 <figure>
-    <img src="{static}/img/food/green-moong-whole.jpg" alt="Whole green moong seeds" />
+    <img class="darken" src="{static}/img/food/green-moong-whole.jpg" alt="Whole green moong seeds" />
     <figcaption class="danger">Whole green moong seeds. Do NOT use these for dal.</figcaption>
 </figure>
 </div>
