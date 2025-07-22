@@ -1,6 +1,6 @@
 title: Pricing Mechanisms and the Riemann-Stieltjes Integral
 slug: auctions-and-integration
-tags: Math
+tags: math
 date: 2025-07-01
 mathengine: katex-full
 summary: While studying pricing mechanisms, trying to formalize simple results led me down the rabbit hole of Riemann-Stieltjes integrals.

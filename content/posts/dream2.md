@@ -1,6 +1,6 @@
 title: Weird dream 2
 slug: dream2
-tags: Dream
+tags: dream
 date: 2022-08-06
 summary:
 

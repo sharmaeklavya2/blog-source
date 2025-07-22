@@ -1,6 +1,6 @@
 title: Analyzing Hand Cricket using Game Theory
 slug: hand-cricket
-tags: Math, Game theory
+tags: math, game-theory
 date: 2023-02-07
 modified: 2023-10-09
 mathengine: katex-full

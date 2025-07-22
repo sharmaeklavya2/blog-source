@@ -1,6 +1,6 @@
 title: Forest Nightmare
 slug: dream3
-tags: Dream
+tags: dream
 date: 2023-12-21
 summary: I had a nightmare today which I think can be made into a good horror movie.
 

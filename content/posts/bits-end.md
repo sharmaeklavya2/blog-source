@@ -1,6 +1,6 @@
 title: Advice to past self on BITS end
 slug: bits-end
-tags: BITS
+tags: bits-pilani
 date: 2017-12-11
 status: draft
 summary: Advice to computer science students who have just begun college at BITS Pilani.

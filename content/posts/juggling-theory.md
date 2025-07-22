@@ -1,6 +1,6 @@
 title: The Math behind Juggling
 slug: juggling-theory
-tags: Juggling, Math
+tags: juggling, math
 date: 2020-09-22
 mathengine: katex-full
 summary: This article explains how math can be applied to juggling, a seemingly non-mathematical area. This gives us more insight into what really goes on in a juggling pattern and helps us automate the process of finding new juggling patterns.

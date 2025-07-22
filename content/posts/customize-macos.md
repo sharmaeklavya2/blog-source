@@ -1,6 +1,5 @@
 title: A Comprehensive Guide to Customizing your MacBook
 slug: customize-macos
-tags: Tutorial
 date: 2019-07-12
 modified: 2024-08-08
 summary: This post contains a list of all the things I did to customize my MacBook. Most instructions here are useful only for programmers and power users.

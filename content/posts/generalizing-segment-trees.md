@@ -1,6 +1,6 @@
 title: Generalizing Segment Trees
 slug: generalizing-segment-trees
-tags: Algorithms, Math
+tags: algorithms, math
 date: 2019-07-20
 mathengine: katex-full
 ExtraCSS: css/solarized.css

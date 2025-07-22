@@ -1,6 +1,6 @@
 title: Weird dream
 slug: dream1
-tags: Dream
+tags: dream
 date: 2020-11-10
 summary:
 

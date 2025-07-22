@@ -1,6 +1,6 @@
 title: Juggling 101
 slug: juggling-101
-tags: Juggling
+tags: juggling
 date: 2017-12-03
 summary: This is an article for those who wish to learn juggling and have absolutely no prior experience. Here you will find links to resources that will help you learn your first juggling pattern and suggestions about what kind of balls to use, what posture you should have, etc.
 
