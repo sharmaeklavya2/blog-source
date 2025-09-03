@@ -307,16 +307,16 @@ Hence,
 $$\begin{aligned}
 L_a(P) &= \sum_{i=1}^n (x_i - x_{i-1})\left(\inf_{x ∈ [x_{i-1}, x_i]} a(x)\right)
 \\ &= \sum_{i=1}^n (x_i - x_{i-1})a(x_{i-1})
-\\ &= \sum_{i=1}^n (s(x_i) - s(x_{i-1})) = s(t) - s(0),
+\\ &\le \sum_{i=1}^n (s(x_i) - s(x_{i-1})) = s(t) - s(0),
 \end{aligned}$$
 and
 $$\begin{aligned}
 U_a(P) &= \sum_{i=1}^n (x_i - x_{i-1})\left(\sup_{x ∈ [x_{i-1}, x_i]} a(x)\right)
 \\ &= \sum_{i=1}^n (x_i - x_{i-1})a(x_i)
-\\ &= \sum_{i=1}^n (s(x_i) - s(x_{i-1})) = s(t) - s(0).
+\\ &\ge \sum_{i=1}^n (s(x_i) - s(x_{i-1})) = s(t) - s(0).
 \end{aligned}$$
-Since $r(0) = 0$, we get $s(0) = 0$, and thus, $U_a(P) = L_a(P) = s(t)$.
-Hence, $U_a(0, t) ≤ U_a(P) = s(t)$ and $L_a(0, t) ≥ L_a(P) = s(t)$.
+Since $r(0) = 0$, we get $s(0) = 0$, and thus, $L_a(P) \le s(t) \le U_a(P)$.
+Hence, $L_a(0, t) \le s(t) \le U_a(0, t)$.
 
 Since $a$ is non-decreasing, $a$ is integrable over $[0, t]$,
 and so, $U_a(0, t) = L_a(0, t) = s(t)$.
