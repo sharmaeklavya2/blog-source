@@ -3,6 +3,7 @@ slug: taal
 tags: music
 date: 2025-11-30
 status: draft
+ExtraCSS: https://sharmaeklavya2.github.io/trin/trin.css
 summary: I list some taals and representative music from each.
 
 
@@ -23,7 +24,7 @@ Here's a single example where it's easy to see that it's in teentaal.
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=1aCWGqUcP3o">Madhuban Mein Radhika Nache Re (मधुबन में राधिका नाचे रे)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=1aCWGqUcP3o">मधुबन में राधिका नाचे रे (Madhuban Mein Radhika Nache Re)</a></td>
     <td>Kohinoor</td>
     <td>Mohd Rafi</td>
 </tr>
@@ -34,10 +35,12 @@ Here's a single example where it's easy to see that it's in teentaal.
 * Structure: 8 = 4 + 4.
 * Listen on tabla: [variant 1](https://www.youtube.com/shorts/wpMuoGZcPnM), [variant 2](https://www.youtube.com/watch?v=910ovdbfORk).
 
+Teentaal and Keherwa are quite similar, and often one can be substituted for the other in a song. Keherwa also has many variants, including some with a slightly different structure, e.g., 3+3+2 instead of 4+4.
+
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=NFsEqOBG51M">Aaj Se Teri</a></td>
+    <td><a href="https://www.youtube.com/watch?v=NFsEqOBG51M">आज से तेरी (Aaj Se Teri)</a></td>
     <td>Padman</td>
     <td>Arijit Singh</td>
 </tr>
@@ -47,7 +50,7 @@ Here's a single example where it's easy to see that it's in teentaal.
     <td>Nintendo</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=92ydUdqWE1g">Tunak Tunak Tun</a></td>
+    <td><a href="https://www.youtube.com/watch?v=92ydUdqWE1g">तुनक तुनक तुन (Tunak Tunak Tun)</a></td>
     <td>-</td>
     <td>Daler Mehndi</td>
 </tr>
@@ -77,7 +80,7 @@ In Western music, this is very common in Waltz.
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=I5SQBNLJ_k8">Hamari Adhuri Kahani / Bheegi-Bheegi</a></td>
+    <td><a href="https://www.youtube.com/watch?v=I5SQBNLJ_k8">हमारी अधूरी कहानी (Hamari Adhuri Kahani)</a></td>
     <td>Gangster</td>
     <td>Faruq Mahfuz Anam James</td>
     <td>-</td>
@@ -86,6 +89,12 @@ In Western music, this is very common in Waltz.
     <td><a href="https://www.youtube.com/watch?v=gbLGvAPd_5E">Hey CM</a></td>
     <td>Leader</td>
     <td>Sunitha Sarathy</td>
+    <td>-</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=d_E6IJ7Yjdc">A Kiss to Build a Dream On</a></td>
+    <td>-</td>
+    <td>Louis Armstrong</td>
     <td>-</td>
 </tr>
 </table>
@@ -100,17 +109,17 @@ This taal is popular in Rajasthani music.
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://youtu.be/heHxA8G_yOw?si=1NCDHvBxqmNNXiNJ&t=177">Padhaaro mhaare des</a></td>
+    <td><a href="https://youtu.be/heHxA8G_yOw?si=1NCDHvBxqmNNXiNJ&t=177">पधारो म्हारे देस (Padhaaro mhaare des)</a></td>
     <td>-</td>
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=TAUKxUfwvwA">Mere Humsafar mere paas aa</a></td>
+    <td><a href="https://www.youtube.com/watch?v=TAUKxUfwvwA">मेरे हमसफ़र मेरे पास आ (Mere Humsafar mere paas aa)</a></td>
     <td>Refugee (2000)</td>
     <td>Sonu Nigam, Alka Yagnik</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=Bt_mtHucxpc">Srilu Pongina</a></td>
+    <td><a href="https://www.youtube.com/watch?v=Bt_mtHucxpc">స్రీలు పొంగిన (Srilu Pongina)</a></td>
     <td>Leader</td>
     <td>Krishna Chaithanya, Siddharth, Kranthi, Sashi Kiran & Aditya</td>
 </tr>
@@ -127,11 +136,12 @@ This taal is popular in Rajasthani music.
 * Listen on tabla: [130 bpm](https://www.youtube.com/watch?v=klEQRN46kL8).
 
 <table>
-<tr><th>Title</th><th>Album</th><th>Artist</th></tr>
+<tr><th>Title</th><th>Album</th><th>Artist</th><th>Comment</th></tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=__dvOaiAju8">Maa Telugu Thalli (మా తెలుగు తల్లి)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=__dvOaiAju8">మా తెలుగు తల్లి (Maa Telugu Thalli)</a></td>
     <td>Leader</td>
     <td>Tanguturi Suryakumari</td>
+    <td>Adapted from the State song of Telangana and Andhra Pradesh</td>
 </tr>
 </table>
 
@@ -145,25 +155,28 @@ Here's a list of songs that either use an unsual taal or switch taals during the
     <td><a href="https://www.youtube.com/watch?v=1le3GsG_abc">Shiva</a></td>
     <td>Navarasam</td>
     <td>Thaikkudam Bridge</td>
-    <td>Teentaal, 12 = 3 + 3 + 3 + 3 for the guitar solo</td>
+    <td>Teentaal, 12 = 3+3+3+3 for the guitar solo</td>
 </tr>
 <tr>
     <td><a href="https://www.youtube.com/watch?v=qR6dzwQahOM">L's theme</a></td>
     <td>Death Note</td>
     <td>-</td>
-    <td>27 = 7 + 6 + 7 + 7, Teentaal</td>
+    <td>27 = 7+6+7+7, Teentaal</td>
 </tr>
 <tr>
     <td><a href="https://www.youtube.com/watch?v=S6mqNuJ-MBw">Simulation</a></td>
     <td>The Stage</td>
     <td>Avenged Sevenfold</td>
-    <td>15 = 4 + 4 + 4 + 3, Teentaal</td>
+    <td>15 = 4+4+4+3, Teentaal</td>
 </tr>
 <tr>
     <td><a href="https://www.youtube.com/watch?v=E0ozmU9cJDg">Master of Puppets</a></td>
     <td>Master of Puppets</td>
     <td>Metallica</td>
-    <td>Teentaal, 15 = 4 + 4 + 4 + 3</td>
+    <td>Teentaal, 15 = 4+4+4+3</td>
 </tr>
 </table>
-<p></p>
+
+The metal band <a href="https://en.wikipedia.org/wiki/Tool_(band)">Tool</a> has composed many songs in very unusual taals.
+
+<script type="module" src="https://sharmaeklavya2.github.io/trin/trinUI.js?init=true"></script>
