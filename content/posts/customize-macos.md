@@ -410,6 +410,23 @@ After making these changes, run `nginx -s reload` for the changes to take effect
 Visit http://localhost:8080 again. Now instead of seeing the welcome page,
 you should see the list of files in `/usr/local/var/www`.
 
+Optionally, if you want the index page to look pretty, you can
+use the [ngx-fancyindex](https://github.com/aperezdc/ngx-fancyindex) module.
+But it seemed a bit too difficult to configure.
+So I use the following string-replacement hack to inject my own CSS:
+
+1.  Put `style.css` at `/usr/local/var/www/`. You can put whatever CSS you want in `style.css`.
+    You can see my style file in [this gist](https://gist.github.com/sharmaeklavya2/e8808872c4acd462d6cccff4ffa994c9).
+
+2.  Add this to '`http` > `server` > `location /`' in `/usr/local/etc/nginx/nginx.conf`:
+
+            sub_filter '<head><title>Index of' '<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="light dark" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Index of';
+            sub_filter_once on;
+
 ### Serve my websites with Nginx
 
 I had backed up compressed archives of my websites to my external hard disk.
