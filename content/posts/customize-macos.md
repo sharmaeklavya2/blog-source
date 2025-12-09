@@ -1,22 +1,22 @@
 title: A Comprehensive Guide to Customizing your MacBook
 slug: customize-macos
 date: 2019-07-12
-modified: 2024-08-08
+modified: 2025-12-08
 summary: This post contains a list of all the things I did to customize my MacBook. Most instructions here are useful only for programmers and power users.
 
 
-I recently got a new laptop - a MacBook Air!
+I recently got a new laptop - a MacBook Air (M4 2025)!
 I customized it so that it's easy for me to use.
 Major changes include:
 
 * Moving data from my old laptop to my new laptop.
-* Installing and configuring software for basic necessities, programming and writing content.
+* Installing and configuring software for basic necessities, programming, and writing content.
 * Setting up a nice environment on my [terminal](https://en.wikipedia.org/wiki/Terminal_emulator).
 
 As I made all these changes to my new laptop, I noted down the steps that I took for future reference.
 I think they could be useful to others, so here they are, as a blog post.
 
-This post is written for macOS Mojave.
+This post is written for macOS Tahoe.
 You may have to modify some instructions if you're using a newer macOS.
 If you're not using macOS, you can still get a similar working environment on Linux,
 but you'll have to make major modifications to the instructions below.
@@ -30,35 +30,43 @@ You can also refer to this [dependency graph]({static}/img/macos-customize-graph
 ## Basic setup
 
 * **Connect to a WiFi network**, since we'll be downloading a lot of stuff.
-* **Update your OS**.
-* macOS will offer a **tour of the OS**. Take that if you're new to macOS.
-* **Remove useless apps from dock**: right-click on the app in the dock, go to Options and uncheck 'Keep in Dock'.
+* **Sign into iCloud**. Create an account if you don't have one.
+* **Remove useless apps from dock**: right-click on the app in the dock, go to Options and click 'Remove from Dock'.
 
 ### System Preferences
 
-Click the Apple logo in the top-left corner of your screen and choose 'System Preferences'.
+Click the Apple logo in the top-left corner of your screen and choose 'System Settings'.
 Here you can customize most aspects of your operating system.
 If you have the time, go through each of the items and choose the options which make sense to you.
 These are the changes which I made:
 
-* General: Use dark theme (Appearance: Dark).
-* Dock:
-    * Position on screen: Left.
-    * Uncheck 'Show recent applications in Dock'.
-* Language and Region: Select 'English (US)' as the primary language.
-  I live in India, so the default was 'English (India)',
-  but I changed it because I generally follow US spelling.
-  I don't want my spell-checker to highlight 'color' and 'center' as misspelled words.
-* Keyboard: Input Sources: Hide input menu in menu bar.
-* Display: Choose Resolution as Scaled and choose the large size.
-* Bluetooth: Show Bluetooth in menu bar.
-* Sharing:
-    * Change hostname. The hostname shows up in the terminal prompt, so I want it to be short.
+* General > Software Update: update the OS.
+* Appearance: Use dark theme.
+* General > About: change 'Name'.
+* General > Storage: empty trash automatically.
+* General > Date and Time: select 24-hour time.
+* General > Language and Region: customize language and units.
+* General > Sharing:
+    * Update local hostname.
     * Allow remote login via SSH.
-* Siri: Disable Siri. I rarely use it.
-* Date and Time: In the 'Clock' tab, check 'Display time with seconds' and 'show date'.
-* Accessibility: Siri: 'Enable type to Siri' if you don't want to disable Siri
-  but want to talk to it by typing instead of speaking.
+* Apple Intelligence and Siri: turn off.
+* Privacy and Security: Turn off FileVault.
+* Control Center:
+    * Pick things that should show up in menu bar.
+    * Show battery percentage.
+    * Clock options: show seconds and date.
+* Desktop and Dock:
+    * Position on screen: left.
+    * Uncheck 'show suggested and recent apps in Dock'.
+* Display: Choose the larger size.
+* Sound: select 'play feedback when volume is changed'.
+* Lock screen:
+    * Customize screen lock and display off timings.
+    * Show 24-hour time.
+* iCloud: turn off iCloud syncing for all items.
+* Keyboard > Input Sources > Edit:
+    * Show input menu in menu bar.
+    * Add other languages that I can type in: Greek, Hindi, Telugu, Kannada.
 
 ### Finder preferences
 
@@ -66,21 +74,23 @@ Finder is the file manager in macOS.
 
 * Finder preferences (`Cmd + ,`):
     * General: Show hard disk and connected servers on desktop.
+    * Tags: Don't show any.
     * Sidebar: Select useful locations.
     * Advanced:
         * Show all filename extensions.
         * Keep folders on top in windows.
         * Search current folder when performing a search.
+* Open home directory in Finder and then press `Cmd + J` to show view options.
+    Select the options you like and press 'Use as Defaults'.
 * Go to 'View' in Finder's menu bar:
-    * Show view options (`Cmd + J`): 'Sort by Name' and 'Use as Defaults'.
     * Show path bar.
 * Press `Cmd + Shift + .` to enable viewing hidden files.
 
-### Install Google Chrome and sync profile
+### Install Google Chrome and/or Firefox
 
-I prefer Google Chrome over Safari.
-I made Chrome the default browser.
-I also synced my account to get all my bookmarks and extensions.
+* Sync profile to get bookmarks and extensions.
+* Make it the default browser.
+* Perhaps also look at Safari settings just in case.
 
 ### TextEdit preferences
 
@@ -185,16 +195,12 @@ You can install programs (called packages by brew) by simply writing commands on
 
     brew install name-of-package
 
-According to [brew's website](https://brew.sh/), brew can be installed by typing this into the terminal:
-
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-Installation may require superuser permissions.
+See [brew's website](https://brew.sh/) for installation instructions.
 
 ### Install [tmux](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 
 I usually need multiple shells to be open.
-I can use Terminal.app's 'tabs' (`Cmd + T`) to achieve this.
+I can use iTerm's or Terminal.app's 'tabs' (`Cmd + T`) to achieve this.
 But I use tmux instead since it has more features.
 Also, if you SSH to a server that has tmux installed,
 you can open multiple shells on the server on a single SSH session.
@@ -217,15 +223,14 @@ You can install MacTex using a GUI installer, but I did it using `brew install -
 
 ### Python and packages
 
-macOS has Python 2 pre-installed, but we should use Python 3, since
-[Python 2 will reach EOL](https://www.anaconda.com/end-of-life-eol-for-python-2-7-is-coming-are-you-ready/)
-on Jan 1, 2020.
+macOS comes pre-installed with Python 3 (and doesn't have Python 2 installed),
+but it may not be the latest version.
 
 Run `brew install python3`. That will install `python3` and [`pip3`](https://pip.pypa.io/en/stable/).
 
 I use [python virtual environments](https://docs.python.org/3/tutorial/venv.html).
 I use one big virtualenv where I install all commonly used packages,
-and I create application-specific virtualenvs for large applications that I'm developing.
+and I sometimes create application-specific virtualenvs.
 
 Run `python3 -m venv /path/to/venv/` to create a python3 virtualenv.
 
@@ -235,7 +240,7 @@ Now all python commands and applications you run will use this virtualenv.
 I usually install python packages only when required,
 but some are useful enough that I installed them in the beginning:
 
-    pip install ipython requests jinja2 pipdeptree flake8 grip
+    pip install requests jinja2 markdown pipdeptree flake8 grip
 
 These packages are useful for math and computation:
 
