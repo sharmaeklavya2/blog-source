@@ -24,7 +24,7 @@ Here's a single example where it's easy to see that it's in teentaal.
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=1aCWGqUcP3o">मधुबन में राधिका नाचे रे (Madhuban Mein Radhika Nache Re)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=1aCWGqUcP3o">मधुबन में राधिका नाचे रे (madhuban mein radhika nache re)</a></td>
     <td>Kohinoor</td>
     <td>Mohd Rafi</td>
 </tr>
@@ -40,7 +40,7 @@ Teentaal and Keherwa are quite similar, and often one can be substituted for the
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=NFsEqOBG51M">आज से तेरी (Aaj Se Teri)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=NFsEqOBG51M">आज से तेरी (aaj se teri)</a></td>
     <td>Padman</td>
     <td>Arijit Singh</td>
 </tr>
@@ -50,7 +50,7 @@ Teentaal and Keherwa are quite similar, and often one can be substituted for the
     <td>Nintendo</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=92ydUdqWE1g">तुनक तुनक तुन (Tunak Tunak Tun)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=92ydUdqWE1g">तुनक तुनक तुन (tunak tunak tun)</a></td>
     <td>-</td>
     <td>Daler Mehndi</td>
 </tr>
@@ -80,7 +80,7 @@ In Western music, this is very common in Waltz.
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=I5SQBNLJ_k8">हमारी अधूरी कहानी (Hamari Adhuri Kahani)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=I5SQBNLJ_k8">हमारी अधूरी कहानी (hamari adhuri kahani)</a></td>
     <td>Gangster</td>
     <td>Faruq Mahfuz Anam James</td>
     <td>-</td>
@@ -109,12 +109,12 @@ This taal is popular in Rajasthani music.
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://youtu.be/heHxA8G_yOw?si=1NCDHvBxqmNNXiNJ&t=177">पधारो म्हारे देस (Padhaaro mhaare des)</a></td>
+    <td><a href="https://youtu.be/heHxA8G_yOw?si=1NCDHvBxqmNNXiNJ&t=177">पधारो म्हारे देस (padhaaro mhaare des)</a></td>
     <td>-</td>
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=TAUKxUfwvwA">मेरे हमसफ़र मेरे पास आ (Mere Humsafar mere paas aa)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=TAUKxUfwvwA">मेरे हमसफ़र मेरे पास आ (mere humsafar mere paas aa)</a></td>
     <td>Refugee (2000)</td>
     <td>Sonu Nigam, Alka Yagnik</td>
 </tr>
@@ -138,7 +138,7 @@ This taal is popular in Rajasthani music.
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th><th>Comment</th></tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=__dvOaiAju8">మా తెలుగు తల్లి (Maa Telugu Thalli)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=__dvOaiAju8">మా తెలుగు తల్లి (maa Telugu thalli)</a></td>
     <td>Leader</td>
     <td>Tanguturi Suryakumari</td>
     <td>Adapted from the State song of Telangana and Andhra Pradesh</td>
