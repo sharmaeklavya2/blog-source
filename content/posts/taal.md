@@ -18,7 +18,7 @@ Here I'll list some songs I know from each taal.
 * Structure: 16 = 4 + 4 + 4 + 4.
 * Listen on tabla: [140 bpm](https://www.youtube.com/watch?v=SxRMsYre02k).
 
-Most songs are in teentaal.
+Most well-known songs are in teentaal.
 Here's a single example where it's easy to see that it's in teentaal.
 
 <table>
@@ -119,6 +119,11 @@ This taal is popular in Rajasthani music.
     <td>Sonu Nigam, Alka Yagnik</td>
 </tr>
 <tr>
+    <td><a href="https://www.youtube.com/watch?v=_lgACMqCpus">पिया तोसे नैना लागे रे (piya tose naina laage re)</a></td>
+    <td>Guide</td>
+    <td>Lata Mangeshkar</td>
+</tr>
+<tr>
     <td><a href="https://www.youtube.com/watch?v=Bt_mtHucxpc">స్రీలు పొంగిన (Srilu Pongina)</a></td>
     <td>Leader</td>
     <td>Krishna Chaithanya, Siddharth, Kranthi, Sashi Kiran & Aditya</td>
@@ -174,6 +179,12 @@ Here's a list of songs that either use an unsual taal or switch taals during the
     <td>Master of Puppets</td>
     <td>Metallica</td>
     <td>Teentaal, 15 = 4+4+4+3</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=2Amsfx3AVHU">संकट मोचन नाम तिहारो (Sankat Mochan naam tihaaro)</a></td>
+    <td>-</td>
+    <td>-</td>
+    <td>Daadra, Keherva</td>
 </tr>
 </table>
 
