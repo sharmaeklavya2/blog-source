@@ -123,23 +123,17 @@ In case you don't, here's a nice short tutorial by TreeHouse:
 
 Terminal.app is the default terminal emulator on macOS.
 But I recommend a better alternative, like [iTerm2](https://www.iterm2.com/features.html).
-I use iTerm2 with the _Solarized_ color scheme.
+
+In iTerm2, I went to Settings > Profiles, and created a new profile and made it default
+(so as to not modify the factory default).
+In Colors, I chose 'Regular' as the Color Preset and unchecked 'use bright version of ANSI colors for bold text'.
 
 In iTerm2, you may want to configure <kbd>Option</kbd> + arrow keys to move over words,
 just like in Terminal.app. To do this, go to Settings > Profiles > Keys > Key Mappings,
 and select 'Terminal.app Compatibility' as the preset.
 
 If you decide to stick to Terminal.app, that's also not a bad option.
-If you want to use the Solarized color scheme on Terminal.app,
-you'll need to download and install it:
-
-1.  Download the [Solarized dark theme for Terminal.app](https://raw.githubusercontent.com/tomislav/osx-terminal.app-colors-solarized/master/Solarized%20Dark.terminal). Open it in finder and double-click on it.
-2.  macOS will say that the file cannot be opened because it is not from an identified developer.
-Go to 'System Preferences > Security > General' and press 'Open Anyway' (don't worry; it's not an executable).
-3.  Open terminal, 'Preferences > Profiles', select 'Solarized Dark' and press the 'Default' button.
-Now restart Terminal.app and you'll see the dark blue background of the Solarized color scheme.
-
-Additionally, you may want to deselect 'restore text when reopening windows'
+In Terminal.app, you may want to deselect 'restore text when reopening windows'
 in the 'Preferences > Profile > Window' tab in Terminal.app.
 
 ### Installing [Xcode command-line tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
@@ -156,7 +150,7 @@ because macOS is going to suggest you do so.
 
 Dotfiles colloquially refers to configuration files placed in the home directory.
 These files' names start with a dot (`.`).
-Common examples are `.bash_profile`, `.vimrc` and `.gitconfig`.
+Common examples are `.zshrc`, `.vimrc` and `.gitconfig`.
 
 I have put all my dotfiles in a Github repository at
 [`sharmaeklavya2/dotfiles`](https://github.com/sharmaeklavya2/dotfiles).
@@ -165,28 +159,14 @@ Here is a brief version:
 
     git clone https://github.com/sharmaeklavya2/dotfiles.git
     cd dotfiles
-    ./scripts/make_links.py
-    shopt -s dotglob nullglob
-    mv _links/.bashrc _links/.bash_profile
-    mv _links/* ~
+    python3 scripts/make_links.py
 
-Now either restart your terminal or run `source ~/.bash_profile`.
+Now either restart your terminal or run `source ~/.zshrc`.
 If you executed the above instructions correctly,
 the first thing you'll notice is the improved, colorful prompt.
 
-My dotfiles are written with the Solarized terminal color scheme in mind.
-If you're not using Solarized, you should modify `.vimrc` accordingly:
-either remove `colorscheme solarized` or pick a different colorscheme,
-like [one](https://github.com/rakr/vim-one).
-
-I also recommend using the `git-prompt.sh` utility script, which will display useful information
-about git repositories (like branch, dirty status, etc) in your prompt.
-To do this, download [git-prompt.sh](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh)
-to `~/ext_bin/git-prompt.sh`. The `~/.bash_profile` will use it to modify the prompt.
-
-I also recommend adding the lines `export HISTSIZE=100000` and `export HISTCONTROL=ignoredups`
-to either `~/.env` or `~/.bash_profile` to increase your shell input history size
-and remove consecutive duplicates.
+Environment variables that I don't want version-controlled with my dotfiles go in `~/.env`.
+This file is sourced in `.zshrc` and `.bashrc`.
 
 ### Install [Homebrew](https://brew.sh/)
 
@@ -196,6 +176,9 @@ You can install programs (called packages by brew) by simply writing commands on
     brew install name-of-package
 
 See [brew's website](https://brew.sh/) for installation instructions.
+
+Brew will check for updates every time you run it.
+To prevent that from happening, add `export HOMEBREW_NO_AUTO_UPDATE=1` to `~/.env`.
 
 ### Install [tmux](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 
@@ -207,9 +190,12 @@ you can open multiple shells on the server on a single SSH session.
 
 To install, run `brew install tmux`.
 
-Brew will check for updates every time you run it.
-To prevent that from happening, add `export HOMEBREW_NO_AUTO_UPDATE=1`
-to `~/.bash_profile` or `~/.env`.
+### Install newer bash
+
+The version of `bash` that ships with macOS is very old.
+Run `brew install bash` to install a newer version of bash.
+This is helpful to check the compatibility of shell scripts between zsh and bash.
+When working on remote computers, I may not have zsh available.
 
 
 ## <span style="background-color: rgba(0, 255, 102, 0.3)">Install command-line programs</span>
@@ -244,7 +230,7 @@ but some are useful enough that I installed them in the beginning:
 
 These packages are useful for math and computation:
 
-    pip install numpy scipy pandas matplotlib seaborn sympy
+    pip install numpy scipy pandas matplotlib
 
 ### Other useful programs
 
@@ -253,14 +239,16 @@ a more recent version can be obtained using `brew install git`.
 * To be able to write and run Java programs, install openjdk: `brew install openjdk`.
 * Node.js and npm: `brew install node`.
 * Other useful programs that can be `brew install`ed:
+[`delta`](https://dandavison.github.io/delta/introduction.html),
 [`diffr`](https://github.com/mookid/diffr/),
-[`dos2unix`](https://linux.die.net/man/1/dos2unix),
-[`htop`](https://en.wikipedia.org/wiki/Htop),
-[`rlwrap`](https://github.com/hanslub42/rlwrap/),
 [`graphviz`](https://graphviz.org),
 [`ffmpeg`](https://ffmpeg.org),
 [`pandoc`](https://pandoc.org),
-[`youtube-dl`](https://github.com/ytdl-org/youtube-dl/).
+[`dos2unix`](https://linux.die.net/man/1/dos2unix),
+[`htop`](https://en.wikipedia.org/wiki/Htop),
+[`rlwrap`](https://github.com/hanslub42/rlwrap/).
+* Install [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) by first installing `node`,
+  and then running `pip install "yt-dlp[default,curl-cffi]" yt-dlp-ejs`.
 
 
 ## <span style="background-color: rgba(0, 136, 255, 0.3)">Transfer backed-up data</span>
@@ -270,41 +258,39 @@ a more recent version can be obtained using `brew install git`.
 There are many places where I store my files:
 
 * My laptop's SSD (which is small enough for all my files to not fit on it).
-* My external hard drive.
+* My external hard disk.
 * My [Dropbox](https://www.dropbox.com/) account.
 * [My Github repositories](https://github.com/sharmaeklavya2).
 * My Android phone.
 
 Some of my files are stored on more than one of the above locations.
-Sometimes the files on one storage medium get updated but not others.
-This made it very difficult for me to manage them without the risk of accidentally losing some files.
-
-To mitigate this problem, I did a massive reorganization of my files before moving them to my new laptop.
-I organized them into folders based on the kind of content and access patterns
+To keep the copies in sync and avoid losing changes,
+I organized my stuff into folders based on the kind of content and access patterns
 and demarcated which folders will be on which storage mediums.
 
-I moved my frequently-changing content to Dropbox.
-I use the Dropbox desktop app which syncs my files online in real-time.
-On my external hard drive, I have an up-to-date backup of content that rarely changes.
+Fortunately, my content that changes frequently is lightweight (code, documents),
+and heavier content (videos, music, books) changes less frequently,
+so the former is either in git repsitories or synced in real-time to Dropbox,
+and I keep copies of the latter on my hard disk.
 
-If you use git for your code, make sure to push all unpushed code on your old computer
+If you use git, make sure to push all unpushed code on your old computer
 to an online remote to avoid losing data.
 
 ### NTFS drivers for macOS
 
-My external hard drive is NTFS-formatted, but macOS cannot write to NTFS drives; it can only read from them.
+My external hard disk is NTFS-formatted, but macOS cannot write to NTFS drives; it can only read from them.
 This was problematic when I was transferring my files from my old laptop (which was also a MacBook)
-to my external hard drive. There are 3 options available:
+to my external hard disk. There are 3 options available:
 
-* Somehow reformat the external drive to FAT32 without losing data.
+* Somehow reformat the external disk to FAT32 without losing data.
 * Install an open-source NTFS driver.
 It's hard to make them work and you have to mount/unmount via command-line.
 * Install a paid NTFS driver, like [Paragon](https://www.paragon-software.com/home/ntfs-mac/).
 These work seamlessly, but are either expensive or offer a limited-time trial version.
 
-Fortunately, my external hard drive was a Seagate product.
+Fortunately, my external hard disk was a Seagate product.
 Seagate offers a [free-of-charge version of Paragon's NTFS driver](https://www.seagate.com/in/en/support/downloads/item/ntfs-driver-for-mac-os-master-dl/)
-which only works on Seagate drives.
+which only works on Seagate disks.
 
 ### Install Dropbox and use symlinks
 
@@ -312,22 +298,11 @@ I installed [Dropbox's desktop app](https://www.dropbox.com/install) on my new l
 This app creates a directory at `~/Dropbox` and downloads all your online content into it.
 Anything you put in this directory will get synced to your online account.
 
-Dropbox has the limitation that it will only sync files inside `~/Dropbox`.
-If I ever change my mind about what to sync, I'll have to move things in and out of `~/Dropbox`.
-If you're a command-line user, you'll know how annoying it can be to change frequently-used paths.
+In Preferences > Sync, I changed the default sync preference from 'online only' to 'available offline'.
 
-To solve this problem, I placed all my files outside `~/Dropbox`
-and created [symlinks](https://kb.iu.edu/d/abbe) to them which I placed in `~/Dropbox`.
-
-**Edit**: This no longer works, since
-[Dropbox removed support for using external symlinks](http://www.paulingraham.com/dropbox-and-symlinks.html).
-Now I place my files inside Dropbox and created symlinks to access them from outside `~/Dropbox`.
-
-### Wallpapers and profile picture
-
-After transferring files from my external hard drive to my new laptop,
-I configured macOS to use my custom wallpapers instead of the system-default ones
-and use my profile picture on the lock screen.
+Apparently, [Dropbox doesn't allow external symlinks](http://www.paulingraham.com/dropbox-and-symlinks.html),
+so instead of having files outside and their symlinks inside Dropbox,
+I have files inside Dropbox and symlinks to them outside.
 
 
 ## <span style="background-color: rgba(255, 0, 0, 0.3)">Customize Vim</span>
@@ -339,7 +314,7 @@ You can see which features are installed by running `vim --version`.
 
 Run `brew install vim` to install a newer, better Vim.
 Alternatively, you can install MacVim (`brew install macvim`).
-This will not replace the old vim; the old vim can still be accessed at `/usr/bin/vim`.
+These will not replace the old vim; the old vim can still be accessed at `/usr/bin/vim`.
 
 ### Get Vim plugins
 
@@ -348,9 +323,8 @@ and clone the git repositories of the plugins you need.
 You can see the list of plugins that I use at
 [`vimpackages.txt`](https://github.com/sharmaeklavya2/dotfiles/blob/master/vimpackages.txt) in my dotfiles.
 
-<!--If you're using my dotfiles, you can run `./scripts/get_vim_packages.py`.
-This will download the vim plugins from `vimpackages.txt` and place them in a directory named `vim_bundle`.
-[Symlink](https://kb.iu.edu/d/abbe) `vim_bundle` to `~/.vim/bundle`.-->
+If you're using my dotfiles, you can run `./scripts/get_vim_packages.py`.
+This will download and install the vim plugins from `vimpackages.txt`.
 
 ### Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
 
@@ -375,19 +349,8 @@ want good completion for C, C++, Java, Rust, Go or JavaScript
 The documentation says that MacVim is required,
 but I'm able to use YouCompleteMe with Vim installed via `brew install vim`.
 
-### Fix Vim locale error
-
-You may get error messages like this when you start Vim:
-
-    Warning: Failed to set locale category LC_NUMERIC to en_IN.
-    Warning: Failed to set locale category LC_TIME to en_IN.
-    Warning: Failed to set locale category LC_COLLATE to en_IN.
-    Warning: Failed to set locale category LC_MONETARY to en_IN.
-    Warning: Failed to set locale category LC_MESSAGES to en_IN.
-
-
-Fix this by adding `export LC_ALL=en_US.UTF-8` to `~/.bash_profile` or `~/.env`
-([brew forum post](https://discourse.brew.sh/t/failed-to-set-locale-category-lc-numeric-to-en-ru/5092)).
+<!-- Fix locale errors by adding `export LC_ALL=en_US.UTF-8` to `~/.env`
+([brew forum post](https://discourse.brew.sh/t/failed-to-set-locale-category-lc-numeric-to-en-ru/5092)). -->
 
 
 ## <span style="background-color: rgba(170, 0, 255, 0.3)">Install Nginx and serve website mirrors</span>
@@ -404,26 +367,26 @@ Now go to http://localhost:8080. You should see a welcome page from Nginx.
 
 ### Enable nginx autoindex
 
-Go to `/usr/local/etc/nginx/nginx.conf` and
+Go to `/opt/homebrew/etc/nginx/nginx.conf` and
 add `autoindex on;` to '`http` > `server` > `location /`'.
 You may also wish to change the port from 8080 to something else by changing the `listen` value.
 
-Then rename `/usr/local/var/www/index.html` to `/usr/local/var/www/index.html~`.
+Then rename `/opt/homebrew/var/www/index.html` to `/opt/homebrew/var/www/index.html~`.
 
 After making these changes, run `nginx -s reload` for the changes to take effect.
 
 Visit http://localhost:8080 again. Now instead of seeing the welcome page,
-you should see the list of files in `/usr/local/var/www`.
+you should see the list of files in `/opt/homebrew/var/www`.
 
 Optionally, if you want the index page to look pretty, you can
 use the [ngx-fancyindex](https://github.com/aperezdc/ngx-fancyindex) module.
 But it seemed a bit too difficult to configure.
 So I use the following string-replacement hack to inject my own CSS:
 
-1.  Put `style.css` at `/usr/local/var/www/`. You can put whatever CSS you want in `style.css`.
+1.  Put `style.css` at `/opt/homebrew/var/www/`. You can put whatever CSS you want in `style.css`.
     You can see my style file in [this gist](https://gist.github.com/sharmaeklavya2/e8808872c4acd462d6cccff4ffa994c9).
 
-2.  Add this to '`http` > `server` > `location /`' in `/usr/local/etc/nginx/nginx.conf`:
+2.  Add this to '`http` > `server` > `location /`' in `/opt/homebrew/etc/nginx/nginx.conf`:
 
             sub_filter '<head><title>Index of' '<head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -435,13 +398,13 @@ So I use the following string-replacement hack to inject my own CSS:
 ### Serve my websites with Nginx
 
 I had backed up compressed archives of my websites to my external hard disk.
-I copied the websites from there, uncompressed them, and placed them in `/usr/local/var/www`.
+I copied the websites from there, uncompressed them, and placed them in `/opt/homebrew/var/www`.
 
-You can put symlinks in `/usr/local/var/www`, but `/usr/local/var/www` itself cannot be a symlink.
+You can put symlinks in `/opt/homebrew/var/www`, but `/opt/homebrew/var/www` itself cannot be a symlink.
 
 ### Security
 
-Anyone on your network can see your files in `/usr/local/var/www`,
+Anyone on your network can see your files in `/opt/homebrew/var/www`,
 so you should be careful about what you put there to preserve your privacy.
 
 You can [set password authentication for Nginx](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04),
@@ -450,7 +413,7 @@ but if someone is eavesdropping, they can
 
 If you want to prevent others on your network from accessing the http server,
 you can restrict Nginx to work on `localhost` only.
-To do this, go to `/usr/local/etc/nginx/nginx.conf` and
+To do this, go to `/opt/homebrew/etc/nginx/nginx.conf` and
 change `listen 8080;` to `listen localhost:8080;`.
 This is somewhat secure, but not secure against a talented attacker
 (see <https://security.stackexchange.com/q/86773>).
