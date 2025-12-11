@@ -197,6 +197,21 @@ Run `brew install bash` to install a newer version of bash.
 This is helpful to check the compatibility of shell scripts between zsh and bash.
 When working on remote computers, I may not have zsh available.
 
+### Set up cron
+
+[Cron](https://en.wikipedia.org/wiki/Cron) is a service that allows us to
+run a program (job) periodically, e.g., every two minutes.
+The jobs and their frequencies are specified in a file called `crontab`.
+Run `crontab -e` to edit your crontab in a terminal text editor.
+
+If your cron jobs fail, you'll get 'mail' in `/var/mail/$USER`.
+You can view it by simply opening `/var/mail/$USER` in a text editor,
+and you can delete the file's contents to empty your inbox.
+
+If your cron job requires reading files in protected directories,
+you'll have to give `/usr/sbin/cron` full-disk access.
+See <https://apple.stackexchange.com/a/378558> for details.
+
 
 ## <span style="background-color: rgba(0, 255, 102, 0.3)">Install command-line programs</span>
 

@@ -29,6 +29,7 @@ digraph dep_graph {
     "dotfiles"
         "install and setup iTerm2" -> "dotfiles"
         "install xcode cmdline tools" -> "dotfiles"
+    "setup cron"
 
     node [color = "#A9DFBF"]
     "install mactex"
