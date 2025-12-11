@@ -368,6 +368,27 @@ which can be installed by running the following in vim:
 I'm using these extensions:
 `coc-clangd`, `coc-css`, `coc-html`, `coc-htmldjango`, `coc-json`, `coc-pyright`, `coc-texlab`, `coc-tsserver`.
 
+### Compatibility with Older Systems
+
+I may want to use vim with my `.vimrc` on other computers, where vim may have fewer features and no plugins.
+Hence, I have used feature detection extensively in my `.vimrc` using `has` and `exists`.
+I tested my `.vimrc` on `vim.tiny` on Debian using [Docker](https://www.docker.com/).
+Here are the steps for doing so.
+
+1.  Install Docker: either [manually](https://www.docker.com/get-started/),
+    or using `brew install --cask docker`.
+2.  Run the docker GUI application and follow the setup instructions. This starts the docker service.
+3.  In terminal, run `docker run -it -v ~/.vimrc:/root/.vimrc:ro debian:stable-slim bash`. This
+    1.  Pulls the `docker:stable-slim` image from [Docker Hub](https://hub.docker.com).
+    2.  Starts a container with `~/.vimrc` mounted to `/root/.vimrc` in read-only mode (`ro`).
+        This ensures that any changes to `~/.vimrc` show up in `/root/.vimrc` on the container,
+        but the container cannot modify the `~/.vimrc`.
+    3.  Runs `bash` in an interactive TTY (`-it`).
+4.  Now a different command-line prompt will appear, since we're inside `bash` in the container.
+5.  We must now install `vim.tiny`. To do so, run `apt update` and then `apt install vim.tiny`.
+6.  Now run `vim.tiny` and see if any errors show up.
+    You can run `vim.tiny --version` to see what features are available.
+
 <!-- Fix locale errors by adding `export LC_ALL=en_US.UTF-8` to `~/.env`
 ([brew forum post](https://discourse.brew.sh/t/failed-to-set-locale-category-lc-numeric-to-en-ru/5092)). -->
 
