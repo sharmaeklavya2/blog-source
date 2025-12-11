@@ -304,6 +304,15 @@ Apparently, [Dropbox doesn't allow external symlinks](http://www.paulingraham.co
 so instead of having files outside and their symlinks inside Dropbox,
 I have files inside Dropbox and symlinks to them outside.
 
+### Clone git repositories
+
+I have git repositories on github.com, gist.github.com, and overleaf.com.
+For private repositories, and when I push to repositories, I need to provide credentials to the git remote.
+It used to be easier many years ago, when the credentials were username and password.
+But these days github and overleaf use tokens. You can either generate new tokens
+(instructions for [GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) and [Overleaf](https://docs.overleaf.com/integrations-and-add-ons/git-integration-and-github-synchronization/git-integration/git-integration-authentication-tokens)),
+or if you have an older macbook already, you'll find your tokens in the 'Keychain Access' application.
+
 
 ## <span style="background-color: rgba(255, 0, 0, 0.3)">Customize Vim</span>
 
