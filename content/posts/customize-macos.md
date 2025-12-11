@@ -139,7 +139,7 @@ in the 'Preferences > Profile > Window' tab in Terminal.app.
 ### Installing [Xcode command-line tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
 
 The 'Xcode command-line tools' consist of command-line applications that are
-very common in Unix-like environments, like git, gcc, make, perl.
+very common in Unix-like environments, like `git`, `gcc`, `make`, `perl`.
 
 Run `xcode-select --install` from a terminal.
 A dialog box will pop up. Select install.
@@ -152,7 +152,7 @@ Dotfiles colloquially refers to configuration files placed in the home directory
 These files' names start with a dot (`.`).
 Common examples are `.zshrc`, `.vimrc` and `.gitconfig`.
 
-I have put all my dotfiles in a Github repository at
+I have put all my dotfiles in a GitHub repository at
 [`sharmaeklavya2/dotfiles`](https://github.com/sharmaeklavya2/dotfiles).
 You can find detailed instructions for setting them up in the repository's readme.
 Here is a brief version:
@@ -236,7 +236,7 @@ These packages are useful for math and computation:
 
 * Although git is provided by the Xcode command line tools,
 a more recent version can be obtained using `brew install git`.
-* To be able to write and run Java programs, install openjdk: `brew install openjdk`.
+* To be able to write and run Java programs, install `openjdk`: `brew install openjdk`.
 * Node.js and npm: `brew install node`.
 * Other useful programs that can be `brew install`ed:
 [`delta`](https://dandavison.github.io/delta/introduction.html),
@@ -260,7 +260,7 @@ There are many places where I store my files:
 * My laptop's SSD (which is small enough for all my files to not fit on it).
 * My external hard disk.
 * My [Dropbox](https://www.dropbox.com/) account.
-* [My Github repositories](https://github.com/sharmaeklavya2).
+* [My GitHub repositories](https://github.com/sharmaeklavya2).
 * My Android phone.
 
 Some of my files are stored on more than one of the above locations.
@@ -270,7 +270,7 @@ and demarcated which folders will be on which storage mediums.
 
 Fortunately, my content that changes frequently is lightweight (code, documents),
 and heavier content (videos, music, books) changes less frequently,
-so the former is either in git repsitories or synced in real-time to Dropbox,
+so the former is either in git repositories or synced in real-time to Dropbox,
 and I keep copies of the latter on my hard disk.
 
 If you use git, make sure to push all unpushed code on your old computer
@@ -347,9 +347,9 @@ The only exception in `vimpackages.txt` is `coc.nvim`, for which you must run
 
 ### Autocomplete using CoC
 
-I use [`coc.nvim`](github.com/neoclide/coc.nvim) for code autocompletion.
+I use [`coc.nvim`](github.com/neoclide/coc.nvim) for code auto-completion.
 You can view the key-mappings in `.vimrc`.
-`coc.nvim` comes with basic autocomplete, but for intelligent language-specific autocomplete, we need to
+`coc.nvim` comes with basic auto-complete, but for intelligent language-specific auto-complete, we need to
 [install extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#install-extensions)
 for those languages. E.g., for typescript and python, we need the `tsserver` and `pyright` extensions,
 which can be installed by running the following in vim:
@@ -373,7 +373,7 @@ It's useful to access local websites that I downloaded or created.
     brew install nginx
     nginx
 
-Now go to http://localhost:8080. You should see a welcome page from Nginx.
+Now go to <http://localhost:8080>. You should see a welcome page from Nginx.
 
 ### Enable nginx autoindex
 
@@ -385,7 +385,7 @@ Then rename `/opt/homebrew/var/www/index.html` to `/opt/homebrew/var/www/index.h
 
 After making these changes, run `nginx -s reload` for the changes to take effect.
 
-Visit http://localhost:8080 again. Now instead of seeing the welcome page,
+Visit <http://localhost:8080> again. Now instead of seeing the welcome page,
 you should see the list of files in `/opt/homebrew/var/www`.
 
 Optionally, if you want the index page to look pretty, you can
