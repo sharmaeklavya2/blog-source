@@ -1,7 +1,7 @@
 title: A Comprehensive Guide to Customizing your MacBook
 slug: customize-macos
 date: 2019-07-12
-modified: 2025-12-08
+modified: 2025-12-10
 summary: This post contains a list of all the things I did to customize my MacBook. Most instructions here are useful only for programmers and power users.
 
 
@@ -316,38 +316,48 @@ Run `brew install vim` to install a newer, better Vim.
 Alternatively, you can install MacVim (`brew install macvim`).
 These will not replace the old vim; the old vim can still be accessed at `/usr/bin/vim`.
 
+### Detecting dark mode
+
+My `.vimrc` tries to detect whether the OS is using dark mode,
+and then sets dark mode in vim (`set background=dark`) accordingly.
+To do this detection, it uses the
+[`darkdetect`](https://github.com/albertosottile/darkdetect) python module.
+If this module is not installed, `.vimrc` falls back to using dark mode in vim.
+
+I have installed `darkdetect` in a virtualenv,
+and I activate it whenever I want detection to work in my `.vimrc`.
+Moreover, if you change the system's dark/light mode while vim is running,
+you would have to either restart vim, or run `:call SetBackground()`.
+
 ### Get Vim plugins
 
 Go to `~/.vim/pack/default/start` (create this directory if it doesn't exist)
 and clone the git repositories of the plugins you need.
 You can see the list of plugins that I use at
 [`vimpackages.txt`](https://github.com/sharmaeklavya2/dotfiles/blob/master/vimpackages.txt) in my dotfiles.
-
 If you're using my dotfiles, you can run `./scripts/get_vim_packages.py`.
 This will download and install the vim plugins from `vimpackages.txt`.
 
-### Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
+Most plugins will be ready to use as soon as you clone their repositories
+(remember to restart vim for the plugins to be loaded).
+The only exception in `vimpackages.txt` is `coc.nvim`, for which you must run
 
-YouCompleteMe is a vim plugin for code auto-completion.
-To install this plugin:
+    cd ~/.vim/pack/default/start/coc.nvim
+    npm ci
 
-* `brew install cmake`
-* `cd ~/.vim/pack/default/start`
-* `git clone --recursive --depth=1 https://github.com/ycm-core/YouCompleteMe.git`
-* `cd YouCompleteMe`
-* If you use a python virtualenv, activate it.
-* `./install.py`
+### Autocomplete using CoC
 
-If you don't switch to the virtualenv before running `./install.py`,
-python auto-complete may not work for external libraries installed in that virtualenv.
+I use [`coc.nvim`](github.com/neoclide/coc.nvim) for code autocompletion.
+You can view the key-mappings in `.vimrc`.
+`coc.nvim` comes with basic autocomplete, but for intelligent language-specific autocomplete, we need to
+[install extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#install-extensions)
+for those languages. E.g., for typescript and python, we need the `tsserver` and `pyright` extensions,
+which can be installed by running the following in vim:
 
-You should read [the documentation](https://github.com/ycm-core/YouCompleteMe)
-for more detailed installation instructions. This is important if you
-want good completion for C, C++, Java, Rust, Go or JavaScript
-(Python auto-complete works out-of-the-box and I'm okay with rudimentary auto-complete for other languages).
+    :CocInstall coc-tsserver coc-pyright
 
-The documentation says that MacVim is required,
-but I'm able to use YouCompleteMe with Vim installed via `brew install vim`.
+I'm using these extensions:
+`coc-clangd`, `coc-css`, `coc-html`, `coc-htmldjango`, `coc-json`, `coc-pyright`, `coc-texlab`, `coc-tsserver`.
 
 <!-- Fix locale errors by adding `export LC_ALL=en_US.UTF-8` to `~/.env`
 ([brew forum post](https://discourse.brew.sh/t/failed-to-set-locale-category-lc-numeric-to-en-ru/5092)). -->
