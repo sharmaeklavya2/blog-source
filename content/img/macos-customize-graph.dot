@@ -1,4 +1,6 @@
 digraph dep_graph {
+    rankdir="LR"
+
     "show battery percentage"
     "join wifi network"
     "update system"
@@ -8,10 +10,10 @@ digraph dep_graph {
         "update system" -> "system preferences"
     "finder preferences and view"
     "textedit preferences"
-    "install chrome"
-        "join wifi network" -> "install chrome"
-    "sync chrome"
-        "install chrome" -> "sync chrome"
+    "install and sync chrome"
+        "join wifi network" -> "install and sync chrome"
+    "install and sync firefox"
+        "join wifi network" -> "install and sync firefox"
 
     node [style = "filled"]
 
@@ -27,9 +29,6 @@ digraph dep_graph {
     "dotfiles"
         "install and setup iTerm2" -> "dotfiles"
         "install xcode cmdline tools" -> "dotfiles"
-    "add to .env"
-    "add __git_ps1"
-        "dotfiles" -> "add __git_ps1"
 
     node [color = "#A9DFBF"]
     "install mactex"
@@ -38,29 +37,28 @@ digraph dep_graph {
         "install brew" -> "install useful programs"
     "install python3"
         "install brew" -> "install python3"
-    "pip3 install virtualenv"
-        "install python3" -> "pip3 install virtualenv"
+    "install node"
+        "install brew" -> "install node"
     "create virtualenv"
-        "pip3 install virtualenv" -> "create virtualenv"
+        "install python3" -> "create virtualenv"
     "pip install common packages"
         "create virtualenv" -> "pip install common packages"
 
     node [color = "#AED6F1"]
     "backup data"
     "backup: push commits to git"
+    "clone git repositories"
+        "install xcode cmdline tools" -> "clone git repositories"
+        "backup: push commits to git" -> "clone git repositories"
     "install ntfs drivers"
         "update system" -> "install ntfs drivers"
     "transfer data from external disk"
         "backup data" -> "transfer data from external disk"
         "install ntfs drivers" -> "transfer data from external disk"
-    "add profile pic"
-        "transfer data from external disk" -> "add profile pic"
-    "add wallpapers"
-        "transfer data from external disk" -> "add wallpapers"
     "install dropbox"
         "join wifi network" -> "install dropbox"
-    "use symlinks with dropbox"
-        "install dropbox" -> "use symlinks with dropbox"
+    "use custom wallpapers"
+        "install dropbox" -> "use custom wallpapers"
 
     node [color = "#D2B4DE"]
     "install nginx"
@@ -76,8 +74,7 @@ digraph dep_graph {
         "install brew" -> "brew install vim"
     "get vim plugins"
         "dotfiles" -> "get vim plugins"
-    "install youcompleteme"
-        "create virtualenv" -> "install youcompleteme"
-    "fix vim locale error"
-        "brew install vim" -> "fix vim locale error"
+    "configure coc.nvim"
+        "install node" -> "configure coc.nvim"
+        "get vim plugins" -> "configure coc.nvim"
 }
