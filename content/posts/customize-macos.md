@@ -58,6 +58,8 @@ These are the changes which I made:
 * Desktop and Dock:
     * Position on screen: left.
     * Uncheck 'show suggested and recent apps in Dock'.
+* Menu Bar: Set 'Automatically hide and show the menu bar' to 'Never'.
+    (This way I can see battery level, internet connectivity, volume, time, etc. in full-screen windows.)
 * Display: Choose the larger size.
 * Sound: select 'play feedback when volume is changed'.
 * Lock screen:
