@@ -1,7 +1,7 @@
 title: A Comprehensive Guide to Customizing your MacBook
 slug: customize-macos
 date: 2019-07-12
-modified: 2025-12-10
+modified: 2025-12-15
 summary: This post contains a list of all the things I did to customize my MacBook. Most instructions here are useful only for programmers and power users.
 
 
@@ -293,21 +293,19 @@ and I keep copies of the latter on my hard disk.
 If you use git, make sure to push all unpushed code on your old computer
 to an online remote to avoid losing data.
 
-### NTFS drivers for macOS
+### Filesystem issues
 
-My external hard disk is NTFS-formatted, but macOS cannot write to NTFS drives; it can only read from them.
-This was problematic when I was transferring my files from my old laptop (which was also a MacBook)
-to my external hard disk. There are 3 options available:
+My external hard disk used to be NTFS-formatted.
+macOS cannot write to NTFS drives; it can only read from them.
+So I had two options:
 
-* Somehow reformat the external disk to FAT32 without losing data.
-* Install an open-source NTFS driver.
-It's hard to make them work and you have to mount/unmount via command-line.
-* Install a paid NTFS driver, like [Paragon](https://www.paragon-software.com/home/ntfs-mac/).
-These work seamlessly, but are either expensive or offer a limited-time trial version.
-
-Fortunately, my external hard disk was a Seagate product.
-Seagate offers a [free-of-charge version of Paragon's NTFS driver](https://www.seagate.com/in/en/support/downloads/item/ntfs-driver-for-mac-os-master-dl/)
-which only works on Seagate disks.
+1.  Copy the data elsewhere, reformat the external disk to exFAT, and then copy data back to the hard disk.
+    This is what I ended up doing.
+2.  Install an NTFS driver: I don't like this option because:
+    1.  Installing NTFS drivers requires [reducing the system security level](https://support.apple.com/guide/mac-help/change-security-settings-startup-disk-a-mac-mchl768f7291/mac) by booting into recovery mode.
+    2.  Open-source drivers are problematic (require mounting/unmounting via command-line)
+        and closed-source drivers cost money (but some hard-disk manufacturers can get you free access to
+        [Paragon](https://www.paragon-software.com/home/ntfs-mac/) drivers if you're using their disk.)
 
 ### Install Dropbox and use symlinks
 
