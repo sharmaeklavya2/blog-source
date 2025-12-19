@@ -23,7 +23,7 @@ Most well-known songs are in teentaal. Here are some examples.
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=1aCWGqUcP3o">मधुबन में राधिका नाचे रे (madhuban mein radhika nache re)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=1aCWGqUcP3o">Madhuban mein radhika nache re</a></td>
     <td>Kohinoor</td>
     <td>Mohd Rafi</td>
 </tr>
@@ -49,17 +49,17 @@ Teentaal and Keherwa are quite similar, and often one can be substituted for the
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=NFsEqOBG51M">आज से तेरी (aaj se teri)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=NFsEqOBG51M">Aaj se teri</a></td>
     <td>Padman</td>
     <td>Arijit Singh</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=NTa6Xbzfq1U">Super Mario Bros. Theme Song</a></td>
+    <td><a href="https://www.youtube.com/watch?v=NTa6Xbzfq1U">Super Mario Bros. theme song</a></td>
     <td>-</td>
     <td>Nintendo</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=92ydUdqWE1g">तुनक तुनक तुन (tunak tunak tun)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=92ydUdqWE1g">Tunak tunak tun</a></td>
     <td>-</td>
     <td>Daler Mehndi</td>
 </tr>
@@ -83,25 +83,25 @@ In Western music, this is very common in Waltz.
     <td>Used in <a href="https://tomandjerry.fandom.com/wiki/The_Flying_Cat">Tom and Jerry: The Flying Cat</a></td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=PGPVZT3Blvs">Piyu Bole</a></td>
+    <td><a href="https://www.youtube.com/watch?v=PGPVZT3Blvs">Piyu bole</a></td>
     <td>Parineeta</td>
     <td>Sonu Nigam, Shreya Ghoshal</td>
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=I5SQBNLJ_k8">हमारी अधूरी कहानी (hamari adhuri kahani)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=I5SQBNLJ_k8">Hamari adhuri kahani</a></td>
     <td>Gangster</td>
     <td>Faruq Mahfuz Anam James</td>
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=i1BqRYMFS08">அப்படி போடு (appadi pode)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=i1BqRYMFS08">Appadi pode</a></td>
     <td>Ghilli</td>
     <td>KK, Anuradha Sriram</td>
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=d_E6IJ7Yjdc">A Kiss to Build a Dream On</a></td>
+    <td><a href="https://www.youtube.com/watch?v=d_E6IJ7Yjdc">A kiss to build a dream on</a></td>
     <td>-</td>
     <td>Louis Armstrong</td>
     <td>-</td>
@@ -118,22 +118,22 @@ This taal is popular in Rajasthani music.
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://youtu.be/heHxA8G_yOw?si=1NCDHvBxqmNNXiNJ&t=177">पधारो म्हारे देस (padhaaro mhaare des)</a></td>
+    <td><a href="https://youtu.be/heHxA8G_yOw?si=1NCDHvBxqmNNXiNJ&t=177">padhaaro mhaare des</a></td>
     <td>-</td>
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=TAUKxUfwvwA">मेरे हमसफ़र मेरे पास आ (mere humsafar mere paas aa)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=TAUKxUfwvwA">Mere humsafar mere paas aa</a></td>
     <td>Refugee (2000)</td>
     <td>Sonu Nigam, Alka Yagnik</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=_lgACMqCpus">पिया तोसे नैना लागे रे (piya tose naina laage re)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=_lgACMqCpus">Piya tose naina laage re</a></td>
     <td>Guide</td>
     <td>Lata Mangeshkar</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=Bt_mtHucxpc">స్రీలు పొంగిన (Srilu Pongina)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=Bt_mtHucxpc">Srilu pongina</a></td>
     <td>Leader</td>
     <td>Krishna Chaithanya, Siddharth, Kranthi, Sashi Kiran & Aditya</td>
 </tr>
@@ -152,7 +152,7 @@ This taal is popular in Rajasthani music.
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th><th>Comment</th></tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=__dvOaiAju8">మా తెలుగు తల్లి (maa Telugu thalli)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=__dvOaiAju8">Maa Telugu thalli</a></td>
     <td>Leader</td>
     <td>Tanguturi Suryakumari</td>
     <td>Adapted from the State song of Telangana and Andhra Pradesh</td>
@@ -190,7 +190,7 @@ Here's a list of songs that either use an unsual taal or switch taals during the
     <td>Teentaal, 15 = 4+4+4+3</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=2Amsfx3AVHU">संकट मोचन नाम तिहारो (Sankat Mochan naam tihaaro)</a></td>
+    <td><a href="https://www.youtube.com/watch?v=2Amsfx3AVHU">Sankat Mochan naam tihaaro</a></td>
     <td>-</td>
     <td>-</td>
     <td>Daadra, Keherva</td>
