@@ -18,8 +18,7 @@ Here I'll list some songs I know from each taal.
 * Structure: 16 = 4 + 4 + 4 + 4.
 * Listen on tabla: [140 bpm](https://www.youtube.com/watch?v=SxRMsYre02k).
 
-Most well-known songs are in teentaal.
-Here's a single example where it's easy to see that it's in teentaal.
+Most well-known songs are in teentaal. Here are some examples.
 
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
@@ -27,6 +26,16 @@ Here's a single example where it's easy to see that it's in teentaal.
     <td><a href="https://www.youtube.com/watch?v=1aCWGqUcP3o">मधुबन में राधिका नाचे रे (madhuban mein radhika nache re)</a></td>
     <td>Kohinoor</td>
     <td>Mohd Rafi</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=CD-E-LDc384">Enter Sandman</a></td>
+    <td>Metallica</td>
+    <td>Metallica</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=6jSLH9CDPPQ">Canon in D</a></td>
+    <td>-</td>
+    <td>Johann Pachelbel</td>
 </tr>
 </table>
 
@@ -86,9 +95,9 @@ In Western music, this is very common in Waltz.
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=gbLGvAPd_5E">Hey CM</a></td>
-    <td>Leader</td>
-    <td>Sunitha Sarathy</td>
+    <td><a href="https://www.youtube.com/watch?v=i1BqRYMFS08">அப்படி போடு (appadi pode)</a></td>
+    <td>Ghilli</td>
+    <td>KK, Anuradha Sriram</td>
     <td>-</td>
 </tr>
 <tr>
