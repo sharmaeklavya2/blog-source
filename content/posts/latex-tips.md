@@ -1,4 +1,4 @@
-title: LaTeX tips
+title: LaTeX Tips
 slug: latex-tips
 tags: latex
 date: 2022-11-13

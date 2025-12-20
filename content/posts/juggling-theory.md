@@ -1,4 +1,4 @@
-title: The Math behind Juggling
+title: The Math Behind Juggling
 slug: juggling-theory
 tags: juggling, math
 date: 2020-09-22

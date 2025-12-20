@@ -1,4 +1,4 @@
-title: Advice to past self on BITS end
+title: Advice to Past Self on BITS End
 slug: bits-end
 tags: bits-pilani
 date: 2017-12-11

@@ -1,4 +1,4 @@
-title: Creating high-quality animations
+title: Creating High-Quality Animations
 slug: high-quality-animations
 date: 2021-03-02
 status: draft

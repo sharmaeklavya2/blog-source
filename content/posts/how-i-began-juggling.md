@@ -1,4 +1,4 @@
-title: How I began Juggling
+title: How I Began Juggling
 slug: how-i-began-juggling
 tags: juggling, about-me
 status: draft

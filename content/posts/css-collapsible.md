@@ -1,4 +1,4 @@
-title: Making a keyboard-navigable collapsible without JavaScript
+title: Making a Keyboard-Navigable Collapsible Without JavaScript
 slug: css-collapsible
 tags: web-dev
 ExtraCSS: css/collapsible.css, css/solarized.css

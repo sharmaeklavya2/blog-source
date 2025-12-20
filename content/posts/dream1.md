@@ -1,4 +1,4 @@
-title: Weird dream
+title: Weird Dream
 slug: dream1
 tags: dream
 date: 2020-11-10
