@@ -124,7 +124,7 @@ This taal is popular in Rajasthani music.
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
 <tr>
-    <td><a href="https://youtu.be/heHxA8G_yOw?si=1NCDHvBxqmNNXiNJ&t=177">padhaaro mhaare des</a></td>
+    <td><a href="https://youtu.be/heHxA8G_yOw?si=1NCDHvBxqmNNXiNJ&t=177">Padhaaro mhaare des</a></td>
     <td>-</td>
     <td>-</td>
 </tr>
@@ -132,6 +132,11 @@ This taal is popular in Rajasthani music.
     <td><a href="https://www.youtube.com/watch?v=TAUKxUfwvwA">Mere humsafar mere paas aa</a></td>
     <td>Refugee (2000)</td>
     <td>Sonu Nigam, Alka Yagnik</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=90hNT7UYlZA">Maula mere lele meri jaan</a></td>
+    <td>Chak De India</td>
+    <td>Krishna, Salim Merchant</td>
 </tr>
 <tr>
     <td><a href="https://www.youtube.com/watch?v=_lgACMqCpus">Piya tose naina laage re</a></td>
@@ -194,6 +199,12 @@ Here's a list of songs that either use an unsual taal or switch taals during the
     <td>Master of Puppets</td>
     <td>Metallica</td>
     <td>Teentaal, 15 = 4+4+4+3</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=FN6jIvKiYOs">Tubular Bells</a></td>
+    <td>The Exorcist</td>
+    <td>Mike Oldfield</td>
+    <td>15 = 7+8</td>
 </tr>
 <tr>
     <td><a href="https://www.youtube.com/watch?v=2Amsfx3AVHU">Sankat Mochan naam tihaaro</a></td>
