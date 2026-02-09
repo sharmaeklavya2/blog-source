@@ -31,6 +31,7 @@ I edit latex code in vim and sync it to Overleaf using Git.
 5.  Overleaf's custom PDF viewer doesn't have bookmarks sidebar.
     I can use browser's PDF viewer instead of Overleaf's custom viewer
     to get back bookmarks, but then I lose dark mode and synctex.
+6.  Spellcheck: Vim can iterate over typos. Vim can have per-project spellfile. Overleaf can't do these.
 
 ## Advantages of Overleaf over Local Editing
 
