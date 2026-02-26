@@ -2,14 +2,14 @@ title: Taal
 slug: taal
 tags: music
 date: 2025-11-30
-status: draft
-ExtraCSS: https://sharmaeklavya2.github.io/trin/trin.css
+modified: 2026-02-25
 summary: I list some taals and representative music from each.
 
 
 I learned some Tabla in childhood, and back then I learned about different
 <a href="https://en.wikipedia.org/wiki/Tala_(music)#Common_Hindustani_talas">taals in Hindustani music</a>.
-Here I'll list some songs I know from each taal.
+Here I'll try to document a wide variety of songs (across different genres, languages, eras) from each taal I know.
+
 
 [TOC]
 
@@ -42,9 +42,12 @@ Most well-known songs are in teentaal. Here are some examples.
 ## Keherva (कहरवा)
 
 * Structure: 8 = 4 + 4.
-* Listen on tabla: [variant 1](https://www.youtube.com/shorts/wpMuoGZcPnM), [variant 2](https://www.youtube.com/watch?v=910ovdbfORk).
+* Listen on tabla:
+    [variant 1](https://www.youtube.com/shorts/wpMuoGZcPnM),
+    [variant 2](https://www.youtube.com/watch?v=910ovdbfORk).
 
-Teentaal and Keherwa are quite similar, and often one can be substituted for the other in a song. Keherwa also has many variants, including some with a slightly different structure, e.g., 3+3+2 instead of 4+4.
+Teentaal and Keherwa are quite similar, and often one can be substituted for the other in a song.
+Keherwa also has many variants, including some with a slightly different structure, e.g., 3+3+2 instead of 4+4.
 
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th></tr>
@@ -83,6 +86,24 @@ In Western music, this is very common in Waltz.
     <td>Used in <a href="https://tomandjerry.fandom.com/wiki/The_Flying_Cat">Tom and Jerry: The Flying Cat</a></td>
 </tr>
 <tr>
+    <td><a href="https://www.youtube.com/watch?v=tAGnKpE4NCI">Nothing else matters</a></td>
+    <td>Metallica</td>
+    <td>Metallica</td>
+    <td>-</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=N4bFqW_eu2I">House of the rising sun</a></td>
+    <td>The Animals</td>
+    <td>The Animals</td>
+    <td>-</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=04854XqcfCY">We are the champions</a></td>
+    <td>News of the World</td>
+    <td>Queen</td>
+    <td>-</td>
+</tr>
+<tr>
     <td><a href="https://www.youtube.com/watch?v=PGPVZT3Blvs">Piyu bole</a></td>
     <td>Parineeta</td>
     <td>Sonu Nigam, Shreya Ghoshal</td>
@@ -95,21 +116,15 @@ In Western music, this is very common in Waltz.
     <td>-</td>
 </tr>
 <tr>
-    <td><a href="https://www.youtube.com/watch?v=N4bFqW_eu2I">House of the rising sun</a></td>
-    <td>The Animals</td>
-    <td>The Animals</td>
+    <td><a href="https://www.youtube.com/watch?v=kKC1hAcPoI4">My name is Lakhan</a></td>
+    <td>Ram Lakhan</td>
+    <td></td>
     <td>-</td>
 </tr>
 <tr>
     <td><a href="https://www.youtube.com/watch?v=tYSrY4iPX6w">Tum Tum</a></td>
     <td>Enemy</td>
     <td></td>
-    <td>-</td>
-</tr>
-<tr>
-    <td><a href="https://www.youtube.com/watch?v=d_E6IJ7Yjdc">A kiss to build a dream on</a></td>
-    <td>-</td>
-    <td>Louis Armstrong</td>
     <td>-</td>
 </tr>
 </table>
@@ -149,6 +164,11 @@ This taal is popular in Rajasthani music.
     <td>Krishna Chaithanya, Siddharth, Kranthi, Sashi Kiran & Aditya</td>
 </tr>
 <tr>
+    <td><a href="https://www.youtube.com/watch?v=lbdEzRfbeH4">Unsquare dance</a></td>
+    <td>-</td>
+    <td>Dave Brubeck</td>
+</tr>
+<tr>
     <td><a href="https://www.youtube.com/watch?v=Z0c1D2NDreU">Mello's theme</a></td>
     <td>Death Note</td>
     <td>-</td>
@@ -168,6 +188,18 @@ This taal is popular in Rajasthani music.
     <td>Tanguturi Suryakumari</td>
     <td>Adapted from the State song of Telangana and Andhra Pradesh</td>
 </tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=tT9Eh8wNMkw">Take five</a></td>
+    <td>-</td>
+    <td>Dave Brubeck</td>
+    <td>Sounds more like 5 = 3 + 2</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=zetSCSGaNig">Chinnari sasirekha vardhillavamma</a></td>
+    <td>Maya Bazar</td>
+    <td></td>
+    <td></td>
+</tr>
 </table>
 
 ## Others
@@ -176,6 +208,12 @@ Here's a list of songs that either use an unsual taal or switch taals during the
 
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th><th>Taals</th></tr>
+<tr>
+    <td><a href="https://www.youtube.com/watch?v=XAYhNHhxN0A">Mission impossible theme</a></td>
+    <td></td>
+    <td></td>
+    <td>Starts in 3+3+2+2, then switches to teentaal.</td>
+</tr>
 <tr>
     <td><a href="https://www.youtube.com/watch?v=1le3GsG_abc">Shiva</a></td>
     <td>Navarasam</td>
@@ -215,5 +253,3 @@ Here's a list of songs that either use an unsual taal or switch taals during the
 </table>
 
 The metal band <a href="https://en.wikipedia.org/wiki/Tool_(band)">Tool</a> has composed many songs in very unusual taals.
-
-<script type="module" src="https://sharmaeklavya2.github.io/trin/trinUI.js?init=true"></script>
