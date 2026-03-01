@@ -195,6 +195,12 @@ This taal is popular in Rajasthani music.
     <td>Sounds more like 5 = 3 + 2</td>
 </tr>
 <tr>
+    <td><a href="https://www.youtube.com/watch?v=yLo9k8Gifb0">Mission Impossible theme</a></td>
+    <td>-</td>
+    <td>-</td>
+    <td>Uses 10 = 3 + 3 + 2 + 2</td>
+</tr>
+<tr>
     <td><a href="https://www.youtube.com/watch?v=zetSCSGaNig">Chinnari sasirekha vardhillavamma</a></td>
     <td>Maya Bazar</td>
     <td></td>
@@ -208,12 +214,6 @@ Here's a list of songs that either use an unsual taal or switch taals during the
 
 <table>
 <tr><th>Title</th><th>Album</th><th>Artist</th><th>Taals</th></tr>
-<tr>
-    <td><a href="https://www.youtube.com/watch?v=XAYhNHhxN0A">Mission impossible theme</a></td>
-    <td></td>
-    <td></td>
-    <td>Starts in 3+3+2+2, then switches to teentaal.</td>
-</tr>
 <tr>
     <td><a href="https://www.youtube.com/watch?v=1le3GsG_abc">Shiva</a></td>
     <td>Navarasam</td>
